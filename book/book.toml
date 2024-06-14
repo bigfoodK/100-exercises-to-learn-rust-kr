@@ -10,3 +10,9 @@ git-repository-url = "https://github.com/mainmatter/100-exercises-to-learn-rust"
 
 [preprocessor.exercise-linker]
 exercise_root_url = "https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/exercises"
+
+[preprocessor.gettext]
+after = ["links"]
+
+[build]
+extra-watch-dirs = ["po"]
