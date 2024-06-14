@@ -13,522 +13,424 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/SUMMARY.md:1 src/02_basic_calculator/01_integers.md:44
-#, fuzzy
 msgid "Summary"
 msgstr "요약"
 
 #: src/SUMMARY.md:3 src/01_intro/00_welcome.md:1
-#, fuzzy
 msgid "Welcome"
-msgstr "환영"
+msgstr "환영합니다"
 
 #: src/SUMMARY.md:4 src/01_intro/01_syntax.md:1
 #: src/03_ticket_v1/06_ownership.md:181
-#, fuzzy
 msgid "Syntax"
-msgstr "통사론"
+msgstr "문법"
 
 #: src/SUMMARY.md:6 src/02_basic_calculator/00_intro.md:1
-#, fuzzy
 msgid "A Basic Calculator"
-msgstr "기본 계산기"
+msgstr "간단한 계산기"
 
 #: src/SUMMARY.md:7 src/02_basic_calculator/01_integers.md:13
-#, fuzzy
 msgid "Integers"
 msgstr "정수"
 
 #: src/SUMMARY.md:8 src/02_basic_calculator/02_variables.md:1
-#, fuzzy
 msgid "Variables"
 msgstr "변수"
 
 #: src/SUMMARY.md:9
-#, fuzzy
 msgid "Branching: `if`/`else`"
 msgstr "분기: `if`/`else`"
 
 #: src/SUMMARY.md:10 src/02_basic_calculator/00_intro.md:12
 #: src/02_basic_calculator/04_panics.md:1
-#, fuzzy
 msgid "Panics"
 msgstr "패닉"
 
 #: src/SUMMARY.md:11 src/02_basic_calculator/05_factorial.md:1
-#, fuzzy
 msgid "Factorial"
-msgstr "계승"
+msgstr "팩토리얼"
 
 #: src/SUMMARY.md:12
-#, fuzzy
 msgid "Loops: `while`"
 msgstr "루프: `while`"
 
 #: src/SUMMARY.md:13
-#, fuzzy
 msgid "Loops: `for`"
 msgstr "루프: `for`"
 
 #: src/SUMMARY.md:14
-#, fuzzy
 msgid "Overflow and underflow"
-msgstr "오버플로 및 언더플로"
+msgstr "오버플로우와 언더플로우"
 
 #: src/SUMMARY.md:15
-#, fuzzy
 msgid "Saturating arithmetic"
 msgstr "포화 산술"
 
 #: src/SUMMARY.md:16
-#, fuzzy
 msgid "Conversions: `as` casting"
-msgstr "전환: `as` 캐스팅"
+msgstr "변환: `as` 캐스팅"
 
 #: src/SUMMARY.md:18
-#, fuzzy
 msgid "Ticket v1"
-msgstr "티켓 v1"
+msgstr "Ticket v1"
 
 #: src/SUMMARY.md:19 src/03_ticket_v1/01_struct.md:1
-#, fuzzy
 msgid "Structs"
 msgstr "구조체"
 
 #: src/SUMMARY.md:20 src/03_ticket_v1/02_validation.md:1
-#, fuzzy
 msgid "Validation"
 msgstr "확인"
 
 #: src/SUMMARY.md:21 src/03_ticket_v1/03_modules.md:1
-#, fuzzy
 msgid "Modules"
 msgstr "모듈"
 
 #: src/SUMMARY.md:22 src/03_ticket_v1/04_visibility.md:1
-#, fuzzy
 msgid "Visibility"
-msgstr "시계"
+msgstr "가시성"
 
 #: src/SUMMARY.md:23 src/03_ticket_v1/05_encapsulation.md:1
-#, fuzzy
 msgid "Encapsulation"
 msgstr "캡슐화"
 
 #: src/SUMMARY.md:24 src/03_ticket_v1/06_ownership.md:1
-#, fuzzy
 msgid "Ownership"
 msgstr "소유권"
 
 #: src/SUMMARY.md:25 src/03_ticket_v1/07_setters.md:25
-#, fuzzy
 msgid "Setters"
-msgstr "세터"
+msgstr "설정자(Setters)"
 
 #: src/SUMMARY.md:26 src/03_ticket_v1/08_stack.md:13
-#, fuzzy
 msgid "Stack"
 msgstr "스택"
 
 #: src/SUMMARY.md:27 src/03_ticket_v1/09_heap.md:1
-#, fuzzy
 msgid "Heap"
-msgstr "더미"
+msgstr "힙"
 
 #: src/SUMMARY.md:28
-#, fuzzy
 msgid "References in memory"
-msgstr "메모리의 참조"
+msgstr "메모리 참조"
 
 #: src/SUMMARY.md:29 src/03_ticket_v1/11_destructor.md:1
 #: src/03_ticket_v1/11_destructor.md:39
-#, fuzzy
 msgid "Destructors"
-msgstr "소멸자"
+msgstr "소멸자(Destructors)"
 
 #: src/SUMMARY.md:30 src/SUMMARY.md:46 src/SUMMARY.md:63 src/SUMMARY.md:107
 #: src/08_futures/08_outro.md:1
-#, fuzzy
 msgid "Outro"
-msgstr "아웃트로"
+msgstr "마무리"
 
 #: src/SUMMARY.md:32 src/04_traits/00_intro.md:1 src/04_traits/01_trait.md:1
-#, fuzzy
 msgid "Traits"
-msgstr "특성"
+msgstr "Traits"
 
 #: src/SUMMARY.md:33 src/04_traits/03_operator_overloading.md:35
-#, fuzzy
 msgid "Trait"
-msgstr "특성"
+msgstr "Trait"
 
 #: src/SUMMARY.md:34 src/04_traits/02_orphan_rule.md:86
-#, fuzzy
 msgid "Orphan rule"
-msgstr "고아 규칙"
+msgstr "고아 규칙(Orphan rule)"
 
 #: src/SUMMARY.md:35 src/04_traits/03_operator_overloading.md:1
-#, fuzzy
 msgid "Operator overloading"
 msgstr "연산자 오버로딩"
 
 #: src/SUMMARY.md:36 src/04_traits/04_derive.md:1 src/04_traits/04_derive.md:69
-#, fuzzy
 msgid "Derive macros"
-msgstr "매크로 파생"
+msgstr "파생(Derive) 매크로"
 
 #: src/SUMMARY.md:37 src/04_traits/05_trait_bounds.md:1
 #: src/04_traits/05_trait_bounds.md:81
-#, fuzzy
 msgid "Trait bounds"
-msgstr "특성 범위"
+msgstr "Trait bounds"
 
 #: src/SUMMARY.md:38 src/04_traits/06_str_slice.md:1
 #: src/04_traits/06_str_slice.md:67
-#, fuzzy
 msgid "String slices"
-msgstr "스트링 슬라이스"
+msgstr "문자열 슬라이스"
 
 #: src/SUMMARY.md:39 src/04_traits/07_deref.md:1
-#, fuzzy
 msgid "`Deref` trait"
-msgstr "'Deref' 특성"
+msgstr "`Deref` trait"
 
 #: src/SUMMARY.md:40
-#, fuzzy
 msgid "`Sized` trait"
-msgstr "'크기' 특성"
+msgstr "`Sized` trait"
 
 #: src/SUMMARY.md:41
-#, fuzzy
 msgid "`From` trait"
-msgstr "`From` 특성"
+msgstr "`From` trait"
 
 #: src/SUMMARY.md:42
-#, fuzzy
 msgid "Associated vs generic types"
-msgstr "연관 유형과 일반 유형"
+msgstr "Associated vs generic types"
 
 #: src/SUMMARY.md:43
-#, fuzzy
 msgid "`Clone` trait"
-msgstr "'클론' 특성"
+msgstr "`Clone` trait"
 
 #: src/SUMMARY.md:44
-#, fuzzy
 msgid "`Copy` trait"
-msgstr "'복사' 특성"
+msgstr "`Copy` trait"
 
 #: src/SUMMARY.md:45
-#, fuzzy
 msgid "`Drop` trait"
-msgstr "'드롭' 특성"
+msgstr "`Drop` trait"
 
 #: src/SUMMARY.md:48
-#, fuzzy
 msgid "Ticket v2"
-msgstr "티켓 v2"
+msgstr "Ticket v2"
 
 #: src/SUMMARY.md:49
-#, fuzzy
 msgid "Enums"
-msgstr "열거형"
+msgstr "열거형(Enums)"
 
 #: src/SUMMARY.md:50
-#, fuzzy
 msgid "Branching: `match`"
-msgstr "분기: `일치`"
+msgstr "분기: `match`"
 
 #: src/SUMMARY.md:51
-#, fuzzy
 msgid "Variants with data"
-msgstr "데이터가 있는 변형"
+msgstr "데이터를 가진 Variants"
 
 #: src/SUMMARY.md:52
-#, fuzzy
 msgid "Branching: `if let` and `let/else`"
-msgstr "분기: `if let` 및 `let/else`"
+msgstr "분기: `if let` 과 `let/else`"
 
 #: src/SUMMARY.md:53 src/05_ticket_v2/05_nullability.md:1
-#, fuzzy
 msgid "Nullability"
-msgstr "Null 허용 여부"
+msgstr "Null 가능성(Nullability)"
 
 #: src/SUMMARY.md:54 src/05_ticket_v2/06_fallibility.md:1
-#, fuzzy
 msgid "Fallibility"
-msgstr "오류 가능성"
+msgstr "실패 가능성(Fallibility)"
 
 #: src/SUMMARY.md:55
-#, fuzzy
 msgid "Unwrap"
-msgstr "풀다"
+msgstr "Unwrap"
 
 #: src/SUMMARY.md:56 src/05_ticket_v2/08_error_enums.md:1
-#, fuzzy
 msgid "Error enums"
-msgstr "오류 열거형"
+msgstr "Error enums"
 
 #: src/SUMMARY.md:57
-#, fuzzy
 msgid "`Error` trait"
-msgstr "`오류` 특성"
+msgstr "`Error` trait"
 
 #: src/SUMMARY.md:58
-#, fuzzy
 msgid "Packages"
 msgstr "패키지"
 
 #: src/SUMMARY.md:59 src/05_ticket_v2/11_dependencies.md:1
-#, fuzzy
 msgid "Dependencies"
-msgstr "종속성"
+msgstr "디펜던시"
 
 #: src/SUMMARY.md:60 src/05_ticket_v2/12_thiserror.md:1
-#, fuzzy
 msgid "`thiserror`"
-msgstr "`이 오류`"
+msgstr "`thiserror`"
 
 #: src/SUMMARY.md:61
-#, fuzzy
 msgid "`TryFrom` trait"
-msgstr "`TryFrom` 특성"
+msgstr "`TryFrom` trait"
 
 #: src/SUMMARY.md:62 src/05_ticket_v2/14_source.md:1
-#, fuzzy
 msgid "`Error::source`"
-msgstr "`오류::소스`"
+msgstr "`Error::source`"
 
 #: src/SUMMARY.md:65
-#, fuzzy
 msgid "Ticket Management"
 msgstr "티켓 관리"
 
 #: src/SUMMARY.md:66 src/06_ticket_management/01_arrays.md:1
 #: src/06_ticket_management/01_arrays.md:9
-#, fuzzy
 msgid "Arrays"
 msgstr "배열"
 
 #: src/SUMMARY.md:67 src/06_ticket_management/02_vec.md:1
-#, fuzzy
 msgid "Vectors"
 msgstr "벡터"
 
 #: src/SUMMARY.md:68 src/06_ticket_management/03_resizing.md:1
-#, fuzzy
 msgid "Resizing"
-msgstr "크기 조정"
+msgstr "리사이징"
 
 #: src/SUMMARY.md:69
-#, fuzzy
 msgid "Iterators"
 msgstr "반복자"
 
 #: src/SUMMARY.md:70
-#, fuzzy
 msgid "Iter"
-msgstr "반복"
+msgstr "Iter"
 
 #: src/SUMMARY.md:71 src/06_ticket_management/06_lifetimes.md:1
-#, fuzzy
 msgid "Lifetimes"
 msgstr "수명"
 
 #: src/SUMMARY.md:72 src/06_ticket_management/07_combinators.md:1
-#, fuzzy
 msgid "Combinators"
-msgstr "결합자"
+msgstr "결합자(Combinators)"
 
 #: src/SUMMARY.md:73 src/06_ticket_management/08_impl_trait.md:1
 #: src/06_ticket_management/08_impl_trait.md:35
-#, fuzzy
 msgid "`impl Trait`"
-msgstr "`impl 특성`"
+msgstr "`impl Trait`"
 
 #: src/SUMMARY.md:74
-#, fuzzy
 msgid "`impl Trait`, pt.2"
 msgstr "`impl Trait`, pt.2"
 
 #: src/SUMMARY.md:75 src/06_ticket_management/10_slices.md:1
-#, fuzzy
 msgid "Slices"
-msgstr "조각"
+msgstr "슬라이스"
 
 #: src/SUMMARY.md:76 src/06_ticket_management/11_mutable_slices.md:1
-#, fuzzy
 msgid "Mutable slices"
 msgstr "변경 가능한 슬라이스"
 
 #: src/SUMMARY.md:77
-#, fuzzy
 msgid "Two states"
 msgstr "두 가지 상태"
 
 #: src/SUMMARY.md:78
-#, fuzzy
 msgid "`Index` trait"
-msgstr "`인덱스` 특성"
+msgstr "`Index` trait"
 
 #: src/SUMMARY.md:79
-#, fuzzy
 msgid "`IndexMut` trait"
-msgstr "`IndexMut` 특성"
+msgstr "`IndexMut` trait"
 
 #: src/SUMMARY.md:80 src/06_ticket_management/15_hashmap.md:1
-#, fuzzy
 msgid "`HashMap`"
-msgstr "`해시맵`"
+msgstr "`HashMap`"
 
 #: src/SUMMARY.md:81 src/06_ticket_management/16_btreemap.md:11
-#, fuzzy
 msgid "`BTreeMap`"
 msgstr "`BTreeMap`"
 
 #: src/SUMMARY.md:83 src/SUMMARY.md:84 src/07_threads/01_threads.md:1
-#, fuzzy
 msgid "Threads"
 msgstr "스레드"
 
 #: src/SUMMARY.md:85 src/07_threads/02_static.md:54
-#, fuzzy
 msgid "`'static` lifetime"
-msgstr "``정적' 수명"
+msgstr "`'static` 수명"
 
 #: src/SUMMARY.md:86
-#, fuzzy
 msgid "Leaking memory"
 msgstr "메모리 누수"
 
 #: src/SUMMARY.md:87 src/07_threads/04_scoped_threads.md:1
-#, fuzzy
 msgid "Scoped threads"
-msgstr "범위가 지정된 스레드"
+msgstr "범위 스레드"
 
 #: src/SUMMARY.md:88 src/07_threads/05_channels.md:1
 #: src/07_threads/05_channels.md:31
-#, fuzzy
 msgid "Channels"
 msgstr "채널"
 
 #: src/SUMMARY.md:89 src/07_threads/06_interior_mutability.md:1
-#, fuzzy
 msgid "Interior mutability"
-msgstr "내부 가변성"
+msgstr "내부 가변성(Interior mutability)"
 
 #: src/SUMMARY.md:90
-#, fuzzy
 msgid "Ack pattern"
-msgstr "확인 패턴"
+msgstr "Ack 패턴"
 
 #: src/SUMMARY.md:91
-#, fuzzy
 msgid "Client"
-msgstr "고객"
+msgstr "클라이언트"
 
 #: src/SUMMARY.md:92 src/07_threads/09_bounded.md:13
-#, fuzzy
 msgid "Bounded channels"
-msgstr "제한된 채널"
+msgstr "제한 채널(Bounded channels)"
 
 #: src/SUMMARY.md:93 src/07_threads/10_patch.md:19
-#, fuzzy
 msgid "Patching"
 msgstr "패치"
 
 #: src/SUMMARY.md:94
-#, fuzzy
 msgid "`Mutex`, `Send` and `Arc`"
-msgstr "`Mutex`, `Send` 및 `Arc`"
+msgstr "`Mutex`, `Send` 그리고 `Arc`"
 
 #: src/SUMMARY.md:95
-#, fuzzy
 msgid "`RwLock`"
 msgstr "`RwLock`"
 
 #: src/SUMMARY.md:96
-#, fuzzy
 msgid "Without channels"
-msgstr "채널 없음"
+msgstr "채널 없이"
 
 #: src/SUMMARY.md:97
-#, fuzzy
 msgid "`Sync` trait"
-msgstr "'동기화' 특성"
+msgstr "`Sync` trait"
 
 #: src/SUMMARY.md:99
-#, fuzzy
 msgid "Futures"
-msgstr "선물"
+msgstr "Futures"
 
 #: src/SUMMARY.md:100 src/08_futures/01_async_fn.md:1
-#, fuzzy
 msgid "Asynchronous functions"
-msgstr "비동기 기능"
+msgstr "비동기 함수"
 
 #: src/SUMMARY.md:101 src/08_futures/02_spawn.md:1
-#, fuzzy
 msgid "Spawning tasks"
-msgstr "산란 작업"
+msgstr "태스크 띄우기"
 
 #: src/SUMMARY.md:102
-#, fuzzy
 msgid "Runtime"
-msgstr "실행 시간"
+msgstr "런타임"
 
 #: src/SUMMARY.md:103
-#, fuzzy
 msgid "Future trait"
-msgstr "미래 특성"
+msgstr "Future trait"
 
 #: src/SUMMARY.md:104
-#, fuzzy
 msgid "Blocking the runtime"
-msgstr "런타임 차단"
+msgstr "런타임 블로킹"
 
 #: src/SUMMARY.md:105 src/08_futures/06_async_aware_primitives.md:1
-#, fuzzy
 msgid "Async-aware primitives"
-msgstr "비동기 인식 기본 요소"
+msgstr "Async-aware 기본 요소"
 
 #: src/SUMMARY.md:106 src/08_futures/07_cancellation.md:1
-#, fuzzy
 msgid "Cancellation"
-msgstr "해제"
+msgstr "취소"
 
 #: src/SUMMARY.md:109 src/going_further.md:16
-#, fuzzy
 msgid "Going further"
 msgstr "더 나아가"
 
 #: src/01_intro/00_welcome.md:3
-#, fuzzy
 msgid "Welcome to **\"100 Exercises To Learn Rust\"**!"
-msgstr "**\"Rust를 배우기 위한 100가지 연습\"**에 오신 것을 환영합니다!"
+msgstr "**Rust를 배우기 위한 100가지 연습**에 오신 것을 환영합니다!"
 
 #: src/01_intro/00_welcome.md:5
-#, fuzzy
 msgid ""
 "This course will teach you Rust's core concepts, one exercise at a time.  \n"
 "You'll learn about Rust's syntax, its type system, its standard library, and "
 "its ecosystem."
 msgstr ""
 "이 코스에서는 Rust의 핵심 개념을 한 번에 하나씩 연습해 볼 것입니다.  \n"
-"Rust의 구문, 유형 시스템, 표준 라이브러리 및 생태계에 대해 배우게 됩니다."
+"Rust의 문법, Trait 시스템, 표준 라이브러리와 생태계에 대해 배우게 됩니다."
 
 #: src/01_intro/00_welcome.md:8
-#, fuzzy
 msgid ""
 "We don't assume any prior knowledge of Rust, but we assume you know at least "
 "another programming language. We also don't assume any prior knowledge of "
 "systems programming or memory management. Those topics will be covered in "
 "the course."
 msgstr ""
-"우리는 Rust에 대한 사전 지식이 없다고 가정하지만, 최소한 다른 프로그래밍 언어를 알고 있다고 가정합니다. 또한 시스템 프로그래밍이나 "
-"메모리 관리에 대한 사전 지식이 없다고 가정하지 않습니다. 해당 주제는 이 과정에서 다루어집니다."
+"우리는 당신이 Rust에 대한 사전 지식이 없지만, 적어도 다른 프로그래밍 언어 하"
+"나는 알고 있다고 가정합니다. 그리고 시스템 프로그래밍이나 메모리 관리에 대한 "
+"사전 지식을 가지고있다고 가정합니다. 이 코스에서 앞선 주제들을 다루어 볼것입"
+"니다."
 
 #: src/01_intro/00_welcome.md:13
-#, fuzzy
 msgid ""
 "In other words, we'll be starting from scratch!  \n"
 "You'll build up your Rust knowledge in small, manageable steps. By the end "
@@ -536,23 +438,23 @@ msgid ""
 "comfortable working on small to medium-sized Rust projects."
 msgstr ""
 "즉, 처음부터 다시 시작하는 것입니다!  \n"
-"작고 관리 가능한 단계를 통해 Rust 지식을 쌓을 수 있습니다. 과정이 끝나면 중소 규모의 Rust 프로젝트에서 편안하게 작업할 수 "
-"있을 만큼 약 100개의 연습 문제를 풀게 됩니다."
+"작고 관리 가능한 단계를 통해 Rust 지식을 쌓을 수 있습니다. 과정이 끝나면 중"
+"소 규모의 Rust 프로젝트에서 편안하게 작업할 수 있을 만큼 약 100개의 연습 문제"
+"를 풀게 됩니다."
 
 #: src/01_intro/00_welcome.md:18
-#, fuzzy
 msgid "Methodology"
 msgstr "방법론"
 
 #: src/01_intro/00_welcome.md:20
-#, fuzzy
 msgid ""
 "This course is based on the \"learn by doing\" principle.  \n"
 "It has been designed to be interactive and hands-on."
-msgstr "이 과정은 \"실행을 통해 학습\" 원칙을 기반으로 합니다.  \n대화형 및 실습형으로 설계되었습니다."
+msgstr ""
+"이 과정은 \"실행을 통해 학습\" 원칙을 기반으로 합니다.  \n"
+"대화형 및 실습형으로 설계되었습니다."
 
 #: src/01_intro/00_welcome.md:23
-#, fuzzy
 msgid ""
 "Mainmatter developed this course to be delivered in a classroom setting, "
 "over 4 days: each attendee advances through the lessons at their own pace, "
@@ -561,28 +463,28 @@ msgid ""
 "If you're interested in attending one of our training sessions, or if you'd "
 "like to bring this course to your company, please get in touch."
 msgstr ""
-"Mainmatter는 4일에 걸쳐 교실 환경에서 제공되도록 이 과정을 개발했습니다. 각 참석자는 숙련된 강사가 지도를 제공하고, 질문에 "
-"답하고, 필요에 따라 주제에 대해 더 깊이 파고드는 가운데 자신의 속도에 맞춰 수업을 진행합니다.  \n"
-"교육 세션에 참여하고 싶거나 이 교육 과정을 회사에 도입하고 싶다면 연락해 주세요."
+"Mainmatter는 4일에 걸친 교육환경에서 제공되도록 이 코스를 만들었습니다. 각 참"
+"석자는 자신만의 페이스로, 숙련된 강사의 지도를 받으며, 질문에 답하고, 필요에 "
+"따라 주제에 대해 더 깊이 파고들며 수업을 진행합니다.  \n"
+"교육 세션에 참여하고 싶거나 이 교육 과정을 회사에 도입하고 싶다면 연락해 주세"
+"요."
 
 #: src/01_intro/00_welcome.md:30
-#, fuzzy
 msgid ""
 "You can also follow the course on your own, but we recommend you find a "
 "friend or a mentor to help you along the way should you get stuck. You can "
 "also find solutions to all exercises in the `solutions` branch of the GitHub "
 "repository."
 msgstr ""
-"스스로 과정을 따라갈 수도 있지만, 막히는 경우 과정을 진행하는 데 도움을 줄 수 있는 친구나 멘토를 찾는 것이 좋습니다. GitHub "
-"저장소의 'solutions' 분기에서 모든 연습에 대한 솔루션을 찾을 수도 있습니다."
+"스스로 과정을 따라갈 수도 있지만, 막히는 경우 과정을 진행하는 데 도움을 줄 "
+"수 있는 친구나 멘토를 찾는 것이 좋습니다. GitHub 저장소의 'solutions' 분기에"
+"서 모든 연습에 대한 솔루션을 찾을 수도 있습니다."
 
 #: src/01_intro/00_welcome.md:35
-#, fuzzy
 msgid "Structure"
 msgstr "구조"
 
 #: src/01_intro/00_welcome.md:37
-#, fuzzy
 msgid ""
 "On the left side of the screen, you can see that the course is divided into "
 "sections. Each section introduces a new concept or feature of the Rust "
@@ -590,25 +492,22 @@ msgid ""
 "To verify your understanding, each section is paired with an exercise that "
 "you need to solve."
 msgstr ""
-"화면 왼쪽을 보면 코스가 여러 섹션으로 나누어져 있는 것을 볼 수 있습니다. 각 섹션에서는 Rust 언어의 새로운 개념이나 기능을 "
-"소개합니다.  \n"
+"화면 왼쪽을 보면 코스가 여러 섹션으로 나누어져 있는 것을 볼 수 있습니다. 각 "
+"섹션에서는 Rust 언어의 새로운 개념이나 기능을 소개합니다.  \n"
 "이해를 확인하기 위해 각 섹션은 해결해야 하는 연습문제와 짝을 이룹니다."
 
 #: src/01_intro/00_welcome.md:41
-#, fuzzy
 msgid ""
 "You can find the exercises in the companion GitHub repository.  \n"
 "Before starting the course, make sure to clone the repository to your local "
 "machine:"
-msgstr "동반 GitHub 저장소에서 연습을 찾을 수 있습니다.  \n과정을 시작하기 전에 저장소를 로컬 머신에 복제했는지 확인하세요."
+msgstr "동반 GitHub 저장"
 
 #: src/01_intro/00_welcome.md:46
-#, fuzzy
 msgid "# If you have an SSH key set up with GitHub"
 msgstr "# GitHub에 SSH 키가 설정되어 있는 경우"
 
 #: src/01_intro/00_welcome.md:47
-#, fuzzy
 msgid ""
 "# Otherwise, use the HTTPS URL:\n"
 "\n"
@@ -616,82 +515,79 @@ msgid ""
 "\n"
 "# git clone https://github.com/mainmatter/100-exercises-to-learn-rust.git"
 msgstr ""
-"# 그렇지 않으면 HTTPS URL을 사용하십시오:\n"
+"# 아니면 HTTPS URL을 사용하십시오:\n"
 "\n"
 "# \n"
 "\n"
-"# 자식 클론 https://github.com/mainmatter/100-exercises-to-learn-rust.git"
+"# git clone https://github.com/mainmatter/100-exercises-to-learn-rust.git"
 
 #: src/01_intro/00_welcome.md:53
-#, fuzzy
 msgid ""
 "We also recommend you work on a branch, so you can easily track your "
 "progress and pull in updates from the main repository, if needed:"
-msgstr "또한 진행 상황을 쉽게 추적하고 필요한 경우 기본 저장소에서 업데이트를 가져올 수 있도록 브랜치에서 작업하는 것이 좋습니다."
+msgstr ""
+"또한 진행 상황을 쉽게 추적하고 필요한 경우 메인 리포지토리에서 업데이트를 가"
+"져올 수 있도록 브랜치에서 작업하는 것이 좋습니다."
 
 #: src/01_intro/00_welcome.md:61
-#, fuzzy
 msgid ""
 "All exercises are located in the `exercises` folder. Each exercise is "
 "structured as a Rust package. The package contains the exercise itself, "
 "instructions on what to do (in `src/lib.rs`), and a test suite to "
 "automatically verify your solution."
 msgstr ""
-"모든 운동은 `exercises` 폴더에 있습니다. 각 연습은 Rust 패키지로 구성됩니다. 패키지에는 연습 자체, 수행할 작업에 대한 "
-"지침(`src/lib.rs`에 있음), 솔루션을 자동으로 검증하기 위한 테스트 모음이 포함되어 있습니다."
+"모든 예제는 `exercises` 폴더에 있습니다. 각 문제는 Rust 패키지로 구성됩니다. "
+"패키지에는 연습 자체, 수행할 작업에 대한 지침(`src/lib.rs`에 있음), 솔루션을 "
+"자동으로 검증하기 위한 테스트 모음이 포함되어 있습니다."
 
 #: src/01_intro/00_welcome.md:66
-#, fuzzy
 msgid "`wr`, the workshop runner"
-msgstr "워크숍 주자 `wr`"
+msgstr "`wr`, 워크숍 러너"
 
 #: src/01_intro/00_welcome.md:68
-#, fuzzy
 msgid ""
 "To verify your solutions, we've provided a tool that will guide you through "
 "the course. It is the `wr` CLI (short for \"workshop runner\"). Install it "
 "with:"
 msgstr ""
-"솔루션을 검증하기 위해 과정 전체를 안내하는 도구를 제공했습니다. `wr` CLI(\"워크숍 러너\"의 줄임말)입니다. 다음을 사용하여 "
-"설치하세요."
+"솔루션을 검증하기 위해 코스 내내 당신을 도와줄 도구를 제공합니다. `wr` "
+"CLI(\"워크숍 러너\"의 줄임말)입니다. 아래 명령을 사용하여 설치하세요."
 
 #: src/01_intro/00_welcome.md:76
-#, fuzzy
 msgid ""
 "In a new terminal, navigate back to the top-level folder of the repository. "
 "Run the `wr` command to start the course:"
-msgstr "새 터미널에서 저장소의 최상위 폴더로 다시 이동합니다. 과정을 시작하려면 `wr` 명령을 실행하세요."
+msgstr ""
+"새 터미널에서 리포지토리의 최상위 폴더로 이동합니다. 코스를 시작하려면 `wr` "
+"명령을 실행하세요."
 
 #: src/01_intro/00_welcome.md:83
-#, fuzzy
 msgid ""
 "`wr` will verify the solution to the current exercise.  \n"
 "Don't move on to the next section until you've solved the exercise for the "
 "current one."
-msgstr "`wr`은 현재 연습에 대한 솔루션을 확인합니다.  \n현재 연습문제를 풀 때까지 다음 섹션으로 넘어가지 마세요."
+msgstr ""
+"`wr`은 현재 연습에 대한 솔루션을 확인합니다.  \n"
+"현재 연습문제를 풀 때까지 다음 섹션으로 넘어가지 마세요."
 
 #: src/01_intro/00_welcome.md:86
-#, fuzzy
 msgid ""
 "We recommend committing your solutions to Git as you progress through the "
 "course, so you can easily track your progress and \"restart\" from a known "
 "point if needed."
 msgstr ""
-"과정을 진행하면서 솔루션을 Git에 커밋하는 것이 좋습니다. 그러면 진행 상황을 쉽게 추적하고 필요한 경우 알려진 지점에서 \"다시 "
-"시작할\" 수 있습니다."
+"과정을 진행하면서 솔루션을 Git에 커밋하는 것이 좋습니다. 그러면 진행 상황을 "
+"쉽게 추적하고 필요한 경우 특정 지점에서 \"다시 시작할\" 수 있습니다."
 
 #: src/01_intro/00_welcome.md:89
-#, fuzzy
 msgid "Enjoy the course!"
 msgstr "코스를 즐겨보세요!"
 
 #: src/01_intro/00_welcome.md:91
-#, fuzzy
 msgid "Author"
-msgstr "작가"
+msgstr "작성자"
 
 #: src/01_intro/00_welcome.md:93
-#, fuzzy
 msgid ""
 "This course was written by Luca Palmieri, Principal Engineering Consultant "
 "at Mainmatter.  \n"
@@ -702,12 +598,14 @@ msgid ""
 "He is also the author and maintainer of a variety of open-source Rust "
 "projects, including `cargo-chef`, Pavex and `wiremock`."
 msgstr ""
-"이 과정은 Mainmatter의 수석 엔지니어링 컨설턴트인 Luca Palmieri가 작성했습니다.  \n"
-"Luca는 2018년부터 처음에는 TrueLayer에서, 그다음에는 AWS에서 Rust와 협력해 왔습니다.  \n"
-"Luca는 Rust에서 백엔드 애플리케이션을 구축하는 방법을 배우기 위한 유용한 리소스인 \"Zero to Production in "
-"Rust\"의 저자입니다.  \n"
-"그는 또한 'cargo-chef', Pavex 및 'wiremock'을 포함한 다양한 오픈 소스 Rust 프로젝트의 저자이자 관리자이기도 "
-"합니다."
+"이 과정은 Mainmatter의 수석 엔지니어링 컨설턴트인 Luca Palmieri가 작성했습니"
+"다.  \n"
+"Luca는 2018년부터 처음에는 TrueLayer에서, 그다음에는 AWS에서 Rust와 협력해 왔"
+"습니다.  \n"
+"Luca는 Rust에서 백엔드 애플리케이션을 구축하는 방법을 배우기 위한 유용한 리소"
+"스인 \"Zero to Production in Rust\"의 저자입니다.  \n"
+"그는 또한 'cargo-chef', Pavex와 'wiremock'을 포함한 다양한 오픈 소스 Rust 프"
+"로젝트의 저자이자 관리자이기도 합니다."
 
 #: src/01_intro/00_welcome.md:102 src/01_intro/01_syntax.md:117
 #: src/02_basic_calculator/00_intro.md:18
@@ -773,17 +671,14 @@ msgstr ""
 #: src/08_futures/05_blocking.md:81
 #: src/08_futures/06_async_aware_primitives.md:131
 #: src/08_futures/07_cancellation.md:111 src/08_futures/08_outro.md:36
-#, fuzzy
 msgid "Exercise"
-msgstr "운동"
+msgstr "예제"
 
 #: src/01_intro/00_welcome.md:104
-#, fuzzy
 msgid "The exercise for this section is located in `01_intro/00_welcome`"
-msgstr "이 섹션의 연습은 `01_intro/00_welcome`에 있습니다."
+msgstr "이 섹션의 예제는 `01_intro/00_welcome`에 있습니다."
 
 #: src/01_intro/01_syntax.md:5
-#, fuzzy
 msgid ""
 "Don't jump ahead!  \n"
 "Complete the exercise for the previous section before you start this one.  \n"
@@ -791,13 +686,12 @@ msgid ""
 "repository.  \n"
 "Use `wr` to start the course and verify your solutions."
 msgstr ""
-"앞으로 뛰어들지 마세요!  \n"
+"앞으로 건너뛰지마세요!  \n"
 "이 섹션을 시작하기 전에 이전 섹션의 연습을 완료하세요.  \n"
 "이 과정은 GitHub 저장소의 `exercises/01_intro/00_welcome`에 있습니다.  \n"
-"'wr'을 사용하여 과정을 시작하고 솔루션을 확인하세요."
+"'wr'을 사용하여 코스를 시작하고 솔루션을 확인하세요."
 
 #: src/01_intro/01_syntax.md:12
-#, fuzzy
 msgid ""
 "The previous task doesn't even qualify as an exercise, but it already "
 "exposed you to quite a bit of Rust **syntax**. We won't cover every single "
@@ -805,137 +699,122 @@ msgid ""
 "_just enough_ to keep going without getting stuck in the details.  \n"
 "One step at a time!"
 msgstr ""
-"이전 작업은 연습으로도 적합하지 않지만 이미 꽤 많은 Rust **구문**을 노출시켰습니다. 이전 연습에서 사용된 Rust 구문의 모든 "
-"세부 사항을 다루지는 않을 것입니다. 대신, 우리는 세부 사항에 얽매이지 않고 계속 진행할 수 있을 만큼만_ 다루겠습니다.  \n"
-"한 번에 한 단계 씩!"
+"이전 작업은 연습으로도 적합하지 않지만 이미 꽤 많은 Rust **문법**을 노출시켰"
+"습니다. 이전 연습에서 사용된 Rust 구문을 세세하게 다루지는 않을 것입니다. 대"
+"신, _계속 진행할 수 있을 정도만_ 다루겠습니다.  \n"
+"한 번에 한 걸음 씩!"
 
 #: src/01_intro/01_syntax.md:17
-#, fuzzy
 msgid "Comments"
 msgstr "코멘트"
 
 #: src/01_intro/01_syntax.md:19
-#, fuzzy
 msgid "You can use `//` for single-line comments:"
 msgstr "한 줄 주석에는 `//`를 사용할 수 있습니다:"
 
 #: src/01_intro/01_syntax.md:22
-#, fuzzy
 msgid ""
 "// This is a single-line comment // Followed by another single-line comment"
-msgstr "// 이것은 한 줄 주석입니다. // 또 다른 한 줄 주석이 이어집니다."
+msgstr "// 이것은 한 줄 주석입니다 // 또 다른 한 줄 주석이 이어집니다"
 
 #: src/01_intro/01_syntax.md:26
-#, fuzzy
 msgid "Functions"
-msgstr "기능"
+msgstr "함수"
 
 #: src/01_intro/01_syntax.md:28
-#, fuzzy
 msgid ""
 "Functions in Rust are defined using the `fn` keyword, followed by the "
 "function's name, its input parameters, and its return type. The function's "
 "body is enclosed in curly braces `{}`."
 msgstr ""
-"Rust의 함수는 `fn` 키워드를 사용하여 정의되며 그 뒤에 함수 이름, 입력 매개변수, 반환 유형이 옵니다. 함수 본문은 중괄호 "
-"`{}`로 묶입니다."
+"Rust의 함수는 `fn` 키워드를 사용하여 정의되며 그 뒤에 함수 이름, 입력 매개변"
+"수, 반환 유형이 옵니다. 함수 본문은 중괄호 `{}`로 감싸줍니다."
 
 #: src/01_intro/01_syntax.md:32
-#, fuzzy
 msgid "In previous exercise, you saw the `greeting` function:"
-msgstr "이전 연습에서는 `인사말` 기능을 보았습니다."
+msgstr "이전 연습에서는 `인사말` 기능을 보았습니다"
 
 #: src/01_intro/01_syntax.md:35
-#, fuzzy
 msgid ""
-"// `fn` \\<function_name> ( <input parameters> ) -> \\<return_type> { <body> "
-"}"
-msgstr "// `fn` \\<function_name> ( <입력 매개변수> ) -> \\<return_type> { <body> }"
+"// `fn` \\<function_name> ( <input parameters> ) -> \\<return_type> "
+"{ <body> }"
+msgstr ""
+"// `fn` \\<function_name> ( <input parameters> ) -> \\<return_type> "
+"{ <body> }"
 
 #: src/01_intro/01_syntax.md:37
-#, fuzzy
 msgid "// TODO: fix me 👇 \"I'm ready to \\_\\_!\""
-msgstr "// TODO: 문제 해결 👇 \"\\_\\_할 준비가 되었습니다!\""
+msgstr "// TODO: fix me 👇 \"I'm ready to \\_\\_!\""
 
 #: src/01_intro/01_syntax.md:42
-#, fuzzy
 msgid ""
 "`greeting` has no input parameters and returns a reference to a string slice "
 "(`&'static str`)."
-msgstr "`greeting`에는 입력 매개변수가 없으며 문자열 조각(`&'static str`)에 대한 참조를 반환합니다."
+msgstr ""
+"`greeting`에는 입력 매개변수가 없으며 문자열 슬라이스 (`&'static str`)에 대"
+"한 참조를 반환합니다."
 
 #: src/01_intro/01_syntax.md:44
-#, fuzzy
 msgid "Return type"
 msgstr "반환 유형"
 
 #: src/01_intro/01_syntax.md:46
-#, fuzzy
 msgid ""
 "The return type can be omitted from the signature if the function doesn't "
 "return anything (i.e. if it returns `()`, Rust's unit type). That's what "
 "happened with the `test_welcome` function:"
 msgstr ""
-"함수가 아무 것도 반환하지 않으면(즉, Rust의 단위 유형인 `()`를 반환하는 경우) 반환 유형을 시그니처에서 생략할 수 있습니다. "
-"이것이 `test_welcome` 함수에서 일어난 일입니다:"
+"함수가 아무 것도 반환하지 않으면(즉, Rust의 단위 유형인 `()`를 반환하는 경"
+"우) 반환 유형을 시그니처에서 생략할 수 있습니다. 이것이 `test_welcome` 함수에"
+"서 있었던 일입니다:"
 
 #: src/01_intro/01_syntax.md:52 src/01_intro/01_syntax.md:62
 #: src/01_intro/01_syntax.md:83
-#, fuzzy
 msgid "\"I'm ready to learn Rust!\""
-msgstr "\"나는 Rust를 배울 준비가 되었습니다!\""
+msgstr "\"I'm ready to learn Rust!\""
 
 #: src/01_intro/01_syntax.md:56
-#, fuzzy
 msgid "The above is equivalent to:"
-msgstr "위의 내용은 다음과 동일합니다."
+msgstr "위의 내용은 다음과 동일합니다:"
 
 #: src/01_intro/01_syntax.md:59
-#, fuzzy
 msgid "// Spelling out the unit return type explicitly //                   👇"
-msgstr "// 단위 반환 유형을 명시적으로 철자하기 // 👇"
+msgstr ""
+"// Spelling out the unit return type explicitly //                   👇"
 
 #: src/01_intro/01_syntax.md:66
-#, fuzzy
 msgid "Returning values"
 msgstr "반환 값"
 
 #: src/01_intro/01_syntax.md:68
-#, fuzzy
 msgid "The last expression in a function is implicitly returned:"
 msgstr "함수의 마지막 표현식은 암시적으로 반환됩니다."
 
 #: src/01_intro/01_syntax.md:72
-#, fuzzy
 msgid ""
 "// This is the last expression in the function // Therefore its value is "
 "returned by `greeting` \"I'm ready to learn Rust!\""
 msgstr ""
-"// 이것은 함수의 마지막 표현식입니다. // 그러므로 그 값은 `greeting`에 의해 반환됩니다. \"I'm Ready to "
-"learn Rust!\""
+"// This is the last expression in the function // Therefore its value is "
+"returned by `greeting` \"I'm ready to learn Rust!\""
 
 #: src/01_intro/01_syntax.md:78
-#, fuzzy
 msgid "You can also use the `return` keyword to return a value early:"
-msgstr "값을 조기에 반환하려면 `return` 키워드를 사용할 수도 있습니다."
+msgstr "중간에 값을 반환하려면 `return` 키워드를 사용할 수도 있습니다."
 
 #: src/01_intro/01_syntax.md:82
-#, fuzzy
 msgid "// Notice the semicolon at the end of the line!"
-msgstr "// 줄 끝에 있는 세미콜론에 주목하세요!"
+msgstr "// Notice the semicolon at the end of the line!"
 
 #: src/01_intro/01_syntax.md:87
-#, fuzzy
 msgid "It is considered idiomatic to omit the `return` keyword when possible."
-msgstr "가능하면 'return' 키워드를 생략하는 것이 관용적인 것으로 간주됩니다."
+msgstr "가능하면 'return' 키워드를 생략하는 것이 관용적입니다."
 
 #: src/01_intro/01_syntax.md:89
-#, fuzzy
 msgid "Input parameters"
 msgstr "입력 매개변수"
 
 #: src/01_intro/01_syntax.md:91
-#, fuzzy
 msgid ""
 "Input parameters are declared inside the parentheses `()` that follow the "
 "function's name.  \n"
@@ -943,49 +822,46 @@ msgid ""
 "by its type."
 msgstr ""
 "입력 매개변수는 함수 이름 뒤에 오는 괄호 '()' 안에 선언됩니다.  \n"
-"각 매개변수는 이름, 콜론 `:`, 유형으로 선언됩니다."
+"각 매개변수는 `이름: 타입` 모양으로 선언됩니다."
 
 #: src/01_intro/01_syntax.md:94
-#, fuzzy
 msgid ""
 "For example, the `greet` function below takes a `name` parameter of type "
 "`&str` (a \"string slice\"):"
-msgstr "예를 들어, 아래 `greet` 함수는 `&str` 유형(\"문자열 슬라이스\")의 `name` 매개변수를 사용합니다."
+msgstr ""
+"예를 들어, 아래 `greet` 함수는 `&str` 타입(\"문자열 슬라이스\")의 `name` 매개"
+"변수를 사용합니다:"
 
 #: src/01_intro/01_syntax.md:97
-#, fuzzy
 msgid "// An input parameter //        👇"
-msgstr "// 입력 매개변수 // 👇"
+msgstr "// An input parameter //        👇"
 
 #: src/01_intro/01_syntax.md:100
-#, fuzzy
 msgid "\"Hello, {}!\""
-msgstr "\"안녕하세요, {}!\""
+msgstr "\"Hello, {}!\""
 
 #: src/01_intro/01_syntax.md:104
-#, fuzzy
 msgid ""
 "If there are multiple input parameters, they must be separated with commas."
 msgstr "입력 매개변수가 여러 개인 경우 쉼표로 구분해야 합니다."
 
 #: src/01_intro/01_syntax.md:106
-#, fuzzy
 msgid "Type annotations"
-msgstr "유형 주석"
+msgstr "타입 어노테이션"
 
 #: src/01_intro/01_syntax.md:108
-#, fuzzy
 msgid ""
 "Since we've been mentioned \"types\" a few times, let's state it clearly: "
 "Rust is a **statically typed language**.  \n"
 "Every single value in Rust has a type and that type must be known to the "
 "compiler at compile-time."
 msgstr ""
-"우리는 \"유형\"에 대해 여러 번 언급했으므로 명확하게 말하겠습니다: Rust는 **정적 유형의 언어**입니다.  \n"
-"Rust의 모든 단일 값에는 유형이 있으며 해당 유형은 컴파일 타임에 컴파일러에 알려야 합니다."
+"우리는 \"타입\"에 대해 여러 번 언급했으므로 명확하게 말하겠습니다: Rust는 **"
+"정적 타입 언어**입니다.  \n"
+"Rust의 모든 단일 값에는 유형이 있으며 해당 유형은 컴파일 타임에 컴파일러가 "
+"알 수 있어야 합니다."
 
 #: src/01_intro/01_syntax.md:111
-#, fuzzy
 msgid ""
 "Types are a form of **static analysis**.  \n"
 "You can think of a type as a **tag** that the compiler attaches to every "
@@ -994,15 +870,15 @@ msgid ""
 "numbers together. If leveraged correctly, types can prevent whole classes of "
 "runtime bugs."
 msgstr ""
-"유형은 **정적 분석**의 한 형태입니다.  \n"
-"유형은 컴파일러가 프로그램의 모든 값에 첨부하는 **태그**로 생각할 수 있습니다. 태그에 따라 컴파일러는 다른 규칙을 적용할 수 "
-"있습니다. 숫자에 문자열을 추가할 수는 없지만 두 숫자를 함께 추가할 수는 있습니다. 유형을 올바르게 활용하면 전체 클래스의 런타임 "
-"버그를 방지할 수 있습니다."
+"타입은 **static analysis**의 한 형태입니다.  \n"
+"타입은 컴파일러가 프로그램의 모든 값에 첨부하는 **태그**로 생각할 수 있습니"
+"다. 태그에 따라 컴파일러는 다른 규칙을 적용할 수 있습니다. 숫자에 문자열을 더"
+"할 수는 없지만 두 숫자를 함께 더할 수는 있습니다. 타입을 올바르게 활용하면 모"
+"든 종류의 런타임 버그를 방지할 수 있습니다."
 
 #: src/01_intro/01_syntax.md:119
-#, fuzzy
 msgid "The exercise for this section is located in `01_intro/01_syntax`"
-msgstr "이 섹션의 연습은 `01_intro/01_syntax`에 있습니다."
+msgstr "이 섹션의 예제는 `01_intro/01_syntax`에 있습니다"
 
 #: src/02_basic_calculator/00_intro.md:3
 #, fuzzy
