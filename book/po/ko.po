@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 100 Exercises To Learn Rust\n"
 "POT-Creation-Date: 2024-06-20T21:50:15+09:00\n"
-"PO-Revision-Date: 2024-06-21 06:16+0900\n"
+"PO-Revision-Date: 2024-06-21 07:59+0900\n"
 "Last-Translator: bigfood <satcom1600@hanmail.net>\n"
 "Language-Team: Korean <translation-team-ko@googlegroups.com>\n"
 "Language: ko\n"
@@ -2664,12 +2664,10 @@ msgstr ""
 "exercises/02_basic_calculator/10_as_casting)에 있습니다"
 
 #: src/03_ticket_v1/00_intro.md:1
-#, fuzzy
 msgid "Modelling A Ticket"
 msgstr "티켓 모델링"
 
 #: src/03_ticket_v1/00_intro.md:3
-#, fuzzy
 msgid ""
 "The first chapter should have given you a good grasp over some of Rust's "
 "primitive types, operators and basic control flow constructs.  \n"
@@ -2678,15 +2676,14 @@ msgid ""
 "Ownership is what enables Rust to be both memory-safe and performant, with no "
 "garbage collector."
 msgstr ""
-"첫 번째 장에서는 Rust의 기본 유형, 연산자 및 기본 제어 흐름 구성 중 일부에 대"
+"첫 번째 장에서는 Rust의 원시 타입, 연산자 및 기본 흐름 제어 구성 중 일부에 대"
 "해 잘 이해할 수 있었을 것입니다.  \n"
 "이번 장에서 우리는 한 단계 더 나아가 Rust를 진정으로 독특하게 만드는 요소인 **"
 "소유권**을 다룰 것입니다.  \n"
-"소유권은 Rust가 가비지 수집기 없이도 메모리 안전과 성능을 모두 발휘할 수 있게 "
+"소유권은 Rust가 가비지콜렉터 없이도 메모리 안전과 성능을 모두 발휘할 수 있게 "
 "해줍니다."
 
 #: src/03_ticket_v1/00_intro.md:8
-#, fuzzy
 msgid ""
 "As our running example, we'll use a (JIRA-like) ticket, the kind you'd use to "
 "track bugs, features, or tasks in a software project.  \n"
@@ -2700,30 +2697,25 @@ msgstr ""
 "우리는 Rust에서 모델링을 시도해 볼 것입니다. 이것은 첫 번째 반복이 될 것입니"
 "다. 이 장의 끝까지 완벽하지도 않고 매우 관용적이지도 않을 것입니다. 그래도 충"
 "분히 도전할 수 있을 거예요!  \n"
-"앞으로 나아가려면 다음과 같은 몇 가지 새로운 Rust 개념을 선택해야 합니다."
+"앞으로 나아가려면 다음과 같은 몇 가지 새로운 Rust 개념을 선택해야 합니다:"
 
 #: src/03_ticket_v1/00_intro.md:14
-#, fuzzy
 msgid "`struct`s, one of Rust's ways to define custom types"
-msgstr "`struct`, 사용자 정의 유형을 정의하는 Rust의 방법 중 하나"
+msgstr "`struct`, 사용자 정의 타입을 정의하는 Rust의 방법 중 하나"
 
 #: src/03_ticket_v1/00_intro.md:15
-#, fuzzy
 msgid "Ownership, references and borrowing"
 msgstr "소유권, 참조 및 차용"
 
 #: src/03_ticket_v1/00_intro.md:16
-#, fuzzy
 msgid "Memory management: stack, heap, pointers, data layout, destructors"
 msgstr "메모리 관리: 스택, 힙, 포인터, 데이터 레이아웃, 소멸자"
 
 #: src/03_ticket_v1/00_intro.md:17
-#, fuzzy
 msgid "Modules and visibility"
 msgstr "모듈 및 가시성"
 
 #: src/03_ticket_v1/00_intro.md:18
-#, fuzzy
 msgid "Strings"
 msgstr "문자열"
 
@@ -2733,58 +2725,52 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/03_ticket_v1/00_intro)"
 msgstr ""
+"이 섹션의 예제는 [`03_ticket_v1/00_intro`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/03_ticket_v1/00_intro)에 있습니다"
 
 #: src/03_ticket_v1/01_struct.md:3
-#, fuzzy
 msgid "We need to keep track of three pieces of information for each ticket:"
-msgstr "우리는 각 티켓에 대해 세 가지 정보를 추적해야 합니다."
+msgstr "우리는 각 티켓에 대해 세 가지 정보를 추적해야 합니다:"
 
 #: src/03_ticket_v1/01_struct.md:5
-#, fuzzy
 msgid "A title"
 msgstr "제목"
 
 #: src/03_ticket_v1/01_struct.md:6
-#, fuzzy
 msgid "A description"
 msgstr "설명"
 
 #: src/03_ticket_v1/01_struct.md:7
-#, fuzzy
 msgid "A status"
 msgstr "상태"
 
 #: src/03_ticket_v1/01_struct.md:9
-#, fuzzy
 msgid ""
 "We can start by using a [`String`](https://doc.rust-lang.org/std/string/"
 "struct.String.html) to represent them. `String` is the type defined in Rust's "
 "standard library to represent [UTF-8 encoded](https://en.wikipedia.org/wiki/"
 "UTF-8) text."
 msgstr ""
-"이를 표현하기 위해 `String`을 사용하는 것부터 시작할 수 있습니다. `String`은 "
-"UTF-8로 인코딩된 텍스트를 나타내기 위해 Rust의 표준 라이브러리에 정의된 유형입"
-"니다."
+"이를 표현하기 위해 [`String`](https://doc.rust-lang.org/std/string/struct."
+"String.html)을 사용하는 것부터 시작할 수 있습니다. `String`은 [UTF-8로 인코딩"
+"된](https://en.wikipedia.org/wiki/UTF-8) 텍스트를 나타내기 위해 Rust의 표준 라"
+"이브러리에 정의된 타입입니다."
 
 #: src/03_ticket_v1/01_struct.md:13
-#, fuzzy
 msgid ""
 "But how do we **combine** these three pieces of information into a single "
 "entity?"
 msgstr "하지만 이 세 가지 정보를 어떻게 단일 항목으로 **결합**할 수 있을까요?"
 
 #: src/03_ticket_v1/01_struct.md:15
-#, fuzzy
 msgid "Defining a `struct`"
 msgstr "`구조체` 정의"
 
 #: src/03_ticket_v1/01_struct.md:17
-#, fuzzy
 msgid "A `struct` defines a **new Rust type**."
-msgstr "`struct`는 **새로운 Rust 유형**을 정의합니다."
+msgstr "`struct`는 **새로운 Rust 타입**을 정의합니다."
 
 #: src/03_ticket_v1/01_struct.md:27
-#, fuzzy
 msgid ""
 "A struct is quite similar to what you would call a class or an object in "
 "other programming languages."
@@ -2793,12 +2779,10 @@ msgstr ""
 "다."
 
 #: src/03_ticket_v1/01_struct.md:29
-#, fuzzy
 msgid "Defining fields"
 msgstr "필드 정의"
 
 #: src/03_ticket_v1/01_struct.md:31
-#, fuzzy
 msgid ""
 "The new type is built by combining other types as **fields**.  \n"
 "Each field must have a name and a type, separated by a colon, `:`. If there "
@@ -2809,78 +2793,65 @@ msgstr ""
 "경우 쉼표 `,`로 구분합니다."
 
 #: src/03_ticket_v1/01_struct.md:34
-#, fuzzy
 msgid ""
 "Fields don't have to be of the same type, as you can see in the "
 "`Configuration` struct below:"
 msgstr ""
 "아래 `Configuration` 구조체에서 볼 수 있듯이 필드는 동일한 유형일 필요는 없습"
-"니다."
+"니다:"
 
 #: src/03_ticket_v1/01_struct.md:43
-#, fuzzy
 msgid "Instantiation"
 msgstr "인스턴스화"
 
 #: src/03_ticket_v1/01_struct.md:45
-#, fuzzy
 msgid ""
 "You can create an instance of a struct by specifying the values for each "
 "field:"
-msgstr "각 필드의 값을 지정하여 구조체의 인스턴스를 만들 수 있습니다."
+msgstr "각 필드의 값을 지정하여 구조체의 인스턴스를 만들 수 있습니다:"
 
 #: src/03_ticket_v1/01_struct.md:48
-#, fuzzy
 msgid "// Syntax: <StructName> { <field_name>: <value>, ... }\n"
-msgstr "// 구문: <StructName> { \\<필드_이름>: <값>, ... }"
+msgstr "// 문법: <StructName> { <field_name>: <value>, ... }\n"
 
 #: src/03_ticket_v1/01_struct.md:50 src/03_ticket_v1/05_encapsulation.md:32
-#, fuzzy
 msgid "\"Build a ticket system\""
-msgstr "\"티켓 시스템 구축\""
+msgstr "\"Build a ticket system\""
 
 #: src/03_ticket_v1/01_struct.md:51 src/03_ticket_v1/05_encapsulation.md:33
-#, fuzzy
 msgid "\"Create a system that can manage tickets across a Kanban board\""
-msgstr "\"Kanban 보드 전체에서 티켓을 관리할 수 있는 시스템을 만듭니다.\""
+msgstr "\"Create a system that can manage tickets across a Kanban board\""
 
 #: src/03_ticket_v1/01_struct.md:52 src/03_ticket_v1/01_struct.md:73
 #: src/03_ticket_v1/05_encapsulation.md:34
-#, fuzzy
 msgid "\"Open\""
-msgstr "\"열려 있는\""
+msgstr "\"Open\""
 
 #: src/03_ticket_v1/01_struct.md:56
-#, fuzzy
 msgid "Accessing fields"
 msgstr "필드에 접근하기"
 
 #: src/03_ticket_v1/01_struct.md:58
-#, fuzzy
 msgid "You can access the fields of a struct using the `.` operator:"
-msgstr "`.` 연산자를 사용하여 구조체의 필드에 액세스할 수 있습니다."
+msgstr "`.` 연산자를 사용하여 구조체의 필드에 액세스할 수 있습니다:"
 
 #: src/03_ticket_v1/01_struct.md:61
-#, fuzzy
 msgid "// Field access\n"
-msgstr "// 필드 접근"
+msgstr "// 필드 접근\n"
 
 #: src/03_ticket_v1/01_struct.md:65
-#, fuzzy
 msgid "Methods"
-msgstr "행동 양식"
+msgstr "메서드"
 
 #: src/03_ticket_v1/01_struct.md:67
-#, fuzzy
 msgid ""
 "We can attach behaviour to our structs by defining **methods**.  \n"
 "Using the `Ticket` struct as an example:"
 msgstr ""
 "**메서드**를 정의하여 구조체에 동작을 연결할 수 있습니다.  \n"
-"예를 들어 `Ticket` 구조체를 사용하면 다음과 같습니다."
+"예를 들어 `Ticket` 구조체를 사용하면 다음과 같습니다:"
 
 #: src/03_ticket_v1/01_struct.md:76
-#, fuzzy
 msgid ""
 "// Syntax:\n"
 "// impl <StructName> {\n"
@@ -2889,21 +2860,22 @@ msgid ""
 "//    }\n"
 "// }\n"
 msgstr ""
-"// 구문: // impl <StructName> { // fn \\<method_name>(<parameters>) -> "
-"\\<return_type> { // // 메서드 본문 // } // }"
+"// 문법:\n"
+"// impl <StructName> {\n"
+"//    fn <method_name>(<parameters>) -> <return_type> {\n"
+"//        // Method body\n"
+"//    }\n"
+"// }\n"
 
 #: src/03_ticket_v1/01_struct.md:85
-#, fuzzy
 msgid "Methods are pretty similar to functions, with two key differences:"
-msgstr "메소드는 함수와 매우 유사하지만 두 가지 주요 차이점이 있습니다."
+msgstr "메소드는 함수와 매우 유사하지만 두 가지 주요 차이점이 있습니다:"
 
 #: src/03_ticket_v1/01_struct.md:87
-#, fuzzy
 msgid "methods must be defined inside an **`impl` block**"
-msgstr "메소드는 **`impl` 블록 안에 정의되어야 합니다**"
+msgstr "메소드는 **`impl` 블록** 안에 정의되어야 합니다"
 
 #: src/03_ticket_v1/01_struct.md:88
-#, fuzzy
 msgid ""
 "methods may use `self` as their first parameter. `self` is a keyword and "
 "represents the instance of the struct the method is being called on."
@@ -2912,95 +2884,82 @@ msgstr ""
 "메소드가 호출되는 구조체의 인스턴스를 나타냅니다."
 
 #: src/03_ticket_v1/01_struct.md:91
-#, fuzzy
 msgid "`self`"
-msgstr "'자신'"
+msgstr "`self`"
 
 #: src/03_ticket_v1/01_struct.md:93
-#, fuzzy
 msgid ""
 "If a method takes `self` as its first parameter, it can be called using the "
 "**method call syntax**:"
 msgstr ""
-"메소드가 `self`를 첫 번째 매개변수로 사용하는 경우 **메서드 호출 구문**을 사용"
+"메소드가 `self`를 첫 번째 매개변수로 사용하는 경우 **메서드 호출 문법**을 사용"
 "하여 호출할 수 있습니다."
 
 #: src/03_ticket_v1/01_struct.md:96
-#, fuzzy
 msgid "// Method call syntax: <instance>.<method_name>(<parameters>)\n"
-msgstr "// 메소드 호출 구문: <instance>.\\<method_name>(<parameters>)"
+msgstr "// 메소드 호출 문법: <instance>.<method_name>(<parameters>)\n"
 
 #: src/03_ticket_v1/01_struct.md:100
-#, fuzzy
 msgid ""
 "This is the same calling syntax you used to perform saturating arithmetic "
 "operations on `u32` values in [the previous chapter]"
 "(../02_basic_calculator/09_saturating.md)."
 msgstr ""
-"이는 이전 장에서 'u32' 값에 대해 포화 산술 연산을 수행하는 데 사용한 것과 동일"
-"한 호출 구문입니다."
+"이는 이전 장에서 `u32` 값에 대해 포화 산술 연산을 수행하는 데 사용한 것과 동일"
+"한 호출 문법입니다."
 
 #: src/03_ticket_v1/01_struct.md:103
-#, fuzzy
 msgid "Static methods"
-msgstr "정적 방법"
+msgstr "정적 메서드"
 
 #: src/03_ticket_v1/01_struct.md:105
-#, fuzzy
 msgid ""
 "If a method doesn't take `self` as its first parameter, it's a **static "
 "method**."
 msgstr ""
-"메소드가 `self`를 첫 번째 매개변수로 사용하지 않으면 **정적 메소드**입니다."
+"메소드가 `self`를 첫 번째 매개변수로 사용하지 않으면 **정적 메서드**입니다."
 
 #: src/03_ticket_v1/01_struct.md:114
-#, fuzzy
 msgid "// `default` is a static method on `Configuration`\n"
-msgstr "// `default`는 `Configuration`의 정적 메서드입니다."
+msgstr "// `default`는 `Configuration`의 정적 메서드입니다.\n"
 
 #: src/03_ticket_v1/01_struct.md:121
-#, fuzzy
 msgid ""
 "The only way to call a static method is by using the **function call syntax**:"
 msgstr ""
-"정적 메서드를 호출하는 유일한 방법은 **함수 호출 구문**을 사용하는 것입니다."
+"정적 메서드를 호출하는 유일한 방법은 **함수 호출 문법**을 사용하는 것입니다."
 
 #: src/03_ticket_v1/01_struct.md:124
-#, fuzzy
 msgid "// Function call syntax: <StructName>::<method_name>(<parameters>)\n"
-msgstr "// 함수 호출 구문: <StructName>::\\<method_name>(<parameters>)"
+msgstr "// 함수 호출 문법: <StructName>::<method_name>(<parameters>)\n"
 
 #: src/03_ticket_v1/01_struct.md:128
-#, fuzzy
 msgid "Equivalence"
 msgstr "등가"
 
 #: src/03_ticket_v1/01_struct.md:130
-#, fuzzy
 msgid ""
 "You can use the function call syntax even for methods that take `self` as "
 "their first parameter:"
 msgstr ""
-"`self`를 첫 번째 매개변수로 사용하는 메소드의 경우에도 함수 호출 구문을 사용"
+"`self`를 첫 번째 매개변수로 사용하는 메소드의 경우에도 함수 호출 문법을 사용"
 "할 수 있습니다."
 
 #: src/03_ticket_v1/01_struct.md:133
-#, fuzzy
 msgid ""
 "// Function call syntax: <StructName>::<method_name>(<instance>, "
 "<parameters>)\n"
 msgstr ""
-"// 함수 호출 구문: <StructName>::\\<method_name>(<instance>, <parameters>)"
+"// 함수 호출 문법: <StructName>::<method_name>(<instance>, <parameters>)\n"
 
 #: src/03_ticket_v1/01_struct.md:137
-#, fuzzy
 msgid ""
 "The function call syntax makes it quite clear that `ticket` is being used as "
 "`self`, the first parameter of the method, but it's definitely more verbose. "
 "Prefer the method call syntax when possible."
 msgstr ""
 "함수 호출 구문을 보면 `ticket`이 메서드의 첫 번째 매개변수인 `self`로 사용되"
-"고 있음이 분명하지만 확실히 더 장황합니다. 가능하면 메서드 호출 구문을 선호하"
+"고 있음이 분명하지만 확실히 더 장황합니다. 가능하면 메서드 호출 문법을 사용하"
 "세요."
 
 #: src/03_ticket_v1/01_struct.md:142
@@ -3009,34 +2968,33 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/03_ticket_v1/01_struct)"
 msgstr ""
+"이 섹션의 예제는 [`03_ticket_v1/01_struct`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/03_ticket_v1/01_struct)에 있습니다"
 
 #: src/03_ticket_v1/02_validation.md:3
-#, fuzzy
 msgid "Let's go back to our ticket definition:"
-msgstr "티켓 정의로 돌아가 보겠습니다."
+msgstr "티켓 정의로 돌아가 보겠습니다:"
 
 #: src/03_ticket_v1/02_validation.md:13
-#, fuzzy
 msgid ""
 "We are using \"raw\" types for the fields of our `Ticket` struct. This means "
 "that users can create a ticket with an empty title, a suuuuuuuper long "
 "description or a nonsensical status (e.g. \"Funny\").  \n"
 "We can do better than that!"
 msgstr ""
-"우리는 `Ticket` 구조체의 필드에 \"원시\" 유형을 사용하고 있습니다. 즉, 사용자"
-"는 빈 제목, 엄청나게 긴 설명 또는 무의미한 상태(예: \"재미있음\")로 티켓을 만"
-"들 수 있습니다.  \n"
-"우리는 그보다 더 잘할 수 있습니다!"
+"우리는 `Ticket` 구조체의 필드에 \"원시\" 타입을 사용하고 있습니다. 즉, 사용자"
+"는 빈 제목, 어어어엄청나게 긴 설명 또는 의미없는 상태(예: \"재미있음\")로 티켓"
+"을 만들 수 있습니다.  \n"
+"우리는 이것보다 더 잘할 수 있습니다!"
 
 #: src/03_ticket_v1/02_validation.md:20
-#, fuzzy
 msgid ""
 "Check out [`String`'s documentation](https://doc.rust-lang.org/std/string/"
 "struct.String.html) for a thorough overview of the methods it provides. "
 "You'll need it for the exercise!"
 msgstr ""
-"제공되는 메소드에 대한 철저한 개요는 `String`의 문서를 확인하세요. 운동할 때 "
-"꼭 필요해요!"
+"제공되는 메소드에 대한 철저한 개요는 [`String`의 문서](https://doc.rust-lang."
+"org/std/string/struct.String.html)를 확인하세요. 예제를 풀 때 꼭 필요해요!"
 
 #: src/03_ticket_v1/02_validation.md:25
 msgid ""
@@ -3044,9 +3002,11 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/03_ticket_v1/02_validation)"
 msgstr ""
+"이 섹션의 예제는 [`03_ticket_v1/02_validation`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/03_ticket_v1/02_validation)에 있습니다"
 
 #: src/03_ticket_v1/03_modules.md:3
-#, fuzzy
 msgid ""
 "The `new` method you've just defined is trying to enforce some "
 "**constraints** on the field values for `Ticket`. But are those invariants "
@@ -3054,11 +3014,10 @@ msgid ""
 "going through `Ticket::new`?"
 msgstr ""
 "방금 정의한 `new` 메소드는 `Ticket`의 필드 값에 일부 **제약조건**을 적용하려"
-"고 합니다. 그러나 이러한 불변성이 실제로 시행됩니까? 개발자가 `Ticket::new`를 "
-"거치지 않고 `Ticket`을 생성하는 것을 방지하는 것은 무엇입니까?"
+"고 합니다. 그러나 이러한 불변성이 실제로 지켜지나요? 개발자가 `Ticket::new`를 "
+"거치지 않고 `Ticket`을 생성하는 것을 막는게 있나요?"
 
 #: src/03_ticket_v1/03_modules.md:7
-#, fuzzy
 msgid ""
 "To get proper **encapsulation** you need to become familiar with two new "
 "concepts: **visibility** and **modules**. Let's start with modules."
@@ -3067,12 +3026,10 @@ msgstr ""
 "에 익숙해져야 합니다. 모듈부터 시작해 보겠습니다."
 
 #: src/03_ticket_v1/03_modules.md:10
-#, fuzzy
 msgid "What is a module?"
 msgstr "모듈이란 무엇입니까?"
 
 #: src/03_ticket_v1/03_modules.md:12
-#, fuzzy
 msgid ""
 "In Rust a **module** is a way to group related code together, under a common "
 "namespace (i.e. the module's name).  \n"
@@ -3102,32 +3059,27 @@ msgstr ""
 #: src/08_futures/05_blocking.md:62
 #: src/08_futures/06_async_aware_primitives.md:29
 #: src/08_futures/07_cancellation.md:16
-#, fuzzy
 msgid "// [...]\n"
-msgstr "// \\[...\\]"
+msgstr "// [...]\n"
 
 #: src/03_ticket_v1/03_modules.md:23
-#, fuzzy
 msgid "Inline modules"
 msgstr "인라인 모듈"
 
 #: src/03_ticket_v1/03_modules.md:25
-#, fuzzy
 msgid ""
 "The `tests` module above is an example of an **inline module**: the module "
 "declaration (`mod tests`) and the module contents (the stuff inside `{ ... }"
 "`) are next to each other."
 msgstr ""
-"위의 `tests` 모듈은 **인라인 모듈**의 예입니다. 모듈 선언(`mod 테스트`)과 모"
-"듈 내용(`{ ... }` 내부의 항목)이 서로 옆에 있습니다."
+"위의 `tests` 모듈은 **인라인 모듈**의 예입니다. 모듈 선언(`mod tests`)과 모듈 "
+"내용(`{ ... }` 내부의 항목)이 바로 옆에 있습니다."
 
 #: src/03_ticket_v1/03_modules.md:28
-#, fuzzy
 msgid "Module tree"
 msgstr "모듈 트리"
 
 #: src/03_ticket_v1/03_modules.md:30
-#, fuzzy
 msgid ""
 "Modules can be nested, forming a **tree** structure.  \n"
 "The root of the tree is the **crate** itself, which is the top-level module "
@@ -3136,12 +3088,11 @@ msgid ""
 "module is also known as the **crate root**."
 msgstr ""
 "모듈은 중첩되어 **트리** 구조를 형성할 수 있습니다.  \n"
-"트리의 루트는 다른 모든 모듈을 포함하는 최상위 모듈인 **상자** 자체입니다. 라"
-"이브러리 크레이트의 경우 루트 모듈은 일반적으로 `src/lib.rs`입니다(위치가 사용"
-"자 정의되지 않은 경우). 루트 모듈은 **크레이트 루트**라고도 합니다."
+"트리의 루트는 다른 모든 모듈을 포함하는 최상위 모듈인 **크레이트** 자체입니"
+"다. 라이브러리 크레이트의 경우 루트 모듈은 일반적으로 `src/lib.rs`입니다(위치"
+"가 사용자 정의 되지 않은 경우). 루트 모듈은 **크레이트 루트**라고도 합니다."
 
 #: src/03_ticket_v1/03_modules.md:35
-#, fuzzy
 msgid ""
 "The crate root can have submodules, which in turn can have their own "
 "submodules, and so on."
@@ -3150,12 +3101,10 @@ msgstr ""
 "가질 수도 있습니다."
 
 #: src/03_ticket_v1/03_modules.md:37
-#, fuzzy
 msgid "External modules and the filesystem"
 msgstr "외부 모듈과 파일 시스템"
 
 #: src/03_ticket_v1/03_modules.md:39
-#, fuzzy
 msgid ""
 "Inline modules are useful for small pieces of code, but as your project grows "
 "you'll want to split your code into multiple files. In the parent module, you "
@@ -3166,7 +3115,6 @@ msgstr ""
 "의 존재를 선언합니다."
 
 #: src/03_ticket_v1/03_modules.md:46
-#, fuzzy
 msgid ""
 "`cargo`, Rust's build tool, is then in charge of finding the file that "
 "contains the module implementation.  \n"
@@ -3176,45 +3124,38 @@ msgstr ""
 "Rust의 빌드 도구인 `cargo`는 모듈 구현이 포함된 파일을 찾는 일을 담당합니"
 "다.  \n"
 "모듈이 크레이트 루트(예: `src/lib.rs` 또는 `src/main.rs`)에 선언된 경우 "
-"`cargo`는 파일 이름이 다음 중 하나로 지정될 것으로 예상합니다."
+"`cargo`는 파일 이름이 다음 중 하나로 지정될 것으로 예상합니다:"
 
 #: src/03_ticket_v1/03_modules.md:51
-#, fuzzy
 msgid "`src/<module_name>.rs`"
-msgstr "`src/<모듈_이름>.rs`"
+msgstr "`src/<module_name>.rs`"
 
 #: src/03_ticket_v1/03_modules.md:52
-#, fuzzy
 msgid "`src/<module_name>/mod.rs`"
-msgstr "`src/<모듈 이름>/mod.rs`"
+msgstr "`src/<module_name>/mod.rs`"
 
 #: src/03_ticket_v1/03_modules.md:54
-#, fuzzy
 msgid ""
 "If your module is a submodule of another module, the file should be named:"
-msgstr "모듈이 다른 모듈의 하위 모듈인 경우 파일 이름은 다음과 같아야 합니다."
+msgstr "모듈이 다른 모듈의 하위 모듈인 경우 파일 이름은 다음과 같아야 합니다:"
 
 #: src/03_ticket_v1/03_modules.md:56
-#, fuzzy
 msgid "`[..]/<parent_module>/<module_name>.rs`"
-msgstr "`[..]/<상위 모듈>/<모듈 이름>.rs`"
+msgstr "`[..]/<parent_module>/<module_name>.rs`"
 
 #: src/03_ticket_v1/03_modules.md:57
-#, fuzzy
 msgid "`[..]/<parent_module>/<module_name>/mod.rs`"
-msgstr "`[..]/<부모 모듈>/<모듈 이름>/mod.rs`"
+msgstr "`[..]/<parent_module>/<module_name>/mod.rs`"
 
 #: src/03_ticket_v1/03_modules.md:59
-#, fuzzy
 msgid ""
 "E.g. `src/animals/dog.rs` or `src/animals/dog/mod.rs` if `dog` is a submodule "
 "of `animals`."
 msgstr ""
-"예: `src/animals/dog.rs` 또는 `dog`가 `animals`의 하위 모듈인 경우 `src/"
+"예: `dog`가 `animals`의 하위 모듈인 경우 `src/animals/dog.rs` 또는 `src/"
 "animals/dog/mod.rs`."
 
 #: src/03_ticket_v1/03_modules.md:61
-#, fuzzy
 msgid ""
 "Your IDE might help you create these files automatically when you declare a "
 "new module using the `mod` keyword."
@@ -3223,30 +3164,26 @@ msgstr ""
 "하는 데 도움이 될 수 있습니다."
 
 #: src/03_ticket_v1/03_modules.md:63
-#, fuzzy
 msgid "Item paths and `use` statements"
-msgstr "항목 경로 및 `use` 문"
+msgstr "아이템 경로와 `use` 문"
 
 #: src/03_ticket_v1/03_modules.md:65
-#, fuzzy
 msgid ""
 "You can access items defined in the same module without any special syntax. "
 "You just use their name."
 msgstr ""
-"특별한 구문 없이 동일한 모듈에 정의된 항목에 액세스할 수 있습니다. 당신은 그들"
-"의 이름을 사용합니다."
+"특별한 문법 없이 동일한 모듈에 정의된 항목에 액세스할 수 있습니다. 항목들의 이"
+"름을 사용하면 됩니다."
 
 #: src/03_ticket_v1/03_modules.md:71
-#, fuzzy
 msgid ""
 "// No need to qualify `Ticket` in any way here\n"
 "// because we're in the same module\n"
 msgstr ""
-"// 여기서는 `Ticket`을 어떤 식으로든 한정할 필요가 없습니다. // 왜냐하면 우리"
-"는 동일한 모듈에 있기 때문입니다."
+"// 여기서는 `Ticket`을 어떤 식으로든 정해줄 필요가 없습니다.\n"
+"// 왜냐하면 우리는 동일한 모듈에 있기 때문입니다.\n"
 
 #: src/03_ticket_v1/03_modules.md:79
-#, fuzzy
 msgid ""
 "That's not the case if you want to access an entity from a different "
 "module.  \n"
@@ -3256,54 +3193,46 @@ msgstr ""
 "액세스하려는 엔터티를 가리키는 **경로**를 사용해야 합니다."
 
 #: src/03_ticket_v1/03_modules.md:82
-#, fuzzy
 msgid "You can compose the path in various ways:"
-msgstr "다양한 방법으로 경로를 구성할 수 있습니다."
+msgstr "다양한 방법으로 경로를 구성할 수 있습니다:"
 
 #: src/03_ticket_v1/03_modules.md:84
-#, fuzzy
 msgid ""
 "starting from the root of the current crate, e.g. `crate::module_1::module_2::"
 "MyStruct`"
-msgstr "현재 크레이트의 루트부터 시작합니다. `상자::모듈_1::모듈_2::MyStruct`"
+msgstr ""
+"현재 크레이트의 루트부터 시작합니다. 예: `crate::module_1::module_2::MyStruct`"
 
 #: src/03_ticket_v1/03_modules.md:85
-#, fuzzy
 msgid "starting from the parent module, e.g. `super::my_function`"
-msgstr "상위 모듈에서 시작합니다. 예: `슈퍼::내_함수`"
+msgstr "상위 모듈에서 시작합니다. 예: `super::my_function`"
 
 #: src/03_ticket_v1/03_modules.md:86
-#, fuzzy
 msgid "starting from the current module, e.g. `sub_module_1::MyStruct`"
-msgstr "현재 모듈에서 시작합니다. 예: `하위_모듈_1::MyStruct`"
+msgstr "현재 모듈에서 시작합니다. 예: `sub_module_1::MyStruct`"
 
 #: src/03_ticket_v1/03_modules.md:88
-#, fuzzy
 msgid ""
 "Having to write the full path every time you want to refer to a type can be "
 "cumbersome. To make your life easier, you can introduce a `use` statement to "
 "bring the entity into scope."
 msgstr ""
-"유형을 참조할 때마다 전체 경로를 작성해야 하는 것은 번거로울 수 있습니다. 삶"
-"을 더 쉽게 만들기 위해 'use' 문을 도입하여 엔터티를 범위로 가져올 수 있습니다."
+"타입을 참조할 때마다 전체 경로를 작성해야 하는 것은 번거로울 수 있습니다. 인생"
+"을 더 쉽게 만들기 위해 `use` 문을 사용해 엔터티를 스코프로 가져올 수 있습니다."
 
 #: src/03_ticket_v1/03_modules.md:92
-#, fuzzy
 msgid "// Bring `MyStruct` into scope\n"
-msgstr "// `MyStruct`를 범위로 가져옵니다."
+msgstr "// `MyStruct`를 스코프로 가져옵니다.\n"
 
 #: src/03_ticket_v1/03_modules.md:94
-#, fuzzy
 msgid "// Now you can refer to `MyStruct` directly\n"
-msgstr "// 이제 `MyStruct`를 직접 참조할 수 있습니다."
+msgstr "// 이제 `MyStruct`를 직접 참조할 수 있습니다.\n"
 
 #: src/03_ticket_v1/03_modules.md:101
-#, fuzzy
 msgid "Star imports"
-msgstr "스타 수입"
+msgstr "별표 임포트"
 
 #: src/03_ticket_v1/03_modules.md:103
-#, fuzzy
 msgid ""
 "You can also import all the items from a module with a single `use` statement."
 msgstr "단일 `use` 문을 사용하여 모듈의 모든 항목을 가져올 수도 있습니다."
@@ -3319,6 +3248,13 @@ msgid ""
 "*;` statement to bring all the items from the parent module (the one being "
 "tested) into scope."
 msgstr ""
+"이것을 **별표 임포트**라고 합니다.\n"
+"일반적으로 현재 네임스페이스를 오염시킬 수 있어 각 이름이 어디에서 왔는지 이해"
+"하기 어렵게 만들고 잠재적으로 이름 충돌을 일으킬 수 있기 때문에 권장되지 않습"
+"니다.\n"
+"그럼에도 불구하고, 유닛 테스트를 작성할 때처럼 유용한 경우가 있습니다. 대부분"
+"의 테스트 모듈이 `use super::*;` 문으로 시작하여 부모 모듈(테스트 중인 모듈)"
+"의 모든 항목을 스코프에 가져오는 것을 눈치챘을 겁입니다."
 
 #: src/03_ticket_v1/03_modules.md:118
 msgid ""
@@ -3326,9 +3262,11 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/03_ticket_v1/03_modules)"
 msgstr ""
+"이 섹션의 예제는 [`03_ticket_v1/03_modules`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/03_ticket_v1/03_modules)에 있습니다"
 
 #: src/03_ticket_v1/04_visibility.md:3
-#, fuzzy
 msgid ""
 "When you start breaking down your code into multiple modules, you need to "
 "start thinking about **visibility**. Visibility determines which regions of "
@@ -3340,36 +3278,30 @@ msgstr ""
 "코드) 영역을 결정합니다."
 
 #: src/03_ticket_v1/04_visibility.md:7
-#, fuzzy
 msgid "Private by default"
 msgstr "기본적으로 비공개"
 
 #: src/03_ticket_v1/04_visibility.md:9
-#, fuzzy
 msgid ""
 "By default, everything in Rust is **private**.  \n"
 "A private entity can only be accessed:"
 msgstr ""
 "기본적으로 Rust의 모든 것은 **비공개**입니다.  \n"
-"개인 엔터티에는 다음 경우에만 액세스할 수 있습니다."
+"프라이빗 엔터티에는 다음 경우에만 액세스할 수 있습니다:"
 
 #: src/03_ticket_v1/04_visibility.md:12
-#, fuzzy
 msgid "within the same module where it's defined, or"
 msgstr "정의된 동일한 모듈 내에서 또는"
 
 #: src/03_ticket_v1/04_visibility.md:13
-#, fuzzy
 msgid "by one of its submodules"
 msgstr "하위 모듈 중 하나에 의해"
 
 #: src/03_ticket_v1/04_visibility.md:15
-#, fuzzy
 msgid "We've used this extensively in the previous exercises:"
-msgstr "이전 연습에서는 이를 광범위하게 사용했습니다."
+msgstr "이전 예제에서는 이를 광범위하게 사용했습니다."
 
 #: src/03_ticket_v1/04_visibility.md:17
-#, fuzzy
 msgid ""
 "`create_todo_ticket` worked (once you added a `use` statement) because "
 "`helpers` is a submodule of the crate root, where `Ticket` is defined. "
@@ -3382,7 +3314,6 @@ msgstr ""
 "스할 수 있습니다."
 
 #: src/03_ticket_v1/04_visibility.md:20
-#, fuzzy
 msgid ""
 "All our unit tests are defined in a submodule of the code they're testing, so "
 "they can access everything without restrictions."
@@ -3391,22 +3322,19 @@ msgstr ""
 "모든 것에 액세스할 수 있습니다."
 
 #: src/03_ticket_v1/04_visibility.md:23
-#, fuzzy
 msgid "Visibility modifiers"
 msgstr "가시성 수정자"
 
 #: src/03_ticket_v1/04_visibility.md:25
-#, fuzzy
 msgid ""
 "You can modify the default visibility of an entity using a **visibility "
 "modifier**.  \n"
 "Some common visibility modifiers are:"
 msgstr ""
 "**가시성 수정자**를 사용하여 엔터티의 기본 가시성을 수정할 수 있습니다.  \n"
-"몇 가지 일반적인 가시성 수정자는 다음과 같습니다."
+"몇 가지 일반적인 가시성 수정자는 다음과 같습니다:"
 
 #: src/03_ticket_v1/04_visibility.md:28
-#, fuzzy
 msgid ""
 "`pub`: makes the entity **public**, i.e. accessible from outside the module "
 "where it's defined, potentially from other crates."
@@ -3415,7 +3343,6 @@ msgstr ""
 "로 다른 크레이트에서 액세스할 수 있습니다."
 
 #: src/03_ticket_v1/04_visibility.md:30
-#, fuzzy
 msgid ""
 "`pub(crate)`: makes the entity public within the same **crate**, but not "
 "outside of it."
@@ -3424,36 +3351,32 @@ msgstr ""
 "지 않습니다."
 
 #: src/03_ticket_v1/04_visibility.md:31
-#, fuzzy
 msgid "`pub(super)`: makes the entity public within the parent module."
 msgstr "`pub(super)`: 상위 모듈 내에서 엔터티를 공개합니다."
 
 #: src/03_ticket_v1/04_visibility.md:32
-#, fuzzy
 msgid ""
 "`pub(in path::to::module)`: makes the entity public within the specified "
 "module."
 msgstr "`pub(in path::to::module)`: 지정된 모듈 내에서 엔터티를 공개합니다."
 
 #: src/03_ticket_v1/04_visibility.md:34
-#, fuzzy
 msgid ""
 "You can use these modifiers on modules, structs, functions, fields, etc. For "
 "example:"
 msgstr ""
 "모듈, 구조체, 함수, 필드 등에 이러한 수정자를 사용할 수 있습니다. 예를 들면 다"
-"음과 같습니다."
+"음과 같습니다:"
 
 #: src/03_ticket_v1/04_visibility.md:44
-#, fuzzy
 msgid ""
 "`Configuration` is public, but you can only access the `version` field from "
 "within the same crate. The `active` field, instead, is private and can only "
 "be accessed from within the same module or one of its submodules."
 msgstr ""
-"'구성'은 공개되지만 동일한 크레이트 내에서는 '버전' 필드에만 액세스할 수 있습"
-"니다. 대신 `active` 필드는 비공개이며 동일한 모듈이나 해당 하위 모듈 중 하나에"
-"서만 액세스할 수 있습니다."
+"`Configuration`은 공개되지만 동일한 크레이트 내에서는 `version` 필드에만 액세"
+"스할 수 있습니다. 대신 `active` 필드는 비공개이며 동일한 모듈이나 해당 하위 모"
+"듈 중 하나에서만 액세스할 수 있습니다."
 
 #: src/03_ticket_v1/04_visibility.md:49
 msgid ""
@@ -3461,9 +3384,11 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/03_ticket_v1/04_visibility)"
 msgstr ""
+"이 섹션의 예제는 [`03_ticket_v1/04_visibility`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/03_ticket_v1/04_visibility)에 있습니다"
 
 #: src/03_ticket_v1/05_encapsulation.md:3
-#, fuzzy
 msgid ""
 "Now that we have a basic understanding of modules and visibility, let's "
 "circle back to **encapsulation**.  \n"
@@ -3477,12 +3402,10 @@ msgstr ""
 "을 적용하는 데 가장 일반적으로 사용됩니다."
 
 #: src/03_ticket_v1/05_encapsulation.md:7
-#, fuzzy
 msgid "Going back to our `Ticket` struct:"
 msgstr "`Ticket` 구조체로 돌아가면:"
 
 #: src/03_ticket_v1/05_encapsulation.md:17
-#, fuzzy
 msgid ""
 "If all fields are made public, there is no encapsulation.  \n"
 "You must assume that the fields can be modified at any time, set to any value "
@@ -3495,7 +3418,6 @@ msgstr ""
 "배제할 수 없습니다."
 
 #: src/03_ticket_v1/05_encapsulation.md:22
-#, fuzzy
 msgid ""
 "To enforce stricter rules, we must keep the fields private[^newtype]. We can "
 "then provide public methods to interact with a `Ticket` instance. Those "
@@ -3503,26 +3425,23 @@ msgid ""
 "a title must not be empty)."
 msgstr ""
 "더 엄격한 규칙을 적용하려면 필드를 비공개로 유지해야 합니다[^newtype]. 그런 다"
-"음 'Ticket' 인스턴스와 상호 작용하는 공개 메서드를 제공할 수 있습니다. 이러한 "
+"음 `Ticket` 인스턴스와 상호 작용하는 공개 메서드를 제공할 수 있습니다. 이러한 "
 "공개 메소드는 우리의 불변성을 유지하는 책임을 갖습니다(예: 제목은 비어 있으면 "
 "안 됩니다)."
 
 #: src/03_ticket_v1/05_encapsulation.md:26
-#, fuzzy
 msgid ""
 "If all fields are private, it is no longer possible to create a `Ticket` "
 "instance directly using the struct instantiation syntax:"
 msgstr ""
 "모든 필드가 비공개인 경우 더 이상 구조체 인스턴스화 구문을 사용하여 'Ticket' "
-"인스턴스를 직접 생성할 수 없습니다."
+"인스턴스를 직접 생성할 수 없습니다:"
 
 #: src/03_ticket_v1/05_encapsulation.md:30
-#, fuzzy
 msgid "// This won't work!\n"
-msgstr "// 이것은 작동하지 않습니다!"
+msgstr "// 이것은 작동하지 않습니다!\n"
 
 #: src/03_ticket_v1/05_encapsulation.md:38
-#, fuzzy
 msgid ""
 "You've seen this in action in the previous exercise on visibility.  \n"
 "We now need to provide one or more public **constructors**—i.e. static "
@@ -3537,42 +3456,36 @@ msgstr ""
 "운 좋게도 이전 연습에서 구현한 `Ticket::new`가 이미 있습니다."
 
 #: src/03_ticket_v1/05_encapsulation.md:43
-#, fuzzy
 msgid "Accessor methods"
-msgstr "접근자 방법"
+msgstr "접근자 메서드"
 
 #: src/03_ticket_v1/05_encapsulation.md:45
-#, fuzzy
 msgid "In summary:"
-msgstr "요약하자면:"
+msgstr "요약:"
 
 #: src/03_ticket_v1/05_encapsulation.md:47
-#, fuzzy
 msgid "All `Ticket` fields are private"
-msgstr "모든 '티켓' 필드는 비공개입니다."
+msgstr "모든 `Ticket` 필드는 비공개입니다."
 
 #: src/03_ticket_v1/05_encapsulation.md:48
-#, fuzzy
 msgid ""
 "We provide a public constructor, `Ticket::new`, that enforces our validation "
 "rules on creation"
 msgstr ""
 "우리는 생성 시 유효성 검사 규칙을 적용하는 공개 생성자 `Ticket::new`를 제공합"
-"니다."
+"니다"
 
 #: src/03_ticket_v1/05_encapsulation.md:50
-#, fuzzy
 msgid ""
 "That's a good start, but it's not enough: apart from creating a `Ticket`, we "
 "also need to interact with it. But how can we access the fields if they're "
 "private?"
 msgstr ""
-"좋은 시작이지만 충분하지 않습니다. '티켓'을 만드는 것 외에도 티켓과 상호 작용"
-"해야 합니다. 하지만 비공개 필드인 경우 어떻게 해당 필드에 액세스할 수 있습니"
-"까?"
+"좋은 시작이지만 충분하지 않습니다. `Ticket`을 만드는 것 외에도 티켓과 상호 작"
+"용해야 합니다. 하지만 비공개 필드인 경우 어떻게 해당 필드에 액세스할 수 있겠습"
+"니까?"
 
 #: src/03_ticket_v1/05_encapsulation.md:53
-#, fuzzy
 msgid ""
 "We need to provide **accessor methods**.  \n"
 "Accessor methods are public methods that allow you to read the value of a "
@@ -3582,21 +3495,21 @@ msgstr ""
 "접근자 메서드는 구조체의 비공개 필드 값을 읽을 수 있는 공개 메서드입니다."
 
 #: src/03_ticket_v1/05_encapsulation.md:56
-#, fuzzy
 msgid ""
 "Rust doesn't have a built-in way to generate accessor methods for you, like "
 "some other languages do. You have to write them yourself—they're just regular "
 "methods."
 msgstr ""
 "Rust에는 다른 언어처럼 접근자 메서드를 생성하는 내장된 방법이 없습니다. 직접 "
-"작성해야 합니다. 이는 단지 일반적인 방법일 뿐입니다."
+"작성해야 합니다. 이는 단지 일반적인 메서드일 뿐입니다."
 
 #: src/03_ticket_v1/05_encapsulation.md:59
-#, fuzzy
 msgid ""
 "Or refine their type, a technique we'll explore [later on]"
 "(../05_ticket_v2/15_outro.md)."
-msgstr "또는 나중에 살펴보게 될 기술인 유형을 구체화합니다."
+msgstr ""
+"또는 타입을 세분화하는 방법, 이 테크닉은 [나중에](../05_ticket_v2/15_outro."
+"md) 살펴보겠습니다."
 
 #: src/03_ticket_v1/05_encapsulation.md:63
 msgid ""
@@ -3604,50 +3517,48 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/03_ticket_v1/05_encapsulation)"
 msgstr ""
+"이 섹션의 예제는 [`03_ticket_v1/05_encapsulation`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/03_ticket_v1/05_encapsulation)에 있습니다"
 
 #: src/03_ticket_v1/06_ownership.md:3
-#, fuzzy
 msgid ""
 "If you solved the previous exercise using what this course has taught you so "
 "far, your accessor methods probably look like this:"
 msgstr ""
 "지금까지 이 과정에서 배운 내용을 사용하여 이전 연습을 해결했다면 접근자 메서드"
-"는 다음과 같을 것입니다."
+"는 다음과 같을 것입니다:"
 
 #: src/03_ticket_v1/06_ownership.md:22
-#, fuzzy
 msgid ""
 "Those methods compile and are enough to get tests to pass, but in a real-"
 "world scenario they won't get you very far. Consider this snippet:"
 msgstr ""
 "이러한 메서드는 컴파일되고 테스트를 통과하기에 충분하지만 실제 시나리오에서는 "
-"그리 멀리 가지 않습니다. 다음 스니펫을 고려해보세요."
+"그리 큰 도움이 되진 않습니다. 다음 코드를 고려해보세요:"
 
 #: src/03_ticket_v1/06_ownership.md:26 src/03_ticket_v1/07_setters.md:53
 #: src/03_ticket_v1/07_setters.md:91 src/04_traits/09_from.md:6
-#, fuzzy
 msgid "\"To-Do\""
-msgstr "\"할 것\""
+msgstr "\"To-Do\""
 
 #: src/03_ticket_v1/06_ownership.md:27
-#, fuzzy
 msgid ""
 "// We haven't covered the `println!` macro yet,\n"
 "    // but for now it's enough to know that it prints \n"
 "    // a (templated) message to the console\n"
 msgstr ""
-"// 아직 `println!` 매크로를 다루지 않았습니다. // 지금은 이 매크로가 콘솔에 "
-"(템플릿화된) 메시지를 // 인쇄한다는 것만 알면 충분합니다."
+"// 아직 `println!` 매크로를 다루지 않았습니다.\n"
+"    // 지금은 이 매크로가 콘솔에 (템플릿화된) 메시지를\n"
+"    // 인쇄한다는 것만 알면 충분합니다.\n"
 
 #: src/03_ticket_v1/06_ownership.md:30
-#, fuzzy
 msgid "\"Your next task is: {}\""
-msgstr "\"다음 작업은: {}\""
+msgstr "\"Your next task is: {}\""
 
 #: src/03_ticket_v1/06_ownership.md:34
-#, fuzzy
 msgid "If you try to compile it, you'll get an error:"
-msgstr "컴파일하려고 하면 오류가 발생합니다."
+msgstr "컴파일하려고 하면 오류가 발생합니다:"
 
 #: src/03_ticket_v1/06_ownership.md:36 src/03_ticket_v1/06_ownership.md:122
 msgid ""
@@ -3673,76 +3584,84 @@ msgid ""
 "   |                       ^^^^\n"
 "```"
 msgstr ""
+"```text\n"
+"error[E0382]: use of moved value: `ticket`\n"
+"  --> src/main.rs:30:43\n"
+"   |\n"
+"25 |     let ticket = Ticket::new(/* */);\n"
+"   |         ------ move occurs because `ticket` has type `Ticket`, \n"
+"   |                which does not implement the `Copy` trait\n"
+"26 |     if ticket.status() == \"To-Do\" {\n"
+"   |               -------- `ticket` moved due to this method call\n"
+"...\n"
+"30 |         println!(\"Your next task is: {}\", ticket.title());\n"
+"   |                                           ^^^^^^ value used here after "
+"move\n"
+"   |\n"
+"note: `Ticket::status` takes ownership of the receiver `self`, which moves "
+"`ticket`\n"
+"  --> src/main.rs:12:23\n"
+"   |\n"
+"12 |         pub fn status(self) -> String {\n"
+"   |                       ^^^^\n"
+"```"
 
 #: src/03_ticket_v1/06_ownership.md:56
-#, fuzzy
 msgid "Congrats, this is your first borrow-checker error!"
-msgstr "축하합니다. 첫 번째 빌림 검사기 오류입니다!"
+msgstr "축하합니다. 첫 번째 차용 검사기 오류입니다!"
 
 #: src/03_ticket_v1/06_ownership.md:58
-#, fuzzy
 msgid "The perks of Rust's ownership system"
 msgstr "Rust 소유권 시스템의 장점"
 
 #: src/03_ticket_v1/06_ownership.md:60
-#, fuzzy
 msgid "Rust's ownership system is designed to ensure that:"
 msgstr "Rust의 소유권 시스템은 다음을 보장하도록 설계되었습니다:"
 
 #: src/03_ticket_v1/06_ownership.md:62 src/03_ticket_v1/06_ownership.md:166
-#, fuzzy
 msgid "Data is never mutated while it's being read"
-msgstr "데이터를 읽는 동안에는 데이터가 변경되지 않습니다."
+msgstr "데이터를 읽는 동안에는 데이터가 변경되지 않습니다"
 
 #: src/03_ticket_v1/06_ownership.md:63 src/03_ticket_v1/06_ownership.md:167
-#, fuzzy
 msgid "Data is never read while it's being mutated"
-msgstr "데이터가 변경되는 동안에는 데이터를 읽을 수 없습니다."
+msgstr "데이터가 변경되는 동안에는 데이터를 읽을 수 없습니다"
 
 #: src/03_ticket_v1/06_ownership.md:64
-#, fuzzy
 msgid "Data is never accessed after it has been destroyed"
-msgstr "데이터가 파기된 후에는 절대 액세스할 수 없습니다."
+msgstr "데이터가 파기된 후에는 절대 액세스할 수 없습니다"
 
 #: src/03_ticket_v1/06_ownership.md:66
-#, fuzzy
 msgid ""
 "These constraints are enforced by the **borrow checker**, a subsystem of the "
 "Rust compiler, often the subject of jokes and memes in the Rust community."
 msgstr ""
 "이러한 제약은 Rust 커뮤니티에서 종종 농담과 밈의 주제가 되는 Rust 컴파일러의 "
-"하위 시스템인 **빌림 검사기**에 의해 시행됩니다."
+"하위 시스템인 **차용 검사기**에 의해 시행됩니다."
 
 #: src/03_ticket_v1/06_ownership.md:69
-#, fuzzy
 msgid ""
 "Ownership is a key concept in Rust, and it's what makes the language unique. "
 "Ownership enables Rust to provide **memory safety without compromising "
 "performance**. All these things are true at the same time for Rust:"
 msgstr ""
 "소유권은 Rust의 핵심 개념이며 언어를 독특하게 만드는 요소입니다. 소유권을 통"
-"해 Rust는 **성능 저하 없이 메모리 안전**을 제공할 수 있습니다. Rust에서는 이 "
+"해 Rust는 **성능 저하 없는 메모리 안전**을 제공할 수 있습니다. Rust에서는 이 "
 "모든 것들이 동시에 적용됩니다:"
 
 #: src/03_ticket_v1/06_ownership.md:73
-#, fuzzy
 msgid "There is no runtime garbage collector"
-msgstr "런타임 가비지 수집기가 없습니다."
+msgstr "런타임 가비지 콜렉터가 없습니다"
 
 #: src/03_ticket_v1/06_ownership.md:74
-#, fuzzy
 msgid "As a developer, you rarely have to manage memory directly"
-msgstr "개발자로서 메모리를 직접 관리해야 하는 경우는 거의 없습니다."
+msgstr "개발자로서 메모리를 직접 관리해야 하는 경우는 거의 없습니다"
 
 #: src/03_ticket_v1/06_ownership.md:75
-#, fuzzy
 msgid ""
 "You can't cause dangling pointers, double frees, and other memory-related bugs"
-msgstr ""
-"매달려 있는 포인터, 이중 해제 및 기타 메모리 관련 버그를 유발할 수 없습니다."
+msgstr "댕글링 포인터, 더블 프리, 기타 메모리 관련 버그를 일으킬 수 없습니다."
 
 #: src/03_ticket_v1/06_ownership.md:77
-#, fuzzy
 msgid ""
 "Languages like Python, JavaScript, and Java give you 2. and 3., but not 1.  \n"
 "Language like C or C++ give you 1., but neither 2. nor 3."
@@ -3752,19 +3671,17 @@ msgstr ""
 "C나 C++ 같은 언어는 1.을 제공하지만 2.도 3도 제공하지 않습니다."
 
 #: src/03_ticket_v1/06_ownership.md:80
-#, fuzzy
 msgid ""
 "Depending on your background, 3. might sound a bit arcane: what is a "
 "\"dangling pointer\"? What is a \"double free\"? Why are they dangerous?  \n"
 "Don't worry: we'll cover these concepts in more details during the rest of "
 "the course."
 msgstr ""
-"3. 배경에 따라 다소 난해하게 들릴 수도 있습니다. \"매달린 포인터\"란 무엇입니"
+"3. 배경에 따라 다소 난해하게 들릴 수도 있습니다. \"댕글링 포인터\"란 무엇입니"
 "까? \"더블 프리\"란 무엇입니까? 왜 위험합니까?  \n"
 "걱정하지 마십시오. 나머지 과정에서 이러한 개념을 더 자세히 다룰 것입니다."
 
 #: src/03_ticket_v1/06_ownership.md:84
-#, fuzzy
 msgid ""
 "For now, though, let's focus on learning how to work within Rust's ownership "
 "system."
@@ -3773,12 +3690,10 @@ msgstr ""
 "니다."
 
 #: src/03_ticket_v1/06_ownership.md:86
-#, fuzzy
 msgid "The owner"
 msgstr "소유자"
 
 #: src/03_ticket_v1/06_ownership.md:88
-#, fuzzy
 msgid ""
 "In Rust, each value has an **owner**, statically determined at compile-time. "
 "There is only one owner for each value at any given time."
@@ -3792,52 +3707,44 @@ msgid "Move semantics"
 msgstr "의미론 이동"
 
 #: src/03_ticket_v1/06_ownership.md:93
-#, fuzzy
 msgid "Ownership can be transferred."
 msgstr "소유권을 이전할 수 있습니다."
 
 #: src/03_ticket_v1/06_ownership.md:95
-#, fuzzy
 msgid ""
 "If you own a value, for example, you can transfer ownership to another "
 "variable:"
-msgstr "예를 들어, 값을 소유한 경우 소유권을 다른 변수로 이전할 수 있습니다."
+msgstr "예를 들어, 값을 소유한 경우 소유권을 다른 변수로 이전할 수 있습니다:"
 
 #: src/03_ticket_v1/06_ownership.md:98
-#, fuzzy
 msgid "\"hello, world\""
-msgstr "\"안녕, 세상아\""
+msgstr "\"hello, world\""
 
 #: src/03_ticket_v1/06_ownership.md:98
-#, fuzzy
 msgid "// <--- `a` is the owner of the String\n"
-msgstr "// \\<\\--- `a`는 문자열의 소유자입니다."
+msgstr "// <--- `a` 는 문자열의 소유자입니다\n"
 
 #: src/03_ticket_v1/06_ownership.md:99
-#, fuzzy
 msgid "// <--- `b` is now the owner of the String\n"
-msgstr "// \\<\\--- `b`는 이제 문자열의 소유자입니다."
+msgstr "// <--- `b` 는 이제 문자열의 소유자입니다\n"
 
 #: src/03_ticket_v1/06_ownership.md:102
-#, fuzzy
 msgid ""
 "Rust's ownership system is baked into the type system: each function has to "
 "declare in its signature _how_ it wants to interact with its arguments."
 msgstr ""
-"Rust의 소유권 시스템은 유형 시스템에 적용됩니다. 각 함수는 인수와 상호 작용하"
-"는 방법을 서명에 선언해야 합니다."
+"Rust의 소유권 시스템은 타입 시스템에 적용됩니다. 각 함수는 인수와 상호 작용하"
+"는 방법을 시그니처에 선언해야 합니다."
 
 #: src/03_ticket_v1/06_ownership.md:105
-#, fuzzy
 msgid ""
 "So far, all our methods and functions have **consumed** their arguments: "
 "they've taken ownership of them. For example:"
 msgstr ""
 "지금까지 우리의 모든 메소드와 함수는 인수를 **소비**했습니다. 즉, 인수의 소유"
-"권을 얻었습니다. 예를 들어:"
+"권을 얻었습니다. 예시:"
 
 #: src/03_ticket_v1/06_ownership.md:116
-#, fuzzy
 msgid ""
 "`Ticket::description` takes ownership of the `Ticket` instance it's called "
 "on.  \n"
@@ -3845,46 +3752,40 @@ msgid ""
 "**moved** from the caller to the callee, and the caller can't use it anymore."
 msgstr ""
 "`Ticket::description`은 호출된 `Ticket` 인스턴스의 소유권을 갖습니다.  \n"
-"이를 **이동 의미**라고 합니다. 값(`self`)의 소유권이 호출자에서 호출 수신자로 "
-"**이동**하고 호출자는 더 이상 이를 사용할 수 없습니다."
+"이를 **move semantics**라고 합니다. 값 (`self`)의 소유권이 호출자에서 호출 수"
+"신자로 **이동**하고 호출자는 더 이상 이를 사용할 수 없습니다."
 
 #: src/03_ticket_v1/06_ownership.md:120
-#, fuzzy
 msgid ""
 "That's exactly the language used by the compiler in the error message we saw "
 "earlier:"
-msgstr "이는 앞서 본 오류 메시지에서 컴파일러가 사용한 언어와 정확히 같습니다."
+msgstr "이는 앞서 본 오류 메시지에서 컴파일러가 사용한 언어와 정확히 같습니다:"
 
 #: src/03_ticket_v1/06_ownership.md:142
-#, fuzzy
 msgid ""
 "In particular, this is the sequence of events that unfold when we call "
 "`ticket.status()`:"
 msgstr ""
-"특히, 다음은 `ticket.status()`를 호출할 때 펼쳐지는 일련의 이벤트입니다."
+"특히, 다음은 `ticket.status()`를 호출할 때 펼쳐지는 일련의 이벤트입니다:"
 
 #: src/03_ticket_v1/06_ownership.md:144
-#, fuzzy
 msgid "`Ticket::status` takes ownership of the `Ticket` instance"
-msgstr "`Ticket::status`는 `Ticket` 인스턴스의 소유권을 갖습니다."
+msgstr "`Ticket::status`는 `Ticket` 인스턴스의 소유권을 갖습니다"
 
 #: src/03_ticket_v1/06_ownership.md:145
-#, fuzzy
 msgid ""
 "`Ticket::status` extracts `status` from `self` and transfers ownership of "
 "`status` back to the caller"
 msgstr ""
 "`Ticket::status`는 `self`에서 `status`를 추출하고 `status`의 소유권을 호출자에"
-"게 다시 이전합니다."
+"게 다시 이전합니다"
 
 #: src/03_ticket_v1/06_ownership.md:146
-#, fuzzy
 msgid ""
 "The rest of the `Ticket` instance is discarded (`title` and `description`)"
-msgstr "나머지 `Ticket` 인스턴스는 삭제됩니다(`title` 및 `description`)."
+msgstr "나머지 `Ticket` 인스턴스는 삭제됩니다(`title` 및 `description`)"
 
 #: src/03_ticket_v1/06_ownership.md:148
-#, fuzzy
 msgid ""
 "When we try to use `ticket` again via `ticket.title()`, the compiler "
 "complains: the `ticket` value is gone now, we no longer own it, therefore we "
@@ -3895,19 +3796,16 @@ msgstr ""
 "다."
 
 #: src/03_ticket_v1/06_ownership.md:151
-#, fuzzy
 msgid ""
 "To build _useful_ accessor methods we need to start working with "
 "**references**."
 msgstr "_유용한_ 접근자 메소드를 구축하려면 **참조** 작업을 시작해야 합니다."
 
 #: src/03_ticket_v1/06_ownership.md:153
-#, fuzzy
 msgid "Borrowing"
 msgstr "차용"
 
 #: src/03_ticket_v1/06_ownership.md:155
-#, fuzzy
 msgid ""
 "It is desirable to have methods that can read the value of a variable without "
 "taking ownership of it.  \n"
@@ -3920,32 +3818,27 @@ msgstr ""
 "이를 수행합니다."
 
 #: src/03_ticket_v1/06_ownership.md:158
-#, fuzzy
 msgid ""
 "Whenever you borrow a value, you get a **reference** to it.  \n"
 "References are tagged with their privileges[^refine]:"
 msgstr ""
-"가치를 빌릴 때마다 해당 가치에 대한 **참조**를 얻게 됩니다.  \n"
+"값을 빌릴 때마다 해당 가치에 대한 **참조**를 얻게 됩니다.  \n"
 "참조에는 해당 권한이 태그로 지정됩니다[^refine]:"
 
 #: src/03_ticket_v1/06_ownership.md:161
-#, fuzzy
 msgid ""
 "Immutable references (`&`) allow you to read the value, but not to mutate it"
-msgstr "불변 참조(`&`)를 사용하면 값을 읽을 수 있지만 변경할 수는 없습니다."
+msgstr "불변 참조(`&`)를 사용하면 값을 읽을 수 있지만 변경할 수는 없습니다"
 
 #: src/03_ticket_v1/06_ownership.md:162
-#, fuzzy
 msgid "Mutable references (`&mut`) allow you to read and mutate the value"
-msgstr "변경 가능한 참조(`&mut`)를 사용하면 값을 읽고 변경할 수 있습니다."
+msgstr "변경 가능한 참조(`&mut`)를 사용하면 값을 읽고 변경할 수 있습니다"
 
 #: src/03_ticket_v1/06_ownership.md:164
-#, fuzzy
 msgid "Going back to the goals of Rust's ownership system:"
 msgstr "Rust의 소유권 시스템의 목표로 돌아가면:"
 
 #: src/03_ticket_v1/06_ownership.md:169
-#, fuzzy
 msgid ""
 "To ensure these two properties, Rust has to introduce some restrictions on "
 "references:"
@@ -3954,51 +3847,44 @@ msgstr ""
 "니다:"
 
 #: src/03_ticket_v1/06_ownership.md:171
-#, fuzzy
 msgid ""
 "You can't have a mutable reference and an immutable reference to the same "
 "value at the same time"
 msgstr ""
 "동일한 값에 대한 변경 가능한 참조와 변경 불가능한 참조를 동시에 가질 수 없습니"
-"다."
+"다"
 
 #: src/03_ticket_v1/06_ownership.md:172
-#, fuzzy
 msgid ""
 "You can't have more than one mutable reference to the same value at the same "
 "time"
 msgstr ""
-"동일한 값에 대해 동시에 두 개 이상의 변경 가능한 참조를 가질 수 없습니다."
+"동일한 값에 대해 동시에 두 개 이상의 변경 가능한 참조를 가질 수 없습니다"
 
 #: src/03_ticket_v1/06_ownership.md:173
-#, fuzzy
 msgid "The owner can't mutate the value while it's being borrowed"
-msgstr "소유자는 값을 빌리는 동안 값을 변경할 수 없습니다."
+msgstr "소유자는 값을 빌리는 동안 값을 변경할 수 없습니다"
 
 #: src/03_ticket_v1/06_ownership.md:174
-#, fuzzy
 msgid ""
 "You can have as many immutable references as you want, as long as there are "
 "no mutable references"
-msgstr "변경 가능한 참조가 없는 한 원하는 만큼 불변 참조를 가질 수 있습니다."
+msgstr "변경 가능한 참조가 없는 한 원하는 만큼 불변 참조를 가질 수 있습니다"
 
 #: src/03_ticket_v1/06_ownership.md:176
-#, fuzzy
 msgid ""
 "In a way, you can think of an immutable reference as a \"read-only\" lock on "
 "the value, while a mutable reference is like a \"read-write\" lock."
 msgstr ""
-"어떤 면에서는 불변 참조를 값에 대한 \"읽기 전용\" 잠금으로 생각할 수 있는 반"
-"면, 변경 가능 참조는 \"읽기-쓰기\" 잠금과 비슷하다고 생각할 수 있습니다."
+"어떤 면에서는 불변 참조를 값에 대한 \"read-only\" 잠금으로 생각할 수 있는 반"
+"면, 변경 가능 참조는 \"read-write\" 잠금과 비슷하다고 생각할 수 있습니다."
 
 #: src/03_ticket_v1/06_ownership.md:179
-#, fuzzy
 msgid ""
 "All these restrictions are enforced at compile-time by the borrow checker."
-msgstr "이러한 모든 제한 사항은 빌림 검사기에 의해 컴파일 타임에 적용됩니다."
+msgstr "이러한 모든 제한 사항은 차용 검사기에 의해 컴파일 타임에 적용됩니다."
 
 #: src/03_ticket_v1/06_ownership.md:183
-#, fuzzy
 msgid ""
 "How do you borrow a value, in practice?  \n"
 "By adding `&` or `&mut` **in front a variable**, you're borrowing its value. "
@@ -4006,13 +3892,12 @@ msgid ""
 "a different meaning: they denote a different type, a reference to the "
 "original type."
 msgstr ""
-"실제로 어떻게 가치를 빌리나요?  \n"
+"실제로 값을 어떻게 빌리나요?  \n"
 "변수 앞에 `&` 또는 `&mut`를 추가하면 해당 값을 빌릴 수 있습니다. 그래도 조심하"
-"세요! **유형 앞**에 있는 동일한 기호(`&` 및 `&mut`)는 다른 의미를 갖습니다. "
-"즉, 원래 유형에 대한 참조인 다른 유형을 나타냅니다."
+"세요! **타입 앞**에 있는 동일한 기호(`&` 및 `&mut`)는 다른 의미를 갖습니다. "
+"즉, 원래 타입에 대한 참조인 또 다른 타입을 나타냅니다."
 
 #: src/03_ticket_v1/06_ownership.md:201
-#, fuzzy
 msgid ""
 "// `b` is a reference to the `version` field of `config`.\n"
 "    // The type of `b` is `&u32`, since it contains a reference to a `u32` "
@@ -4021,41 +3906,36 @@ msgid ""
 "operator.\n"
 "    // Same symbol (`&`), different meaning depending on the context!\n"
 msgstr ""
-"// `b`는 `config`의 `version` 필드에 대한 참조입니다. // `b`의 유형은 `u32` 값"
-"에 대한 참조를 포함하므로 `&u32`입니다. // `&` 연산자를 사용하여 `config."
-"version`을 빌려 참조를 생성합니다. // 같은 기호(`&`), 상황에 따라 의미가 달라"
-"집니다!"
+"// `b`는 `config`의 `version` 필드에 대한 참조입니다.\n"
+"    // `b`의 타입은 `u32` 값에 대한 참조를 포함하므로 `&u32`입니다.\n"
+"    // `&` 연산자를 사용하여 `config.version`을 빌려 참조를 생성합니다.\n"
+"    // 같은 기호(`&`), 상황에 따라 다른 의미!\n"
 
 #: src/03_ticket_v1/06_ownership.md:206
-#, fuzzy
 msgid ""
 "//     ^ The type annotation is not necessary, \n"
 "    //       it's just there to clarify what's going on\n"
 msgstr ""
-"// ^ 유형 주석은 필요하지 않습니다. // 무슨 일이 일어나고 있는지 명확히 하기 "
-"위해 존재합니다."
+"//     ^ 타입 어노테이션은 중요하지 않습니다.\n"
+"    //       단지 무슨 일이 일어나고 있는지 명확히 하기 위해 존재합니다.\n"
 
 #: src/03_ticket_v1/06_ownership.md:211
-#, fuzzy
 msgid "The same concept applies to function arguments and return types:"
-msgstr "함수 인수와 반환 유형에도 동일한 개념이 적용됩니다."
+msgstr "함수 인수와 반환 유형에도 동일한 개념이 적용됩니다:"
 
 #: src/03_ticket_v1/06_ownership.md:214
-#, fuzzy
 msgid ""
 "// `f` takes a mutable reference to a `u32` as an argument, \n"
 "// bound to the name `number`\n"
 msgstr ""
-"// `f`는 `u32`에 대한 변경 가능한 참조를 인수로 사용하고 // `number`라는 이름"
-"에 바인딩됩니다."
+"// `f`는 `u32`에 대한 변경 가능한 참조를 인수로 사용하고\n"
+"// `number`라는 이름에 바인딩됩니다\n"
 
 #: src/03_ticket_v1/06_ownership.md:221
-#, fuzzy
 msgid "Breathe in, breathe out"
-msgstr "숨을들이 쉬고 내쉬다"
+msgstr "진정하고 심호흡하세요"
 
 #: src/03_ticket_v1/06_ownership.md:223
-#, fuzzy
 msgid ""
 "Rust's ownership system can be a bit overwhelming at first.  \n"
 "But don't worry: it'll become second nature with practice.  \n"
@@ -4070,7 +3950,6 @@ msgstr ""
 "식을 진정으로 이해할 수 있도록 할 것입니다."
 
 #: src/03_ticket_v1/06_ownership.md:229
-#, fuzzy
 msgid ""
 "Towards the end of this chapter we'll explain _why_ Rust's ownership system "
 "is designed the way it is. For the time being, focus on understanding the "
@@ -4081,14 +3960,14 @@ msgstr ""
 "일러 오류를 학습 기회로 삼으세요!"
 
 #: src/03_ticket_v1/06_ownership.md:232
-#, fuzzy
 msgid ""
 "This is a great mental model to start out, but it doesn't capture the _full_ "
 "picture. We'll refine our understanding of references [later in the course]"
 "(../07_threads/06_interior_mutability.md)."
 msgstr ""
 "이것은 시작하기에 훌륭한 정신적 모델이지만 _전체_ 그림을 포착하지는 못합니다. "
-"이 과정의 뒷부분에서 참조에 대한 이해를 더욱 구체화할 것입니다."
+"[이 코스의 뒷부분](../07_threads/06_interior_mutability.md)에서 참조에 대한 이"
+"해를 더욱 구체화할 것입니다."
 
 #: src/03_ticket_v1/06_ownership.md:237
 msgid ""
@@ -4096,19 +3975,19 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/03_ticket_v1/06_ownership)"
 msgstr ""
+"이 섹션의 예제는 [`03_ticket_v1/06_ownership`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/03_ticket_v1/06_ownership)에 있습니다"
 
 #: src/03_ticket_v1/07_setters.md:1
-#, fuzzy
 msgid "Mutable references"
 msgstr "변경 가능한 참조"
 
 #: src/03_ticket_v1/07_setters.md:3
-#, fuzzy
 msgid "Your accessor methods should look like this now:"
-msgstr "이제 접근자 메서드는 다음과 같아야 합니다."
+msgstr "이제 접근자 메서드는 다음과 같아야 합니다:"
 
 #: src/03_ticket_v1/07_setters.md:21
-#, fuzzy
 msgid ""
 "A sprinkle of `&` here and there did the trick!  \n"
 "We now have a way to access the fields of a `Ticket` instance without "
@@ -4117,51 +3996,44 @@ msgid ""
 msgstr ""
 "여기저기에 `&`를 뿌리면 효과가 있습니다!  \n"
 "이제 프로세스에서 이를 사용하지 않고 `Ticket` 인스턴스의 필드에 액세스할 수 있"
-"는 방법이 있습니다. 다음에는 **setter 메소드**를 사용하여 `Ticket` 구조체를 어"
-"떻게 향상할 수 있는지 살펴보겠습니다."
+"는 방법이 있습니다. 다음에는 **setter 메서드**를 사용하여 `Ticket` 구조체를 어"
+"떻게 개선할 수 있는지 살펴보겠습니다."
 
 #: src/03_ticket_v1/07_setters.md:27
-#, fuzzy
 msgid ""
 "Setter methods allow users to change the values of `Ticket`'s private fields "
 "while making sure that its invariants are respected (i.e. you can't set a "
 "`Ticket`'s title to an empty string)."
 msgstr ""
-"Setter 메소드를 사용하면 사용자는 `티켓`의 비공개 필드 값을 변경하는 동시에 해"
-"당 불변성을 준수할 수 있습니다(예: `티켓` 제목을 빈 문자열로 설정할 수 없음)."
+"Setter 메서드를 사용하면 사용자는 `Ticket`의 비공개 필드 값을 변경하는 동시에 "
+"해당 불변성을 준수할 수 있습니다(예: `Ticket` 제목을 빈 문자열로 설정할 수 없"
+"음)."
 
 #: src/03_ticket_v1/07_setters.md:30
-#, fuzzy
 msgid "There are two common ways to implement setters in Rust:"
 msgstr "Rust에서 setter를 구현하는 두 가지 일반적인 방법이 있습니다:"
 
 #: src/03_ticket_v1/07_setters.md:32
-#, fuzzy
 msgid "Taking `self` as input."
-msgstr "'self'를 입력으로 사용합니다."
+msgstr "`self`를 인풋으로 받기."
 
 #: src/03_ticket_v1/07_setters.md:33
-#, fuzzy
 msgid "Taking `&mut self` as input."
-msgstr "`&mut self`를 입력으로 사용합니다."
+msgstr "`&mut self`를 인풋으로 받기."
 
 #: src/03_ticket_v1/07_setters.md:35
-#, fuzzy
 msgid "Taking `self` as input"
-msgstr "'self'를 입력으로 사용"
+msgstr "'self'를 인풋으로 받기"
 
 #: src/03_ticket_v1/07_setters.md:37
-#, fuzzy
 msgid "The first approach looks like this:"
-msgstr "첫 번째 접근 방식은 다음과 같습니다."
+msgstr "첫 번째 접근 방식은 다음과 같습니다:"
 
 #: src/03_ticket_v1/07_setters.md:42 src/03_ticket_v1/07_setters.md:78
-#, fuzzy
 msgid "// Validate the new title [...]\n"
-msgstr "// 새 제목 확인 \\[...\\]"
+msgstr "// 새 제목 검증 [...]\n"
 
 #: src/03_ticket_v1/07_setters.md:49
-#, fuzzy
 msgid ""
 "It takes ownership of `self`, changes the title, and returns the modified "
 "`Ticket` instance.  \n"
@@ -4169,26 +4041,22 @@ msgid ""
 msgstr ""
 "`self`의 소유권을 가져와 제목을 변경하고 수정된 `Ticket` 인스턴스를 반환합니"
 "다.  \n"
-"사용 방법은 다음과 같습니다."
+"사용 방법은 다음과 같습니다:"
 
 #: src/03_ticket_v1/07_setters.md:53 src/03_ticket_v1/07_setters.md:91
-#, fuzzy
 msgid "\"Title\""
-msgstr "\"제목\""
+msgstr "\"Title\""
 
 #: src/03_ticket_v1/07_setters.md:53 src/03_ticket_v1/07_setters.md:91
-#, fuzzy
 msgid "\"Description\""
-msgstr "\"설명\""
+msgstr "\"Description\""
 
 #: src/03_ticket_v1/07_setters.md:54 src/03_ticket_v1/07_setters.md:66
 #: src/03_ticket_v1/07_setters.md:92 src/03_ticket_v1/07_setters.md:105
-#, fuzzy
 msgid "\"New title\""
-msgstr "\"새 제목\""
+msgstr "\"New title\""
 
 #: src/03_ticket_v1/07_setters.md:57
-#, fuzzy
 msgid ""
 "Since `set_title` takes ownership of `self` (i.e. it **consumes it**), we "
 "need to reassign the result to a variable. In the example above we take "
@@ -4202,7 +4070,6 @@ msgstr ""
 "를 **섀도우**합니다. 이는 Rust 코드의 일반적인 패턴입니다."
 
 #: src/03_ticket_v1/07_setters.md:62
-#, fuzzy
 msgid ""
 "`self`\\-setters work quite nicely when you need to change multiple fields at "
 "once: you can chain multiple calls together!"
@@ -4211,29 +4078,24 @@ msgstr ""
 "호출을 함께 연결할 수 있습니다!"
 
 #: src/03_ticket_v1/07_setters.md:67 src/03_ticket_v1/07_setters.md:106
-#, fuzzy
 msgid "\"New description\""
-msgstr "\"새 설명\""
+msgstr "\"New description\""
 
 #: src/03_ticket_v1/07_setters.md:68 src/03_ticket_v1/07_setters.md:107
-#, fuzzy
 msgid "\"In Progress\""
-msgstr "\"진행 중\""
+msgstr "\"In Progress\""
 
 #: src/03_ticket_v1/07_setters.md:71
-#, fuzzy
 msgid "Taking `&mut self` as input"
-msgstr "`&mut self`를 입력으로 사용"
+msgstr "`&mut self`를 인풋으로 받기"
 
 #: src/03_ticket_v1/07_setters.md:73
-#, fuzzy
 msgid ""
 "The second approach to setters, using `&mut self`, looks like this instead:"
 msgstr ""
-"`&mut self`를 사용하는 세터에 대한 두 번째 접근 방식은 대신 다음과 같습니다."
+"`&mut self`를 사용하는 세터에 대한 두 번째 접근 방식은 대신 다음과 같습니다:"
 
 #: src/03_ticket_v1/07_setters.md:85
-#, fuzzy
 msgid ""
 "This time the method takes a mutable reference to `self` as input, changes "
 "the title, and that's it. Nothing is returned."
@@ -4242,28 +4104,24 @@ msgstr ""
 "경하면 그게 전부입니다. 아무것도 반환되지 않습니다."
 
 #: src/03_ticket_v1/07_setters.md:88
-#, fuzzy
 msgid "You'd use it like this:"
-msgstr "다음과 같이 사용할 수 있습니다."
+msgstr "다음과 같이 사용할 수 있습니다:"
 
 #: src/03_ticket_v1/07_setters.md:93
-#, fuzzy
 msgid "// Use the modified ticket\n"
-msgstr "// 수정된 티켓 사용"
+msgstr "// 수정된 티켓 사용\n"
 
 #: src/03_ticket_v1/07_setters.md:97
-#, fuzzy
 msgid ""
 "Ownership stays with the caller, so the original `ticket` variable is still "
 "valid. We don't need to reassign the result. We need to mark `ticket` as "
 "mutable though, because we're taking a mutable reference to it."
 msgstr ""
-"소유권은 호출자에게 있으므로 원래 '티켓' 변수는 여전히 유효합니다. 결과를 다"
-"시 할당할 필요는 없습니다. 하지만 '티켓'에 대한 변경 가능한 참조를 사용하고 있"
-"으므로 변경 가능으로 표시해야 합니다."
+"소유권은 호출자에게 있으므로 원래 `ticket` 변수는 여전히 유효합니다. 결과를 다"
+"시 할당할 필요는 없습니다. 하지만 `ticket`에 대한 변경 가능한 참조를 사용하고 "
+"있으므로 변경 가능으로 표시해야 합니다."
 
 #: src/03_ticket_v1/07_setters.md:100
-#, fuzzy
 msgid ""
 "`&mut`\\-setters have a downside: you can't chain multiple calls together. "
 "Since they don't return the modified `Ticket` instance, you can't call "
@@ -4272,7 +4130,7 @@ msgid ""
 msgstr ""
 "`&mut`\\-setter에는 단점이 있습니다. 여러 호출을 함께 연결할 수 없습니다. 수정"
 "된 `Ticket` 인스턴스를 반환하지 않으므로 첫 번째 결과에 대해 다른 setter를 호"
-"출할 수 없습니다. 각 setter를 별도로 호출해야 합니다."
+"출할 수 없습니다. 각 setter를 별도로 호출해야 합니다:"
 
 #: src/03_ticket_v1/07_setters.md:112
 msgid ""
@@ -4280,16 +4138,17 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/03_ticket_v1/07_setters)"
 msgstr ""
+"이 섹션의 예제는 [`03_ticket_v1/07_setters`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/03_ticket_v1/07_setters)에 있습니다"
 
 #: src/03_ticket_v1/08_stack.md:1 src/04_traits/06_str_slice.md:17
 #: src/06_ticket_management/02_vec.md:71
 #: src/06_ticket_management/10_slices.md:55
-#, fuzzy
 msgid "Memory layout"
 msgstr "메모리 레이아웃"
 
 #: src/03_ticket_v1/08_stack.md:3
-#, fuzzy
 msgid ""
 "We've looked at ownership and references from an operational point of view—"
 "what you can and can't do with them. Now it's a good time to take a look "
@@ -4300,12 +4159,10 @@ msgstr ""
 "니다. **메모리**에 대해 이야기해 보겠습니다."
 
 #: src/03_ticket_v1/08_stack.md:6
-#, fuzzy
 msgid "Stack and heap"
 msgstr "스택과 힙"
 
 #: src/03_ticket_v1/08_stack.md:8
-#, fuzzy
 msgid ""
 "When discussing memory, you'll often hear people talk about the **stack** and "
 "the **heap**.  \n"
@@ -4317,12 +4174,10 @@ msgstr ""
 "다."
 
 #: src/03_ticket_v1/08_stack.md:11
-#, fuzzy
 msgid "Let's start with the stack."
 msgstr "스택부터 시작해 보겠습니다."
 
 #: src/03_ticket_v1/08_stack.md:15
-#, fuzzy
 msgid ""
 "The **stack** is a **LIFO** (Last In, First Out) data structure.  \n"
 "When you call a function, a new **stack frame** is added on top of the stack. "
@@ -4333,11 +4188,10 @@ msgid ""
 msgstr ""
 "**스택**은 **LIFO**(Last In, First Out) 데이터 구조입니다.  \n"
 "함수를 호출하면 새로운 **스택 프레임**이 스택 위에 추가됩니다. 해당 스택 프레"
-"임은 함수의 인수, 지역 변수 및 몇 가지 \"장부\" 값을 저장합니다.  \n"
+"임은 함수의 인수, 로컬 변수와 몇 가지 \"부가적인\" 값을 저장합니다.  \n"
 "함수가 반환되면 스택 프레임이 스택에서 팝됩니다[^stack-overflow]."
 
 #: src/03_ticket_v1/08_stack.md:28
-#, fuzzy
 msgid ""
 "From an operational point of view, stack allocation/de-allocation is **very "
 "fast**.  \n"
@@ -4351,12 +4205,10 @@ msgstr ""
 "리 블록입니다."
 
 #: src/03_ticket_v1/08_stack.md:32
-#, fuzzy
 msgid "Rust"
-msgstr "녹"
+msgstr "Rust"
 
 #: src/03_ticket_v1/08_stack.md:34
-#, fuzzy
 msgid ""
 "Rust will often allocate data on the stack.  \n"
 "You have a `u32` input argument in a function? Those 32 bits will be on the "
@@ -4369,47 +4221,41 @@ msgid ""
 msgstr ""
 "Rust는 종종 스택에 데이터를 할당합니다.  \n"
 "함수에 'u32' 입력 인수가 있나요? 해당 32비트는 스택에 저장됩니다.  \n"
-"`i64` 유형의 지역 변수를 정의하시겠습니까? 해당 64비트는 스택에 저장됩니"
+"`i64` 타입의 로컬 변수를 정의하시겠습니까? 해당 64비트는 스택에 저장됩니"
 "다.  \n"
 "이러한 정수의 크기는 컴파일 타임에 알려지기 때문에 모든 것이 매우 잘 작동합니"
 "다. 따라서 컴파일된 프로그램은 이를 위해 스택에 예약해야 하는 공간의 양을 알"
 "고 있습니다."
 
 #: src/03_ticket_v1/08_stack.md:40
-#, fuzzy
 msgid "`std::mem::size_of`"
 msgstr "`std::mem::size_of`"
 
 #: src/03_ticket_v1/08_stack.md:42
-#, fuzzy
 msgid ""
 "You can verify how much space a type would take on the stack using the [`std::"
 "mem::size_of`](https://doc.rust-lang.org/std/mem/fn.size_of.html) function."
 msgstr ""
-"`std::mem::size_of` 함수를 사용하여 유형이 스택에서 차지하는 공간을 확인할 수 "
-"있습니다."
+"[`std::mem::size_of`](https://doc.rust-lang.org/std/mem/fn.size_of.html) 함수"
+"를 사용하여 유형이 스택에서 차지하는 공간을 확인할 수 있습니다."
 
 #: src/03_ticket_v1/08_stack.md:45
-#, fuzzy
 msgid "For a `u8`, for example:"
 msgstr "예를 들어 'u8'의 경우:"
 
 #: src/03_ticket_v1/08_stack.md:48
-#, fuzzy
 msgid ""
 "// We'll explain this funny-looking syntax (`::<u8>`) later on.\n"
 "// Ignore it for now.\n"
 msgstr ""
-"// 이 재미있어 보이는 구문(`::<u8>`)에 대해서는 나중에 설명하겠습니다. // 지금"
-"은 무시하세요."
+"// 이 재미있어 보이는 구문(`::<u8>`)에 대해서는 나중에 설명하겠습니다.\n"
+"// 지금은 무시하세요.\n"
 
 #: src/03_ticket_v1/08_stack.md:53
-#, fuzzy
 msgid "1 makes sense, because a `u8` is 8 bits long, or 1 byte."
-msgstr "'u8'의 길이가 8비트, 즉 1바이트이기 때문에 1이 의미가 있습니다."
+msgstr "'u8'의 길이가 8비트, 즉 1바이트이기 때문에 1이 말이 됩니다."
 
 #: src/03_ticket_v1/08_stack.md:55
-#, fuzzy
 msgid ""
 "If you have nested function calls, each function pushes its data onto the "
 "stack when it's called but it doesn't pop it off until the innermost function "
@@ -4428,9 +4274,10 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/03_ticket_v1/08_stack)"
 msgstr ""
+"이 섹션의 예제는 [`03_ticket_v1/08_stack`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/03_ticket_v1/08_stack)에 있습니다"
 
 #: src/03_ticket_v1/09_heap.md:3
-#, fuzzy
 msgid ""
 "The stack is great, but it can't solve all our problems. What about data "
 "whose size is not known at compile time? Collections, strings, and other "
@@ -4439,16 +4286,14 @@ msgid ""
 msgstr ""
 "스택은 훌륭하지만 모든 문제를 해결할 수는 없습니다. 컴파일 타임에 크기를 알 "
 "수 없는 데이터는 어떻게 되나요? 컬렉션, 문자열 및 기타 동적으로 크기가 조정된 "
-"데이터는 (전체) 스택에 할당될 수 없습니다. **힙**이 들어오는 곳이 바로 여기입"
-"니다."
+"데이터는 (전체) 스택에 할당될 수 없습니다. **힙**이 필요한 곳이 바로 여기입니"
+"다."
 
 #: src/03_ticket_v1/09_heap.md:7
-#, fuzzy
 msgid "Heap allocations"
 msgstr "힙 할당"
 
 #: src/03_ticket_v1/09_heap.md:9
-#, fuzzy
 msgid ""
 "You can visualize the heap as a big chunk of memory—a huge array, if you "
 "will.  \n"
@@ -4465,12 +4310,10 @@ msgstr ""
 "제공합니다."
 
 #: src/03_ticket_v1/09_heap.md:14
-#, fuzzy
 msgid "No automatic de-allocation"
 msgstr "자동 할당 해제 없음"
 
 #: src/03_ticket_v1/09_heap.md:16
-#, fuzzy
 msgid ""
 "The heap is structured quite differently from the stack.  \n"
 "Heap allocations are not contiguous, they can be located anywhere inside the "
@@ -4480,7 +4323,6 @@ msgstr ""
 "힙 할당은 연속적이지 않으며 힙 내부 어디에나 위치할 수 있습니다."
 
 #: src/03_ticket_v1/09_heap.md:25
-#, fuzzy
 msgid ""
 "It's the allocator's job to keep track of which parts of the heap are in use "
 "and which are free. The allocator won't automatically free the memory you "
@@ -4493,12 +4335,10 @@ msgstr ""
 "하게 생각해야 합니다."
 
 #: src/03_ticket_v1/09_heap.md:29 src/06_ticket_management/01_arrays.md:62
-#, fuzzy
 msgid "Performance"
 msgstr "성능"
 
 #: src/03_ticket_v1/09_heap.md:31
-#, fuzzy
 msgid ""
 "The heap's flexibility comes at a cost: heap allocations are **slower** than "
 "stack allocations. There's a lot more bookkeeping involved!  \n"
@@ -4512,12 +4352,10 @@ msgstr ""
 "터를 선호하는 것이 좋습니다."
 
 #: src/03_ticket_v1/09_heap.md:36
-#, fuzzy
 msgid "`String`'s memory layout"
 msgstr "`String`의 메모리 레이아웃"
 
 #: src/03_ticket_v1/09_heap.md:38
-#, fuzzy
 msgid ""
 "When you create a local variable of type `String`, Rust is forced to allocate "
 "on the heap[^empty]: it doesn't know in advance how much text you're going to "
@@ -4525,41 +4363,35 @@ msgid ""
 "But a `String` is not _entirely_ heap-allocated, it also keeps some data on "
 "the stack. In particular:"
 msgstr ""
-"`String` 유형의 지역 변수를 만들 때 Rust는 강제로 힙에 할당합니다[^empty]: 거"
+"`String` 타입의 로컬 변수를 만들 때 Rust는 강제로 힙에 할당합니다[^empty]: 거"
 "기에 얼마나 많은 텍스트를 넣을지 미리 알지 못하므로 예약할 수 없습니다. 스택"
 "에 적절한 양의 공간이 있습니다.  \n"
 "하지만 `String`은 _완전히_ 힙에 할당되지 않으며 일부 데이터를 스택에 유지하기"
 "도 합니다. 특히:"
 
 #: src/03_ticket_v1/09_heap.md:43 src/06_ticket_management/02_vec.md:101
-#, fuzzy
 msgid "The **pointer** to the heap region you reserved."
-msgstr "예약한 힙 영역에 대한 **포인터**입니다."
+msgstr "예약한 힙 영역에 대한 **포인터**."
 
 #: src/03_ticket_v1/09_heap.md:44
-#, fuzzy
 msgid "The **length** of the string, i.e. how many bytes are in the string."
 msgstr "문자열의 **길이**, 즉 문자열에 몇 바이트가 있는지 나타냅니다."
 
 #: src/03_ticket_v1/09_heap.md:45
-#, fuzzy
 msgid ""
 "The **capacity** of the string, i.e. how many bytes have been reserved on the "
 "heap."
 msgstr "문자열의 **용량**, 즉 힙에 예약된 바이트 수입니다."
 
 #: src/03_ticket_v1/09_heap.md:47
-#, fuzzy
 msgid "Let's look at an example to understand this better:"
-msgstr "이를 더 잘 이해하기 위해 예를 살펴보겠습니다."
+msgstr "이를 더 잘 이해하기 위해 예를 살펴보겠습니다:"
 
 #: src/03_ticket_v1/09_heap.md:53
-#, fuzzy
 msgid "If you run this code, memory will be laid out like this:"
-msgstr "이 코드를 실행하면 메모리가 다음과 같이 배치됩니다."
+msgstr "이 코드를 실행하면 메모리가 다음과 같이 배치됩니다:"
 
 #: src/03_ticket_v1/09_heap.md:68
-#, fuzzy
 msgid ""
 "We asked for a `String` that can hold up to 5 bytes of text.  \n"
 "`String::with_capacity` goes to the allocator and asks for 5 bytes of heap "
@@ -4577,33 +4409,28 @@ msgstr ""
 "바이트를 포함합니다."
 
 #: src/03_ticket_v1/09_heap.md:75
-#, fuzzy
 msgid "If you push some text into the `String`, the situation will change:"
-msgstr "일부 텍스트를 `String`에 넣으면 상황이 변경됩니다."
+msgstr "일부 텍스트를 `String`에 넣으면 상황이 변경됩니다:"
 
 #: src/03_ticket_v1/09_heap.md:78 src/03_ticket_v1/10_references_in_memory.md:19
-#, fuzzy
 msgid "\"Hey\""
-msgstr "\"여기요\""
+msgstr "\"Hey\""
 
 #: src/03_ticket_v1/09_heap.md:94
-#, fuzzy
 msgid ""
 "`s` now holds 3 bytes of text. Its length is updated to 3, but capacity "
 "remains 5. Three of the five bytes on the heap are used to store the "
 "characters `H`, `e`, and `y`."
 msgstr ""
 "`s`는 이제 3바이트의 텍스트를 보유합니다. 길이는 3으로 업데이트되지만 용량은 5"
-"로 유지됩니다. 힙의 5바이트 ​​중 3바이트는 'H', 'e' 및 'y' 문자를 저장하는 데 사"
+"로 유지됩니다. 힙의 5바이트 ​​중 3바이트는 `H`, `e` 및 `y` 문자를 저장하는 데 사"
 "용됩니다."
 
 #: src/03_ticket_v1/09_heap.md:97
-#, fuzzy
 msgid "`usize`"
-msgstr "'사용'"
+msgstr "`usize`"
 
 #: src/03_ticket_v1/09_heap.md:99
-#, fuzzy
 msgid ""
 "How much space do we need to store pointer, length and capacity on the "
 "stack?  \n"
@@ -4613,7 +4440,6 @@ msgstr ""
 "실행 중인 머신의 **아키텍처**에 따라 다릅니다."
 
 #: src/03_ticket_v1/09_heap.md:102
-#, fuzzy
 msgid ""
 "Every memory location on your machine has an [**address**](https://en."
 "wikipedia.org/wiki/Memory_address), commonly represented as an unsigned "
@@ -4621,13 +4447,12 @@ msgid ""
 "memory your machine can address), this integer can have a different size. "
 "Most modern machines use either a 32-bit or a 64-bit address space."
 msgstr ""
-"컴퓨터의 모든 메모리 위치에는 일반적으로 부호 없는 정수로 표시되는 **주소**가 "
-"있습니다. 주소 공간의 최대 크기(즉, 컴퓨터가 주소를 지정할 수 있는 메모리 양)"
-"에 따라 이 정수의 크기가 다를 수 있습니다. 대부분의 최신 컴퓨터는 32비트 또는 "
-"64비트 주소 공간을 사용합니다."
+"컴퓨터의 모든 메모리 위치에는 일반적으로 부호 없는 정수로 표시되는 [**주소**]"
+"(https://en.wikipedia.org/wiki/Memory_address)가 있습니다. 주소 공간의 최대 크"
+"기(즉, 컴퓨터가 주소를 지정할 수 있는 메모리 양)에 따라 이 정수의 크기가 다를 "
+"수 있습니다. 대부분의 최신 컴퓨터는 32비트 또는 64비트 주소 공간을 사용합니다."
 
 #: src/03_ticket_v1/09_heap.md:107
-#, fuzzy
 msgid ""
 "Rust abstracts away these architecture-specific details by providing the "
 "`usize` type: an unsigned integer that's as big as the number of bytes needed "
@@ -4640,37 +4465,32 @@ msgstr ""
 "'u64'와 일치합니다."
 
 #: src/03_ticket_v1/09_heap.md:111
-#, fuzzy
 msgid ""
 "Capacity, length and pointers are all represented as `usize`s in "
 "Rust[^equivalence]."
-msgstr "용량, 길이, 포인터는 모두 Rust[^동등]에서 `usize`로 표시됩니다."
+msgstr "용량, 길이, 포인터는 모두 Rust[^equivalence]에서 `usize`로 표시됩니다."
 
 #: src/03_ticket_v1/09_heap.md:113
-#, fuzzy
 msgid "No `std::mem::size_of` for the heap"
-msgstr "힙에는 `std::mem::size_of`가 없습니다."
+msgstr "힙에는 `std::mem::size_of`가 없습니다"
 
 #: src/03_ticket_v1/09_heap.md:115
-#, fuzzy
 msgid ""
 "`std::mem::size_of` returns the amount of space a type would take on the "
 "stack, which is also known as the **size of the type**."
 msgstr ""
-"`std::mem::size_of`는 유형이 스택에서 차지할 공간의 양을 반환하며, 이는 **유형"
+"`std::mem::size_of`는 타입이 스택에서 차지할 공간의 양을 반환하며, 이는 **타입"
 "의 크기**라고도 알려져 있습니다."
 
 #: src/03_ticket_v1/09_heap.md:118
-#, fuzzy
 msgid ""
 "What about the memory buffer that `String` is managing on the heap? Isn't "
 "that part of the size of `String`?"
 msgstr ""
 "`String`이 힙에서 관리하는 메모리 버퍼는 어떻습니까? 그것은 `String` 크기의 일"
-"부가 아닌가?"
+"부가 아닐까요?"
 
 #: src/03_ticket_v1/09_heap.md:121
-#, fuzzy
 msgid ""
 "No!  \n"
 "That heap allocation is a **resource** that `String` is managing. It's not "
@@ -4681,7 +4501,6 @@ msgstr ""
 "의 일부로 간주하지 않습니다."
 
 #: src/03_ticket_v1/09_heap.md:125
-#, fuzzy
 msgid ""
 "`std::mem::size_of` doesn't know (or care) about additional heap-allocated "
 "data that a type might manage or refer to via pointers, as is the case with "
@@ -4689,10 +4508,9 @@ msgid ""
 msgstr ""
 "`std::mem::size_of`는 `String`의 경우처럼 유형이 포인터를 통해 관리하거나 참조"
 "할 수 있는 추가 힙 할당 데이터에 대해 알지(또는 신경 쓰지) 않으므로 해당 데이"
-"터를 추적하지 않습니다. 크기."
+"터의 크기를 추적하지 않습니다."
 
 #: src/03_ticket_v1/09_heap.md:129
-#, fuzzy
 msgid ""
 "Unfortunately there is no equivalent of `std::mem::size_of` to measure the "
 "amount of heap memory that a certain value is allocating at runtime. Some "
@@ -4711,17 +4529,15 @@ msgstr ""
 "로그램의 힙 사용량을 검사할 수 있습니다."
 
 #: src/03_ticket_v1/09_heap.md:136
-#, fuzzy
 msgid ""
 "`std` doesn't allocate if you create an **empty** `String` (i.e. `String::"
 "new()`). Heap memory will be reserved when you push data into it for the "
 "first time."
 msgstr ""
-"**빈** `String`(예: `String::new()`)을 생성하면 `std`는 할당하지 않습니다. 힙 "
-"메모리는 처음으로 데이터를 푸시할 때 예약됩니다."
+"**빈** `String`(예: `String::new()`)을 생성하면 `std`는 힙을 할당하지 않습니"
+"다. 힙 메모리는 처음으로 데이터를 푸시할 때 예약됩니다."
 
 #: src/03_ticket_v1/09_heap.md:139
-#, fuzzy
 msgid ""
 "The size of a pointer depends on the operating system too. In certain "
 "environments, a pointer is **larger** than a memory address (e.g. [CHERI]"
@@ -4740,24 +4556,23 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/03_ticket_v1/09_heap)"
 msgstr ""
+"이 섹션의 예제는 [`03_ticket_v1/09_heap`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/03_ticket_v1/09_heap)에 있습니다"
 
 #: src/03_ticket_v1/10_references_in_memory.md:1
 #: src/06_ticket_management/06_lifetimes.md:80
-#, fuzzy
 msgid "References"
-msgstr "참고자료"
+msgstr "참조"
 
 #: src/03_ticket_v1/10_references_in_memory.md:3
-#, fuzzy
 msgid ""
 "What about references, like `&String` or `&mut String`? How are they "
 "represented in memory?"
 msgstr ""
-"`&String` 또는 `&mut String`과 같은 참조는 어떻습니까? 기억 속에는 어떻게 표현"
-"되는가?"
+"`&String` 또는 `&mut String`과 같은 참조는 어떨까요? 메모리에서 어떻게 표현될"
+"까요?"
 
 #: src/03_ticket_v1/10_references_in_memory.md:5
-#, fuzzy
 msgid ""
 "Most references[^fat] in Rust are represented, in memory, as a pointer to a "
 "memory location.  \n"
@@ -4765,15 +4580,13 @@ msgid ""
 msgstr ""
 "Rust에서 대부분의 참조[^fat]는 메모리에서 메모리 위치에 대한 포인터로 표시됩니"
 "다.  \n"
-"그 크기는 포인터의 크기인 'usize'와 동일합니다."
+"그 크기는 포인터의 크기인 `usize`와 동일합니다."
 
 #: src/03_ticket_v1/10_references_in_memory.md:8
-#, fuzzy
 msgid "You can verify this using `std::mem::size_of`:"
 msgstr "`std::mem::size_of`를 사용하여 이를 확인할 수 있습니다:"
 
 #: src/03_ticket_v1/10_references_in_memory.md:15
-#, fuzzy
 msgid ""
 "A `&String`, in particular, is a pointer to the memory location where the "
 "`String`'s metadata is stored.  \n"
@@ -4784,12 +4597,10 @@ msgstr ""
 "이 스니펫을 실행하면:"
 
 #: src/03_ticket_v1/10_references_in_memory.md:23
-#, fuzzy
 msgid "you'll get something like this in memory:"
-msgstr "메모리에 다음과 같은 내용이 표시됩니다."
+msgstr "메모리에 다음과 같은 내용이 표시됩니다:"
 
 #: src/03_ticket_v1/10_references_in_memory.md:40
-#, fuzzy
 msgid ""
 "It's a pointer to a pointer to the heap-allocated data, if you will. The same "
 "goes for `&mut String`."
@@ -4798,12 +4609,10 @@ msgstr ""
 "찬가지입니다."
 
 #: src/03_ticket_v1/10_references_in_memory.md:43
-#, fuzzy
 msgid "Not all pointers point to the heap"
-msgstr "모든 포인터가 힙을 가리키는 것은 아닙니다."
+msgstr "모든 포인터가 힙을 가리키는 것은 아닙니다"
 
 #: src/03_ticket_v1/10_references_in_memory.md:45
-#, fuzzy
 msgid ""
 "The example above should clarify one thing: not all pointers point to the "
 "heap.  \n"
@@ -4816,16 +4625,15 @@ msgstr ""
 "킬 뿐입니다."
 
 #: src/03_ticket_v1/10_references_in_memory.md:48
-#, fuzzy
 msgid ""
 "[Later in the course](../04_traits/06_str_slice.md) we'll talk about **fat "
 "pointers**, i.e. pointers with additional metadata. As the name implies, they "
 "are larger than the pointers we discussed in this chapter, also known as "
 "**thin pointers**."
 msgstr ""
-"이 과정의 뒷부분에서는 **팻 포인터**, 즉 추가 메타데이터가 포함된 포인터에 대"
-"해 설명하겠습니다. 이름에서 알 수 있듯이 이 장에서 논의한 포인터(**얇은 포인터"
-"**라고도 함)보다 큽니다."
+"[이 코스의 뒷부분](../04_traits/06_str_slice.md)에서는 **팻 포인터**, 즉 추가 "
+"메타데이터가 포함된 포인터에 대해 설명하겠습니다. 이름에서 알 수 있듯이 이 장"
+"에서 논의한 포인터(**얇은 포인터**라고도 함)보다 큽니다."
 
 #: src/03_ticket_v1/10_references_in_memory.md:54
 msgid ""
@@ -4834,22 +4642,23 @@ msgid ""
 "exercises-to-learn-rust/tree/main/"
 "exercises/03_ticket_v1/10_references_in_memory)"
 msgstr ""
+"이 섹션의 예제는 [`03_ticket_v1/10_references_in_memory`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/03_ticket_v1/10_references_in_memory)에 있습니다"
 
 #: src/03_ticket_v1/11_destructor.md:3
-#, fuzzy
 msgid ""
 "When introducing the heap, we mentioned that you're responsible for freeing "
 "the memory you allocate.  \n"
 "When introducing the borrow-checker, we also stated that you rarely have to "
 "manage memory directly in Rust."
 msgstr ""
-"힙을 도입할 때 할당한 메모리를 해제할 책임은 사용자에게 있다고 언급했습니"
+"힙을 소개할 때 할당한 메모리를 해제할 책임은 사용자에게 있다고 언급했습니"
 "다.  \n"
-"빌림 검사기를 소개할 때 우리는 Rust에서 직접 메모리를 관리할 필요가 거의 없다"
+"차용 검사기를 소개할 때 우리는 Rust에서 직접 메모리를 관리할 필요가 거의 없다"
 "고 언급했습니다."
 
 #: src/03_ticket_v1/11_destructor.md:6
-#, fuzzy
 msgid ""
 "These two statements might seem contradictory at first. Let's see how they "
 "fit together by introducing **scopes** and **destructors**."
@@ -4858,118 +4667,100 @@ msgstr ""
 "를 도입하여 이들이 어떻게 조화를 이루는지 살펴보겠습니다."
 
 #: src/03_ticket_v1/11_destructor.md:9
-#, fuzzy
 msgid "Scopes"
-msgstr "범위"
+msgstr "스코프"
 
 #: src/03_ticket_v1/11_destructor.md:11
-#, fuzzy
 msgid ""
 "The **scope** of a variable is the region of Rust code where that variable is "
 "valid, or **alive**."
 msgstr ""
-"변수의 **범위**는 해당 변수가 유효하거나 **살아있는** Rust 코드의 영역입니다."
+"변수의 **스코프**는 해당 변수가 유효하거나 **살아있는** Rust 코드의 영역입니"
+"다."
 
 #: src/03_ticket_v1/11_destructor.md:13
-#, fuzzy
 msgid ""
 "The scope of a variable starts with its declaration. It ends when one of the "
 "following happens:"
-msgstr "변수의 범위는 선언부터 시작됩니다. 다음 중 하나가 발생하면 종료됩니다."
+msgstr "변수의 범위는 선언부터 시작됩니다. 다음 중 하나가 발생하면 종료됩니다:"
 
 #: src/03_ticket_v1/11_destructor.md:16
-#, fuzzy
 msgid ""
 "the block (i.e. the code between `{}`) where the variable was declared ends"
-msgstr "변수가 선언된 블록(즉 `{}` 사이의 코드)이 끝납니다."
+msgstr "변수가 선언된 블록(즉 `{}` 사이의 코드)이 끝날 "
 
 #: src/03_ticket_v1/11_destructor.md:19
-#, fuzzy
 msgid "// `x` is not yet in scope here\n"
-msgstr "// `x`는 아직 여기 범위에 포함되지 않습니다."
+msgstr "// `x`는 아직 스코프에 포함되지 않습니다\n"
 
 #: src/03_ticket_v1/11_destructor.md:20 src/03_ticket_v1/11_destructor.md:32
 #: src/03_ticket_v1/11_destructor.md:54 src/03_ticket_v1/11_destructor.md:64
 #: src/03_ticket_v1/11_destructor.md:82 src/03_ticket_v1/11_destructor.md:98
 #: src/03_ticket_v1/11_destructor.md:115 src/04_traits/06_str_slice.md:26
 #: src/04_traits/06_str_slice.md:74 src/04_traits/08_sized.md:13
-#, fuzzy
 msgid "\"Hello\""
-msgstr "\"안녕하세요\""
+msgstr "\"Hello\""
 
 #: src/03_ticket_v1/11_destructor.md:21 src/03_ticket_v1/11_destructor.md:55
 #: src/03_ticket_v1/11_destructor.md:65
-#, fuzzy
 msgid "\"World\""
-msgstr "\"세계\""
+msgstr "\"World\""
 
 #: src/03_ticket_v1/11_destructor.md:21
-#, fuzzy
 msgid "// <-- x's scope starts here...\n"
-msgstr "// \\<\\-- x의 범위는 여기서 시작됩니다..."
+msgstr "// <-- x's 스코프는 여기서 시작됩니다...\n"
 
 #: src/03_ticket_v1/11_destructor.md:22 src/03_ticket_v1/11_destructor.md:56
 #: src/03_ticket_v1/11_destructor.md:66
-#, fuzzy
 msgid "\"!\""
 msgstr "\"!\""
 
 #: src/03_ticket_v1/11_destructor.md:22
-#, fuzzy
 msgid "//   |\n"
-msgstr "// |"
+msgstr "//   |\n"
 
 #: src/03_ticket_v1/11_destructor.md:23
-#, fuzzy
 msgid "//  <-------------- ...and ends here\n"
-msgstr "// \\<\\--------------- ...여기서 끝납니다."
+msgstr "// \\<\\--------------- ...그리고 여기서 끝납니다\n"
 
 #: src/03_ticket_v1/11_destructor.md:25
-#, fuzzy
 msgid ""
 "ownership of the variable is transferred to someone else (e.g. a function or "
 "another variable)"
-msgstr "변수의 소유권이 다른 사람에게 이전되었습니다(예: 함수 또는 다른 변수)."
+msgstr "변수의 소유권이 다른 사람에게 이전될 때(예: 함수 또는 다른 변수)"
 
 #: src/03_ticket_v1/11_destructor.md:28 src/03_ticket_v1/11_destructor.md:78
 #: src/03_ticket_v1/11_destructor.md:91
-#, fuzzy
 msgid "// Do something [...]\n"
-msgstr "// 뭔가를 하세요 \\[...\\]"
+msgstr "// 뭐든 하세요 [...]\n"
 
 #: src/03_ticket_v1/11_destructor.md:32
-#, fuzzy
 msgid "// <-- s's scope starts here...\n"
-msgstr "// \\<\\-- s의 범위는 여기서 시작됩니다..."
+msgstr "// <-- s의 스코프는 여기서 시작됩니다...\n"
 
 #: src/03_ticket_v1/11_destructor.md:33
-#, fuzzy
 msgid "//                    | \n"
-msgstr "// |"
+msgstr "//                    | \n"
 
 #: src/03_ticket_v1/11_destructor.md:34
-#, fuzzy
 msgid "// <------------------- ..and ends here\n"
-msgstr "// \\<\\------ ..여기서 끝납니다."
+msgstr "// <------------------- ..그리고 여기서 끝납니다\n"
 
 #: src/03_ticket_v1/11_destructor.md:35
-#, fuzzy
 msgid "//   because `s` is moved into `compute`\n"
-msgstr "// `s`가 `compute`로 이동되었기 때문입니다."
+msgstr "//   `s`가 `compute`로 이동되었기 때문입니다\n"
 
 #: src/03_ticket_v1/11_destructor.md:41
-#, fuzzy
 msgid ""
 "When the owner of a value goes out of scope, Rust invokes its "
 "**destructor**.  \n"
 "The destructor tries to clean up the resources used by that value—in "
 "particular, whatever memory it allocated."
 msgstr ""
-"값의 소유자가 범위를 벗어나면 Rust는 해당 **소멸자**를 호출합니다.  \n"
+"값의 소유자가 스코프를 벗어나면 Rust는 해당 **소멸자**를 호출합니다.  \n"
 "소멸자는 해당 값에 사용된 리소스, 특히 할당한 메모리를 정리하려고 합니다."
 
 #: src/03_ticket_v1/11_destructor.md:44
-#, fuzzy
 msgid ""
 "You can manually invoke the destructor of a value by passing it to `std::mem::"
 "drop`.  \n"
@@ -4984,53 +4775,46 @@ msgstr ""
 "유입니다."
 
 #: src/03_ticket_v1/11_destructor.md:48
-#, fuzzy
 msgid "Visualizing drop points"
 msgstr "드롭 포인트 시각화"
 
 #: src/03_ticket_v1/11_destructor.md:50
-#, fuzzy
 msgid ""
 "We can insert explicit calls to `drop` to \"spell out\" what the compiler "
 "does for us. Going back to the previous example:"
 msgstr ""
-"컴파일러가 수행하는 작업을 \"철자\"하기 위해 'drop'에 대한 명시적 호출을 삽입"
-"할 수 있습니다. 이전 예시로 돌아가면 다음과 같습니다."
+"우리는 drop에 명시적으로 호출을 삽입할 수 있습니다. 이는 컴파일러가 우리를 위"
+"해 수행하는 작업을 명확하게 설명해 줍니다. 이전 예제로 돌아가보겠습니다:"
 
 #: src/03_ticket_v1/11_destructor.md:60
-#, fuzzy
 msgid "It's equivalent to:"
 msgstr "이는 다음과 같습니다:"
 
 #: src/03_ticket_v1/11_destructor.md:67
-#, fuzzy
 msgid "// Variables are dropped in reverse order of declaration\n"
-msgstr "// 변수는 선언의 역순으로 삭제됩니다."
+msgstr "// 변수는 선언의 역순으로 삭제됩니다\n"
 
 #: src/03_ticket_v1/11_destructor.md:74
-#, fuzzy
 msgid ""
 "Let's look at the second example instead, where `s`'s ownership is "
 "transferred to `compute`:"
-msgstr "대신 `s`의 소유권이 `compute`로 이전되는 두 번째 예를 살펴보겠습니다."
+msgstr "대신 `s`의 소유권이 `compute`로 이전되는 두 번째 예를 살펴보겠습니다:"
 
 #: src/03_ticket_v1/11_destructor.md:87
-#, fuzzy
 msgid "It's equivalent to this:"
-msgstr "이는 다음과 동일합니다."
+msgstr "이는 다음과 동일합니다:"
 
 #: src/03_ticket_v1/11_destructor.md:92
-#, fuzzy
 msgid ""
 "// <-- Assuming `t` wasn't dropped or moved \n"
 "             //     before this point, the compiler will call \n"
 "             //     `drop` here, when it goes out of scope\n"
 msgstr ""
-"// \\<\\-- 이 지점 이전에 `t`가 삭제되거나 이동되지 않았다고 가정하면 // 컴파"
-"일러는 범위를 벗어날 때 // 여기에서 `drop`을 호출합니다."
+"// <-- 이 지점 이전에 `t`가 삭제되거나 이동되지 않았다고 가정하면 \n"
+"             //     컴파일러는 스코프를 벗어날 때 \n"
+"             //     여기에서 `drop`을 호출합니다.\n"
 
 #: src/03_ticket_v1/11_destructor.md:103
-#, fuzzy
 msgid ""
 "Notice the difference: even though `s` is no longer valid after `compute` is "
 "called in `main`, there is no `drop(s)` in `main`. When you transfer "
@@ -5042,24 +4826,22 @@ msgstr ""
 "값 정리 책임**도 이전됩니다."
 
 #: src/03_ticket_v1/11_destructor.md:107
-#, fuzzy
 msgid ""
 "This ensures that the destructor for a value is called **at most[^leak] "
 "once**, preventing [double free bugs](https://owasp.org/www-community/"
 "vulnerabilities/Doubly_freeing_memory) by design."
 msgstr ""
-"이렇게 하면 값에 대한 소멸자가 **최대로[^leak] 한 번** 호출되어 설계상 이중 프"
-"리 버그를 방지할 수 있습니다."
+"이렇게 하면 값에 대한 소멸자가 **최대로[^leak] 한 번** 호출되어 설계상 [더블 "
+"프리 버그](https://owasp.org/www-community/vulnerabilities/"
+"Doubly_freeing_memory)를 방지할 수 있습니다."
 
 #: src/03_ticket_v1/11_destructor.md:110
-#, fuzzy
 msgid "Use after drop"
-msgstr "떨어뜨린 후 사용"
+msgstr "삭제 후 사용"
 
 #: src/03_ticket_v1/11_destructor.md:112
-#, fuzzy
 msgid "What happens if you try to use a value after it's been dropped?"
-msgstr "값이 삭제된 후에 값을 사용하려고 하면 어떻게 되나요?"
+msgstr "값이 삭제된 후에 값을 사용하려고 하면 어떻게 될까요?"
 
 #: src/03_ticket_v1/11_destructor.md:117 src/03_ticket_v1/11_destructor.md:128
 #: src/06_ticket_management/04_iterators.md:10
@@ -5071,17 +4853,14 @@ msgstr "값이 삭제된 후에 값을 사용하려고 하면 어떻게 되나�
 #: src/06_ticket_management/09_impl_trait_2.md:23
 #: src/08_futures/03_runtime.md:85 src/08_futures/04_future.md:40
 #: src/08_futures/04_future.md:131
-#, fuzzy
 msgid "\"{}\""
 msgstr "\"{}\""
 
 #: src/03_ticket_v1/11_destructor.md:120
-#, fuzzy
 msgid "If you try to compile this code, you'll get an error:"
-msgstr "이 코드를 컴파일하려고 하면 오류가 발생합니다."
+msgstr "이 코드를 컴파일하려고 하면 오류가 발생합니다:"
 
 #: src/03_ticket_v1/11_destructor.md:132
-#, fuzzy
 msgid ""
 "Drop **consumes** the value it's called on, meaning that the value is no "
 "longer valid after the call.  \n"
@@ -5091,16 +4870,15 @@ msgid ""
 msgstr ""
 "Drop은 호출된 값을 **소비**합니다. 즉, 호출 후에는 해당 값이 더 이상 유효하지 "
 "않습니다.  \n"
-"따라서 컴파일러는 사용자가 이를 사용하지 못하게 하여 use-after-free 버그를 방"
-"지합니다."
+"따라서 컴파일러는 사용자가 이를 사용하지 못하게 하여 [use-after-free 버그]"
+"(https://owasp.org/www-community/vulnerabilities/Using_freed_memory)를 방지합"
+"니다."
 
 #: src/03_ticket_v1/11_destructor.md:135
-#, fuzzy
 msgid "Dropping references"
 msgstr "참조 삭제"
 
 #: src/03_ticket_v1/11_destructor.md:137
-#, fuzzy
 msgid ""
 "What if a variable contains a reference?  \n"
 "For example:"
@@ -5109,16 +4887,14 @@ msgstr ""
 "예를 들어:"
 
 #: src/03_ticket_v1/11_destructor.md:146
-#, fuzzy
 msgid ""
 "When you call `drop(y)`... nothing happens.  \n"
 "If you actually try to compile this code, you'll get a warning:"
 msgstr ""
 "`drop(y)`를 호출하면... 아무 일도 일어나지 않습니다.  \n"
-"실제로 이 코드를 컴파일하려고 하면 다음과 같은 경고가 표시됩니다."
+"실제로 이 코드를 컴파일하려고 하면 다음과 같은 경고가 표시됩니다:"
 
 #: src/03_ticket_v1/11_destructor.md:161
-#, fuzzy
 msgid ""
 "It goes back to what we said earlier: we only want to call the destructor "
 "once.  \n"
@@ -5133,18 +4909,18 @@ msgstr ""
 "이전에 말한 내용으로 돌아갑니다. 소멸자를 한 번만 호출하려고 합니다.  \n"
 "동일한 값에 대한 참조가 여러 개 있을 수 있습니다. 그 중 하나가 범위를 벗어날 "
 "때 가리키는 값에 대해 소멸자를 호출하면 다른 참조에는 어떤 일이 발생할까요? 그"
-"들은 더 이상 유효하지 않은 메모리 위치, 즉 **use-after-free 버그**와 가까운 친"
-"척인 **매달린 포인터**를 참조합니다. Rust의 소유권 시스템은 설계상 이러한 종류"
-"의 버그를 배제합니다."
+"들은 더 이상 유효하지 않은 메모리 위치, 즉 [**use-after-free 버그**](https://"
+"owasp.org/www-community/vulnerabilities/Using_freed_memory)와 가까운 친척인 "
+"[**댕글링 포인터**](https://en.wikipedia.org/wiki/Dangling_pointer)를 참조합니"
+"다. Rust의 소유권 시스템은 설계상 이러한 종류의 버그를 배제합니다."
 
 #: src/03_ticket_v1/11_destructor.md:168
-#, fuzzy
 msgid ""
 "Rust doesn't guarantee that destructors will run. They won't, for example, if "
 "you explicitly choose to [leak memory](../07_threads/03_leak.md)."
 msgstr ""
-"Rust는 소멸자가 실행된다는 것을 보장하지 않습니다. 예를 들어 명시적으로 메모"
-"리 누수를 선택한 경우에는 그렇지 않습니다."
+"Rust는 소멸자가 실행된다는 것을 보장하지 않습니다. 예를 들어 명시적으로 [메모"
+"리 누수](../07_threads/03_leak.md)를 선택한 경우에는 그렇지 않습니다."
 
 #: src/03_ticket_v1/11_destructor.md:173
 msgid ""
@@ -5152,15 +4928,16 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/03_ticket_v1/11_destructor)"
 msgstr ""
+"이 섹션의 예제는 [`03_ticket_v1/11_destructor`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/03_ticket_v1/11_destructor)에 있습니다"
 
 #: src/03_ticket_v1/12_outro.md:1 src/04_traits/14_outro.md:1
 #: src/05_ticket_v2/15_outro.md:1
-#, fuzzy
 msgid "Wrapping up"
 msgstr "마무리"
 
 #: src/03_ticket_v1/12_outro.md:3
-#, fuzzy
 msgid ""
 "We've covered a lot of foundational Rust concepts in this chapter.  \n"
 "Before moving on, let's go through one last exercise to consolidate what "
@@ -5177,6 +4954,8 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/03_ticket_v1/12_outro)"
 msgstr ""
+"이 섹션의 예제는 [`03_ticket_v1/12_outro`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/03_ticket_v1/12_outro)에 있습니다"
 
 #: src/04_traits/00_intro.md:3
 #, fuzzy
