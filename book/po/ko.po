@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 100 Exercises To Learn Rust\n"
 "POT-Creation-Date: 2024-06-20T21:50:15+09:00\n"
-"PO-Revision-Date: 2024-06-20 22:11+0900\n"
+"PO-Revision-Date: 2024-06-21 06:16+0900\n"
 "Last-Translator: bigfood <satcom1600@hanmail.net>\n"
 "Language-Team: Korean <translation-team-ko@googlegroups.com>\n"
 "Language: ko\n"
@@ -532,7 +532,7 @@ msgid ""
 "and pull in updates from the main repository, if needed:"
 msgstr ""
 "또한 진행 상황을 쉽게 추적하고 필요한 경우 메인 리포지토리에서 업데이트를 가져"
-"올 수 있도록 브랜치에서 작업하는 것이 좋습니다."
+"올 수 있도록 브랜치에서 작업하는 것이 좋습니다:"
 
 #: src/01_intro/00_welcome.md:61
 msgid ""
@@ -556,7 +556,7 @@ msgid ""
 "with:"
 msgstr ""
 "솔루션을 검증하기 위해 코스 내내 당신을 도와줄 도구를 제공합니다. `wr` "
-"CLI(\"워크숍 러너\"의 줄임말)입니다. 아래 명령을 사용하여 설치하세요."
+"CLI(\"워크숍 러너\"의 줄임말)입니다. 아래 명령을 사용하여 설치하세요:"
 
 #: src/01_intro/00_welcome.md:76
 msgid ""
@@ -564,7 +564,7 @@ msgid ""
 "Run the `wr` command to start the course:"
 msgstr ""
 "새 터미널에서 리포지토리의 최상위 폴더로 이동합니다. 코스를 시작하려면 `wr` 명"
-"령을 실행하세요."
+"령을 실행하세요:"
 
 #: src/01_intro/00_welcome.md:83
 msgid ""
@@ -754,7 +754,7 @@ msgstr ""
 
 #: src/01_intro/01_syntax.md:32
 msgid "In previous exercise, you saw the `greeting` function:"
-msgstr "이전 연습에서는 `인사말` 기능을 보았습니다"
+msgstr "이전 연습에서는 `인사말` 기능을 보았습니다:"
 
 #: src/01_intro/01_syntax.md:35
 msgid ""
@@ -816,7 +816,7 @@ msgstr "반환 값"
 
 #: src/01_intro/01_syntax.md:68
 msgid "The last expression in a function is implicitly returned:"
-msgstr "함수의 마지막 표현식은 암시적으로 반환됩니다."
+msgstr "함수의 마지막 표현식은 암시적으로 반환됩니다:"
 
 #: src/01_intro/01_syntax.md:72
 msgid ""
@@ -830,7 +830,7 @@ msgstr ""
 
 #: src/01_intro/01_syntax.md:78
 msgid "You can also use the `return` keyword to return a value early:"
-msgstr "중간에 값을 반환하려면 `return` 키워드를 사용할 수도 있습니다."
+msgstr "중간에 값을 반환하려면 `return` 키워드를 사용할 수도 있습니다:"
 
 #: src/01_intro/01_syntax.md:82
 msgid "// Notice the semicolon at the end of the line!\n"
@@ -926,8 +926,8 @@ msgid ""
 "Rust's basics, such as:"
 msgstr ""
 "이번 장에서는 Rust를 **계산기**로 사용하는 방법을 배우겠습니다.  \n"
-"별것 아닌 것처럼 들리겠지만, 다음과 같은 Rust의 기본 사항을 많이 다룰 수 있는 "
-"기회를 제공할 것입니다:"
+"별것 아닌 것처럼 들리겠지만, 다음과 같은 Rust의 기본기를 많이 다룰 수 있는 기"
+"회를 제공할 것입니다:"
 
 #: src/02_basic_calculator/00_intro.md:6
 msgid "How to define and call functions"
@@ -939,7 +939,7 @@ msgstr "변수 선언 및 사용 방법"
 
 #: src/02_basic_calculator/00_intro.md:8
 msgid "Primitive types (integers and booleans)"
-msgstr "기본 유형(정수 및 부울)"
+msgstr "원시 타입(정수 와 불리언)"
 
 #: src/02_basic_calculator/00_intro.md:9
 msgid "Arithmetic operators (including overflow and underflow behavior)"
@@ -952,7 +952,7 @@ msgstr "비교 연산자"
 
 #: src/02_basic_calculator/00_intro.md:11
 msgid "Control flow"
-msgstr "제어 흐름"
+msgstr "흐름 제어"
 
 #: src/02_basic_calculator/00_intro.md:14
 msgid ""
@@ -961,9 +961,9 @@ msgid ""
 "ownership, you'll be able to focus on the new concepts without getting bogged "
 "down by the syntax or other trivial details."
 msgstr ""
-"몇 가지 연습을 통해 기본 사항을 익히면 언어가 손가락 아래로 흐르게 됩니다. 특"
-"성 및 소유권과 같은 더 복잡한 주제로 넘어갈 때 구문이나 기타 사소한 세부 사항"
-"에 얽매이지 않고 새로운 개념에 집중할 수 있습니다."
+"몇 가지 연습을 통해 기본기를 익히면 언어가 물흐르듯 써지게 됩니다. Trait와 소"
+"유권같은 더 복잡한 주제로 넘어갈 때 문법이나 기타 사소한 세부사항에 얽매이지 "
+"않고 새로운 개념에 집중할 수 있습니다."
 
 #: src/02_basic_calculator/00_intro.md:20
 msgid ""
@@ -980,101 +980,90 @@ msgid "Types, part 1"
 msgstr "Types, part 1"
 
 #: src/02_basic_calculator/01_integers.md:3
-#, fuzzy
 msgid ""
 "In the [\"Syntax\" section](../01_intro/01_syntax.md) `compute`'s input "
 "parameters were of type `u32`.  \n"
 "Let's unpack what that _means_."
 msgstr ""
-"\"구문\" 섹션에서 `compute`의 입력 매개변수는 `u32` 유형이었습니다.  \n"
+"[\"문법\" section](../01_intro/01_syntax.md)섹션에서 `compute`의 입력 매개변수"
+"는 `u32` 타입이었습니다.  \n"
 "그것이 _의미_ 무엇인지 풀어봅시다."
 
 #: src/02_basic_calculator/01_integers.md:6
-#, fuzzy
 msgid "Primitive types"
-msgstr "기본 유형"
+msgstr "원시 타입"
 
 #: src/02_basic_calculator/01_integers.md:8
-#, fuzzy
 msgid ""
 "`u32` is one of Rust's **primitive types**. Primitive types are the most "
 "basic building blocks of a language. They're built into the language itself—i."
 "e. they are not defined in terms of other types."
 msgstr ""
-"`u32`는 Rust의 **원시 유형** 중 하나입니다. 기본 유형은 언어의 가장 기본적인 "
-"구성 요소입니다. 이는 언어 자체에 내장되어 있습니다. 다른 유형의 관점에서 정의"
-"되지 않습니다."
+"`u32`는 Rust의 **원시 타입** 중 하나입니다. 원시 타입은 언어의 가장 기본적인 "
+"구성 요소입니다. 이는 언어 자체에 내장되어 있습니다. 다른 타입처럼 정의되지 않"
+"습니다."
 
 #: src/02_basic_calculator/01_integers.md:11
-#, fuzzy
 msgid ""
 "You can combine these primitive types to create more complex types. We'll see "
 "how soon enough."
 msgstr ""
-"이러한 기본 유형을 결합하여 더 복잡한 유형을 만들 수 있습니다. 얼마나 빨리 되"
-"는지 살펴보겠습니다."
+"이러한 원시 타입을 결합하여 더 복잡한 타입을 만들 수 있습니다. 곧 배우게 되실"
+"겁니다."
 
 #: src/02_basic_calculator/01_integers.md:15
-#, fuzzy
 msgid "`u32`, in particular, is an **unsigned 32-bit integer**."
-msgstr "특히 `u32`는 **부호 없는 32비트 정수**입니다."
+msgstr "`u32`는 **부호 없는 32비트 정수**입니다."
 
 #: src/02_basic_calculator/01_integers.md:17
-#, fuzzy
 msgid ""
 "An integer is a number that can be written without a fractional component. E."
 "g. `1` is an integer, while `1.2` is not."
 msgstr ""
-"정수는 분수 구성요소 없이 쓸 수 있는 숫자입니다. 예: '1'은 정수이지만 '1.2'는 "
-"정수가 아닙니다."
+"정수는 분수없이 나타낼 수 있는 숫자입니다. 예: '1'은 정수이지만 '1.2'는 정수"
+"가 아닙니다."
 
 #: src/02_basic_calculator/01_integers.md:19
-#, fuzzy
 msgid "Signed vs. unsigned"
-msgstr "서명된 대 서명되지 않은"
+msgstr "Signed vs. unsigned"
 
 #: src/02_basic_calculator/01_integers.md:21
-#, fuzzy
 msgid ""
 "An integer can be **signed** or **unsigned**.  \n"
 "An unsigned integer can only represent non-negative numbers (i.e. `0` or "
 "greater). A signed integer can represent both positive and negative numbers "
 "(e.g. `-1`, `12`, etc.)."
 msgstr ""
-"정수는 **부호 있음** 또는 **부호 없음**일 수 있습니다.  \n"
+"정수는 **signed** 또는 **unsigned**일 수 있습니다.  \n"
 "부호 없는 정수는 음수가 아닌 숫자(예: '0' 이상)만 나타낼 수 있습니다. 부호 있"
 "는 정수는 양수와 음수를 모두 나타낼 수 있습니다(예: '-1', '12' 등)."
 
 #: src/02_basic_calculator/01_integers.md:25
-#, fuzzy
 msgid ""
 "The `u` in `u32` stands for **unsigned**.  \n"
 "The equivalent type for signed integer is `i32`, where the `i` stands for "
 "integer (i.e. any integer, positive or negative)."
 msgstr ""
-"`u32`의 `u`는 **부호 없음**을 의미합니다.  \n"
+"`u32`의 `u`는 **unsigned**를 의미합니다.  \n"
 "부호 있는 정수에 해당하는 유형은 'i32'입니다. 여기서 'i'는 정수(예: 양수 또는 "
 "음수)를 나타냅니다."
 
 #: src/02_basic_calculator/01_integers.md:29
 #: src/02_basic_calculator/01_integers.md:48
-#, fuzzy
 msgid "Bit width"
 msgstr "비트 폭"
 
 #: src/02_basic_calculator/01_integers.md:31
-#, fuzzy
 msgid ""
 "The `32` in `u32` refers to the **number of bits[^bit]** used to represent "
 "the number in memory.  \n"
 "The more bits, the larger the range of numbers that can be represented."
 msgstr ""
-"'u32'의 '32'는 메모리의 숫자를 나타내는 데 사용되는 **비트 수[^비트]**를 나타"
-"냅니다.  \n"
+"'u32'의 '32'는 메모리의 숫자를 나타내는 데 사용되는 **비트 수[^bit]**를 나타냅"
+"니다.  \n"
 "비트가 많을수록 표현할 수 있는 숫자의 범위가 커집니다."
 
 #: src/02_basic_calculator/01_integers.md:34
-#, fuzzy
 msgid ""
 "Rust supports multiple bit widths for integers: `8`, `16`, `32`, `64`, `128`."
 msgstr ""
@@ -1082,7 +1071,6 @@ msgstr ""
 "니다."
 
 #: src/02_basic_calculator/01_integers.md:36
-#, fuzzy
 msgid ""
 "With 32 bits, `u32` can represent numbers from `0` to `2^32 - 1` (a.k.a. "
 "[`u32::MAX`](https://doc.rust-lang.org/std/primitive.u32."
@@ -1097,115 +1085,100 @@ msgid ""
 "representation for more details on how signed integers are represented in "
 "memory."
 msgstr ""
-"32비트를 사용하면 `u32`는 `0`부터 `2^32 - 1`(즉, `u32::MAX`)까지의 숫자를 나타"
-"낼 수 있습니다.  \n"
+"32비트를 사용하면 `u32`는 `0`부터 `2^32 - 1`(즉, [`u32::MAX`](https://doc."
+"rust-lang.org/std/primitive.u32.html#associatedconstant.MAX))까지의 숫자를 나"
+"타낼 수 있습니다.  \n"
 "동일한 비트 수를 사용하여 부호 있는 정수(`i32`)는 `-2^31`부터 `2^31 - 1`까지"
-"(즉, `i32::MIN`부터 `i32::MAX`까지)의 숫자를 나타낼 수 있습니다. .  \n"
+"(즉, [`i32::MIN`](https://doc.rust-lang.org/std/primitive.i32."
+"html#associatedconstant.MIN)부터 [`i32::MAX`](https://doc.rust-lang.org/std/"
+"primitive.i32.html#associatedconstant.MAX)까지)의 숫자를 나타낼 수 있습니"
+"다.  \n"
 "'i32'의 최대값은 'u32'의 최대값보다 작습니다. 1비트가 숫자의 부호를 나타내는 "
 "데 사용되기 때문입니다. 부호 있는 정수가 메모리에 어떻게 표현되는지에 대한 자"
-"세한 내용은 2의 보수 표현을 확인하세요."
+"세한 내용은 [2의 보수](https://en.wikipedia.org/wiki/Two%27s_complement)를 확"
+"인하세요."
 
 #: src/02_basic_calculator/01_integers.md:46
-#, fuzzy
 msgid ""
 "Combining the two variables (signed/unsigned and bit width), we get the "
 "following integer types:"
 msgstr ""
-"두 변수(부호 있는/부호 없는 및 비트 너비)를 결합하면 다음과 같은 정수 유형을 "
-"얻을 수 있습니다."
+"두 변수(signed/unsigned와 비트 폭)를 결합하면 다음과 같은 정수 유형을 얻을 수 "
+"있습니다:"
 
 #: src/02_basic_calculator/01_integers.md:48
-#, fuzzy
 msgid "Signed"
-msgstr "서명됨"
+msgstr "Signed"
 
 #: src/02_basic_calculator/01_integers.md:48
-#, fuzzy
 msgid "Unsigned"
-msgstr "서명되지 않음"
+msgstr "Unsigned"
 
 #: src/02_basic_calculator/01_integers.md:50
-#, fuzzy
 msgid "8-bit"
-msgstr "8비트"
+msgstr "8-bit"
 
 #: src/02_basic_calculator/01_integers.md:50
-#, fuzzy
 msgid "`i8`"
-msgstr "'i8'"
+msgstr "`i8`"
 
 #: src/02_basic_calculator/01_integers.md:50
-#, fuzzy
 msgid "`u8`"
 msgstr "`u8`"
 
 #: src/02_basic_calculator/01_integers.md:51
-#, fuzzy
 msgid "16-bit"
-msgstr "16비트"
+msgstr "16-bit"
 
 #: src/02_basic_calculator/01_integers.md:51
-#, fuzzy
 msgid "`i16`"
-msgstr "'i16'"
+msgstr "`i16`"
 
 #: src/02_basic_calculator/01_integers.md:51
-#, fuzzy
 msgid "`u16`"
-msgstr "'u16'"
+msgstr "`u16`"
 
 #: src/02_basic_calculator/01_integers.md:52
-#, fuzzy
 msgid "32-bit"
-msgstr "32비트"
+msgstr "32-bit"
 
 #: src/02_basic_calculator/01_integers.md:52
-#, fuzzy
 msgid "`i32`"
-msgstr "'i32'"
+msgstr "`i32`"
 
 #: src/02_basic_calculator/01_integers.md:52
-#, fuzzy
 msgid "`u32`"
-msgstr "'u32'"
+msgstr "`u32`"
 
 #: src/02_basic_calculator/01_integers.md:53
-#, fuzzy
 msgid "64-bit"
-msgstr "64비트"
+msgstr "64-bit"
 
 #: src/02_basic_calculator/01_integers.md:53
-#, fuzzy
 msgid "`i64`"
-msgstr "'i64'"
+msgstr "`i64`"
 
 #: src/02_basic_calculator/01_integers.md:53
-#, fuzzy
 msgid "`u64`"
-msgstr "'u64'"
+msgstr "`u64`"
 
 #: src/02_basic_calculator/01_integers.md:54
-#, fuzzy
 msgid "128-bit"
-msgstr "128비트"
+msgstr "128-bit"
 
 #: src/02_basic_calculator/01_integers.md:54
-#, fuzzy
 msgid "`i128`"
-msgstr "'i128'"
+msgstr "`i128`"
 
 #: src/02_basic_calculator/01_integers.md:54
-#, fuzzy
 msgid "`u128`"
-msgstr "'u128'"
+msgstr "`u128`"
 
 #: src/02_basic_calculator/01_integers.md:56
-#, fuzzy
 msgid "Literals"
 msgstr "리터럴"
 
 #: src/02_basic_calculator/01_integers.md:58
-#, fuzzy
 msgid ""
 "A **literal** is a notation for representing a fixed value in source code.  \n"
 "For example, `42` is a Rust literal for the number forty-two."
@@ -1214,18 +1187,16 @@ msgstr ""
 "예를 들어 '42'는 숫자 42에 대한 Rust 리터럴입니다."
 
 #: src/02_basic_calculator/01_integers.md:61
-#, fuzzy
 msgid "Type annotations for literals"
-msgstr "리터럴에 대한 유형 주석"
+msgstr "타입 어노테이션 리터럴"
 
 #: src/02_basic_calculator/01_integers.md:63
-#, fuzzy
 msgid "But all values in Rust have a type, so... what's the type of `42`?"
 msgstr ""
-"하지만 Rust의 모든 값에는 유형이 있습니다. 그렇다면 '42' 유형은 무엇인가요?"
+"하지만 Rust의 모든 값에는 유형이 있습니다. 그렇다면... '42'의 타입은 무엇일까"
+"요?"
 
 #: src/02_basic_calculator/01_integers.md:65
-#, fuzzy
 msgid ""
 "The Rust compiler will try to infer the type of a literal based on how it's "
 "used.  \n"
@@ -1234,20 +1205,18 @@ msgid ""
 "If you want to use a different type, you can add the desired integer type as "
 "a suffix—e.g. `2u64` is a 2 that's explicitly typed as a `u64`."
 msgstr ""
-"Rust 컴파일러는 리터럴이 사용되는 방식에 따라 리터럴의 유형을 추론하려고 시도"
+"Rust 컴파일러는 리터럴이 사용되는 방식에 따라 리터럴의 타입을 추론하려고 시도"
 "합니다.  \n"
 "컨텍스트를 제공하지 않으면 컴파일러는 정수 리터럴에 대해 기본적으로 `i32`를 사"
 "용합니다.  \n"
-"다른 유형을 사용하려면 원하는 정수 유형을 접미사로 추가할 수 있습니다. "
-"'2u64'는 'u64'로 명시적으로 입력된 2입니다."
+"다른 타입을 사용하려면 원하는 정수 타입을 접미사로 추가할 수 있습니다. "
+"'2u64'는 명시적으로 'u64'라고 정해진 2입니다."
 
 #: src/02_basic_calculator/01_integers.md:70
-#, fuzzy
 msgid "Underscores in literals"
-msgstr "리터럴의 밑줄"
+msgstr "리터럴에서의 밑줄"
 
 #: src/02_basic_calculator/01_integers.md:72
-#, fuzzy
 msgid ""
 "You can use underscores `_` to improve the readability of large numbers.  \n"
 "For example, `1_000_000` is the same as `1000000`."
@@ -1256,42 +1225,34 @@ msgstr ""
 "예를 들어 '1_000_000'은 '1000000'과 동일합니다."
 
 #: src/02_basic_calculator/01_integers.md:75
-#, fuzzy
 msgid "Arithmetic operators"
 msgstr "산술 연산자"
 
 #: src/02_basic_calculator/01_integers.md:77
-#, fuzzy
 msgid "Rust supports the following arithmetic operators[^traits] for integers:"
 msgstr "Rust는 정수에 대해 다음과 같은 산술 연산자[^traits]를 지원합니다:"
 
 #: src/02_basic_calculator/01_integers.md:79
-#, fuzzy
 msgid "`+` for addition"
-msgstr "추가하려면 `+`"
+msgstr "`+` 더하기"
 
 #: src/02_basic_calculator/01_integers.md:80
-#, fuzzy
 msgid "`-` for subtraction"
-msgstr "뺄셈의 경우 `-`"
+msgstr "`-` 빼기"
 
 #: src/02_basic_calculator/01_integers.md:81
-#, fuzzy
 msgid "`*` for multiplication"
-msgstr "곱셈을 위한 `*`"
+msgstr "`*` 곱하기"
 
 #: src/02_basic_calculator/01_integers.md:82
-#, fuzzy
 msgid "`/` for division"
-msgstr "나누기용 `/`"
+msgstr "`/` 나누기"
 
 #: src/02_basic_calculator/01_integers.md:83
-#, fuzzy
 msgid "`%` for remainder"
-msgstr "나머지는 `%`"
+msgstr "`%` 나머지"
 
 #: src/02_basic_calculator/01_integers.md:85
-#, fuzzy
 msgid ""
 "Precedence and associativity rules for these operators are the same as in "
 "mathematics.  \n"
@@ -1299,15 +1260,13 @@ msgid ""
 "4)`."
 msgstr ""
 "이러한 연산자의 우선순위 및 결합성 규칙은 수학과 동일합니다.  \n"
-"괄호를 사용하여 기본 우선 순위를 재정의할 수 있습니다. 예: '2 * (3 + 4)'."
+"괄호를 사용하여 기본 우선 순위를 재정의할 수 있습니다. 예: `2 * (3 + 4)`."
 
 #: src/02_basic_calculator/01_integers.md:88
-#, fuzzy
 msgid "⚠️ **Warning**"
 msgstr "⚠️ **경고**"
 
 #: src/02_basic_calculator/01_integers.md:90
-#, fuzzy
 msgid ""
 "The division operator `/` performs integer division when used with integer "
 "types. I.e. the result is truncated towards zero. For example, `5 / 2` is "
@@ -1317,12 +1276,10 @@ msgstr ""
 "결과는 0쪽으로 잘립니다. 예를 들어 '5/2'는 '2.5'가 아니라 '2'입니다."
 
 #: src/02_basic_calculator/01_integers.md:93
-#, fuzzy
 msgid "No automatic type coercion"
-msgstr "자동 유형 강제 변환 없음"
+msgstr "자동 타입 변환 없음"
 
 #: src/02_basic_calculator/01_integers.md:95
-#, fuzzy
 msgid ""
 "As we discussed in the previous exercise, Rust is a statically typed "
 "language.  \n"
@@ -1330,31 +1287,30 @@ msgid ""
 "automatically convert a value from one type to another[^coercion], even if "
 "the conversion is lossless. You have to do it explicitly."
 msgstr ""
-"이전 연습에서 논의한 것처럼 Rust는 정적으로 유형이 지정된 언어입니다.  \n"
-"특히 Rust는 유형 강제에 대해 상당히 엄격합니다. 변환이 무손실이더라도 자동으"
-"로 값을 한 유형에서 다른 유형으로 변환[^강제]하지 않습니다. 명시적으로 해야 합"
-"니다."
+"이전 연습에서 논의한 것처럼 Rust는 정적으로 타입이 지정된 언어입니다.  \n"
+"특히 Rust는 타입 강제에 대해 상당히 엄격합니다. 타입 변환이 무손실이더라도 자"
+"동으로 값을 한 타입에서 다른 타입으로 변환[^coercion]하지 않습니다. 명시적으"
+"로 해야 합니다."
 
 #: src/02_basic_calculator/01_integers.md:100
-#, fuzzy
 msgid ""
 "For example, you can't assign a `u8` value to a variable with type `u32`, "
 "even though all `u8` values are valid `u32` values:"
 msgstr ""
-"예를 들어, 모든 `u8` 값이 유효한 `u32` 값이더라도 `u32` 유형의 변수에 `u8` 값"
-"을 할당할 수 없습니다."
+"예를 들어, 모든 `u8` 값이 유효한 `u32` 값이더라도 `u32` 타입에 `u8`타입의 값"
+"을 할당할 수 없습니다:"
 
 #: src/02_basic_calculator/01_integers.md:108
-#, fuzzy
 msgid "It'll throw a compilation error:"
-msgstr "컴파일 오류가 발생합니다."
+msgstr "컴파일 오류가 발생합니다:"
 
 #: src/02_basic_calculator/01_integers.md:120
-#, fuzzy
 msgid ""
 "We'll see how to convert between types [later in this course]"
 "(../04_traits/09_from.md)."
-msgstr "이 과정의 뒷부분에서 유형 간 변환 방법을 살펴보겠습니다."
+msgstr ""
+"[이 코스의 뒷부분](../04_traits/09_from.md)에서 타입 간 변환 방법을 살펴보겠습"
+"니다."
 
 #: src/02_basic_calculator/01_integers.md:122
 #: src/02_basic_calculator/04_panics.md:44
@@ -1366,18 +1322,18 @@ msgstr "이 과정의 뒷부분에서 유형 간 변환 방법을 살펴보겠�
 #: src/06_ticket_management/07_combinators.md:103
 #: src/07_threads/02_static.md:112 src/07_threads/11_locks.md:218
 #: src/08_futures/05_blocking.md:76 src/08_futures/07_cancellation.md:101
-#, fuzzy
 msgid "Further reading"
-msgstr "추가 읽기"
+msgstr "읽을거리"
 
 #: src/02_basic_calculator/01_integers.md:124
 msgid ""
 "[The integer types section](https://doc.rust-lang.org/book/ch03-02-data-types."
 "html#integer-types) in the official Rust book"
 msgstr ""
+"공식 Rust book의 [정수 타입 섹션](https://doc.rust-lang.org/book/ch03-02-data-"
+"types.html#integer-types)"
 
 #: src/02_basic_calculator/01_integers.md:126
-#, fuzzy
 msgid ""
 "A bit is the smallest unit of data in a computer. It can only have two "
 "values: `0` or `1`."
@@ -1386,7 +1342,6 @@ msgstr ""
 "수 있습니다."
 
 #: src/02_basic_calculator/01_integers.md:128
-#, fuzzy
 msgid ""
 "Rust doesn't let you define custom operators, but it puts you in control of "
 "how the built-in operators behave. We'll talk about operator overloading "
@@ -1394,10 +1349,10 @@ msgid ""
 "covered traits."
 msgstr ""
 "Rust에서는 사용자 정의 연산자를 정의할 수 없지만 내장 연산자의 작동 방식을 제"
-"어할 수 있습니다. 특성을 다룬 후 연산자 오버로딩에 대해 나중에 설명하겠습니다."
+"어할 수 있습니다. 나중에 Trait에 대해 다룬 후 연산자 오버로딩에 대해 설명하겠"
+"습니다."
 
 #: src/02_basic_calculator/01_integers.md:132
-#, fuzzy
 msgid ""
 "There are some exceptions to this rule, mostly related to references, smart "
 "pointers and ergonomics. We'll cover those [later on](../04_traits/07_deref."
@@ -1405,8 +1360,8 @@ msgid ""
 "in the meantime."
 msgstr ""
 "이 규칙에는 주로 참조, 스마트 포인터 및 인체 공학과 관련된 몇 가지 예외가 있습"
-"니다. 이에 대해서는 나중에 다루겠습니다. 그 동안에는 \"모든 전환이 명시적입니"
-"다\"라는 정신적 모델이 도움이 될 것입니다."
+"니다. 이에 대해서는 [나중에](../04_traits/07_deref.md) 다루겠습니다. 그 전까지"
+"는 \"모든 타입 변환이 명시적\"이라는 정신이 도움이 될 것입니다."
 
 #: src/02_basic_calculator/01_integers.md:138
 msgid ""
@@ -1414,75 +1369,68 @@ msgid ""
 "[`02_basic_calculator/01_integers`](https://github.com/mainmatter/100-"
 "exercises-to-learn-rust/tree/main/exercises/02_basic_calculator/01_integers)"
 msgstr ""
+"이 섹션의 예제는 [`02_basic_calculator/01_integers`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/02_basic_calculator/01_integers)에 있습니다"
 
 #: src/02_basic_calculator/02_variables.md:3
-#, fuzzy
 msgid ""
 "In Rust, you can use the `let` keyword to declare **variables**.  \n"
 "For example:"
 msgstr ""
 "Rust에서는 `let` 키워드를 사용하여 **변수**를 선언할 수 있습니다.  \n"
-"예를 들어:"
+"예시:"
 
 #: src/02_basic_calculator/02_variables.md:10
-#, fuzzy
 msgid "Above we defined a variable `x` and assigned it the value `42`."
-msgstr "위에서는 변수 'x'를 정의하고 값 '42'를 할당했습니다."
+msgstr "위에서는 변수 `x`를 정의하고 값 `42`를 할당했습니다."
 
 #: src/02_basic_calculator/02_variables.md:12
-#, fuzzy
 msgid "Type"
-msgstr "유형"
+msgstr "타입"
 
 #: src/02_basic_calculator/02_variables.md:14
-#, fuzzy
 msgid ""
 "Every variable in Rust must have a type. It can either be inferred by the "
 "compiler or explicitly specified by the developer."
 msgstr ""
-"Rust의 모든 변수에는 유형이 있어야 합니다. 이는 컴파일러에 의해 유추되거나 개"
+"Rust의 모든 변수에는 타입이 있어야 합니다. 이는 컴파일러에 의해 유추되거나 개"
 "발자가 명시적으로 지정할 수 있습니다."
 
 #: src/02_basic_calculator/02_variables.md:17
-#, fuzzy
 msgid "Explicit type annotation"
-msgstr "명시적 유형 주석"
+msgstr "명시적 타입 어노테이션"
 
 #: src/02_basic_calculator/02_variables.md:19
-#, fuzzy
 msgid ""
 "You can specify the variable type by adding a colon `:` followed by the type "
 "after the variable name. For example:"
 msgstr ""
-"변수 이름 뒤에 콜론 `:`을 추가하고 유형을 추가하여 변수 유형을 지정할 수 있습"
-"니다. 예를 들어:"
+"변수 이름 뒤에 콜론 `:`을 추가하고 타입을 추가하여 변수 타입을 지정할 수 있습"
+"니다. 예시:"
 
 #: src/02_basic_calculator/02_variables.md:22
 msgid "// let <variable_name>: <type> = <expression>;\n"
-msgstr ""
+msgstr "// let <variable_name>: <type> = <expression>;\n"
 
 #: src/02_basic_calculator/02_variables.md:26
-#, fuzzy
 msgid ""
 "In the example above, we explicitly constrained the type of `x` to be `u32`."
-msgstr "위의 예에서는 `x` 유형을 `u32`로 명시적으로 제한했습니다."
+msgstr "위의 예에서는 `x`의 타입을 `u32`로 명시적으로 제한했습니다."
 
 #: src/02_basic_calculator/02_variables.md:28
-#, fuzzy
 msgid "Type inference"
-msgstr "유형 추론"
+msgstr "타입 추론"
 
 #: src/02_basic_calculator/02_variables.md:30
-#, fuzzy
 msgid ""
 "If we don't specify the type of a variable, the compiler will try to infer it "
 "based on the context in which the variable is used."
 msgstr ""
-"변수 유형을 지정하지 않으면 컴파일러는 변수가 사용되는 컨텍스트를 기반으로 변"
-"수 유형을 추론하려고 시도합니다."
+"변수 타입을 지정하지 않으면 컴파일러는 변수가 사용되는 컨텍스트를 기반으로 변"
+"수 타입을 추론하려고 시도합니다."
 
 #: src/02_basic_calculator/02_variables.md:38
-#, fuzzy
 msgid ""
 "In the example above, we didn't specify the type of `x`.  \n"
 "`x` is later assigned to `y`, which is explicitly typed as `u32`. Since Rust "
@@ -1490,46 +1438,42 @@ msgid ""
 "to be `u32`—the same as `y` and the only type that will allow the program to "
 "compile without errors."
 msgstr ""
-"위의 예에서는 'x' 유형을 지정하지 않았습니다.  \n"
-"`x`는 나중에 명시적으로 `u32`로 입력되는 `y`에 할당됩니다. Rust는 자동 유형 강"
-"제 변환을 수행하지 않기 때문에 컴파일러는 `x` 유형을 `u32`로 추론합니다. 이는 "
-"`y`와 동일하고 프로그램이 오류 없이 컴파일할 수 있게 해주는 유일한 유형입니다."
+"위의 예에서는 `x`의 타입을 지정하지 않았습니다.  \n"
+"`x`는 나중에 명시적으로 `u32`로 입력되는 `y`에 할당됩니다. Rust는 자동 타입 강"
+"제 변환을 수행하지 않기 때문에 컴파일러는 `x`의 타입을 `u32`로 추론합니다. 이"
+"는 `y`와 동일하고 프로그램이 오류 없이 컴파일할 수 있게 해주는 유일한 타입입니"
+"다."
 
 #: src/02_basic_calculator/02_variables.md:43
-#, fuzzy
 msgid "Inference limitations"
 msgstr "추론의 한계"
 
 #: src/02_basic_calculator/02_variables.md:45
-#, fuzzy
 msgid ""
 "The compiler sometimes needs a little help to infer the correct variable type "
 "based on its usage.  \n"
 "In those cases you'll get a compilation error and the compiler will ask you "
 "to provide an explicit type hint to disambiguate the situation."
 msgstr ""
-"컴파일러는 사용법에 따라 올바른 변수 유형을 유추하기 위해 약간의 도움이 필요"
+"컴파일러는 사용법에 따라 올바른 변수 타입을 유추하기 위해 약간의 도움이 필요"
 "한 경우가 있습니다.  \n"
 "이러한 경우 컴파일 오류가 발생하고 컴파일러는 상황을 명확하게 하기 위해 명시적"
-"인 유형 힌트를 제공하도록 요청합니다."
+"인 타입 힌트를 제공하도록 요청합니다."
 
 #: src/02_basic_calculator/02_variables.md:49
-#, fuzzy
 msgid "Function arguments are variables"
-msgstr "함수 인수는 변수입니다."
+msgstr "함수 인수는 변수입니다"
 
 #: src/02_basic_calculator/02_variables.md:51
-#, fuzzy
 msgid ""
 "Not all heroes wear capes, not all variables are declared with `let`.  \n"
 "Function arguments are variables too!"
 msgstr ""
-"모든 영웅이 망토를 입는 것은 아니며, 모든 변수가 'let'으로 선언되는 것은 아닙"
+"모든 영웅이 망토를 입는 것은 아니며, 모든 변수가 `let`으로 선언되는 것은 아닙"
 "니다.  \n"
 "함수 인수도 변수입니다!"
 
 #: src/02_basic_calculator/02_variables.md:60
-#, fuzzy
 msgid ""
 "In the example above, `x` is a variable of type `u32`.  \n"
 "The only difference between `x` and a variable declared with `let` is that "
@@ -1539,20 +1483,19 @@ msgid ""
 "function's signature without having to look at its implementation. That's a "
 "big boost for compilation speed[^speed]!"
 msgstr ""
-"위의 예에서 'x'는 'u32' 유형의 변수입니다.  \n"
-"`x`와 `let`으로 선언된 변수의 유일한 차이점은 함수 인수 **반드시** 해당 유형"
+"위의 예에서 `x`는 `u32` 타입의 변수입니다.  \n"
+"`x`와 `let`으로 선언된 변수의 유일한 차이점은 함수 인수 **반드시** 해당 타입"
 "이 명시적으로 선언되어야 한다는 것입니다. 컴파일러는 이를 추론하지 않습니"
 "다.  \n"
-"이 제약은 Rust 컴파일러(그리고 우리 인간!)가 구현을 살펴보지 않고도 함수의 서"
-"명을 이해할 수 있게 해줍니다. 이는 컴파일 속도[^속도]를 크게 향상시킵니다!"
+"이 제약은 Rust 컴파일러(그리고 우리 인간도!)가 구현을 살펴보지 않고도 함수의 "
+"시그니처를 이해할 수 있게 해줍니다. 이는 컴파일 속도[^speed]를 크게 향상시킵니"
+"다!"
 
 #: src/02_basic_calculator/02_variables.md:66
-#, fuzzy
 msgid "Initialization"
 msgstr "초기화"
 
 #: src/02_basic_calculator/02_variables.md:68
-#, fuzzy
 msgid ""
 "You don't have to initialize a variable when you declare it.  \n"
 "For example"
@@ -1561,7 +1504,6 @@ msgstr ""
 "예를 들어"
 
 #: src/02_basic_calculator/02_variables.md:75
-#, fuzzy
 msgid ""
 "is a valid variable declaration.  \n"
 "However, you must initialize the variable before using it. The compiler will "
@@ -1569,20 +1511,17 @@ msgid ""
 msgstr ""
 "유효한 변수 선언입니다.  \n"
 "그러나 변수를 사용하기 전에 초기화해야 합니다. 다음을 수행하지 않으면 컴파일러"
-"에서 오류가 발생합니다."
+"에서 오류가 발생합니다:"
 
 #: src/02_basic_calculator/02_variables.md:83
-#, fuzzy
 msgid "will throw a compilation error:"
-msgstr "컴파일 오류가 발생합니다."
+msgstr "컴파일 오류가 발생합니다:"
 
 #: src/02_basic_calculator/02_variables.md:100
-#, fuzzy
 msgid ""
 "The Rust compiler needs all the help it can get when it comes to compilation "
 "speed."
-msgstr ""
-"Rust 컴파일러는 컴파일 속도와 관련해 얻을 수 있는 모든 도움이 필요합니다."
+msgstr "Rust 컴파일러는 컴파일 속도를 위한 어떤 도움이라도 필요로합니다."
 
 #: src/02_basic_calculator/02_variables.md:104
 msgid ""
@@ -1590,14 +1529,15 @@ msgid ""
 "[`02_basic_calculator/02_variables`](https://github.com/mainmatter/100-"
 "exercises-to-learn-rust/tree/main/exercises/02_basic_calculator/02_variables)"
 msgstr ""
+"이 섹션의 예제는 [`02_basic_calculator/02_variables`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/02_basic_calculator/02_variables)에 있습니다"
 
 #: src/02_basic_calculator/03_if_else.md:1
-#, fuzzy
 msgid "Control flow, part 1"
-msgstr "제어 흐름, 1부"
+msgstr "흐름 제어, part 1"
 
 #: src/02_basic_calculator/03_if_else.md:3
-#, fuzzy
 msgid ""
 "All our programs so far have been pretty straightforward.  \n"
 "A sequence of instructions is executed from top to bottom, and that's it."
@@ -1606,49 +1546,41 @@ msgstr ""
 "일련의 명령이 위에서 아래로 실행됩니다."
 
 #: src/02_basic_calculator/03_if_else.md:6
-#, fuzzy
 msgid "It's time to introduce some **branching**."
 msgstr "이제 몇 가지 **분기**를 소개할 시간입니다."
 
 #: src/02_basic_calculator/03_if_else.md:8
-#, fuzzy
 msgid "`if` clauses"
-msgstr "'if' 절"
+msgstr "`if` 문"
 
 #: src/02_basic_calculator/03_if_else.md:10
-#, fuzzy
 msgid ""
 "The `if` keyword is used to execute a block of code only if a condition is "
 "true."
-msgstr "'if' 키워드는 조건이 참인 경우에만 코드 블록을 실행하는 데 사용됩니다."
+msgstr "`if` 키워드는 조건이 참인 경우에만 코드 블록을 실행하는 데 사용됩니다."
 
 #: src/02_basic_calculator/03_if_else.md:12
-#, fuzzy
 msgid "Here's a simple example:"
-msgstr "간단한 예는 다음과 같습니다."
+msgstr "간단한 예는 다음과 같습니다:"
 
 #: src/02_basic_calculator/03_if_else.md:17
 #: src/02_basic_calculator/03_if_else.md:33
-#, fuzzy
 msgid "\"`number` is smaller than 5\""
-msgstr "\"'숫자'는 5보다 작습니다.\""
+msgstr "\"`number` is smaller than 5\""
 
 #: src/02_basic_calculator/03_if_else.md:21
-#, fuzzy
 msgid ""
 "This program will print `number is smaller than 5` because the condition "
 "`number < 5` is true."
 msgstr ""
-"이 프로그램은 `number < 5` 조건이 true이기 때문에 `number is less than 5`를 인"
-"쇄합니다."
+"이 프로그램은 `number < 5` 조건이 true이기 때문에 `number is less than 5`를 프"
+"린트합니다."
 
 #: src/02_basic_calculator/03_if_else.md:23
-#, fuzzy
 msgid "`else` clauses"
-msgstr "'else' 절"
+msgstr "`else` 문"
 
 #: src/02_basic_calculator/03_if_else.md:25
-#, fuzzy
 msgid ""
 "Like most programming languages, Rust supports an optional `else` branch to "
 "execute a block of code when the condition in an `if` expression is false.  \n"
@@ -1656,74 +1588,63 @@ msgid ""
 msgstr ""
 "대부분의 프로그래밍 언어와 마찬가지로 Rust는 `if` 표현식의 조건이 거짓일 때 코"
 "드 블록을 실행하기 위한 선택적인 `else` 분기를 지원합니다.  \n"
-"예를 들어:"
+"예시:"
 
 #: src/02_basic_calculator/03_if_else.md:35
-#, fuzzy
 msgid "\"`number` is greater than or equal to 5\""
-msgstr "\"'숫자'는 5보다 크거나 같습니다.\""
+msgstr "\"`number` is greater than or equal to 5\""
 
 #: src/02_basic_calculator/03_if_else.md:39
-#, fuzzy
 msgid "Booleans"
-msgstr "부울"
+msgstr "불리언"
 
 #: src/02_basic_calculator/03_if_else.md:41
-#, fuzzy
 msgid ""
 "The condition in an `if` expression must be of type `bool`, a **boolean**.  \n"
 "Booleans, just like integers, are a primitive type in Rust."
 msgstr ""
-"`if` 표현식의 조건은 **부울**인 `bool` 유형이어야 합니다.  \n"
-"정수와 마찬가지로 부울도 Rust의 기본 유형입니다."
+"`if` 표현식의 조건은 `bool` 타입의 **불리언**이어야 합니다.  \n"
+"정수와 마찬가지로 불리언도 Rust의 원시 타입입니다."
 
 #: src/02_basic_calculator/03_if_else.md:44
-#, fuzzy
 msgid "A boolean can have one of two values: `true` or `false`."
-msgstr "부울은 'true' 또는 'false'라는 두 가지 값 중 하나를 가질 수 있습니다."
+msgstr "불리언은 `true` 또는 `false`라는 두 가지 값 중 하나를 가질 수 있습니다."
 
 #: src/02_basic_calculator/03_if_else.md:46
-#, fuzzy
 msgid "No truthy or falsy values"
-msgstr "진실 또는 거짓 값 없음"
+msgstr "참 혹은 거짓이 아닌 경ㅇ"
 
 #: src/02_basic_calculator/03_if_else.md:48
-#, fuzzy
 msgid ""
 "If the condition in an `if` expression is not a boolean, you'll get a "
 "compilation error."
-msgstr "'if' 표현식의 조건이 부울이 아닌 경우 컴파일 오류가 발생합니다."
+msgstr "`if` 표현식의 조건이 불리언이 아닌 경우 컴파일 오류가 발생합니다."
 
 #: src/02_basic_calculator/03_if_else.md:50
-#, fuzzy
 msgid "For example, the following code will not compile:"
-msgstr "예를 들어 다음 코드는 컴파일되지 않습니다."
+msgstr "예를 들어 다음 코드는 컴파일되지 않습니다:"
 
 #: src/02_basic_calculator/03_if_else.md:55
-#, fuzzy
 msgid "\"`number` is not zero\""
-msgstr "\"'숫자'는 0이 아닙니다.\""
+msgstr "\"`number` is not zero\""
 
 #: src/02_basic_calculator/03_if_else.md:59
-#, fuzzy
 msgid "You'll get the following compilation error:"
-msgstr "다음과 같은 컴파일 오류가 발생합니다."
+msgstr "다음과 같은 컴파일 오류가 발생합니다:"
 
 #: src/02_basic_calculator/03_if_else.md:69
-#, fuzzy
 msgid ""
 "This follows from Rust's philosophy around type coercion: there's no "
 "automatic conversion from non-boolean types to booleans. Rust doesn't have "
 "the concept of **truthy** or **falsy** values, like JavaScript or Python.  \n"
 "You have to be explicit about the condition you want to check."
 msgstr ""
-"이는 유형 강제에 관한 Rust의 철학을 따른 것입니다. 즉, 불리언이 아닌 유형에서 "
+"이는 타입 강제에 관한 Rust의 철학을 따른 것입니다. 즉, 불리언이 아닌 타입에서 "
 "불리언으로의 자동 변환은 없습니다. Rust에는 JavaScript나 Python처럼 **참** 또"
 "는 **거짓** 값이라는 개념이 없습니다.  \n"
 "확인하려는 조건에 대해 명시적으로 설명해야 합니다."
 
 #: src/02_basic_calculator/03_if_else.md:75
-#, fuzzy
 msgid ""
 "It's quite common to use comparison operators to build conditions for `if` "
 "expressions.  \n"
@@ -1735,42 +1656,34 @@ msgstr ""
 "정수로 작업할 때 Rust에서 사용할 수 있는 비교 연산자는 다음과 같습니다:"
 
 #: src/02_basic_calculator/03_if_else.md:78
-#, fuzzy
 msgid "`==`: equal to"
 msgstr "`==`: 같음"
 
 #: src/02_basic_calculator/03_if_else.md:79
-#, fuzzy
 msgid "`!=`: not equal to"
 msgstr "`!=`: 같지 않음"
 
 #: src/02_basic_calculator/03_if_else.md:80
-#, fuzzy
 msgid "`<`: less than"
 msgstr "`<`: 미만"
 
 #: src/02_basic_calculator/03_if_else.md:81
-#, fuzzy
 msgid "`>`: greater than"
-msgstr "`>`: 보다 큼"
+msgstr "`>`: 초과"
 
 #: src/02_basic_calculator/03_if_else.md:82
-#, fuzzy
 msgid "`<=`: less than or equal to"
 msgstr "`<=`: 작거나 같음"
 
 #: src/02_basic_calculator/03_if_else.md:83
-#, fuzzy
 msgid "`>=`: greater than or equal to"
-msgstr "`>=`: 보다 크거나 같음"
+msgstr "`>=`: 크거나 같음"
 
 #: src/02_basic_calculator/03_if_else.md:85
-#, fuzzy
 msgid "`if/else` is an expression"
-msgstr "'if/else'는 표현식입니다."
+msgstr "`if/else`는 표현식입니다"
 
 #: src/02_basic_calculator/03_if_else.md:87
-#, fuzzy
 msgid ""
 "In Rust, `if` expressions are **expressions**, not statements: they return a "
 "value.  \n"
@@ -1779,20 +1692,17 @@ msgid ""
 msgstr ""
 "Rust에서 `if` 표현식은 명령문이 아닌 **표현식**입니다. 즉, 값을 반환합니"
 "다.  \n"
-"해당 값은 변수에 할당되거나 다른 표현식에 사용될 수 있습니다. 예를 들어:"
+"해당 값은 변수에 할당되거나 다른 표현식에 사용될 수 있습니다. 예시:"
 
 #: src/02_basic_calculator/03_if_else.md:93
-#, fuzzy
 msgid "\"smaller than 5\""
-msgstr "\"5보다 작다\""
+msgstr "\"smaller than 5\""
 
 #: src/02_basic_calculator/03_if_else.md:95
-#, fuzzy
 msgid "\"greater than or equal to 5\""
-msgstr "\"5보다 크거나 같다\""
+msgstr "\"greater than or equal to 5\""
 
 #: src/02_basic_calculator/03_if_else.md:99
-#, fuzzy
 msgid ""
 "In the example above, each branch of the `if` evaluates to a string literal, "
 "which is then assigned to the `message` variable.  \n"
@@ -1800,7 +1710,7 @@ msgid ""
 msgstr ""
 "위의 예에서 `if`의 각 분기는 문자열 리터럴로 평가된 다음 `message` 변수에 할당"
 "됩니다.  \n"
-"유일한 요구 사항은 두 `if` 분기가 동일한 유형을 반환한다는 것입니다."
+"유일한 요구 사항은 두 `if` 분기가 동일한 타입을 반환한다는 것입니다."
 
 #: src/02_basic_calculator/03_if_else.md:105
 msgid ""
@@ -1808,18 +1718,19 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/02_basic_calculator/03_if_else)"
 msgstr ""
+"이 섹션의 예제는 [`02_basic_calculator/03_if_else`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/02_basic_calculator/03_if_else)에 있습니다"
 
 #: src/02_basic_calculator/04_panics.md:3
-#, fuzzy
 msgid ""
 "Let's go back to the `speed` function you wrote for the [\"Variables\" "
 "section](02_variables.md). It probably looked something like this:"
 msgstr ""
-"\"변수\" 섹션에 작성한 `speed` 함수로 돌아가 보겠습니다. 아마도 다음과 같았을 "
-"것입니다."
+"[\"변수\" 섹션](02_variables.md)에 작성한 `speed` 함수로 돌아가 보겠습니다. 아"
+"마도 다음과 같았을 것입니다:"
 
 #: src/02_basic_calculator/04_panics.md:13
-#, fuzzy
 msgid ""
 "If you have a keen eye, you might have spotted one issue[^one]: what happens "
 "if `time_elapsed` is zero?"
@@ -1828,17 +1739,17 @@ msgstr ""
 "`time_elapsed`가 0이면 어떻게 될까요?"
 
 #: src/02_basic_calculator/04_panics.md:15
-#, fuzzy
 msgid ""
 "You can try it out [on the Rust playground](https://play.rust-lang.org/?"
 "version=stable&mode=debug&edition=2021&gist=36e5ddbe3b3f741dfa9f74c956622bac)!  \n"
 "The program will exit with the following error message:"
 msgstr ""
-"Rust 놀이터에서 시험해 볼 수 있습니다!  \n"
-"프로그램은 다음 오류 메시지와 함께 종료됩니다."
+"[Rust playground에서](https://play.rust-lang.org/?"
+"version=stable&mode=debug&edition=2021&gist=36e5ddbe3b3f741dfa9f74c956622bac) "
+"해 볼 수 있습니다!  \n"
+"프로그램은 다음 오류 메시지와 함께 종료됩니다:"
 
 #: src/02_basic_calculator/04_panics.md:24
-#, fuzzy
 msgid ""
 "This is known as a **panic**.  \n"
 "A panic is Rust's way to signal that something went so wrong that the program "
@@ -1847,74 +1758,65 @@ msgid ""
 msgstr ""
 "이를 **패닉**이라고 합니다.  \n"
 "패닉은 무언가 잘못되어 프로그램이 계속 실행될 수 없음을 알리는 Rust의 방법입니"
-"다. 이는 **복구할 수 없는 오류**[^잡기]입니다. 0으로 나누는 것은 이러한 오류"
-"로 분류됩니다."
+"다. 이는 **복구할 수 없는 오류**[^catching]입니다. 0으로 나누는 것은 이러한 오"
+"류로 분류됩니다."
 
 #: src/02_basic_calculator/04_panics.md:29
-#, fuzzy
 msgid "The panic! macro"
-msgstr "공황! 매크로"
+msgstr "panic! 매크로"
 
 #: src/02_basic_calculator/04_panics.md:31
-#, fuzzy
 msgid ""
 "You can intentionally trigger a panic by calling the `panic!` macro[^macro]:"
 msgstr ""
-"'panic!' 매크로[^macro]를 호출하여 의도적으로 패닉을 유발할 수 있습니다."
+"`panic!` 매크로[^macro]를 호출하여 의도적으로 패닉을 유발할 수 있습니다:"
 
 #: src/02_basic_calculator/04_panics.md:35
-#, fuzzy
 msgid "\"This is a panic!\""
-msgstr "\"이건 패닉이야!\""
+msgstr "\"This is a panic!\""
 
 #: src/02_basic_calculator/04_panics.md:36
-#, fuzzy
 msgid "// The line below will never be executed\n"
-msgstr "// 아래 줄은 절대 실행되지 않습니다."
+msgstr "// 아래 줄은 절대 실행되지 않습니다\n"
 
 #: src/02_basic_calculator/04_panics.md:41
-#, fuzzy
 msgid ""
 "There are other mechanisms to work with recoverable errors in Rust, which "
 "[we'll cover later](../05_ticket_v2/06_fallibility.md). For the time being "
 "we'll stick with panics as a brutal but simple stopgap solution."
 msgstr ""
-"Rust에는 복구 가능한 오류를 처리하는 다른 메커니즘이 있는데, 이에 대해서는 나"
-"중에 다루겠습니다. 당분간 우리는 잔인하지만 간단한 임시방편으로 패닉을 고수할 "
-"것입니다."
+"Rust에는 복구 가능한 오류를 처리하는 다른 메커니즘이 있는데, 이에 대해서는 [나"
+"중에 다루겠습니다](../05_ticket_v2/06_fallibility.md). 당분간 우리는 무식하지"
+"만 간단한 임시방편으로 패닉을 고수할 것입니다."
 
 #: src/02_basic_calculator/04_panics.md:46
 msgid ""
 "[The panic! macro documentation](https://doc.rust-lang.org/std/macro.panic."
 "html)"
-msgstr ""
+msgstr "[panic! 매크로 문서](https://doc.rust-lang.org/std/macro.panic.html)"
 
 #: src/02_basic_calculator/04_panics.md:48
-#, fuzzy
 msgid ""
 "There's another issue with `speed` that we'll address soon enough. Can you "
 "spot it?"
 msgstr ""
-"우리가 곧 다루게 될 '속도'와 관련된 또 다른 문제가 있습니다. 그것을 발견할 수 "
-"있나요?"
+"우리가 곧 다루게 될 `speed` 와 관련된 또 다른 문제가 있습니다. 발견하셨나요?"
 
 #: src/02_basic_calculator/04_panics.md:50
-#, fuzzy
 msgid ""
 "You can try to catch a panic, but it should be a last resort attempt reserved "
 "for very specific circumstances."
 msgstr ""
-"패닉 상황을 포착하려고 시도할 수 있지만 이는 매우 특정한 상황에 대비해 최후의 "
-"수단으로 시도해야 합니다."
+"패닉을 catch 시도할 수 있지만 이는 매우 특정한 상황에서의 최후의 수단으로 시도"
+"해야합니다."
 
 #: src/02_basic_calculator/04_panics.md:53
-#, fuzzy
 msgid ""
 "If it's followed by a `!`, it's a macro invocation. Think of macros as spicy "
 "functions for now. We'll cover them in more detail later in the course."
 msgstr ""
-"뒤에 `!`가 오면 매크로 호출입니다. 지금은 매크로를 매운 기능으로 생각하십시"
-"오. 이 과정의 뒷부분에서 이에 대해 더 자세히 다루겠습니다."
+"뒤에 `!`가 오면 매크로 호출입니다. 지금은 매크로를 양념 함수로 생각하세요. 이 "
+"코스의 뒷부분에서 이에 대해 더 자세히 다루겠습니다."
 
 #: src/02_basic_calculator/04_panics.md:58
 msgid ""
@@ -1922,40 +1824,36 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/02_basic_calculator/04_panics)"
 msgstr ""
+"이 섹션의 예제는 [`02_basic_calculator/04_panics`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/02_basic_calculator/04_panics)에 있습니다"
 
 #: src/02_basic_calculator/05_factorial.md:3
-#, fuzzy
 msgid "So far you've learned:"
-msgstr "지금까지 배운 내용은 다음과 같습니다."
+msgstr "지금까지 배운 내용:"
 
 #: src/02_basic_calculator/05_factorial.md:5
-#, fuzzy
 msgid "How to define a function"
 msgstr "함수를 정의하는 방법"
 
 #: src/02_basic_calculator/05_factorial.md:6
-#, fuzzy
 msgid "How to call a function"
 msgstr "함수를 호출하는 방법"
 
 #: src/02_basic_calculator/05_factorial.md:7
-#, fuzzy
 msgid "Which integer types are available in Rust"
-msgstr "Rust에서 사용할 수 있는 정수 유형"
+msgstr "Rust에서 사용할 수 있는 정수 타입"
 
 #: src/02_basic_calculator/05_factorial.md:8
-#, fuzzy
 msgid "Which arithmetic operators are available for integers"
 msgstr "정수에 사용할 수 있는 산술 연산자"
 
 #: src/02_basic_calculator/05_factorial.md:9
-#, fuzzy
 msgid ""
 "How to execute conditional logic via comparisons and `if`/`else` expressions"
-msgstr "비교 및 `if`/`else` 표현식을 통해 조건부 논리를 실행하는 방법"
+msgstr "비교 및 `if`/`else` 표현식을 통해 조건 로직 실행하는 방법"
 
 #: src/02_basic_calculator/05_factorial.md:11
-#, fuzzy
 msgid "It looks like you're ready to tackle factorials!"
 msgstr "팩토리얼을 다룰 준비가 된 것 같습니다!"
 
@@ -1965,14 +1863,15 @@ msgid ""
 "[`02_basic_calculator/05_factorial`](https://github.com/mainmatter/100-"
 "exercises-to-learn-rust/tree/main/exercises/02_basic_calculator/05_factorial)"
 msgstr ""
+"이 섹션의 예제는 [`02_basic_calculator/05_factorial`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/02_basic_calculator/05_factorial)에 있습니다"
 
 #: src/02_basic_calculator/06_while.md:1
-#, fuzzy
 msgid "Loops, part 1: `while`"
-msgstr "루프, 파트 1: `while`"
+msgstr "루프, part 1: `while`"
 
 #: src/02_basic_calculator/06_while.md:3
-#, fuzzy
 msgid ""
 "Your implementation of `factorial` has been forced to use recursion.  \n"
 "This may feel natural to you, especially if you're coming from a functional "
@@ -1985,49 +1884,41 @@ msgstr ""
 "도 있습니다."
 
 #: src/02_basic_calculator/06_while.md:7
-#, fuzzy
 msgid ""
 "Let's see how you can implement the same functionality using a **loop** "
 "instead."
 msgstr "대신 **루프**를 사용하여 동일한 기능을 구현하는 방법을 살펴보겠습니다."
 
 #: src/02_basic_calculator/06_while.md:9
-#, fuzzy
 msgid "The `while` loop"
-msgstr "'while' 루프"
+msgstr "`while` 루프"
 
 #: src/02_basic_calculator/06_while.md:11
-#, fuzzy
 msgid ""
 "A `while` loop is a way to execute a block of code as long as a **condition** "
 "is true.  \n"
 "Here's the general syntax:"
 msgstr ""
-"'while' 루프는 **조건**이 true인 동안 코드 블록을 실행하는 방법입니다.  \n"
-"일반적인 구문은 다음과 같습니다."
+"`while` 루프는 **조건**이 true인 동안 코드 블록을 실행하는 방법입니다.  \n"
+"일반적인 문법은 다음과 같습니다:"
 
 #: src/02_basic_calculator/06_while.md:16 src/02_basic_calculator/07_for.md:14
-#, fuzzy
 msgid "// code to execute\n"
-msgstr "//실행할 코드"
+msgstr "// 실행할 코드\n"
 
 #: src/02_basic_calculator/06_while.md:20
-#, fuzzy
 msgid "For example, we might want to sum the numbers from 1 to 5:"
-msgstr "예를 들어 1부터 5까지의 숫자를 합산하려고 할 수 있습니다."
+msgstr "예를 들어 1부터 5까지의 숫자를 더하려할 때:"
 
 #: src/02_basic_calculator/06_while.md:24
-#, fuzzy
 msgid "// \"while i is less than or equal to 5\"\n"
-msgstr "// \"i가 5보다 작거나 같은 동안\""
+msgstr "// \"i가 5보다 작거나 같은 동안\"\n"
 
 #: src/02_basic_calculator/06_while.md:27
-#, fuzzy
 msgid "// `+=` is a shorthand for `sum = sum + i`\n"
-msgstr "// `+=`는 `sum = sum + i`의 약어입니다."
+msgstr "// `+=`는 `sum = sum + i`의 약어입니다.\n"
 
 #: src/02_basic_calculator/06_while.md:33
-#, fuzzy
 msgid ""
 "This will keep adding 1 to `i` and `i` to `sum` until `i` is no longer less "
 "than or equal to 5."
@@ -2036,48 +1927,42 @@ msgstr ""
 "에 `i`를 추가합니다."
 
 #: src/02_basic_calculator/06_while.md:35
-#, fuzzy
 msgid "The `mut` keyword"
 msgstr "`mut` 키워드"
 
 #: src/02_basic_calculator/06_while.md:37
-#, fuzzy
 msgid "The example above won't compile as is. You'll get an error like:"
 msgstr ""
-"위의 예는 있는 그대로 컴파일되지 않습니다. 다음과 같은 오류가 발생합니다."
+"위의 예는 있는 그대로 컴파일되지 않습니다. 다음과 같은 오류가 발생합니다:"
 
 #: src/02_basic_calculator/06_while.md:65
-#, fuzzy
 msgid ""
 "This is because variables in Rust are **immutable** by default.  \n"
 "You can't change their value once it has been assigned."
 msgstr ""
-"이는 Rust의 변수가 기본적으로 **불변**이기 때문입니다.  \n"
-"일단 할당된 값은 변경할 수 없습니다."
+"이는 Rust의 변수가 기본적으로 **immutable**이기 때문입니다.  \n"
+"일단 할당된 값은 수저할 수 없습니다."
 
 #: src/02_basic_calculator/06_while.md:68
-#, fuzzy
 msgid ""
 "If you want to allow modifications, you have to declare the variable as "
 "**mutable** using the `mut` keyword:"
 msgstr ""
-"수정을 허용하려면 `mut` 키워드를 사용하여 변수를 **변경 가능**으로 선언해야 합"
-"니다."
+"수정을 허용하려면 `mut` 키워드를 사용하여 변수를 **mutable**으로 선언해야 합니"
+"다:"
 
 #: src/02_basic_calculator/06_while.md:71
-#, fuzzy
 msgid "// `sum` and `i` are mutable now!\n"
-msgstr "// `sum`과 `i`는 이제 변경 가능합니다!"
+msgstr "// `sum`과 `i`는 이제 수정 가능합니다!\n"
 
 #: src/02_basic_calculator/06_while.md:81
-#, fuzzy
 msgid "This will compile and run without errors."
 msgstr "그러면 오류 없이 컴파일되고 실행됩니다."
 
 #: src/02_basic_calculator/06_while.md:85
 msgid ""
 "[`while` loop documentation](https://doc.rust-lang.org/std/keyword.while.html)"
-msgstr ""
+msgstr "[`while` 루프 문서](https://doc.rust-lang.org/std/keyword.while.html)"
 
 #: src/02_basic_calculator/06_while.md:89
 msgid ""
@@ -2085,87 +1970,79 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/02_basic_calculator/06_while)"
 msgstr ""
+"이 섹션의 예제는 [`02_basic_calculator/06_while`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/02_basic_calculator/06_while)에 있습니다"
 
 #: src/02_basic_calculator/07_for.md:1
-#, fuzzy
 msgid "Loops, part 2: `for`"
-msgstr "루프, 파트 2: `for`"
+msgstr "루프, part 2: `for`"
 
 #: src/02_basic_calculator/07_for.md:3
-#, fuzzy
 msgid ""
 "Having to manually increment a counter variable is somewhat tedious. The "
 "pattern is also extremely common!  \n"
 "To make this easier, Rust provides a more concise way to iterate over a range "
 "of values: the `for` loop."
 msgstr ""
-"카운터 변수를 수동으로 증가시키는 것은 다소 지루합니다. 패턴도 굉장히 흔해"
-"요!  \n"
+"카운터 변수를 수동으로 증가시키는 것은 다소 지루한 일입니다. 굉장히 흔한 패턴"
+"이기도해요!  \n"
 "이를 더 쉽게 만들기 위해 Rust는 다양한 값을 반복하는 보다 간결한 방법인 `for` "
 "루프를 제공합니다."
 
 #: src/02_basic_calculator/07_for.md:6
-#, fuzzy
 msgid "The `for` loop"
-msgstr "'for' 루프"
+msgstr "`for` 루프"
 
 #: src/02_basic_calculator/07_for.md:8
-#, fuzzy
 msgid ""
 "A `for` loop is a way to execute a block of code for each element in an "
 "iterator[^iterator]."
 msgstr ""
-"'for' 루프는 반복자[^반복자]의 각 요소에 대해 코드 블록을 실행하는 방법입니다."
+"`for` 루프는 반복자[^iterator]의 각 요소에 대해 코드 블록을 실행하는 방법입니"
+"다."
 
 #: src/02_basic_calculator/07_for.md:10
-#, fuzzy
 msgid "Here's the general syntax:"
-msgstr "일반적인 구문은 다음과 같습니다."
+msgstr "일반적인 문법은 다음과 같습니다:"
 
 #: src/02_basic_calculator/07_for.md:18
-#, fuzzy
 msgid "Ranges"
 msgstr "범위"
 
 #: src/02_basic_calculator/07_for.md:20
-#, fuzzy
 msgid ""
 "Rust's standard library provides **range** type that can be used to iterate "
 "over a sequence of numbers[^weird-ranges]."
 msgstr ""
-"Rust의 표준 라이브러리는 일련의 숫자[^이상한 범위]를 반복하는 데 사용할 수 있"
-"는 **range** 유형을 제공합니다."
+"Rust의 표준 라이브러리는 일련의 숫자[^weird-ranges]를 반복하는 데 사용할 수 있"
+"는 **range** 타입을 제공합니다."
 
 #: src/02_basic_calculator/07_for.md:22
-#, fuzzy
 msgid "For example, if we want to sum the numbers from 1 to 5:"
-msgstr "예를 들어 1부터 5까지의 합을 구한다면 다음과 같습니다."
+msgstr "예를 들어 1부터 5까지의 합을 구한다면 다음과 같습니다:"
 
 #: src/02_basic_calculator/07_for.md:31
-#, fuzzy
 msgid ""
 "Every time the loop runs, `i` will be assigned the next value in the range "
 "before executing the block of code."
 msgstr ""
-"루프가 실행될 때마다 'i'에는 코드 블록을 실행하기 전에 범위의 다음 값이 할당됩"
+"루프가 실행될 때마다 `i`에는 코드 블록을 실행하기 전에 범위의 다음 값이 할당됩"
 "니다."
 
 #: src/02_basic_calculator/07_for.md:33
-#, fuzzy
 msgid "There are five kinds of ranges in Rust:"
 msgstr "Rust에는 5가지 종류의 범위가 있습니다:"
 
 #: src/02_basic_calculator/07_for.md:35
-#, fuzzy
 msgid ""
 "`1..5`: A (half-open) range. It includes all numbers from 1 to 4. It doesn't "
 "include the last value, 5."
 msgstr ""
-"`1..5`: A(반개방) 범위. 여기에는 1부터 4까지의 모든 숫자가 포함됩니다. 마지막 "
-"값인 5는 포함되지 않습니다."
+"`1..5`: A (half-open) 범위. 여기에는 1부터 4까지의 모든 숫자가 포함됩니다. 마"
+"지막 값인 5는 포함되지 않습니다."
 
 #: src/02_basic_calculator/07_for.md:36
-#, fuzzy
 msgid ""
 "`1..=5`: An inclusive range. It includes all numbers from 1 to 5. It includes "
 "the last value, 5."
@@ -2174,7 +2051,6 @@ msgstr ""
 "막 값인 5도 포함됩니다."
 
 #: src/02_basic_calculator/07_for.md:37
-#, fuzzy
 msgid ""
 "`1..`: An open-ended range. It includes all numbers from 1 to infinity (well, "
 "until the maximum value of the integer type)."
@@ -2183,7 +2059,6 @@ msgstr ""
 "포함합니다."
 
 #: src/02_basic_calculator/07_for.md:38
-#, fuzzy
 msgid ""
 "`..5`: A range that starts at the minimum value for the integer type and ends "
 "at 4. It doesn't include the last value, 5."
@@ -2192,7 +2067,6 @@ msgstr ""
 "함되지 않습니다."
 
 #: src/02_basic_calculator/07_for.md:39
-#, fuzzy
 msgid ""
 "`..=5`: A range that starts at the minimum value for the integer type and "
 "ends at 5. It includes the last value, 5."
@@ -2201,39 +2075,35 @@ msgstr ""
 "다."
 
 #: src/02_basic_calculator/07_for.md:41
-#, fuzzy
 msgid ""
 "You can use a `for` loop with the first three kinds of ranges, where the "
 "starting point is explicitly specified. The last two range types are used in "
 "other contexts, that we'll cover later."
 msgstr ""
 "시작점이 명시적으로 지정된 처음 세 종류의 범위에 `for` 루프를 사용할 수 있습니"
-"다. 마지막 두 가지 범위 유형은 나중에 다루게 될 다른 상황에서 사용됩니다."
+"다. 마지막 두 가지 범위 타입은 나중에 다루게 될 다른 상황에서 사용됩니다."
 
 #: src/02_basic_calculator/07_for.md:44
-#, fuzzy
 msgid ""
 "The extreme values of a range don't have to be integer literals—they can be "
 "variables or expressions too!"
 msgstr ""
-"범위의 극단값은 정수 리터럴일 필요는 없습니다. 변수나 표현식일 수도 있습니다!"
+"범위의 극단값은 정수 리터럴일 필요는 없습니다—변수나 표현식일 수도 있습니다!"
 
 #: src/02_basic_calculator/07_for.md:46
 #: src/02_basic_calculator/10_as_casting.md:12
 #: src/03_ticket_v1/06_ownership.md:188 src/04_traits/02_orphan_rule.md:51
 #: src/04_traits/09_from.md:55 src/05_ticket_v2/14_source.md:112
 #: src/07_threads/01_threads.md:47
-#, fuzzy
 msgid "For example:"
-msgstr "예를 들어:"
+msgstr "예시:"
 
 #: src/02_basic_calculator/07_for.md:59
 msgid ""
 "[`for` loop documentation](https://doc.rust-lang.org/std/keyword.for.html)"
-msgstr ""
+msgstr "[`for` 루프 문서](https://doc.rust-lang.org/std/keyword.for.html)"
 
 #: src/02_basic_calculator/07_for.md:61
-#, fuzzy
 msgid ""
 "Later in the course we'll give a precise definition of what counts as an "
 "\"iterator\". For now, think of it as a sequence of values that you can loop "
@@ -2242,8 +2112,8 @@ msgid ""
 "case in day-to-day Rust programming."
 msgstr ""
 "이 과정의 후반부에서 \"반복자\"로 간주되는 것이 무엇인지에 대한 정확한 정의를 "
-"제공할 것입니다. 지금은 이를 반복할 수 있는 일련의 값으로 생각하세요. [^이상"
-"한 범위]: 다른 유형(예: 문자 및 IP 주소)에도 범위를 사용할 수 있지만 일상적인 "
+"제공할 것입니다. 지금은 이를 반복할 수 있는 일련의 값으로 생각하세요. [^weird-"
+"ranges]: 다른 타입(예: 문자 및 IP 주소)에도 범위를 사용할 수 있지만 일상적인 "
 "Rust 프로그래밍에서는 확실히 정수가 가장 일반적인 경우입니다."
 
 #: src/02_basic_calculator/07_for.md:68
@@ -2252,34 +2122,33 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/02_basic_calculator/07_for)"
 msgstr ""
+"이 섹션의 예제는 [`02_basic_calculator/07_for`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/02_basic_calculator/07_for)에 있습니다"
 
 #: src/02_basic_calculator/08_overflow.md:1
-#, fuzzy
 msgid "Overflow"
-msgstr "과다"
+msgstr "오버플로우"
 
 #: src/02_basic_calculator/08_overflow.md:3
-#, fuzzy
 msgid ""
 "The factorial of a number grows quite fast.  \n"
 "For example, the factorial of 20 is 2,432,902,008,176,640,000. That's already "
 "bigger than the maximum value for a 32-bit integer, 2,147,483,647."
 msgstr ""
-"숫자의 계승은 매우 빠르게 증가합니다.  \n"
-"예를 들어, 20의 계승은 2,432,902,008,176,640,000입니다. 이는 이미 32비트 정수"
-"의 최대값인 2,147,483,647보다 큽니다."
+"팩토리얼은 매우 빠르게 증가합니다.  \n"
+"예를 들어, 팩토리얼 20은 2,432,902,008,176,640,000입니다. 이는 이미 32비트 정"
+"수의 최대값인 2,147,483,647보다 큽니다."
 
 #: src/02_basic_calculator/08_overflow.md:7
-#, fuzzy
 msgid ""
 "When the result of an arithmetic operation is bigger than the maximum value "
 "for a given integer type, we are talking about **an integer overflow**."
 msgstr ""
-"산술 연산의 결과가 주어진 정수 유형의 최대값보다 큰 경우 **정수 오버플로**에 "
-"대해 이야기합니다."
+"산술 연산의 결과가 주어진 정수 유형의 최대값보다 큰 경우 **정수 오버플로우**"
+"에 대해 이야기합니다."
 
 #: src/02_basic_calculator/08_overflow.md:10
-#, fuzzy
 msgid ""
 "Integer overflows are an issue because they violate the contract for "
 "arithmetic operations.  \n"
@@ -2287,12 +2156,11 @@ msgid ""
 "should be another integer of the same type. But the _mathematically correct "
 "result_ doesn't fit into that integer type!"
 msgstr ""
-"정수 오버플로는 산술 연산 계약을 위반하기 때문에 문제가 됩니다.  \n"
-"주어진 유형의 두 정수 사이의 산술 연산 결과는 동일한 유형의 또 다른 정수여야 "
-"합니다. 하지만 _수학적으로 올바른 결과_는 해당 정수 유형에 맞지 않습니다!"
+"정수 오버플로우는 산술 연산 정의를 위반하기 때문에 문제가 됩니다.  \n"
+"주어진 타입의 두 정수 사이의 산술 연산 결과는 동일한 타입의 또 다른 정수여야 "
+"합니다. 하지만 _수학적으로 올바른 결과_는 해당 정수 타입에 맞지 않습니다!"
 
 #: src/02_basic_calculator/08_overflow.md:14
-#, fuzzy
 msgid ""
 "If the result is smaller than the minimum value for a given integer type, we "
 "refer to the event as **an integer underflow**.  \n"
@@ -2300,98 +2168,89 @@ msgid ""
 "section, but keep in mind that everything we say applies to integer "
 "underflows as well."
 msgstr ""
-"결과가 특정 정수 유형의 최소값보다 작은 경우 해당 이벤트를 **정수 언더플로**라"
+"결과가 특정 정수 유형의 최소값보다 작은 경우 해당 상황을 **정수 언더플로우**라"
 "고 합니다.  \n"
-"간결하게 하기 위해 이 섹션의 나머지 부분에서는 정수 오버플로에 대해서만 설명하"
-"겠습니다. 하지만 우리가 말하는 모든 내용은 정수 언더플로에도 적용된다는 점을 "
-"명심하세요."
+"간결하게 하기 위해 이 섹션의 나머지 부분에서는 정수 오버플로우에 대해서만 설명"
+"하겠습니다. 하지만 우리가 말하는 모든 내용은 정수 언더플로우에도 적용된다는 점"
+"을 명심하세요."
 
 #: src/02_basic_calculator/08_overflow.md:19
-#, fuzzy
 msgid ""
 "The `speed` function you wrote in the [\"Variables\" section](02_variables."
 "md) underflowed for some input combinations. E.g. if `end` is smaller than "
 "`start`, `end - start` will underflow the `u32` type since the result is "
 "supposed to be negative but `u32` can't represent negative numbers."
 msgstr ""
-"\"변수\" 섹션에 작성한 '속도' 기능이 일부 입력 조합에 대해 언더플로되었습니"
-"다. 예: `end`가 `start`보다 작으면 `end - start`는 결과가 음수로 가정되지만 "
-"`u32`는 음수를 나타낼 수 없으므로 `u32` 유형으로 언더플로됩니다."
+"[\"변수\" 섹션](02_variables.md)에 작성한 `speed`함수는 일부 입력 조합에 대해 "
+"언더플로우됩니다. 예: `end`가 `start`보다 작으면 `end - start`는 결과가 음수"
+"로 가정되지만 `u32`는 음수를 나타낼 수 없으므로 `u32` 타입으로 언더플로우됩니"
+"다."
 
 #: src/02_basic_calculator/08_overflow.md:24
-#, fuzzy
 msgid "No automatic promotion"
 msgstr "자동 승격 없음"
 
 #: src/02_basic_calculator/08_overflow.md:26
-#, fuzzy
 msgid ""
 "One possible approach would be automatically promote the result to a bigger "
 "integer type. E.g. if you're summing two `u8` integers and the result is 256 "
 "(`u8::MAX + 1`), Rust could choose to interpret the result as `u16`, the next "
 "integer type that's big enough to hold 256."
 msgstr ""
-"한 가지 가능한 접근 방식은 결과를 더 큰 정수 유형으로 자동 승격시키는 것입니"
+"한 가지 가능한 접근 방식은 결과를 더 큰 정수 타입으로 자동 승격시키는 것입니"
 "다. 예: 두 개의 `u8` 정수를 합산하고 그 결과가 256(`u8::MAX + 1`)이라면 Rust"
-"는 그 결과를 256을 수용할 만큼 큰 다음 정수 유형인 `u16`으로 해석하도록 선택"
+"는 그 결과를 256을 수용할 만큼 큰 다음 정수 타입인 `u16`으로 해석하도록 선택"
 "할 수 있습니다."
 
 #: src/02_basic_calculator/08_overflow.md:30
-#, fuzzy
 msgid ""
 "But, as we've discussed before, Rust is quite picky about type conversions. "
 "Automatic integer promotion is not Rust's solution to the integer overflow "
 "problem."
 msgstr ""
-"그러나 이전에 논의한 것처럼 Rust는 유형 변환에 대해 매우 까다롭습니다. 자동 정"
-"수 승격은 정수 오버플로 문제에 대한 Rust의 솔루션이 아닙니다."
+"그러나 이전에 논의한 것처럼 Rust는 타입 변환에 대해 매우 까다롭습니다. 자동 정"
+"수 승격은 정수 오버플로우 문제에 대한 Rust의 솔루션이 아닙니다."
 
 #: src/02_basic_calculator/08_overflow.md:33
-#, fuzzy
 msgid "Alternatives"
 msgstr "대안"
 
 #: src/02_basic_calculator/08_overflow.md:35
-#, fuzzy
 msgid ""
 "Since we ruled out automatic promotion, what can we do when an integer "
 "overflow occurs?  \n"
 "It boils down to two different approaches:"
 msgstr ""
-"자동 승격을 배제했으므로 정수 오버플로가 발생하면 어떻게 해야 할까요?  \n"
-"이는 두 가지 접근 방식으로 요약됩니다."
+"자동 승격을 배제했으므로 정수 오버플로우가 발생하면 어떻게 해야 할까요?  \n"
+"이는 두 가지 접근 방식으로 요약됩니다:"
 
 #: src/02_basic_calculator/08_overflow.md:38
 #: src/02_basic_calculator/08_overflow.md:41
-#, fuzzy
 msgid "Reject the operation"
 msgstr "작업 거부"
 
 #: src/02_basic_calculator/08_overflow.md:39
-#, fuzzy
 msgid ""
 "Come up with a \"sensible\" result that fits into the expected integer type"
-msgstr "예상되는 정수 유형에 맞는 \"합리적인\" 결과를 생각해 보세요."
+msgstr "예상되는 정수 타입에 맞는 \"합리적인\" 결과를 생각해 보세요."
 
 #: src/02_basic_calculator/08_overflow.md:43
-#, fuzzy
 msgid ""
 "This is the most conservative approach: we stop the program when an integer "
 "overflow occurs.  \n"
 "That's done via a panic, the mechanism we've already seen in the [\"Panics\" "
 "section](04_panics.md)."
 msgstr ""
-"이것은 가장 보수적인 접근 방식입니다. 정수 오버플로가 발생하면 프로그램을 중지"
-"합니다.  \n"
-"이는 \"패닉\" 섹션에서 이미 본 메커니즘인 패닉을 통해 수행됩니다."
+"이것은 가장 보수적인 접근 방식입니다. 정수 오버플로우가 발생하면 프로그램을 중"
+"지합니다.  \n"
+"이는 [\"패닉\" 섹션](04_panics.md)에서 이미 본 메커니즘인 패닉을 통해 수행됩니"
+"다."
 
 #: src/02_basic_calculator/08_overflow.md:46
-#, fuzzy
 msgid "Come up with a \"sensible\" result"
 msgstr "\"합리적인\" 결과를 내세요"
 
 #: src/02_basic_calculator/08_overflow.md:48
-#, fuzzy
 msgid ""
 "When the result of an arithmetic operation is bigger than the maximum value "
 "for a given integer type, you can choose to **wrap around**.  \n"
@@ -2399,71 +2258,65 @@ msgid ""
 "wrapping around means that when you reach the maximum value, you start again "
 "from the minimum value."
 msgstr ""
-"산술 연산의 결과가 특정 정수 유형의 최대값보다 큰 경우 **줄바꿈**을 선택할 수 "
-"있습니다.  \n"
-"주어진 정수형에 가능한 모든 값을 원으로 생각한다면, 감싸는 것은 최대값에 도달"
-"하면 최소값부터 다시 시작한다는 뜻입니다."
+"산술 연산의 결과가 특정 정수 타입의 최대값보다 큰 경우 **wrap around**를 선택"
+"할 수 있습니다.  \n"
+"주어진 정수형에 가능한 모든 값을 원으로 생각한다면, wrap around는 최대값에 도"
+"달하면 최소값부터 다시 시작한다는 뜻입니다."
 
 #: src/02_basic_calculator/08_overflow.md:53
-#, fuzzy
 msgid ""
 "For example, if you do a **wrapping addition** between 1 and 255 (=`u8::"
 "MAX`), the result is 0 (=`u8::MIN`). If you're working with signed integers, "
 "the same principle applies. E.g. adding 1 to 127 (=`i8::MAX`) with wrapping "
 "will give you -128 (=`i8::MIN`)."
 msgstr ""
-"예를 들어, 1과 255(=`u8::MAX`) 사이에서 **래핑 추가**를 수행하면 결과는 "
+"예를 들어, 1과 255(=`u8::MAX`)에 **wrapping addition**를 수행하면 결과는 "
 "0(=`u8::MIN`)입니다. 부호 있는 정수로 작업하는 경우에도 동일한 원칙이 적용됩니"
-"다. 예: 127(=`i8::MAX`)에 줄바꿈을 추가하면 -128(=`i8::MIN`)이 됩니다."
+"다. 예: 127(=`i8::MAX`)에 wrapping와 함께 1을 더하면 -128(=`i8::MIN`)이 됩니"
+"다."
 
 #: src/02_basic_calculator/08_overflow.md:57
-#, fuzzy
 msgid "`overflow-checks`"
-msgstr "`오버플로 검사`"
+msgstr "`오버플로우 검사`"
 
 #: src/02_basic_calculator/08_overflow.md:59
-#, fuzzy
 msgid ""
 "Rust lets you, the developer, choose which approach to use when an integer "
 "overflow occurs. The behaviour is controlled by the `overflow-checks` profile "
 "setting."
 msgstr ""
-"Rust를 사용하면 개발자가 정수 오버플로가 발생할 때 사용할 접근 방식을 선택할 "
-"수 있습니다. 동작은 'overflow-checks' 프로필 설정에 의해 제어됩니다."
+"Rust를 사용하면 개발자가 정수 오버플로우가 발생할 때 사용할 접근 방식을 선택"
+"할 수 있습니다. 동작은 `overflow-checks` 프로필 설정에 의해 제어됩니다."
 
 #: src/02_basic_calculator/08_overflow.md:62
-#, fuzzy
 msgid ""
 "If `overflow-checks` is set to `true`, Rust will **panic at runtime** when an "
 "integer operation overflows. If `overflow-checks` is set to `false`, Rust "
 "will **wrap around** when an integer operation overflows."
 msgstr ""
-"`overflow-checks`가 `true`로 설정되면 Rust는 정수 연산이 오버플로될 때 **런타"
-"임에 패닉**을 일으킬 것입니다. `overflow-checks`가 `false`로 설정되면 Rust는 "
-"정수 연산이 오버플로될 때 **줄바꿈**합니다."
+"`overflow-checks`가 `true`로 설정되면 Rust는 정수 연산이 오버플로우될 때 **런"
+"타임에 패닉**을 일으킬 것입니다. `overflow-checks`가 `false`로 설정되면 Rust"
+"는 정수 연산이 오버플로될 때 **wrap around**합니다."
 
 #: src/02_basic_calculator/08_overflow.md:65
-#, fuzzy
 msgid "You may be wondering—what is a profile setting? Let's get into that!"
 msgstr "프로필 설정이 무엇인지 궁금하실 겁니다. 그것에 대해 살펴 보겠습니다!"
 
 #: src/02_basic_calculator/08_overflow.md:67
-#, fuzzy
 msgid "Profiles"
 msgstr "프로필"
 
 #: src/02_basic_calculator/08_overflow.md:69
-#, fuzzy
 msgid ""
 "A [**profile**](https://doc.rust-lang.org/cargo/reference/profiles.html) is a "
 "set of configuration options that can be used to customize the way Rust code "
 "is compiled."
 msgstr ""
-"**프로필**은 Rust 코드가 컴파일되는 방식을 사용자 정의하는 데 사용할 수 있는 "
-"구성 옵션 세트입니다."
+"[**프로필**](https://doc.rust-lang.org/cargo/reference/profiles.html)은 Rust "
+"코드가 컴파일되는 방식을 사용자 정의하는 데 사용할 수 있는 구성 옵션 세트입니"
+"다."
 
 #: src/02_basic_calculator/08_overflow.md:72
-#, fuzzy
 msgid ""
 "Cargo provides two built-in profiles: `dev` and `release`.  \n"
 "The `dev` profile is used every time you run `cargo build`, `cargo run` or "
@@ -2474,16 +2327,15 @@ msgid ""
 "incurs longer compilation times. You need to explicitly request via the `--"
 "release` flag—e.g. `cargo build --release` or `cargo run --release`."
 msgstr ""
-"Cargo는 'dev'와 'release'라는 두 가지 내장 프로필을 제공합니다.  \n"
+"Cargo는 `dev`와 `release`라는 두 가지 내장 프로필을 제공합니다.  \n"
 "`dev` 프로필은 `cargo build`, `cargo run` 또는 `cargo test`를 실행할 때마다 사"
 "용됩니다. 로컬 개발을 목표로 하므로 더 빠른 컴파일 시간과 더 나은 디버깅 환경"
 "을 위해 런타임 성능을 희생합니다.  \n"
-"대신 '릴리스' 프로필은 런타임 성능에 최적화되어 있지만 컴파일 시간이 더 길어집"
-"니다. `--release` 플래그를 통해 명시적으로 요청해야 합니다. `cargo build --"
+"대신 `release` 프로필은 런타임 성능에 최적화되어 있지만 컴파일 시간이 더 길어"
+"집니다. `--release` 플래그를 통해 명시적으로 요청해야 합니다. `cargo build --"
 "release` 또는 `cargo run --release`."
 
 #: src/02_basic_calculator/08_overflow.md:79
-#, fuzzy
 msgid ""
 "\"Have you built your project in release mode?\" is almost a meme in the Rust "
 "community.  \n"
@@ -2491,41 +2343,35 @@ msgid ""
 "performance on social media (e.g. Reddit, Twitter, etc.) before realizing "
 "they haven't built their project in release mode."
 msgstr ""
-"\"릴리스 모드에서 프로젝트를 빌드하셨나요?\" Rust 커뮤니티에서는 거의 밈이 되"
-"었습니다.  \n"
+"\"릴리스 모드에서 프로젝트를 빌드하셨나요?\"라는 말은 Rust 커뮤니티에서 거의 "
+"밈이 되었습니다.  \n"
 "이는 Rust에 익숙하지 않고 릴리스 모드에서 자신의 프로젝트를 빌드하지 않았다는 "
 "사실을 깨닫기도 전에 소셜 미디어(예: Reddit, Twitter 등)에서 Rust의 성능에 대"
-"해 불평하는 개발자를 말합니다."
+"해 불평하는 개발자에게 사용하는 밈입니다."
 
 #: src/02_basic_calculator/08_overflow.md:84
-#, fuzzy
 msgid "You can also define custom profiles or customize the built-in ones."
 msgstr ""
 "사용자 정의 프로필을 정의하거나 기본 제공 프로필을 사용자 정의할 수도 있습니"
 "다."
 
 #: src/02_basic_calculator/08_overflow.md:86
-#, fuzzy
 msgid "`overflow-check`"
-msgstr "'오버플로 확인'"
+msgstr "`overflow-check`"
 
 #: src/02_basic_calculator/08_overflow.md:88
-#, fuzzy
 msgid "By default, `overflow-checks` is set to:"
-msgstr "기본적으로 'overflow-checks'는 다음과 같이 설정됩니다."
+msgstr "기본적으로 `overflow-checks`는 다음과 같이 설정됩니다:"
 
 #: src/02_basic_calculator/08_overflow.md:90
-#, fuzzy
 msgid "`true` for the `dev` profile"
 msgstr "`dev` 프로필의 경우 `true`"
 
 #: src/02_basic_calculator/08_overflow.md:91
-#, fuzzy
 msgid "`false` for the `release` profile"
-msgstr "'릴리스' 프로필의 경우 'false'"
+msgstr "`release` 프로필의 경우 `false`"
 
 #: src/02_basic_calculator/08_overflow.md:93
-#, fuzzy
 msgid ""
 "This is in line with the goals of the two profiles.  \n"
 "`dev` is aimed at local development, so it panics in order to highlight "
@@ -2534,10 +2380,10 @@ msgid ""
 "would slow down the program, so it prefers to wrap around."
 msgstr ""
 "이는 두 프로필의 목표와 일치합니다.  \n"
-"'dev'는 지역 발전을 목표로 하기 때문에 잠재적인 문제를 조기에 부각시키기 위해 "
-"당황합니다.  \n"
-"대신 `release`는 런타임 성능에 맞게 조정됩니다. 오버플로를 확인하면 프로그램 "
-"속도가 느려지므로 랩어라운드를 선호합니다."
+"`dev`는 로컬 개발을 목표로 하기 때문에 잠재적인 문제를 조기에 부각시키기 위해 "
+"패닉합니다.  \n"
+"반면에 `release`는 런타임 성능에 맞게 조정됩니다. 오버플로우를 확인하면 프로그"
+"램 속도가 느려지므로 wrap around를 선호합니다."
 
 #: src/02_basic_calculator/08_overflow.md:98
 msgid ""
@@ -2549,16 +2395,21 @@ msgid ""
 "performance-critical application, you can run benchmarks to decide if it's "
 "something you can afford."
 msgstr ""
+"동시에 두 프로파일에 대해 다른 동작을 하면 미묘한 버그가 발생할 수 있습니다.\n"
+"두 프로파일 모두에서 `overflow-check`를 사용할 수 있도록 하는 것이 좋습니다. "
+"조용히 잘못된 결과를 내는 것보다 크래시나는 것이 좋습니다. 런타임 성능 문제는 "
+"대부분의 경우 무시할 수 있습니다. 성능이 중요한 애플리케이션을 사용하는 경우 "
+"벤치마크를 실행하여 감당 가능한 수준인지 결정할 수 있습니다."
 
 #: src/02_basic_calculator/08_overflow.md:105
-#, fuzzy
 msgid ""
 "Check out [\"Myths and legends about integer overflow in Rust\"](https://"
 "huonw.github.io/blog/2016/04/myths-and-legends-about-integer-overflow-in-"
 "rust/) for an in-depth discussion about integer overflow in Rust."
 msgstr ""
-"Rust의 정수 오버플로에 대한 심층적인 논의는 \"Rust의 정수 오버플로에 대한 신화"
-"와 전설\"을 확인하세요."
+"Rust의 정수 오버플로에 대한 심층적인 논의는 [\"Myths and legends about "
+"integer overflow in Rust\"](https://huonw.github.io/blog/2016/04/myths-and-"
+"legends-about-integer-overflow-in-rust/)을 확인하세요."
 
 #: src/02_basic_calculator/08_overflow.md:110
 msgid ""
@@ -2566,14 +2417,15 @@ msgid ""
 "[`02_basic_calculator/08_overflow`](https://github.com/mainmatter/100-"
 "exercises-to-learn-rust/tree/main/exercises/02_basic_calculator/08_overflow)"
 msgstr ""
+"이 섹션의 예제는 [`02_basic_calculator/08_overflow`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/02_basic_calculator/08_overflow)에 있습니다"
 
 #: src/02_basic_calculator/09_saturating.md:1
-#, fuzzy
 msgid "Case-by-case behavior"
 msgstr "사례별 동작"
 
 #: src/02_basic_calculator/09_saturating.md:3
-#, fuzzy
 msgid ""
 "`overflow-checks` is a blunt tool: it's a global setting that affects the "
 "whole program.  \n"
@@ -2583,16 +2435,14 @@ msgid ""
 msgstr ""
 "`overflow-checks`는 무뚝뚝한 도구입니다. 전체 프로그램에 영향을 미치는 전역 설"
 "정입니다.  \n"
-"상황에 따라 정수 오버플로를 다르게 처리하려는 경우가 종종 있습니다. 때로는 래"
-"핑이 올바른 선택이고, 다른 경우에는 당황하는 것이 더 좋습니다."
+"상황에 따라 정수 오버플로우를 다르게 처리하려는 경우가 종종 있습니다. 때로는 "
+"래핑이 올바른 선택이고, 다른 경우에는 패닉이 더 좋습니다."
 
 #: src/02_basic_calculator/09_saturating.md:7
-#, fuzzy
 msgid "`wrapping_` methods"
 msgstr "`wrapping_` 메소드"
 
 #: src/02_basic_calculator/09_saturating.md:9
-#, fuzzy
 msgid ""
 "You can opt into wrapping arithmetic on a per-operation basis by using the "
 "`wrapping_` methods[^method].  \n"
@@ -2600,16 +2450,13 @@ msgid ""
 msgstr ""
 "`wrapping_` 메소드[^method]를 사용하여 연산별로 래핑 산술을 선택할 수 있습니"
 "다.  \n"
-"예를 들어 `wrapping_add`를 사용하여 래핑으로 두 개의 정수를 추가할 수 있습니"
-"다."
+"예를 들어 `wrapping_add`를 사용하여 래핑으로 두 개의 정수를 더할 수 있습니다:"
 
 #: src/02_basic_calculator/09_saturating.md:19
-#, fuzzy
 msgid "`saturating_` methods"
 msgstr "`saturating_` 메소드"
 
 #: src/02_basic_calculator/09_saturating.md:21
-#, fuzzy
 msgid ""
 "Alternatively, you can opt into **saturating arithmetic** by using the "
 "`saturating_` methods.  \n"
@@ -2617,39 +2464,35 @@ msgid ""
 "minimum value for the integer type. For example:"
 msgstr ""
 "또는 `saturating_` 메서드를 사용하여 **포화 산술**을 선택할 수도 있습니다.  \n"
-"둘러싸는 대신 포화 산술은 정수 유형의 최대값 또는 최소값을 반환합니다. 예를 들"
-"어:"
+"래핑 대신 포화 산술은 정수 타입의 최대값 또는 최소값을 반환합니다. 예시:"
 
 #: src/02_basic_calculator/09_saturating.md:32
-#, fuzzy
 msgid ""
 "Since `255 + 1` is `256`, which is bigger than `u8::MAX`, the result is `u8::"
 "MAX` (255).  \n"
 "The opposite happens for underflows: `0 - 1` is `-1`, which is smaller than "
 "`u8::MIN`, so the result is `u8::MIN` (0)."
 msgstr ""
-"'255 + 1'은 '256'이며 이는 'u8::MAX'보다 크므로 결과는 'u8::MAX'(255)입니"
+"`255 + 1`은 `256`이며 이는 `u8::MAX`보다 크므로 결과는 `u8::MAX` (255)입니"
 "다.  \n"
 "언더플로우의 경우 반대가 발생합니다. `0 - 1`은 `-1`이며 이는 `u8::MIN`보다 작"
-"으므로 결과는 `u8::MIN`(0)입니다."
+"으므로 결과는 `u8::MIN` (0)입니다."
 
 #: src/02_basic_calculator/09_saturating.md:35
-#, fuzzy
 msgid ""
 "You can't get saturating arithmetic via the `overflow-checks` profile setting—"
 "you have to explicitly opt into it when performing the arithmetic operation."
 msgstr ""
-"`overflow-checks` 프로필 설정을 통해 포화 산술을 얻을 수 없습니다. 산술 연산"
-"을 수행할 때 이를 명시적으로 선택해야 합니다."
+"`overflow-checks` 프로필 설정을 통해 포화 산술을 할 수 없습니다. 산술 연산을 "
+"수행할 때 이를 명시적으로 선택해야 합니다."
 
 #: src/02_basic_calculator/09_saturating.md:38
-#, fuzzy
 msgid ""
 "You can think of methods as functions that are \"attached\" to a specific "
 "type. We'll cover methods (and how to define them) in the next chapter."
 msgstr ""
 "메소드를 특정 유형에 \"연결된\" 함수로 생각할 수 있습니다. 다음 장에서는 메서"
-"드(및 이를 정의하는 방법)를 다룰 것입니다."
+"드(그리고 이를 정의하는 방법)를 다룰 것입니다."
 
 #: src/02_basic_calculator/09_saturating.md:43
 msgid ""
@@ -2657,54 +2500,51 @@ msgid ""
 "[`02_basic_calculator/09_saturating`](https://github.com/mainmatter/100-"
 "exercises-to-learn-rust/tree/main/exercises/02_basic_calculator/09_saturating)"
 msgstr ""
+"이 섹션의 예제는 [`02_basic_calculator/09_saturating`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/02_basic_calculator/09_saturating)에 있습니다"
 
 #: src/02_basic_calculator/10_as_casting.md:1
-#, fuzzy
 msgid "Conversions, pt. 1"
-msgstr "전환, pt. 1"
+msgstr "변환, pt. 1"
 
 #: src/02_basic_calculator/10_as_casting.md:3
-#, fuzzy
 msgid ""
 "We've repeated over and over again that Rust won't perform implicit type "
 "conversions for integers.  \n"
 "How do you perform _explicit_ conversions then?"
 msgstr ""
-"우리는 Rust가 정수에 대해 암묵적인 유형 변환을 수행하지 않는다는 점을 계속해"
+"우리는 Rust가 정수에 대해 암묵적인 타입 변환을 수행하지 않는다는 점을 계속해"
 "서 반복했습니다.  \n"
-"그렇다면 _명시적_ 변환을 어떻게 수행합니까?"
+"그렇다면 _명시적_ 변환을 어떻게 수행할까요?"
 
 #: src/02_basic_calculator/10_as_casting.md:7
-#, fuzzy
 msgid "`as`"
-msgstr "'as'"
+msgstr "`as`"
 
 #: src/02_basic_calculator/10_as_casting.md:9
-#, fuzzy
 msgid ""
 "You can use the `as` operator to convert between integer types.  \n"
 "`as` conversions are **infallible**."
 msgstr ""
-"`as` 연산자를 사용하여 정수 유형 간에 변환할 수 있습니다.  \n"
-"`as` 변환은 **무오류**입니다."
+"`as` 연산자를 사용하여 정수 타입 간에 변환할 수 있습니다.  \n"
+"`as` 변환은 **infallible**입니다."
 
 #: src/02_basic_calculator/10_as_casting.md:16
-#, fuzzy
 msgid "// Cast `a` into the `u64` type\n"
-msgstr "// `a`를 `u64` 유형으로 캐스트"
+msgstr "// `a`를 `u64` 타입으로 캐스트\n"
 
 #: src/02_basic_calculator/10_as_casting.md:19
-#, fuzzy
 msgid ""
 "// You can use `_` as the target type\n"
 "// if it can be correctly inferred \n"
 "// by the compiler. For example:\n"
 msgstr ""
-"// 컴파일러가 // 올바르게 추론할 수 있는 경우 // `_`를 대상 유형으로 사용할 "
-"수 있습니다. 예를 들어:"
+"// 컴파일러가\n"
+"// 올바르게 추론할 수 있는 경우\n"
+"// `_`를 대상 타입으로 사용할 수 있습니다. 예시:\n"
 
 #: src/02_basic_calculator/10_as_casting.md:26
-#, fuzzy
 msgid ""
 "The semantics of this conversion are what you expect: all `u32` values are "
 "valid `u64` values."
@@ -2713,70 +2553,63 @@ msgstr ""
 "`u64` 값입니다."
 
 #: src/02_basic_calculator/10_as_casting.md:29
-#, fuzzy
 msgid "Truncation"
-msgstr "잘림"
+msgstr "Truncation"
 
 #: src/02_basic_calculator/10_as_casting.md:31
-#, fuzzy
 msgid "Things get more interesting if we go in the opposite direction:"
-msgstr "반대 방향으로 가면 상황이 더 흥미로워집니다."
+msgstr "반대 방향으로 가면 상황이 더 흥미로워집니다:"
 
 #: src/02_basic_calculator/10_as_casting.md:34
-#, fuzzy
 msgid ""
 "// A number that's too big \n"
 "// to fit into a `u8`\n"
-msgstr "// 너무 커서 `u8`에 들어갈 수 없는 숫자"
+msgstr ""
+"// 너무 커서\n"
+"// `u8`에 들어갈 수 없는 숫자\n"
 
 #: src/02_basic_calculator/10_as_casting.md:40
-#, fuzzy
 msgid ""
 "This program will run without issues, because `as` conversions are "
 "infallible. But what is the value of `b`? When going from a larger integer "
 "type to a smaller, the Rust compiler will perform a **truncation**."
 msgstr ""
 "`as` 변환에는 오류가 없기 때문에 이 프로그램은 문제 없이 실행됩니다. 그런데 "
-"`b`의 값은 무엇입니까? 더 큰 정수 유형에서 더 작은 유형으로 전환할 때 Rust 컴"
-"파일러는 **잘림**을 수행합니다."
+"`b`의 값은 무엇입니까? 더 큰 정수 타입에서 더 작은 타입으로 전환할 때 Rust 컴"
+"파일러는 **truncation**을 수행합니다."
 
 #: src/02_basic_calculator/10_as_casting.md:45
-#, fuzzy
 msgid ""
 "To understand what happens, let's start by looking at how `256u16` is "
 "represented in memory, as a sequence of bits:"
 msgstr ""
 "무슨 일이 일어나는지 이해하기 위해 `256u16`이 메모리에 비트 시퀀스로 어떻게 표"
-"시되는지부터 살펴보겠습니다."
+"시되는지부터 살펴보겠습니다:"
 
 #: src/02_basic_calculator/10_as_casting.md:55
-#, fuzzy
 msgid ""
 "When converting to a `u8`, the Rust compiler will keep the last 8 bits of a "
 "`u16` memory representation:"
 msgstr ""
 "`u8`로 변환할 때 Rust 컴파일러는 `u16` 메모리 표현의 마지막 8비트를 유지합니"
-"다."
+"다:"
 
 #: src/02_basic_calculator/10_as_casting.md:65
-#, fuzzy
 msgid ""
 "Hence `256 as u8` is equal to `0`. That's... not ideal, in most scenarios.  \n"
 "In fact, the Rust compiler will actively try to stop you if it sees you "
 "trying to cast a literal value which will result in a truncation:"
 msgstr ""
-"따라서 '256 as u8'은 '0'과 같습니다. 그건... 대부분의 시나리오에서 이상적이지 "
+"따라서 `256 as u8`은 `0`과 같습니다. 그건... 대부분의 시나리오에서 이상적이지 "
 "않습니다.  \n"
 "실제로, Rust 컴파일러는 여러분이 리터럴 값을 캐스팅하려고 시도하는 것을 발견하"
 "면 적극적으로 여러분을 막으려고 노력할 것입니다:"
 
 #: src/02_basic_calculator/10_as_casting.md:80
-#, fuzzy
 msgid "Recommendation"
-msgstr "추천"
+msgstr "추천하는 방식"
 
 #: src/02_basic_calculator/10_as_casting.md:82
-#, fuzzy
 msgid ""
 "As a rule of thumb, be quite careful with `as` casting.  \n"
 "Use it _exclusively_ for going from a smaller type to a larger type. To "
@@ -2784,19 +2617,17 @@ msgid ""
 "conversion machinery](../05_ticket_v2/13_try_from.md) that we'll explore "
 "later in the course."
 msgstr ""
-"경험상 'as' 캐스팅에는 매우 주의해야 합니다.  \n"
-"더 작은 유형에서 더 큰 유형으로 전환하려면 _독점적으로_ 사용하세요. 더 큰 정"
-"수 유형에서 더 작은 정수 유형으로 변환하려면 이 과정의 뒷부분에서 살펴볼 _오"
-"류 가능한_ 변환 메커니즘을 사용하세요."
+"경험상 `as` 캐스팅할 때는 매우 주의해야 합니다.  \n"
+"더 작은 타입에서 더 큰 타입으로 전환하려면 _독점적으로_ 사용하세요. 더 큰 정"
+"수 타입에서 더 작은 정수 타입으로 변환하려면 이 과정의 뒷부분에서 살펴볼 "
+"[_fallible_ 변환 메커니즘](../05_ticket_v2/13_try_from.md)을 사용하세요."
 
 #: src/02_basic_calculator/10_as_casting.md:88
 #: src/06_ticket_management/11_mutable_slices.md:21
-#, fuzzy
 msgid "Limitations"
-msgstr "제한 사항"
+msgstr "한계점"
 
 #: src/02_basic_calculator/10_as_casting.md:90
-#, fuzzy
 msgid ""
 "Surprising behaviour is not the only downside of `as` casting. It is also "
 "fairly limited: you can only rely on `as` casting for primitive types and a "
@@ -2805,13 +2636,13 @@ msgid ""
 "conversion mechanisms ([fallible](../05_ticket_v2/13_try_from.md) and "
 "[infallible](../04_traits/09_from.md)), which we'll explore later on."
 msgstr ""
-"'as' 캐스팅의 단점은 놀라운 행동만이 아닙니다. 또한 상당히 제한적입니다. 원시 "
-"유형 및 기타 몇 가지 특수한 경우에만 `as` 캐스팅에 의존할 수 있습니다.  \n"
-"복합 유형으로 작업할 때 나중에 살펴보게 될 다양한 변환 메커니즘(오류 가능 및 "
-"완전 오류)에 의존해야 합니다."
+"놀라운 동작이 as 캐스팅의 유일한 단점은 아닙니다. as 캐스팅은 상당히 제한적이"
+"어서, 원시 타입과 몇 가지 특별한 경우에만 사용할 수 있습니다.  \n"
+"복합 타입으로 작업할 때 나중에 살펴보게 될 다양한 변환 메커니즘([fallible]"
+"(../05_ticket_v2/13_try_from.md)과 [infallible](../04_traits/09_from.md))를 사"
+"용해야합니다."
 
 #: src/02_basic_calculator/10_as_casting.md:99
-#, fuzzy
 msgid ""
 "Check out [Rust's official reference](https://doc.rust-lang.org/reference/"
 "expressions/operator-expr.html#numeric-cast) to learn the precise behaviour "
@@ -2819,7 +2650,8 @@ msgid ""
 "list of allowed conversions."
 msgstr ""
 "각 소스/타겟 조합에 대한 `as` 캐스팅의 정확한 동작과 허용되는 변환의 전체 목록"
-"을 알아보려면 Rust의 공식 참조를 확인하세요."
+"을 알아보려면 [Rust's official reference](https://doc.rust-lang.org/reference/"
+"expressions/operator-expr.html#numeric-cast)를 확인하세요."
 
 #: src/02_basic_calculator/10_as_casting.md:105
 msgid ""
@@ -2827,6 +2659,9 @@ msgid ""
 "[`02_basic_calculator/10_as_casting`](https://github.com/mainmatter/100-"
 "exercises-to-learn-rust/tree/main/exercises/02_basic_calculator/10_as_casting)"
 msgstr ""
+"이 섹션의 예제는 [`02_basic_calculator/10_as_casting`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/02_basic_calculator/10_as_casting)에 있습니다"
 
 #: src/03_ticket_v1/00_intro.md:1
 #, fuzzy
