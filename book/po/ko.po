@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 100 Exercises To Learn Rust\n"
 "POT-Creation-Date: 2024-06-20T21:50:15+09:00\n"
-"PO-Revision-Date: 2024-06-22 03:24+0900\n"
+"PO-Revision-Date: 2024-06-22 04:40+0900\n"
 "Last-Translator: bigfood <satcom1600@hanmail.net>\n"
 "Language-Team: Korean <translation-team-ko@googlegroups.com>\n"
 "Language: ko\n"
@@ -196,7 +196,7 @@ msgstr "분기: `match`"
 
 #: src/SUMMARY.md:51
 msgid "Variants with data"
-msgstr "데이터를 가진 Variants"
+msgstr "데이터를 가진 배리언트"
 
 #: src/SUMMARY.md:52
 msgid "Branching: `if let` and `let/else`"
@@ -216,11 +216,11 @@ msgstr "Unwrap"
 
 #: src/SUMMARY.md:56 src/05_ticket_v2/08_error_enums.md:1
 msgid "Error enums"
-msgstr "Error enums"
+msgstr "Error 열거형"
 
 #: src/SUMMARY.md:57
 msgid "`Error` trait"
-msgstr "`Error` trait"
+msgstr "`Error` 트레잇"
 
 #: src/SUMMARY.md:58
 msgid "Packages"
@@ -236,7 +236,7 @@ msgstr "`thiserror`"
 
 #: src/SUMMARY.md:61
 msgid "`TryFrom` trait"
-msgstr "`TryFrom` trait"
+msgstr "`TryFrom` 트레잇"
 
 #: src/SUMMARY.md:62 src/05_ticket_v2/14_source.md:1
 msgid "`Error::source`"
@@ -7412,61 +7412,52 @@ msgid "Modelling A Ticket, pt. 2"
 msgstr "Ticket 모델링, pt. 2"
 
 #: src/05_ticket_v2/00_intro.md:3
-#, fuzzy
 msgid ""
 "The `Ticket` struct we worked on in the previous chapters is a good start, "
 "but it still screams \"I'm a beginner Rustacean!\"."
 msgstr ""
 "이전 장에서 작업한 `Ticket` 구조체는 좋은 시작이지만 여전히 \"나는 초보자 "
-"Rustacean입니다!\"라고 비명을 지릅니다."
+"Rustacean입니다!\"라고 티를 냅니다."
 
 #: src/05_ticket_v2/00_intro.md:6
-#, fuzzy
 msgid ""
 "We'll use this chapter to refine our Rust domain modelling skills. We'll need "
 "to introduce a few more concepts along the way:"
 msgstr ""
-"우리는 이 장을 사용하여 Rust 도메인 모델링 기술을 개선할 것입니다. 그 과정에"
-"서 몇 가지 개념을 더 소개해야 합니다."
+"우리는 이 장에서 Rust 도메인 모델링 기술을 개선할 것입니다. 그 과정에서 몇 가"
+"지 개념을 더 소개해야 합니다:"
 
 #: src/05_ticket_v2/00_intro.md:9
-#, fuzzy
 msgid "`enum`s, one of Rust's most powerful features for data modeling"
 msgstr "데이터 모델링을 위한 Rust의 가장 강력한 기능 중 하나인 `enum`"
 
 #: src/05_ticket_v2/00_intro.md:10
-#, fuzzy
 msgid "The `Option` type, to model nullable values"
-msgstr "Null 허용 값을 모델링하는 'Option' 유형"
+msgstr "Null 허용 값을 모델링하는 `Option` 타입"
 
 #: src/05_ticket_v2/00_intro.md:11
-#, fuzzy
 msgid "The `Result` type, to model recoverable errors"
-msgstr "복구 가능한 오류를 모델링하기 위한 'Result' 유형"
+msgstr "복구 가능한 오류를 모델링하기 위한 `Result` 타입"
 
 #: src/05_ticket_v2/00_intro.md:12
-#, fuzzy
 msgid "The `Debug` and `Display` traits, for printing"
-msgstr "인쇄용 `Debug` 및 `Display` 특성"
+msgstr "프린트용 `Debug` 및 `Display` 트레잇"
 
 #: src/05_ticket_v2/00_intro.md:13
-#, fuzzy
 msgid "The `Error` trait, to mark error types"
-msgstr "오류 유형을 표시하는 `Error` 특성"
+msgstr "오류 타입을 표시하는 `Error` 트레잇"
 
 #: src/05_ticket_v2/00_intro.md:14
-#, fuzzy
 msgid "The `TryFrom` and `TryInto` traits, for fallible conversions"
-msgstr "오류가 있는 변환을 위한 `TryFrom` 및 `TryInto` 특성"
+msgstr "오류가 있는 변환을 위한 `TryFrom`과 `TryInto` 트레잇"
 
 #: src/05_ticket_v2/00_intro.md:15
-#, fuzzy
 msgid ""
 "Rust's package system, explaining what's a library, what's a binary, how to "
 "use third-party crates"
 msgstr ""
-"Rust의 패키지 시스템, 라이브러리가 무엇인지, 바이너리가 무엇인지, 타사 크레이"
-"트를 사용하는 방법을 설명합니다."
+"Rust의 패키지 시스템, 라이브러리가 무엇인지, 바이너리가 무엇인지, 외부 크레이"
+"트를 사용하는 방법을 설명합니다"
 
 #: src/05_ticket_v2/00_intro.md:19
 msgid ""
@@ -7474,14 +7465,14 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/00_intro)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/00_intro`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/05_ticket_v2/00_intro)에 있습니다"
 
 #: src/05_ticket_v2/01_enum.md:1
-#, fuzzy
 msgid "Enumerations"
 msgstr "열거"
 
 #: src/05_ticket_v2/01_enum.md:3
-#, fuzzy
 msgid ""
 "Based on the validation logic you wrote [in a previous chapter]"
 "(../03_ticket_v1/02_validation.md), there are only a few valid statuses for a "
@@ -7489,13 +7480,13 @@ msgid ""
 "This is not obvious if we look at the `status` field in the `Ticket` struct "
 "or at the type of the `status` parameter in the `new` method:"
 msgstr ""
-"이전 장에서 작성한 유효성 검사 논리에 따르면 티켓에는 'To-Do', 'InProgress', "
-"'Done' 등 몇 가지 유효한 상태만 있습니다.  \n"
-"`Ticket` 구조체의 `status` 필드나 `new` 메소드의 `status` 매개변수 유형을 보"
+"[이전 장에서](../03_ticket_v1/02_validation.md) 작성한 유효성 검사 로직에 따르"
+"면 티켓에는 `To-Do`, `InProgress`, `Done` 등 몇 가지 유효한 상태만 있습니"
+"다.  \n"
+"`Ticket` 구조체의 `status` 필드나 `new` 메소드의 `status` 매개변수 타입을 보"
 "면 이는 명확하지 않습니다."
 
 #: src/05_ticket_v2/01_enum.md:23
-#, fuzzy
 msgid ""
 "In both cases we're using `String` to represent the `status` field. `String` "
 "is a very general type—it doesn't immediately convey the information that the "
@@ -7503,35 +7494,32 @@ msgid ""
 "of `Ticket::new` will only find out **at runtime** if the status they "
 "provided is valid or not."
 msgstr ""
-"두 경우 모두 `상태` 필드를 나타내기 위해 `문자열`을 사용하고 있습니다. "
-"`String`은 매우 일반적인 유형입니다. `status` 필드에 가능한 값이 제한되어 있다"
-"는 정보를 즉시 전달하지 않습니다. 더 나쁜 것은 `Ticket::new` 호출자는 자신이 "
-"제공한 상태가 유효한지 **런타임**에서만 알아낼 수 있다는 것입니다."
+"두 경우 모두 `status` 필드를 나타내기 위해 `String`을 사용하고 있습니다. "
+"`String`은 매우 일반적인 타입입니다. `status` 필드에 가능한 값이 제한되어 있다"
+"는 정보를 직관적으로 알려주지 않습니다. 더 나쁜 것은 `Ticket::new` 호출자는 자"
+"신이 제공한 상태가 유효한지 **런타임**에서만 알아낼 수 있다는 것입니다."
 
 #: src/05_ticket_v2/01_enum.md:28
-#, fuzzy
 msgid "We can do better than that with **enumerations**."
 msgstr "**열거**를 사용하면 그보다 더 나은 작업을 수행할 수 있습니다."
 
 #: src/05_ticket_v2/01_enum.md:30
-#, fuzzy
 msgid "`enum`"
-msgstr "'열거형'"
+msgstr "`enum`"
 
 #: src/05_ticket_v2/01_enum.md:32
-#, fuzzy
 msgid ""
 "An enumeration is a type that can have a fixed set of values, called "
 "**variants**.  \n"
 "In Rust, you define an enumeration using the `enum` keyword:"
 msgstr ""
-"열거형은 **변형**이라고 불리는 고정된 값 집합을 가질 수 있는 유형입니다.  \n"
+"열거형은 **variants**이라고 불리는 고정된 값 집합을 가질 수 있는 타입입니"
+"다.  \n"
 "Rust에서는 `enum` 키워드를 사용하여 열거형을 정의합니다:"
 
 #: src/05_ticket_v2/01_enum.md:43
-#, fuzzy
 msgid "`enum`, just like `struct`, defines **a new Rust type**."
-msgstr "`enum`은 `struct`와 마찬가지로 **새로운 Rust 유형**을 정의합니다."
+msgstr "`enum`은 `struct`와 마찬가지로 **새로운 Rust 타입**을 정의합니다."
 
 #: src/05_ticket_v2/01_enum.md:47
 msgid ""
@@ -7539,30 +7527,29 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/01_enum)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/01_enum`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/05_ticket_v2/01_enum)에 있습니다"
 
 #: src/05_ticket_v2/02_match.md:1
-#, fuzzy
 msgid "`match`"
-msgstr "'일치'"
+msgstr "`match`"
 
 #: src/05_ticket_v2/02_match.md:3
-#, fuzzy
 msgid ""
 "You may be wondering—what can you actually **do** with an enum?  \n"
 "The most common operation is to **match** on it."
 msgstr ""
 "열거형을 사용하여 실제로 **할 수 있는** 작업이 무엇인지 궁금하실 것입니다.  \n"
-"가장 일반적인 작업은 **일치**하는 것입니다."
+"가장 일반적인 작업은 **match**입니다."
 
 #: src/05_ticket_v2/02_match.md:17
-#, fuzzy
 msgid ""
 "// The `|` operator lets you match multiple patterns.\n"
 "            // It reads as \"either `Status::ToDo` or `Status::"
 "InProgress`\".\n"
 msgstr ""
-"// `|` 연산자를 사용하면 여러 패턴을 일치시킬 수 있습니다. // \"`Status::"
-"ToDo` 또는 `Status::InProgress`\"로 읽습니다."
+"// `|` 연산자를 사용하면 여러 패턴을 일치시킬 수 있습니다.\n"
+"            // \"`Status::ToDo` 또는 `Status::InProgress`\"로 인식합니다.\n"
 
 #: src/05_ticket_v2/02_match.md:25
 msgid ""
@@ -7572,31 +7559,31 @@ msgid ""
 "execute the first block; if it's a `InProgress` or `ToDo` variant, execute "
 "the second block."
 msgstr ""
+"`match` 문은 러스트 값을 여러 패턴과 비교할 수 있는 구문입니다.\n"
+"타입 수준에서 볼 때, 이는 if문으로 볼 수 있습니다. 만약 `status`가 `Done` 배리"
+"언트라면 첫 번째 블록을 실행하고, `InProgress` 또는 `ToDo` 배리언트라면 두 번"
+"째 블록을 실행합니다."
 
 #: src/05_ticket_v2/02_match.md:29
-#, fuzzy
 msgid "Exhaustiveness"
 msgstr "철저함"
 
 #: src/05_ticket_v2/02_match.md:31
-#, fuzzy
 msgid ""
 "There's one key detail here: `match` is **exhaustive**. You must handle all "
 "enum variants.  \n"
 "If you forget to handle a variant, Rust will stop you **at compile-time** "
 "with an error."
 msgstr ""
-"여기에는 한 가지 중요한 세부 사항이 있습니다. 'match'는 **완전히**라는 것입니"
-"다. 모든 열거형 변형을 처리해야 합니다.  \n"
-"변형 처리를 잊어버리면 Rust는 **컴파일 시간**에 오류로 인해 중지됩니다."
+"여기에는 한 가지 중요한 세부 사항이 있습니다: `match`는 **완전**하다는 것입니"
+"다. 모든 열거형 배리언트를 처리해야 합니다.  \n"
+"배리언트 처리를 깜빡하면 Rust는 **컴파일 타임**에 오류로 인해 중지됩니다."
 
 #: src/05_ticket_v2/02_match.md:34
-#, fuzzy
 msgid "E.g. if we forget to handle the `ToDo` variant:"
-msgstr "예: `ToDo` 변형을 처리하는 것을 잊어버린 경우:"
+msgstr "예: `ToDo` 배리언트를 처리하는 것을 깜빡한 경우:"
 
 #: src/05_ticket_v2/02_match.md:53
-#, fuzzy
 msgid ""
 "This is a big deal!  \n"
 "Codebases evolve over time—you might add a new status down the line, e.g. "
@@ -7606,27 +7593,24 @@ msgid ""
 "compiler tells you what to do next, you just have to fix what it reports."
 msgstr ""
 "이건 큰일이에요!  \n"
-"코드베이스는 시간이 지남에 따라 발전합니다. 예를 들어 새로운 상태를 추가할 수"
-"도 있습니다. '차단'. Rust 컴파일러는 새로운 변형에 대한 논리가 누락된 모든 단"
-"일 `match` 문에 대해 오류를 내보냅니다. 이것이 바로 Rust 개발자들이 종종 \"컴"
-"파일러 중심 리팩토링\"을 칭찬하는 이유입니다. 컴파일러는 다음에 수행할 작업을 "
-"알려주고, 보고한 내용을 수정하기만 하면 됩니다."
+"코드베이스는 시간이 지남에 따라 발전합니다. `Blocked`같은 새로운 상태를 추가"
+"할 수도 있습니다. Rust 컴파일러는 새로운 배리언트에 대한 로직이 누락된 모든 "
+"`match` 문에 대해 오류를 내보냅니다. 이것이 바로 Rust 개발자들이 종종 \"컴파일"
+"러 중심 리팩토링\"을 칭찬하는 이유입니다. 컴파일러는 다음에 수행할 작업을 알려"
+"주고, 알려준 작업을 수행하기만 하면 됩니다."
 
 #: src/05_ticket_v2/02_match.md:59
-#, fuzzy
 msgid "Catch-all"
-msgstr "포괄"
+msgstr "Catch-all"
 
 #: src/05_ticket_v2/02_match.md:61
-#, fuzzy
 msgid ""
 "If you don't care about one or more variants, you can use the `_` pattern as "
 "a catch-all:"
 msgstr ""
-"하나 이상의 변형에 관심이 없다면 `_` 패턴을 포괄적으로 사용할 수 있습니다."
+"하나 이상의 배리언트에 관심이 없다면 `_` 패턴을 포괄적으로 사용할 수 있습니다."
 
 #: src/05_ticket_v2/02_match.md:70
-#, fuzzy
 msgid ""
 "The `_` pattern matches anything that wasn't matched by the previous patterns."
 msgstr "`_` 패턴은 이전 패턴과 일치하지 않는 모든 항목과 일치합니다."
@@ -7637,41 +7621,38 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/02_match)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/02_match`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/05_ticket_v2/02_match)에 있습니다"
 
 #: src/05_ticket_v2/03_variants_with_data.md:1
-#, fuzzy
 msgid "Variants can hold data"
-msgstr "변형은 데이터를 보유할 수 있습니다."
+msgstr "배리언트는 데이터를 가질 수 있습니다"
 
 #: src/05_ticket_v2/03_variants_with_data.md:11
-#, fuzzy
 msgid ""
 "Our `Status` enum is what's usually called a **C-style enum**.  \n"
 "Each variant is a simple label, a bit like a named constant. You can find "
 "this kind of enum in many programming languages, like C, C++, Java, C#, "
 "Python, etc."
 msgstr ""
-"우리의 `상태` 열거형은 일반적으로 **C 스타일 열거형**이라고 불리는 것입니"
+"우리의 `Status` 열거형은 일반적으로 **C 스타일 열거형**이라고 불리는 것입니"
 "다.  \n"
 "각 변형은 명명된 상수와 약간 유사한 간단한 레이블입니다. C, C++, Java, C#, "
 "Python 등과 같은 많은 프로그래밍 언어에서 이러한 종류의 열거형을 찾을 수 있습"
 "니다."
 
 #: src/05_ticket_v2/03_variants_with_data.md:15
-#, fuzzy
 msgid ""
 "Rust enums can go further though. We can **attach data to each variant**."
 msgstr ""
-"Rust 열거형은 더 나아갈 수 있습니다. **각 변형에 데이터를 첨부**할 수 있습니"
-"다."
+"Rust 열거형은 더 나아갈 수 있습니다. **각 배리언트에 데이터를 첨부**할 수 있습"
+"니다."
 
 #: src/05_ticket_v2/03_variants_with_data.md:17
-#, fuzzy
 msgid "Variants"
-msgstr "변형"
+msgstr "배리언트"
 
 #: src/05_ticket_v2/03_variants_with_data.md:19
-#, fuzzy
 msgid ""
 "Let's say that we want to store the name of the person who's currently "
 "working on a ticket.  \n"
@@ -7682,44 +7663,38 @@ msgstr ""
 "현재 티켓 작업을 하고 있는 사람의 이름을 저장하고 싶다고 가정해 보겠습니"
 "다.  \n"
 "티켓이 진행 중인 경우에만 이 정보를 얻을 수 있습니다. 할 일 티켓이나 완료된 티"
-"켓에는 존재하지 않습니다. `InProgress` 변형에 `String` 필드를 연결하여 이를 모"
-"델링할 수 있습니다."
+"켓에는 존재하지 않습니다. `InProgress` 배리언트에 `String` 필드를 연결하여 이"
+"를 모델링할 수 있습니다:"
 
 #: src/05_ticket_v2/03_variants_with_data.md:34
-#, fuzzy
 msgid ""
 "`InProgress` is now a **struct-like variant**.  \n"
 "The syntax mirrors, in fact, the one we used to define a struct—it's just "
 "\"inlined\" inside the enum, as a variant."
 msgstr ""
-"`InProgress`는 이제 **구조체 유사 변형**입니다.  \n"
-"실제로 구문은 구조체를 정의하는 데 사용한 구문을 반영합니다. 즉, 변형으로 열거"
-"형 내부에 \"인라인\"되어 있을 뿐입니다."
+"`InProgress`는 이제 **구조체 유사 배리언트**입니다.  \n"
+"실제로 구문은 구조체를 정의하는 데 사용한 구문을 사용합니다. 즉, 배리언트로 열"
+"거형 내부에 \"인라인\"되어 있을 뿐입니다."
 
 #: src/05_ticket_v2/03_variants_with_data.md:37
-#, fuzzy
 msgid "Accessing variant data"
-msgstr "변형 데이터에 액세스"
+msgstr "배리언트 데이터에 액세스"
 
 #: src/05_ticket_v2/03_variants_with_data.md:39
-#, fuzzy
 msgid "If we try to access `assigned_to` on a `Status` instance,"
-msgstr "`Status` 인스턴스에서 `할당된_to`에 액세스하려고 하면,"
+msgstr "`Status` 인스턴스의 `assigned_to`에 액세스하려고 하면,"
 
 #: src/05_ticket_v2/03_variants_with_data.md:43
-#, fuzzy
 msgid "// This won't compile\n"
-msgstr "// 컴파일되지 않습니다."
+msgstr "// 컴파일되지 않습니다\n"
 
 #: src/05_ticket_v2/03_variants_with_data.md:45
 #: src/05_ticket_v2/03_variants_with_data.md:64
 #: src/05_ticket_v2/03_variants_with_data.md:82
-#, fuzzy
 msgid "\"Assigned to: {}\""
-msgstr "\"할당: {}\""
+msgstr "\"Assigned to: {}\""
 
 #: src/05_ticket_v2/03_variants_with_data.md:48
-#, fuzzy
 msgid "the compiler will stop us:"
 msgstr "컴파일러가 우리를 막을 것입니다:"
 
@@ -7733,31 +7708,34 @@ msgid ""
 "  |                                        ^^^^^^^^^^^ unknown field\n"
 "```"
 msgstr ""
+"```text\n"
+"error[E0609]: no field `assigned_to` on type `Status`\n"
+" --> src/main.rs:5:40\n"
+"  |\n"
+"5 |     println!(\"Assigned to: {}\", status.assigned_to);\n"
+"  |                                        ^^^^^^^^^^^ unknown field\n"
+"```"
 
 #: src/05_ticket_v2/03_variants_with_data.md:58
-#, fuzzy
 msgid ""
 "`assigned_to` is **variant-specific**, it's not available on all `Status` "
 "instances.  \n"
 "To access `assigned_to`, we need to use **pattern matching**:"
 msgstr ""
-"`할당된_to`는 **변형별**이므로 모든 `상태` 인스턴스에서 사용할 수는 없습니"
-"다.  \n"
-"`할당된_대상`에 액세스하려면 **패턴 일치**를 사용해야 합니다."
+"`assigned_to`는 **특정 배리언트**에 대한 것이므로 모든 `Status` 인스턴스에서 "
+"사용할 수는 없습니다.  \n"
+"`assigned_to`에 액세스하려면 **패턴 매칭**을 사용해야 합니다."
 
 #: src/05_ticket_v2/03_variants_with_data.md:67
 #: src/05_ticket_v2/03_variants_with_data.md:85
-#, fuzzy
 msgid "\"Done\""
-msgstr "\"완료\""
+msgstr "\"Done\""
 
 #: src/05_ticket_v2/03_variants_with_data.md:72
-#, fuzzy
 msgid "Bindings"
 msgstr "바인딩"
 
 #: src/05_ticket_v2/03_variants_with_data.md:74
-#, fuzzy
 msgid ""
 "In the match pattern `Status::InProgress { assigned_to }`, `assigned_to` is a "
 "**binding**.  \n"
@@ -7765,11 +7743,11 @@ msgid ""
 "`assigned_to` field to a new variable, also named `assigned_to`.  \n"
 "If we wanted, we could bind the field to a different variable name:"
 msgstr ""
-"일치 패턴 `Status::InProgress { 할당된_to }`에서 `할당된_to`는 **바인딩**입니"
-"다.  \n"
-"우리는 `Status::InProgress` 변형을 **구조화**하고 `할당_to` 필드를 `할당_to`라"
-"는 새 변수에 바인딩합니다.  \n"
-"원한다면 필드를 다른 변수 이름에 바인딩할 수 있습니다."
+"`Status::InProgress { assigned_to }`매치 패턴에서, `assigned_to`는 **바인딩**"
+"입니다.   \n"
+"우리는 `Status::InProgress` 배리언트를 **구조 분해**하고 `assigned_to` 필드를 "
+"`assigned_to`라는 새 변수에 바인딩합니다.  \n"
+"원한다면 필드를 다른 변수 이름에 바인딩할 수 있습니다:"
 
 #: src/05_ticket_v2/03_variants_with_data.md:92
 msgid ""
@@ -7778,74 +7756,66 @@ msgid ""
 "exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/03_variants_with_data)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/03_variants_with_data`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/05_ticket_v2/03_variants_with_data)에 있습니다"
 
 #: src/05_ticket_v2/04_if_let.md:1
-#, fuzzy
 msgid "Concise branching"
 msgstr "간결한 분기"
 
 #: src/05_ticket_v2/04_if_let.md:3
-#, fuzzy
 msgid "Your solution to the previous exercise probably looks like this:"
-msgstr "이전 연습에 대한 솔루션은 아마도 다음과 같을 것입니다."
+msgstr "이전 예제에 대한 솔루션은 아마도 다음과 같을 것입니다:"
 
 #: src/05_ticket_v2/04_if_let.md:11 src/05_ticket_v2/04_if_let.md:36
 #: src/05_ticket_v2/04_if_let.md:51
-#, fuzzy
 msgid "\"Only `In-Progress` tickets can be assigned to someone\""
-msgstr "\"'진행 중' 티켓만 다른 사람에게 할당될 수 있습니다.\""
+msgstr "\"`In-Progress` 티켓만 누군가에게 할당될 수 있습니다\""
 
 #: src/05_ticket_v2/04_if_let.md:18
-#, fuzzy
 msgid ""
 "You only care about the `Status::InProgress` variant. Do you really need to "
 "match on all the other variants?"
 msgstr ""
-"`Status::InProgress` 변형에만 관심이 있습니다. 정말로 다른 모든 변형을 일치시"
-"켜야 합니까?"
+"우린 `Status::InProgress` 배리언트에만 관심이 있습니다. 꼭 다른 모든 배리언트"
+"를 매칭해야할까요?"
 
 #: src/05_ticket_v2/04_if_let.md:21
-#, fuzzy
 msgid "New constructs to the rescue!"
-msgstr "구조할 새로운 구조물입니다!"
+msgstr "우리를 구원할 새로운 친구입니다!"
 
 #: src/05_ticket_v2/04_if_let.md:23
-#, fuzzy
 msgid "`if let`"
-msgstr "`만약`"
+msgstr "`if let`"
 
 #: src/05_ticket_v2/04_if_let.md:25
-#, fuzzy
 msgid ""
 "The `if let` construct allows you to match on a single variant of an enum, "
 "without having to handle all the other variants."
 msgstr ""
-"`if let` 구조를 사용하면 다른 모든 변형을 처리할 필요 없이 열거형의 단일 변형"
-"을 일치시킬 수 있습니다."
+"`if let` 구조를 사용하면 다른 모든 배리언트를 처리할 필요 없이 열거형의 단일 "
+"배리언트를 매칭할 수 있습니다."
 
 #: src/05_ticket_v2/04_if_let.md:28
-#, fuzzy
 msgid "Here's how you can use `if let` to simplify the `assigned_to` method:"
 msgstr ""
-"'할당_대상' 메서드를 단순화하기 위해 'if let'을 사용하는 방법은 다음과 같습니"
-"다."
+"`assigned_to` 메서드를 단순화하기 위해 `if let`을 사용하는 방법은 다음과 같습"
+"니다:"
 
 #: src/05_ticket_v2/04_if_let.md:42
-#, fuzzy
 msgid "`let/else`"
-msgstr "`렛/그렇지`"
+msgstr "`let/else`"
 
 #: src/05_ticket_v2/04_if_let.md:44
-#, fuzzy
 msgid ""
 "If the `else` branch is meant to return early (a panic counts as returning "
 "early!), you can use the `let/else` construct:"
 msgstr ""
 "`else` 분기가 일찍 반환되도록 의도된 경우(패닉은 조기 반환으로 간주됩니다!) "
-"`let/else` 구문을 사용할 수 있습니다."
+"`let/else` 구문을 사용할 수 있습니다:"
 
 #: src/05_ticket_v2/04_if_let.md:58
-#, fuzzy
 msgid ""
 "It allows you to assign the destructured variable without incurring any "
 "\"right drift\", i.e. the variable is assigned at the same indentation level "
@@ -7855,12 +7825,10 @@ msgstr ""
 "있습니다. 즉, 변수는 이전 코드와 동일한 들여쓰기 수준에서 할당됩니다."
 
 #: src/05_ticket_v2/04_if_let.md:62
-#, fuzzy
 msgid "Style"
 msgstr "스타일"
 
 #: src/05_ticket_v2/04_if_let.md:64
-#, fuzzy
 msgid ""
 "Both `if let` and `let/else` are idiomatic Rust constructs.  \n"
 "Use them as you see fit to improve the readability of your code, but don't "
@@ -7868,7 +7836,7 @@ msgid ""
 msgstr ""
 "`if let`과 `let/else`는 둘 다 관용적인 Rust 구문입니다.  \n"
 "코드의 가독성을 높이기 위해 적절하다고 생각되는 대로 사용하되, 너무 과도하게 "
-"사용하지 마십시오. `match`는 필요할 때 항상 존재합니다."
+"사용하지 마세요. `match`는 항상 필요할 때 그 자리에 있으니까요."
 
 #: src/05_ticket_v2/04_if_let.md:70
 msgid ""
@@ -7876,34 +7844,32 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/04_if_let)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/04_if_let`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/05_ticket_v2/04_if_let)에 있습니다"
 
 #: src/05_ticket_v2/05_nullability.md:3
-#, fuzzy
 msgid ""
 "Our implementation of the `assigned` method is fairly blunt: panicking for to-"
 "do and done tickets is far from ideal.  \n"
 "We can do better using **Rust's `Option` type**."
 msgstr ""
-"'할당된' 방법의 구현은 상당히 무뚝뚝합니다. 해야 할 일과 완료 티켓에 대해 당황"
-"하는 것은 이상적이지 않습니다.  \n"
-"**Rust의 `Option` 유형**을 사용하면 더 나은 결과를 얻을 수 있습니다."
+"`assigned` 메소드의 구현은 상당히 무뚝뚝합니다. to-do 상태의 티켓과 완료된 티"
+"켓에 대해 패닉하는 것은 이상적이지 않습니다.  \n"
+"**Rust의 `Option` 타입**을 사용하면 더 나은 결과를 얻을 수 있습니다."
 
 #: src/05_ticket_v2/05_nullability.md:6
-#, fuzzy
 msgid "`Option`"
-msgstr "`옵션`"
+msgstr "`Option`"
 
 #: src/05_ticket_v2/05_nullability.md:8
-#, fuzzy
 msgid ""
 "`Option` is a Rust type that represents **nullable values**.  \n"
 "It is an enum, defined in Rust's standard library:"
 msgstr ""
-"`Option`은 **nullable 값**을 나타내는 Rust 유형입니다.  \n"
+"`Option`은 **nullable 값**을 나타내는 Rust 타입입니다.  \n"
 "이것은 Rust의 표준 라이브러리에 정의된 열거형입니다:"
 
 #: src/05_ticket_v2/05_nullability.md:18
-#, fuzzy
 msgid ""
 "`Option` encodes the idea that a value might be present (`Some(T)`) or absent "
 "(`None`).  \n"
@@ -7922,71 +7888,61 @@ msgstr ""
 "\" null 허용 여부에 비해 크게 개선된 것입니다."
 
 #: src/05_ticket_v2/05_nullability.md:24
-#, fuzzy
 msgid "`Option`'s definition"
-msgstr "`옵션`의 정의"
+msgstr "`Option`의 정의"
 
 #: src/05_ticket_v2/05_nullability.md:26
-#, fuzzy
 msgid ""
 "`Option`'s definition uses a Rust construct that you haven't seen before: "
 "**tuple-like variants**."
 msgstr ""
-"`Option`의 정의는 이전에 본 적이 없는 Rust 구성인 **튜플 유사 변형**을 사용합"
-"니다."
+"`Option`의 정의는 이전에 본 적이 없는 Rust 구성인 **튜플 유사 배리언트**를 사"
+"용합니다."
 
 #: src/05_ticket_v2/05_nullability.md:28
-#, fuzzy
 msgid "Tuple-like variants"
-msgstr "튜플과 유사한 변형"
+msgstr "튜플 유사 배리언트"
 
 #: src/05_ticket_v2/05_nullability.md:30
-#, fuzzy
 msgid ""
 "`Option` has two variants: `Some(T)` and `None`.  \n"
 "`Some` is a **tuple-like variant**: it's a variant that holds **unnamed "
 "fields**."
 msgstr ""
-"`Option`에는 `Some(T)`과 `None`이라는 두 가지 변형이 있습니다.  \n"
-"`Some`은 **튜플과 유사한 변형**입니다. 이는 **이름이 지정되지 않은 필드**를 보"
-"유하는 변형입니다."
+"`Option`에는 `Some(T)`과 `None`이라는 두 가지 배리언트가 있습니다.  \n"
+"`Some`은 **튜플 유사 배리언트**입니다. 이는 **이름이 지정되지 않은 필드**를 가"
+"지는 배리언트입니다."
 
 #: src/05_ticket_v2/05_nullability.md:33
-#, fuzzy
 msgid ""
 "Tuple-like variants are often used when there is a single field to store, "
 "especially when we're looking at a \"wrapper\" type like `Option`."
 msgstr ""
-"튜플형 변형은 저장할 단일 필드가 있을 때, 특히 `Option`과 같은 \"래퍼\" 유형"
-"을 볼 때 자주 사용됩니다."
+"튜플형 배리언트는 저장할 단일 필드가 있을 때, 특히 `Option`과 같은 \"래퍼\" 타"
+"입에 자주 사용됩니다."
 
 #: src/05_ticket_v2/05_nullability.md:36
-#, fuzzy
 msgid "Tuple-like structs"
-msgstr "튜플과 유사한 구조체"
+msgstr "튜플 유사 구조체"
 
 #: src/05_ticket_v2/05_nullability.md:38
-#, fuzzy
 msgid "They're not specific to enums—you can define tuple-like structs too:"
 msgstr ""
-"이는 열거형에만 국한되지 않습니다. 튜플과 유사한 구조체도 정의할 수 있습니다."
+"이는 열거형에만 국한되지 않습니다. 튜플 유사 구조체도 정의할 수 있습니다:"
 
 #: src/05_ticket_v2/05_nullability.md:44
-#, fuzzy
 msgid ""
 "You can then access the two fields of a `Point` instance using their "
 "positional index:"
 msgstr ""
 "그런 다음 위치 인덱스를 사용하여 `Point` 인스턴스의 두 필드에 액세스할 수 있습"
-"니다."
+"니다:"
 
 #: src/05_ticket_v2/05_nullability.md:52
-#, fuzzy
 msgid "Tuples"
 msgstr "튜플"
 
 #: src/05_ticket_v2/05_nullability.md:54
-#, fuzzy
 msgid ""
 "It's weird to say that something is tuple-like when we haven't seen tuples "
 "yet!  \n"
@@ -7995,36 +7951,32 @@ msgid ""
 msgstr ""
 "아직 튜플을 본 적이 없는데 뭔가가 튜플과 비슷하다고 말하는 것은 이상합니"
 "다!  \n"
-"튜플은 원시 Rust 유형의 또 다른 예입니다. (잠재적으로 다른) 유형을 사용하여 고"
+"튜플은 원시 Rust 타입의 또 다른 예입니다. (잠재적으로 다른) 타입을 사용하여 고"
 "정된 개수의 값을 그룹화합니다."
 
 #: src/05_ticket_v2/05_nullability.md:59
-#, fuzzy
 msgid "// Two values, same type\n"
-msgstr "// 두 개의 값, 동일한 유형"
+msgstr "// 두 개의 값, 동일한 타입\n"
 
 #: src/05_ticket_v2/05_nullability.md:60
-#, fuzzy
 msgid "// Three values, different types\n"
-msgstr "// 세 가지 값, 다른 유형"
+msgstr "// 세 가지 값, 다른 타입\n"
 
 #: src/05_ticket_v2/05_nullability.md:65
-#, fuzzy
 msgid ""
 "The syntax is simple: you list the types of the values between parentheses, "
 "separated by commas. You can access the fields of a tuple using the dot "
 "notation and the field index:"
 msgstr ""
-"구문은 간단합니다. 괄호 안에 값 유형을 쉼표로 구분하여 나열합니다. 점 표기법"
+"문법은 간단합니다. 괄호 안에 값 타입을 쉼표로 구분하여 나열합니다. 점 표기법"
 "과 필드 인덱스를 사용하여 튜플의 필드에 액세스할 수 있습니다."
 
 #: src/05_ticket_v2/05_nullability.md:74
-#, fuzzy
 msgid ""
 "Tuples are a convenient way of grouping values together when you can't be "
 "bothered to define a dedicated struct type."
 msgstr ""
-"튜플은 전용 구조체 유형을 정의할 필요가 없을 때 값을 그룹화하는 편리한 방법입"
+"튜플은 전용 구조체 타입을 정의할 필요가 없을 때 값을 그룹화하는 편리한 방법입"
 "니다."
 
 #: src/05_ticket_v2/05_nullability.md:78
@@ -8033,34 +7985,31 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/05_nullability)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/05_nullability`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/05_ticket_v2/05_nullability)에 있습니다"
 
 #: src/05_ticket_v2/06_fallibility.md:3
-#, fuzzy
 msgid "Let's revisit the `Ticket::new` function from the previous exercise:"
-msgstr "이전 연습의 `Ticket::new` 함수를 다시 살펴보겠습니다."
+msgstr "이전 예제의 `Ticket::new` 함수를 다시 살펴보겠습니다."
 
 #: src/05_ticket_v2/06_fallibility.md:9
-#, fuzzy
 msgid "\"Title cannot be empty\""
-msgstr "\"제목은 비워둘 수 없습니다.\""
+msgstr "\"Title cannot be empty\""
 
 #: src/05_ticket_v2/06_fallibility.md:12
-#, fuzzy
 msgid "\"Title cannot be longer than 50 bytes\""
-msgstr "\"제목은 50바이트를 초과할 수 없습니다.\""
+msgstr "\"Title cannot be longer than 50 bytes\""
 
 #: src/05_ticket_v2/06_fallibility.md:15
-#, fuzzy
 msgid "\"Description cannot be empty\""
-msgstr "\"설명은 비워둘 수 없습니다.\""
+msgstr "\"Description cannot be empty\""
 
 #: src/05_ticket_v2/06_fallibility.md:18
-#, fuzzy
 msgid "\"Description cannot be longer than 500 bytes\""
-msgstr "\"설명은 500바이트를 초과할 수 없습니다.\""
+msgstr "\"Description cannot be longer than 500 bytes\""
 
 #: src/05_ticket_v2/06_fallibility.md:30
-#, fuzzy
 msgid ""
 "As soon as one of the checks fails, the function panics. This is not ideal, "
 "as it doesn't give the caller a chance to **handle the error**."
@@ -8069,59 +8018,50 @@ msgstr ""
 "를 처리**할 기회를 주지 않기 때문에 이상적이지 않습니다."
 
 #: src/05_ticket_v2/06_fallibility.md:33
-#, fuzzy
 msgid ""
 "It's time to introduce the `Result` type, Rust's primary mechanism for error "
 "handling."
 msgstr ""
-"이제 오류 처리를 위한 Rust의 주요 메커니즘인 `Result` 유형을 소개할 시간입니"
+"이제 오류 처리를 위한 Rust의 주요 메커니즘인 `Result` 타입을 소개할 시간입니"
 "다."
 
 #: src/05_ticket_v2/06_fallibility.md:35
-#, fuzzy
 msgid "The `Result` type"
-msgstr "'결과' 유형"
+msgstr "`Result` 타입"
 
 #: src/05_ticket_v2/06_fallibility.md:37
-#, fuzzy
 msgid "The `Result` type is an enum defined in the standard library:"
-msgstr "`Result` 유형은 표준 라이브러리에 정의된 열거형입니다."
+msgstr "`Result` 타입은 표준 라이브러리에 정의된 열거형입니다."
 
 #: src/05_ticket_v2/06_fallibility.md:46
-#, fuzzy
 msgid "It has two variants:"
-msgstr "여기에는 두 가지 변형이 있습니다."
+msgstr "여기에는 두 가지 배리언트가 있습니다."
 
 #: src/05_ticket_v2/06_fallibility.md:48
-#, fuzzy
 msgid ""
 "`Ok(T)`: represents a successful operation. It holds `T`, the output of the "
 "operation."
-msgstr "`Ok(T)`: 성공적인 작업을 나타냅니다. 연산의 출력인 `T`를 보유합니다."
+msgstr "`Ok(T)`: 성공적인 작업을 나타냅니다. 연산의 결과인 `T`를 가집니다."
 
 #: src/05_ticket_v2/06_fallibility.md:49
-#, fuzzy
 msgid ""
 "`Err(E)`: represents a failed operation. It holds `E`, the error that "
 "occurred."
-msgstr "`Err(E)`: 실패한 작업을 나타냅니다. 발생한 오류인 'E'를 담고 있습니다."
+msgstr "`Err(E)`: 실패한 작업을 나타냅니다. 발생한 오류인 `E`를 가집니다."
 
 #: src/05_ticket_v2/06_fallibility.md:51
-#, fuzzy
 msgid ""
 "Both `Ok` and `Err` are generic, allowing you to specify your own types for "
 "the success and error cases."
 msgstr ""
-"`Ok`와 `Err`은 모두 일반적이므로 성공 및 오류 사례에 대해 고유한 유형을 지정"
+"`Ok`와 `Err`은 모두 일반적이므로 성공 및 오류 사례에 대해 고유한 타입을 지정"
 "할 수 있습니다."
 
 #: src/05_ticket_v2/06_fallibility.md:53
-#, fuzzy
 msgid "No exceptions"
 msgstr "예외 없음"
 
 #: src/05_ticket_v2/06_fallibility.md:55
-#, fuzzy
 msgid ""
 "Recoverable errors in Rust are **represented as values**.  \n"
 "They're just an instance of a type, being passed around and manipulated like "
@@ -8129,12 +8069,11 @@ msgid ""
 "as Python or C#, where **exceptions** are used to signal errors."
 msgstr ""
 "Rust에서 복구 가능한 오류는 **값으로 표시**됩니다.  \n"
-"이는 단지 유형의 인스턴스일 뿐이며 다른 값처럼 전달되고 조작됩니다. 이는 오류"
+"이는 단지 타입의 인스턴스일 뿐이며 다른 값처럼 전달되고 조작됩니다. 이는 오류"
 "를 알리기 위해 **예외**를 사용하는 Python이나 C# 등의 다른 언어와는 상당한 차"
 "이가 있습니다."
 
 #: src/05_ticket_v2/06_fallibility.md:59
-#, fuzzy
 msgid ""
 "Exceptions create a separate control flow path that can be hard to reason "
 "about.  \n"
@@ -8146,68 +8085,61 @@ msgid ""
 msgstr ""
 "예외는 추론하기 어려울 수 있는 별도의 제어 흐름 경로를 생성합니다.  \n"
 "함수의 시그니처만 보면 예외가 발생할 수 있는지 여부를 알 수 없습니다. 함수의 "
-"시그니처만 보면 **어떤** 예외 유형이 발생할 수 있는지 알 수 없습니다.  \n"
+"시그니처만 보면 **어떤** 예외 타입이 발생할 수 있는지 알 수 없습니다.  \n"
 "알아내려면 함수의 문서를 읽거나 구현을 살펴봐야 합니다."
 
 #: src/05_ticket_v2/06_fallibility.md:64
-#, fuzzy
 msgid ""
 "Exception handling logic has very poor locality: the code that throws the "
 "exception is far removed from the code that catches it, and there's no direct "
 "link between the two."
 msgstr ""
-"예외 처리 논리는 지역성이 매우 낮습니다. 예외를 발생시키는 코드는 예외를 포착"
+"예외 처리 로직은 지역성이 매우 낮습니다. 예외를 발생시키는 코드는 예외를 포착"
 "하는 코드에서 멀리 떨어져 있으며 둘 사이에는 직접적인 링크가 없습니다."
 
 #: src/05_ticket_v2/06_fallibility.md:67
-#, fuzzy
 msgid "Fallibility is encoded in the type system"
-msgstr "오류 가능성은 유형 시스템에 인코딩되어 있습니다."
+msgstr "오류 가능성은 타입 시스템에 인코딩되어 있습니다"
 
 #: src/05_ticket_v2/06_fallibility.md:69
-#, fuzzy
 msgid ""
 "Rust, with `Result`, forces you to **encode fallibility in the function's "
 "signature**.  \n"
 "If a function can fail (and you want the caller to have a shot at handling "
 "the error), it must return a `Result`."
 msgstr ""
-"Rust는 'Result'를 사용하여 **함수 서명의 오류 가능성**을 인코딩하도록 강제합니"
-"다.  \n"
+"Rust는 `Result`를 사용하여 **함수 시그니처의 오류 가능성**을 인코딩하도록 강제"
+"합니다.  \n"
 "함수가 실패할 수 있는 경우(그리고 호출자가 오류를 처리하도록 하려는 경우) "
 "`Result`를 반환해야 합니다."
 
 #: src/05_ticket_v2/06_fallibility.md:73
-#, fuzzy
 msgid ""
 "// Just by looking at the signature, you know that this function can fail.\n"
 "// You can also inspect `ParseIntError` to see what kind of failures to "
 "expect.\n"
 msgstr ""
-"// 서명만 봐도 이 함수가 실패할 수 있다는 것을 알 수 있습니다. // "
-"`ParseIntError`를 검사하여 어떤 종류의 실패가 예상되는지 확인할 수도 있습니다."
+"// 시그니처만 봐도 이 함수가 실패할 수 있다는 것을 알 수 있습니다.\n"
+"// `ParseIntError`를 확인해 어떤 종류의 실패가 예상되는지 알 수 있습니다.\n"
 
 #: src/05_ticket_v2/06_fallibility.md:76 src/05_ticket_v2/07_unwrap.md:13
-#, fuzzy
 msgid "// ...\n"
-msgstr "// ..."
+msgstr "// ...\n"
 
 #: src/05_ticket_v2/06_fallibility.md:80
-#, fuzzy
 msgid "That's the big advantage of `Result`: it makes fallibility explicit."
 msgstr ""
 "이것이 `Result`의 가장 큰 장점입니다. 즉, 오류 가능성을 명시적으로 만들어줍니"
 "다."
 
 #: src/05_ticket_v2/06_fallibility.md:82
-#, fuzzy
 msgid ""
 "Keep in mind, though, that panics exist. They aren't tracked by the type "
 "system, just like exceptions in other languages. But they're meant for "
 "**unrecoverable errors** and should be used sparingly."
 msgstr ""
-"하지만 패닉이 존재한다는 점을 명심하십시오. 다른 언어의 예외와 마찬가지로 유"
-"형 시스템으로 추적되지 않습니다. 그러나 **복구할 수 없는 오류**를 위한 것이므"
+"하지만 패닉이 존재한다는 점을 명심하십시오. 다른 언어의 예외와 마찬가지로 타"
+"입 시스템으로 추적되지 않습니다. 그러나 **복구할 수 없는 오류**를 위한 것이므"
 "로 드물게 사용해야 합니다."
 
 #: src/05_ticket_v2/06_fallibility.md:87
@@ -8216,71 +8148,66 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/06_fallibility)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/06_fallibility`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/05_ticket_v2/06_fallibility)에 있습니다"
 
 #: src/05_ticket_v2/07_unwrap.md:1
-#, fuzzy
 msgid "Unwrapping"
-msgstr "풀기"
+msgstr "언랩핑"
 
 #: src/05_ticket_v2/07_unwrap.md:3
-#, fuzzy
 msgid ""
 "`Ticket::new` now returns a `Result` instead of panicking on invalid "
 "inputs.  \n"
 "What does this mean for the caller?"
 msgstr ""
-"`Ticket::new`는 이제 유효하지 않은 입력에 당황하는 대신 `Result`를 반환합니"
+"`Ticket::new`는 이제 유효하지 않은 입력에 패닉하는 대신 `Result`를 반환합니"
 "다.  \n"
-"이는 발신자에게 무엇을 의미합니까?"
+"이는 호출하는 입장에서 무엇을 의미할까요?"
 
 #: src/05_ticket_v2/07_unwrap.md:6
-#, fuzzy
 msgid "Failures can't be (implicitly) ignored"
-msgstr "실패는 (암시적으로) 무시될 수 없습니다."
+msgstr "실패는 (암시적으로) 무시될 수 없습니다"
 
 #: src/05_ticket_v2/07_unwrap.md:8
-#, fuzzy
 msgid ""
 "Unlike exceptions, Rust's `Result` forces you to **handle errors at the call "
 "site**.  \n"
 "If you call a function that returns a `Result`, Rust won't allow you to "
 "implicitly ignore the error case."
 msgstr ""
-"예외와 달리 Rust의 `Result`는 **호출 사이트에서 오류를 처리**하도록 강제합니"
+"예외와 달리 Rust의 `Result`는 **호출한 곳에서 오류를 처리**하도록 강제합니"
 "다.  \n"
-"`Result`를 반환하는 함수를 호출하면 Rust는 오류 사례를 암시적으로 무시하는 것"
-"을 허용하지 않습니다."
+"`Result`를 반환하는 함수를 호출하면 Rust는 에러 케이스를 암시적으로 무시하는 "
+"것을 허용하지 않습니다."
 
 #: src/05_ticket_v2/07_unwrap.md:15
-#, fuzzy
 msgid ""
 "// This won't compile: we're not handling the error case.\n"
 "// We must either use `match` or one of the combinators provided by `Result`\n"
 "// to \"unwrap\" the success value or handle the error.\n"
 msgstr ""
-"// 컴파일되지 않습니다. 오류 사례를 처리하지 않습니다. // 성공 값을 \"해제\"하"
-"거나 오류를 처리하려면 `match` 또는 `Result`에서 제공하는 // 결합자 중 하나를 "
-"사용해야 합니다."
+"// 컴파일되지 않습니다. 에러 케이스를 처리하지 않았습니다.\n"
+"// 성공 값을 \"언랩\"하거나 오류를 처리하려면 `match` 또는 `Result`에서 제공하"
+"는\n"
+"// 결합자 중 하나를 사용해야 합니다.\n"
 
 #: src/05_ticket_v2/07_unwrap.md:19 src/05_ticket_v2/07_unwrap.md:30
 #: src/05_ticket_v2/07_unwrap.md:32 src/05_ticket_v2/07_unwrap.md:36
-#, fuzzy
 msgid "\"42\""
 msgstr "\"42\""
 
 #: src/05_ticket_v2/07_unwrap.md:22
-#, fuzzy
 msgid "You got a `Result`. Now what?"
-msgstr "'결과'가 나왔습니다. 이제 뭐?"
+msgstr "`Result`가 나왔습니다. 이걸로 뭘 할 수 있을까요?"
 
 #: src/05_ticket_v2/07_unwrap.md:24
-#, fuzzy
 msgid ""
 "When you call a function that returns a `Result`, you have two key options:"
-msgstr "'결과'를 반환하는 함수를 호출할 때 두 가지 주요 옵션이 있습니다."
+msgstr "`Result`를 반환하는 함수를 호출할 때 두 가지 주요 옵션이 있습니다:"
 
 #: src/05_ticket_v2/07_unwrap.md:26
-#, fuzzy
 msgid ""
 "Panic if the operation failed. This is done using either the `unwrap` or "
 "`expect` methods."
@@ -8289,38 +8216,32 @@ msgstr ""
 "여 수행됩니다."
 
 #: src/05_ticket_v2/07_unwrap.md:29
-#, fuzzy
 msgid "// Panics if `parse_int` returns an `Err`.\n"
-msgstr "// `parse_int`가 `Err`을 반환하면 패닉이 발생합니다."
+msgstr "// `parse_int`가 `Err`을 반환하면 패닉이 발생합니다.\n"
 
 #: src/05_ticket_v2/07_unwrap.md:31
-#, fuzzy
 msgid "// `expect` lets you specify a custom panic message.\n"
-msgstr "// `expect`를 사용하면 사용자 정의 패닉 메시지를 지정할 수 있습니다."
+msgstr "// `expect`를 사용하면 사용자 정의 패닉 메시지를 지정할 수 있습니다.\n"
 
 #: src/05_ticket_v2/07_unwrap.md:32
-#, fuzzy
 msgid "\"Failed to parse integer\""
-msgstr "\"정수를 구문 분석하지 못했습니다.\""
+msgstr "\"Failed to parse integer\""
 
 #: src/05_ticket_v2/07_unwrap.md:34
-#, fuzzy
 msgid ""
 "Destructure the `Result` using a `match` expression to deal with the error "
 "case explicitly."
 msgstr ""
-"오류 사례를 명시적으로 처리하려면 '일치' 표현식을 사용하여 '결과'를 구조화하세"
-"요."
+"에러 케이스를 명시적으로 처리하려면 `match` 표현식을 사용하여 `Result`를 구조 "
+"해제하세요."
 
 #: src/05_ticket_v2/07_unwrap.md:37
-#, fuzzy
 msgid "\"Parsed number: {}\""
-msgstr "\"파싱된 번호: {}\""
+msgstr "\"Parsed number: {}\""
 
 #: src/05_ticket_v2/07_unwrap.md:38
-#, fuzzy
 msgid "\"Error: {}\""
-msgstr "\"오류: {}\""
+msgstr "\"Error: {}\""
 
 #: src/05_ticket_v2/07_unwrap.md:44
 msgid ""
@@ -8328,67 +8249,62 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/07_unwrap)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/07_unwrap`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/05_ticket_v2/07_unwrap)에 있습니다"
 
 #: src/05_ticket_v2/08_error_enums.md:3
-#, fuzzy
 msgid ""
 "Your solution to the previous exercise may have felt awkward: matching on "
 "strings is not ideal!  \n"
 "A colleague might rework the error messages returned by `Ticket::new` (e.g. "
 "to improve readability) and, all of a sudden, your calling code would break."
 msgstr ""
-"이전 연습에 대한 솔루션이 어색하게 느껴질 수 있습니다. 문자열 일치는 이상적이"
+"이전 예제에 대한 솔루션이 어색하게 느껴질 수 있습니다. 문자열 매칭은 이상적이"
 "지 않습니다!  \n"
 "동료가 `Ticket::new`에서 반환된 오류 메시지를 재작업할 수 있으며(예: 가독성을 "
-"높이기 위해) 갑자기 호출 코드가 중단될 수 있습니다."
+"높이기 위해) 갑자기 호출하는 코드가 중단될 수 있습니다."
 
 #: src/05_ticket_v2/08_error_enums.md:7
-#, fuzzy
 msgid "You already know the machinery required to fix this: enums!"
 msgstr ""
 "당신은 이 문제를 해결하는 데 필요한 메커니즘을 이미 알고 있습니다: 열거형!"
 
 #: src/05_ticket_v2/08_error_enums.md:9
-#, fuzzy
 msgid "Reacting to errors"
-msgstr "오류에 대한 대응"
+msgstr "오류 처리"
 
 #: src/05_ticket_v2/08_error_enums.md:11
-#, fuzzy
 msgid ""
 "When you want to allow the caller to behave differently based on the specific "
 "error that occurred, you can use an enum to represent the different error "
 "cases:"
 msgstr ""
 "발생한 특정 오류에 따라 호출자가 다르게 동작하도록 허용하려면 열거형을 사용하"
-"여 다양한 오류 사례를 나타낼 수 있습니다."
+"여 다양한 오류 사례를 나타낼 수 있습니다:"
 
 #: src/05_ticket_v2/08_error_enums.md:15
-#, fuzzy
 msgid ""
 "// An error enum to represent the different error cases\n"
 "// that may occur when parsing a `u32` from a string.\n"
 msgstr ""
-"// 문자열에서 `u32`를 구문 분석할 때 발생할 수 있는 // 다양한 오류 사례를 나타"
-"내는 오류 열거형입니다."
+"// 문자열에서 `u32`를 구문 분석할 때 발생할 수 있는\n"
+"// 다양한 에러 케이스를 나타내는 오류 열거형입니다.\n"
 
 #: src/05_ticket_v2/08_error_enums.md:24
-#, fuzzy
 msgid ""
 "Using an error enum, you're encoding the different error cases in the type "
 "system—they become part of the signature of the fallible function.  \n"
 "This simplifies error handling for the caller, as they can use a `match` "
 "expression to react to the different error cases:"
 msgstr ""
-"오류 열거형을 사용하여 유형 시스템의 다양한 오류 사례를 인코딩합니다. 이는 오"
-"류가 있는 함수 서명의 일부가 됩니다.  \n"
-"이렇게 하면 호출자가 '일치' 표현식을 사용하여 다양한 오류 사례에 반응할 수 있"
-"으므로 호출자의 오류 처리가 단순화됩니다."
+"오류 열거형을 사용하여 타입 시스템의 다양한 에러 케이스를 인코딩합니다. 이는 "
+"오류가 있는 함수 시그니처의 일부가 됩니다.  \n"
+"이렇게 하면 호출자가 `match` 표현식을 사용하여 다양한 에러 케이스에 대응할 수 "
+"있으므로 호출자의 오류 처리가 단순화됩니다."
 
 #: src/05_ticket_v2/08_error_enums.md:35
-#, fuzzy
 msgid "\"Not a number: {}\""
-msgstr "\"숫자가 아님: {}\""
+msgstr "\"Not a number: {}\""
 
 #: src/05_ticket_v2/08_error_enums.md:42
 msgid ""
@@ -8396,19 +8312,19 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/08_error_enums)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/08_error_enums`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/05_ticket_v2/08_error_enums)에 있습니다"
 
 #: src/05_ticket_v2/09_error_trait.md:1
-#, fuzzy
 msgid "Error trait"
-msgstr "오류 특성"
+msgstr "Error 트레잇"
 
 #: src/05_ticket_v2/09_error_trait.md:3
-#, fuzzy
 msgid "Error reporting"
 msgstr "오류 보고"
 
 #: src/05_ticket_v2/09_error_trait.md:5
-#, fuzzy
 msgid ""
 "In the previous exercise you had to destructure the `TitleError` variant to "
 "extract the error message and pass it to the `panic!` macro.  \n"
@@ -8416,13 +8332,12 @@ msgid ""
 "type into a representation that can be shown to a user, a service operator, "
 "or a developer."
 msgstr ""
-"이전 연습에서는 오류 메시지를 추출하고 이를 `panic!` 매크로에 전달하기 위해 "
-"`TitleError` 변형을 분해해야 했습니다.  \n"
-"이는 **오류 보고**의 (초보적인) 예입니다. 오류 유형을 사용자, 서비스 운영자 또"
+"이전 예제에서는 오류 메시지를 추출하고 이를 `panic!` 매크로에 전달하기 위해 "
+"`TitleError` 배리언트를 분해해야 했습니다.  \n"
+"이는 **오류 보고**의 (초보적인) 예입니다. 오류 타입을 사용자, 서비스 운영자 또"
 "는 개발자에게 표시될 수 있는 표현으로 변환합니다."
 
 #: src/05_ticket_v2/09_error_trait.md:10
-#, fuzzy
 msgid ""
 "It's not practical for each Rust developer to come up with their own error "
 "reporting strategy: it'd be a waste of time and it wouldn't compose well "
@@ -8430,76 +8345,67 @@ msgid ""
 msgstr ""
 "각 Rust 개발자가 자신만의 오류 보고 전략을 생각해내는 것은 실용적이지 않습니"
 "다. 이는 시간 낭비일 뿐 아니라 프로젝트 전반에 걸쳐 잘 구성되지 않을 것입니"
-"다. 이것이 Rust가 `std::error::Error` 특성을 제공하는 이유입니다."
+"다. 이것이 Rust가 `std::error::Error` 트레잇을 제공하는 이유입니다."
 
 #: src/05_ticket_v2/09_error_trait.md:14
-#, fuzzy
 msgid "The `Error` trait"
-msgstr "'오류' 특성"
+msgstr "'Error' 트레잇"
 
 #: src/05_ticket_v2/09_error_trait.md:16
-#, fuzzy
 msgid ""
 "There are no constraints on the type of the `Err` variant in a `Result`, but "
 "it's a good practice to use a type that implements the `Error` trait. `Error` "
 "is the cornerstone of Rust's error handling story:"
 msgstr ""
-"`Result`의 `Err` 변형 유형에는 제한이 없지만 `Error` 특성을 구현하는 유형을 사"
-"용하는 것이 좋습니다. `Error`는 Rust의 오류 처리 이야기의 초석입니다:"
+"`Result`의 `Err` 배리언트 타입에는 제한이 없지만 `Error` 트레잇을 구현하는 타"
+"입을 사용하는 것이 좋습니다. `Error`는 Rust의 오류 처리 이야기의 초석입니다:"
 
 #: src/05_ticket_v2/09_error_trait.md:21
-#, fuzzy
 msgid "// Slightly simplified definition of the `Error` trait\n"
-msgstr "// `Error` 특성의 정의를 약간 단순화했습니다."
+msgstr "// `Error` 트레잇의 정의를 약간 단순화했습니다\n"
 
 #: src/05_ticket_v2/09_error_trait.md:25
-#, fuzzy
 msgid ""
 "You might recall the `:` syntax from [the `Sized` trait]"
 "(../04_traits/08_sized.md)—it's used to specify **supertraits**. For `Error`, "
 "there are two supertraits: `Debug` and `Display`. If a type wants to "
 "implement `Error`, it must also implement `Debug` and `Display`."
 msgstr ""
-"`Sized` 특성에서 `:` 구문을 기억하실 수 있습니다. 이는 **초특성**을 지정하는 "
-"데 사용됩니다. `Error`에는 `Debug`와 `Display`라는 두 가지 슈퍼 특성이 있습니"
-"다. 유형이 `Error`를 구현하려는 경우 `Debug` 및 `Display`도 구현해야 합니다."
+"`Sized` 트레잇에서 `:` 구문을 기억하실 수 있습니다. 이는 **슈퍼 트레잇**을 지"
+"정하는 데 사용됩니다. `Error`에는 `Debug`와 `Display`라는 두 가지 슈퍼 트레잇"
+"이 있습니다. 타입이 `Error`를 구현하려는 경우 `Debug` 및 `Display`도 구현해야 "
+"합니다."
 
 #: src/05_ticket_v2/09_error_trait.md:29
-#, fuzzy
 msgid "`Display` and `Debug`"
-msgstr "'디스플레이' 및 '디버그'"
+msgstr "`Display`와 `Debug`"
 
 #: src/05_ticket_v2/09_error_trait.md:31
-#, fuzzy
 msgid ""
 "We've already encountered the `Debug` trait in [a previous exercise]"
 "(../04_traits/04_derive.md)—it's the trait used by `assert_eq!` to display "
 "the values of the variables it's comparing when the assertion fails."
 msgstr ""
-"우리는 이전 연습에서 이미 `Debug` 특성을 접했습니다. 이는 어설션이 실패할 때 "
-"비교하는 변수의 값을 표시하기 위해 `assert_eq!`에서 사용하는 특성입니다."
+"우리는 이전 예제에서 이미 `Debug` 트레잇을 접했습니다. 이는 어설션이 실패할 "
+"때 비교하는 변수의 값을 표시하기 위해 `assert_eq!`에서 사용하는 트레잇입니다."
 
 #: src/05_ticket_v2/09_error_trait.md:34
-#, fuzzy
 msgid ""
 "From a \"mechanical\" perspective, `Display` and `Debug` are identical—they "
 "encode how a type should be converted into a string-like representation:"
 msgstr ""
-"\"기계적\" 관점에서 'Display'와 'Debug'는 동일합니다. 즉, 유형을 문자열과 같"
-"은 표현으로 변환하는 방법을 인코딩합니다."
+"\"메카니컬한\" 관점에서 `Display`와 `Debug`는 동일합니다. 즉, 타입을 문자열과 "
+"같은 표현으로 변환하는 방법을 인코딩합니다."
 
 #: src/05_ticket_v2/09_error_trait.md:38
-#, fuzzy
 msgid "// `Debug`\n"
-msgstr "// `디버그`"
+msgstr "// `Debug`\n"
 
 #: src/05_ticket_v2/09_error_trait.md:42
-#, fuzzy
 msgid "// `Display`\n"
-msgstr "// `디스플레이`"
+msgstr "// `Display`\n"
 
 #: src/05_ticket_v2/09_error_trait.md:49
-#, fuzzy
 msgid ""
 "The difference is in their _purpose_: `Display` returns a representation "
 "that's meant for \"end-users\", while `Debug` provides a low-level "
@@ -8520,25 +8426,25 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/09_error_trait)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/09_error_trait`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/05_ticket_v2/09_error_trait)에 잇습니다"
 
 #: src/05_ticket_v2/10_packages.md:1
-#, fuzzy
 msgid "Libraries and binaries"
-msgstr "라이브러리 및 바이너리"
+msgstr "라이브러리와 바이너리"
 
 #: src/05_ticket_v2/10_packages.md:3
-#, fuzzy
 msgid ""
 "It took a bit of code to implement the `Error` trait for `TicketNewError`, "
 "didn't it?  \n"
 "A manual `Display` implementation, plus an `Error` impl block."
 msgstr ""
-"`TicketNewError`에 대한 `Error` 특성을 구현하려면 약간의 코드가 필요하지 않습"
-"니까?  \n"
+"`TicketNewError`에 대한 `Error` 트레잇을 구현하려면 약간의 코드가 필요하지 않"
+"습니까?  \n"
 "수동 `Display` 구현과 `Error` impl 블록."
 
 #: src/05_ticket_v2/10_packages.md:6
-#, fuzzy
 msgid ""
 "We can remove some of the boilerplate by using [`thiserror`](https://docs.rs/"
 "thiserror/latest/thiserror/), a Rust crate that provides a **procedural "
@@ -8546,83 +8452,73 @@ msgid ""
 "But we're getting ahead of ourselves: `thiserror` is a third-party crate, "
 "it'd be our first dependency!"
 msgstr ""
-"사용자 정의 오류 유형 생성을 단순화하기 위해 **절차적 매크로**를 제공하는 "
+"사용자 정의 오류 타입 생성을 단순화하기 위해 **절차적 매크로**를 제공하는 "
 "Rust 크레이트인 `thiserror`를 사용하여 상용구 중 일부를 제거할 수 있습니"
 "다.  \n"
-"하지만 우리는 앞서 나가고 있습니다. `thiserror`는 제3자 크레이트이며, 이것이 "
-"우리의 첫 번째 종속물이 될 것입니다!"
+"하지만 우리는 앞서 나가고 있습니다. `thiserror`는 서드파티 크레이트이며, 이것"
+"이 우리의 첫 번째 디펜던시가 될 것입니다!"
 
 #: src/05_ticket_v2/10_packages.md:10
-#, fuzzy
 msgid ""
 "Let's take a step back to talk about Rust's packaging system before we dive "
 "into dependencies."
 msgstr ""
-"종속성에 대해 자세히 알아보기 전에 한 걸음 물러나 Rust의 패키징 시스템에 대해 "
-"이야기해 보겠습니다."
+"디펜던시에 대해 자세히 알아보기 전에 한 걸음 물러나 Rust의 패키징 시스템에 대"
+"해 이야기해 보겠습니다."
 
 #: src/05_ticket_v2/10_packages.md:12
-#, fuzzy
 msgid "What is a package?"
-msgstr "패키지란 무엇입니까?"
+msgstr "패키지란?"
 
 #: src/05_ticket_v2/10_packages.md:14
-#, fuzzy
 msgid ""
 "A Rust package is defined by the `[package]` section in a `Cargo.toml` file, "
 "also known as its **manifest**. Within `[package]` you can set the package's "
 "metadata, such as its name and version."
 msgstr ""
-"Rust 패키지는 **매니페스트**라고도 알려진 `Cargo.toml` 파일의 `[패키지]` 섹션"
-"에 의해 정의됩니다. `[패키지]` 내에서 이름 및 버전과 같은 패키지의 메타데이터"
-"를 설정할 수 있습니다."
+"Rust 패키지는 **매니페스트**라고도 알려진 `Cargo.toml` 파일의 `[package]` 섹션"
+"에 의해 정의됩니다. `[package]` 내에서 이름이나 버전과 같은 패키지의 메타데이"
+"터를 설정할 수 있습니다."
 
 #: src/05_ticket_v2/10_packages.md:17
-#, fuzzy
 msgid ""
 "Go check the `Cargo.toml` file in the directory of this section's exercise!"
-msgstr "이 섹션의 연습 디렉토리에 있는 `Cargo.toml` 파일을 확인해보세요!"
+msgstr "이 섹션의 예제 디렉토리에 있는 `Cargo.toml` 파일을 확인해보세요!"
 
 #: src/05_ticket_v2/10_packages.md:19
-#, fuzzy
 msgid "What is a crate?"
-msgstr "상자란 무엇입니까?"
+msgstr "크레이트란?"
 
 #: src/05_ticket_v2/10_packages.md:21
-#, fuzzy
 msgid ""
 "Inside a package, you can have one or more **crates**, also known as "
 "**targets**.  \n"
 "The two most common crate types are **binary crates** and **library crates**."
 msgstr ""
-"패키지 내부에는 **대상**이라고도 알려진 하나 이상의 **상자**가 있을 수 있습니"
+"패키지 내부에는 **targets**라고 하는 하나 이상의 **크레이트**가 있을 수 있습니"
 "다.  \n"
-"가장 일반적인 두 가지 상자 유형은 **바이너리 상자**와 **라이브러리 상자**입니"
-"다."
+"가장 일반적인 두 가지 크레이트 타입은 **바이너리 크레이트**와 **라이브러리 크"
+"레이트**입니다."
 
 #: src/05_ticket_v2/10_packages.md:24
-#, fuzzy
 msgid "Binaries"
 msgstr "바이너리"
 
 #: src/05_ticket_v2/10_packages.md:26
-#, fuzzy
 msgid ""
 "A binary is a program that can be compiled to an **executable file**.  \n"
 "It must include a function named `main`—the program's entry point. `main` is "
 "invoked when the program is executed."
 msgstr ""
 "바이너리는 **실행 파일**로 컴파일될 수 있는 프로그램입니다.  \n"
-"여기에는 프로그램의 진입점인 'main'이라는 함수가 포함되어야 합니다. 프로그램"
-"이 실행될 때 'main'이 호출됩니다."
+"여기에는 프로그램의 진입점인 `main`이라는 함수가 포함되어야 합니다. 프로그램"
+"이 실행될 때 `main`이 호출됩니다."
 
 #: src/05_ticket_v2/10_packages.md:29
-#, fuzzy
 msgid "Libraries"
-msgstr "도서관"
+msgstr "라이브러리"
 
 #: src/05_ticket_v2/10_packages.md:31
-#, fuzzy
 msgid ""
 "Libraries, on the other hand, are not executable on their own. You can't "
 "_run_ a library, but you can _import its code_ from another package that "
@@ -8633,11 +8529,10 @@ msgstr ""
 "반면에 라이브러리는 자체적으로 실행될 수 없습니다. 라이브러리를 _실행_할 수는 "
 "없지만 라이브러리에 의존하는 다른 패키지에서 _해당 코드_를 가져올 수 있습니"
 "다.  \n"
-"라이브러리는 다른 패키지에서 **종속성**으로 활용할 수 있는 코드(예: 함수, 유"
-"형 등)를 그룹화합니다."
+"라이브러리는 다른 패키지에서 **디펜던시**으로 활용할 수 있는 코드(예: 함수, 타"
+"입 등)를 그룹화합니다."
 
 #: src/05_ticket_v2/10_packages.md:35
-#, fuzzy
 msgid ""
 "All the exercises you've solved so far have been structured as libraries, "
 "with a test suite attached to them."
@@ -8646,78 +8541,69 @@ msgstr ""
 "부되어 있습니다."
 
 #: src/05_ticket_v2/10_packages.md:37
-#, fuzzy
 msgid "Conventions"
-msgstr "규칙"
+msgstr "컨벤션"
 
 #: src/05_ticket_v2/10_packages.md:39
-#, fuzzy
 msgid ""
 "There are some conventions around Rust packages that you need to keep in mind:"
 msgstr "Rust 패키지와 관련하여 염두에 두어야 할 몇 가지 규칙이 있습니다:"
 
 #: src/05_ticket_v2/10_packages.md:41
-#, fuzzy
 msgid "The package's source code is usually located in the `src` directory."
 msgstr "패키지의 소스 코드는 일반적으로 `src` 디렉토리에 있습니다."
 
 #: src/05_ticket_v2/10_packages.md:42
-#, fuzzy
 msgid ""
 "If there's a `src/lib.rs` file, `cargo` will infer that the package contains "
 "a library crate."
 msgstr ""
-"`src/lib.rs` 파일이 있으면 `cargo`는 패키지에 라이브러리 상자가 포함되어 있다"
-"고 추론합니다."
+"`src/lib.rs` 파일이 있으면 `cargo`는 패키지에 라이브러리 크레이트가 포함되어 "
+"있다고 추론합니다."
 
 #: src/05_ticket_v2/10_packages.md:43
-#, fuzzy
 msgid ""
 "If there's a `src/main.rs` file, `cargo` will infer that the package contains "
 "a binary crate."
 msgstr ""
-"`src/main.rs` 파일이 있으면 `cargo`는 패키지에 바이너리 상자가 포함되어 있다"
-"고 추론합니다."
+"`src/main.rs` 파일이 있으면 `cargo`는 패키지에 바이너리 크레이트가 포함되어 있"
+"다고 추론합니다."
 
 #: src/05_ticket_v2/10_packages.md:45
-#, fuzzy
 msgid ""
 "You can override these defaults by explicitly declaring your targets in the "
 "`Cargo.toml` file—see [`cargo`'s documentation](https://doc.rust-lang.org/"
 "cargo/reference/cargo-targets.html#cargo-targets) for more details."
 msgstr ""
 "`Cargo.toml` 파일에서 대상을 명시적으로 선언하여 이러한 기본값을 재정의할 수 "
-"있습니다. 자세한 내용은 `cargo` 문서를 참조하세요."
+"있습니다. 자세한 내용은 [`cargo` 문서](https://doc.rust-lang.org/cargo/"
+"reference/cargo-targets.html#cargo-targets)를 참조하세요."
 
 #: src/05_ticket_v2/10_packages.md:48
-#, fuzzy
 msgid ""
 "Keep in mind that while a package can contain multiple crates, it can only "
 "contain one library crate."
 msgstr ""
-"패키지에는 여러 상자가 포함될 수 있지만 라이브러리 상자는 하나만 포함될 수 있"
-"습니다."
+"패키지에는 여러 크레이트가 포함될 수 있지만 라이브러리 크레이트는 하나만 포함"
+"될 수 있습니다."
 
 #: src/05_ticket_v2/10_packages.md:50
-#, fuzzy
 msgid "Scaffolding a new package"
-msgstr "새 패키지 스캐폴딩"
+msgstr "새 패키지 스캐폴딩하기"
 
 #: src/05_ticket_v2/10_packages.md:52
-#, fuzzy
 msgid "You can use `cargo` to scaffold a new package:"
 msgstr "새로운 패키지를 생성하기 위해 `cargo`를 사용할 수 있습니다:"
 
 #: src/05_ticket_v2/10_packages.md:58
-#, fuzzy
 msgid ""
 "This will create a new folder, `my-binary`, containing a new Rust package "
 "with the same name and a single binary crate inside. If you want to create a "
 "library crate instead, you can use the `--lib` flag:"
 msgstr ""
 "그러면 이름이 같은 새 Rust 패키지와 내부에 단일 바이너리 상자가 포함된 `my-"
-"binary`라는 새 폴더가 생성됩니다. 대신 라이브러리 상자를 생성하려면 `--lib` 플"
-"래그를 사용할 수 있습니다:"
+"binary`라는 새 폴더가 생성됩니다. 대신 라이브러리 크레이트를 생성하려면 `--"
+"lib` 플래그를 사용할 수 있습니다:"
 
 #: src/05_ticket_v2/10_packages.md:67
 msgid ""
@@ -8725,18 +8611,20 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/10_packages)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/10_packages`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/05_ticket_v2/10_packages)에 있습니다"
 
 #: src/05_ticket_v2/11_dependencies.md:3
-#, fuzzy
 msgid ""
 "A package can depend on other packages by listing them in the "
 "`[dependencies]` section of its `Cargo.toml` file.  \n"
 "The most common way to specify a dependency is by providing its name and "
 "version:"
 msgstr ""
-"패키지는 `Cargo.toml` 파일의 `[종속성]` 섹션에 나열하여 다른 패키지에 의존할 "
-"수 있습니다.  \n"
-"종속성을 지정하는 가장 일반적인 방법은 해당 이름과 버전을 제공하는 것입니다."
+"패키지는 `Cargo.toml` 파일의 `[dependencies]` 섹션에 나열하여 다른 패키지에 의"
+"존할 수 있습니다.  \n"
+"디펜던시를 지정하는 가장 일반적인 방법은 해당 이름과 버전을 제공하는 것입니다."
 
 #: src/05_ticket_v2/11_dependencies.md:6
 msgid ""
@@ -8745,36 +8633,36 @@ msgid ""
 "thiserror = \"1\"\n"
 "```"
 msgstr ""
+"```toml\n"
+"[dependencies]\n"
+"thiserror = \"1\"\n"
+"```"
 
 #: src/05_ticket_v2/11_dependencies.md:11
-#, fuzzy
 msgid ""
 "This will add `thiserror` as a dependency to your package, with a **minimum** "
 "version of `1.0.0`. `thiserror` will be pulled from [crates.io](https://"
 "crates.io), Rust's official package registry. When you run `cargo build`, "
 "`cargo` will go through a few stages:"
 msgstr ""
-"이렇게 하면 **최소** 버전 `1.0.0`과 함께 `thiserror`가 패키지에 대한 종속성으"
-"로 추가됩니다. `thiserror`는 Rust의 공식 패키지 레지스트리인 crates.io에서 가"
-"져옵니다. `cargo build`를 실행하면 `cargo`는 몇 가지 단계를 거칩니다."
+"이렇게 하면 **최소** 버전 `1.0.0`과 함께 `thiserror`가 패키지에 대한 디펜던시"
+"로 추가됩니다. `thiserror`는 Rust의 공식 패키지 레지스트리인 [crates.io]"
+"(https://crates.io)에서 가져옵니다. `cargo build`를 실행하면 `cargo`는 몇 가"
+"지 단계를 거칩니다:"
 
 #: src/05_ticket_v2/11_dependencies.md:15
-#, fuzzy
 msgid "Dependency resolution"
-msgstr "종속성 해결"
+msgstr "의존성 해결"
 
 #: src/05_ticket_v2/11_dependencies.md:16
-#, fuzzy
 msgid "Downloading the dependencies"
-msgstr "종속성 다운로드"
+msgstr "디펜던시 다운로드"
 
 #: src/05_ticket_v2/11_dependencies.md:17
-#, fuzzy
 msgid "Compiling your project (your own code and the dependencies)"
-msgstr "프로젝트 컴파일(자신의 코드 및 종속성)"
+msgstr "프로젝트 컴파일(자신의 코드와 디펜던시)"
 
 #: src/05_ticket_v2/11_dependencies.md:19
-#, fuzzy
 msgid ""
 "Dependency resolution is skipped if your project has a `Cargo.lock` file and "
 "your manifest files are unchanged. A lockfile is automatically generated by "
@@ -8785,34 +8673,31 @@ msgid ""
 "should commit the `Cargo.lock` file to your version control system."
 msgstr ""
 "프로젝트에 `Cargo.lock` 파일이 있고 매니페스트 파일이 변경되지 않은 경우 종속"
-"성 해결을 건너뜁니다. 잠금 파일은 종속성 해결이 성공적으로 완료된 후 `cargo`"
-"에 의해 자동으로 생성됩니다. 여기에는 프로젝트에 사용된 모든 종속성의 정확한 "
-"버전이 포함되어 있으며 동일한 버전이 다양한 빌드(예: CI)에서 일관되게 사용되도"
-"록 하는 데 사용됩니다. . 여러 개발자와 함께 프로젝트를 진행하는 경우 `Cargo."
+"성 해결을 건너뜁니다. lockfile은 종속성 해결이 성공적으로 완료된 후 `cargo`에 "
+"의해 자동으로 생성됩니다. 여기에는 프로젝트에 사용된 모든 종속성의 정확한 버전"
+"이 포함되어 있으며 동일한 버전이 다양한 빌드(예: CI)에서 일관되게 사용되도록 "
+"하는 데 사용됩니다. . 여러 개발자와 함께 프로젝트를 진행하는 경우 `Cargo."
 "lock` 파일을 버전 제어 시스템에 커밋해야 합니다."
 
 #: src/05_ticket_v2/11_dependencies.md:25
-#, fuzzy
 msgid ""
 "You can use `cargo update` to update the `Cargo.lock` file with the latest "
 "(compatible) versions of all your dependencies."
 msgstr ""
-"`cargo update`를 사용하여 `Cargo.lock` 파일을 모든 종속성의 최신(호환) 버전으"
-"로 업데이트할 수 있습니다."
+"`cargo update`를 사용하여 `Cargo.lock` 파일을 모든 디펜던시의 최신(호환) 버전"
+"으로 업데이트할 수 있습니다."
 
 #: src/05_ticket_v2/11_dependencies.md:27
-#, fuzzy
 msgid "Path dependencies"
-msgstr "경로 종속성"
+msgstr "경로 디펜던시"
 
 #: src/05_ticket_v2/11_dependencies.md:29
-#, fuzzy
 msgid ""
 "You can also specify a dependency using a **path**. This is useful when "
 "you're working on multiple local packages."
 msgstr ""
-"**경로**를 사용하여 종속성을 지정할 수도 있습니다. 이는 여러 로컬 패키지를 작"
-"업할 때 유용합니다."
+"**경로**를 사용하여 디펜던시를 지정할 수도 있습니다. 이는 여러 로컬 패키지를 "
+"작업할 때 유용합니다."
 
 #: src/05_ticket_v2/11_dependencies.md:31
 msgid ""
@@ -8821,43 +8706,43 @@ msgid ""
 "my-library = { path = \"../my-library\" }\n"
 "```"
 msgstr ""
+"```toml\n"
+"[dependencies]\n"
+"my-library = { path = \"../my-library\" }\n"
+"```"
 
 #: src/05_ticket_v2/11_dependencies.md:36
-#, fuzzy
 msgid ""
 "The path is relative to the `Cargo.toml` file of the package that's declaring "
 "the dependency."
-msgstr "경로는 종속성을 선언하는 패키지의 `Cargo.toml` 파일에 상대적입니다."
+msgstr "경로는 디펜던시를 선언하는 패키지의 `Cargo.toml` 파일의 상대경로입니다."
 
 #: src/05_ticket_v2/11_dependencies.md:38
-#, fuzzy
 msgid "Other sources"
 msgstr "기타 소스"
 
 #: src/05_ticket_v2/11_dependencies.md:40
-#, fuzzy
 msgid ""
 "Check out the [Cargo documentation](https://doc.rust-lang.org/cargo/reference/"
 "specifying-dependencies.html) for more details on where you can get "
 "dependencies from and how to specify them in your `Cargo.toml` file."
 msgstr ""
 "종속성을 가져올 수 있는 위치와 이를 `Cargo.toml` 파일에 지정하는 방법에 대한 "
-"자세한 내용은 Cargo 문서를 확인하세요."
+"자세한 내용은 [Cargo 문서](https://doc.rust-lang.org/cargo/reference/"
+"specifying-dependencies.html)를 확인하세요."
 
 #: src/05_ticket_v2/11_dependencies.md:43
-#, fuzzy
 msgid "Dev dependencies"
-msgstr "개발 종속성"
+msgstr "개발용 디펜던시"
 
 #: src/05_ticket_v2/11_dependencies.md:45
-#, fuzzy
 msgid ""
 "You can also specify dependencies that are only needed for development—i.e. "
 "they only get pulled in when you're running `cargo test`.  \n"
 "They go in the `[dev-dependencies]` section of your `Cargo.toml` file:"
 msgstr ""
-"개발에만 필요한 종속성을 지정할 수도 있습니다. 그들은 `화물 테스트`를 실행할 "
-"때만 끌어옵니다.  \n"
+"개발에만 필요한 디펜던시을 지정할 수도 있습니다. 이것들은 `cargo test`를 실행"
+"할 때만 받아옵니다.  \n"
 "`Cargo.toml` 파일의 `[dev-dependents]` 섹션에 들어갑니다:"
 
 #: src/05_ticket_v2/11_dependencies.md:49
@@ -8867,9 +8752,12 @@ msgid ""
 "static_assertions = \"1.1.0\"\n"
 "```"
 msgstr ""
+"```toml\n"
+"[dev-dependencies]\n"
+"static_assertions = \"1.1.0\"\n"
+"```"
 
 #: src/05_ticket_v2/11_dependencies.md:54
-#, fuzzy
 msgid ""
 "We've been using a few of these throughout the book to shorten our tests."
 msgstr ""
@@ -8882,56 +8770,52 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/11_dependencies)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/11_dependencies`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/05_ticket_v2/11_dependencies)에 있습니다"
 
 #: src/05_ticket_v2/12_thiserror.md:3
-#, fuzzy
 msgid ""
 "That was a bit of detour, wasn't it? But a necessary one!  \n"
 "Let's get back on track now: custom error types and `thiserror`."
 msgstr ""
-"그건 좀 우회적인 일이었죠, 그렇죠? 하지만 꼭 필요한 것!  \n"
-"이제 다시 원래대로 돌아가 보겠습니다: 맞춤 오류 유형과 `thiserror`."
+"좀 빙 둘러왔어요, 그렇죠? 하지만 꼭 필요한 것이었어요!  \n"
+"이제 다시 원래대로 돌아가 보겠습니다: 커스텀 에러 타입과 `thiserror`."
 
 #: src/05_ticket_v2/12_thiserror.md:6
-#, fuzzy
 msgid "Custom error types"
-msgstr "사용자 정의 오류 유형"
+msgstr "커스텀 에러 타입"
 
 #: src/05_ticket_v2/12_thiserror.md:8
-#, fuzzy
 msgid ""
 "We've seen how to implement the `Error` trait \"manually\" for a custom error "
 "type.  \n"
 "Imagine that you have to do this for most error types in your codebase. "
 "That's a lot of boilerplate, isn't it?"
 msgstr ""
-"우리는 사용자 정의 오류 유형에 대해 `Error` 특성을 \"수동으로\" 구현하는 방법"
-"을 살펴보았습니다.  \n"
-"코드베이스에 있는 대부분의 오류 유형에 대해 이 작업을 수행해야 한다고 상상해 "
-"보세요. 상용구가 너무 많죠, 그렇죠?"
+"우리는 커스텀 에러 타입에 대해 `Error` 트레잇을 \"수동으로\" 구현하는 방법을 "
+"살펴보았습니다.  \n"
+"코드베이스에 있는 대부분의 에러 타입에 대해 이 작업을 수행해야 한다고 상상해 "
+"보세요. 상용구가 너무 많죠, 그렇지않나요?"
 
 #: src/05_ticket_v2/12_thiserror.md:11
-#, fuzzy
 msgid ""
 "We can remove some of the boilerplate by using [`thiserror`](https://docs.rs/"
 "thiserror/latest/thiserror/), a Rust crate that provides a **procedural "
 "macro** to simplify the creation of custom error types."
 msgstr ""
-"사용자 정의 오류 유형 생성을 단순화하기 위해 **절차적 매크로**를 제공하는 "
-"Rust 크레이트인 `thiserror`를 사용하여 상용구 중 일부를 제거할 수 있습니다."
+"커스텀 에러 타입 생성을 단순화하기 위해 **절차적 매크로**를 제공하는 Rust 크레"
+"이트인 `thiserror`를 사용하여 상용구 중 일부를 제거할 수 있습니다."
 
 #: src/05_ticket_v2/12_thiserror.md:17 src/05_ticket_v2/12_thiserror.md:19
-#, fuzzy
 msgid "\"{0}\""
 msgstr "\"{0}\""
 
 #: src/05_ticket_v2/12_thiserror.md:24
-#, fuzzy
 msgid "You can write your own macros"
-msgstr "매크로를 직접 작성할 수 있습니다."
+msgstr "매크로를 직접 작성할 수 있습니다"
 
 #: src/05_ticket_v2/12_thiserror.md:26
-#, fuzzy
 msgid ""
 "All the `derive` macros we've seen so far were provided by the Rust standard "
 "library.  \n"
@@ -8942,7 +8826,6 @@ msgstr ""
 "`thiserror::Error`는 **타사** `derive` 매크로의 첫 번째 예입니다."
 
 #: src/05_ticket_v2/12_thiserror.md:29
-#, fuzzy
 msgid ""
 "`derive` macros are a subset of **procedural macros**, a way to generate Rust "
 "code at compile time. We won't get into the details of how to write a "
@@ -8953,41 +8836,37 @@ msgstr ""
 "`derive` 매크로는 컴파일 타임에 Rust 코드를 생성하는 방법인 **절차적 매크로**"
 "의 하위 집합입니다. 이 과정에서는 절차적 매크로를 작성하는 방법에 대해 자세히 "
 "설명하지 않지만 직접 작성할 수 있다는 점을 아는 것이 중요합니다!  \n"
-"좀 더 고급 Rust 과정에서 접근할 주제입니다."
+"좀 더 고급 Rust 코스에서 다뤄볼만한 주제입니다."
 
 #: src/05_ticket_v2/12_thiserror.md:34
-#, fuzzy
 msgid "Custom syntax"
-msgstr "사용자 정의 구문"
+msgstr "커스텀 문법"
 
 #: src/05_ticket_v2/12_thiserror.md:36
-#, fuzzy
 msgid ""
 "Each procedural macro can define its own syntax, which is usually explained "
 "in the crate's documentation. In the case of `thiserror`, we have:"
 msgstr ""
-"각 절차적 매크로는 자체 구문을 정의할 수 있으며 이는 일반적으로 크레이트 문서"
-"에 설명되어 있습니다. `thiserror`의 경우 다음과 같습니다."
+"각 절차적 매크로는 자체 문법을 정의할 수 있으며 이는 일반적으로 크레이트 문서"
+"에 설명되어 있습니다. `thiserror`의 경우 다음과 같습니다:"
 
 #: src/05_ticket_v2/12_thiserror.md:39
-#, fuzzy
 msgid ""
 "`#[derive(thiserror::Error)]`: this is the syntax to derive the `Error` trait "
 "for a custom error type, helped by `thiserror`."
 msgstr ""
 "`#[derive(thiserror::Error)]`: 이것은 `thiserror`의 도움을 받아 사용자 정의 오"
-"류 유형에 대한 `Error` 특성을 파생시키는 구문입니다."
+"류 유형에 대한 `Error` 트레잇을 파생시키는 구문입니다."
 
 #: src/05_ticket_v2/12_thiserror.md:40
-#, fuzzy
 msgid ""
 "`#[error(\"{0}\")]`: this is the syntax to define a `Display` implementation "
 "for each variant of the custom error type. `{0}` is replaced by the zero-th "
 "field of the variant (`String`, in this case) when the error is displayed."
 msgstr ""
-"`#[error(\"{0}\")]`: 이는 사용자 정의 오류 유형의 각 변형에 대해 `Display` 구"
-"현을 정의하는 구문입니다. 오류가 표시되면 `{0}`은 변형(이 경우 `String`)의 0번"
-"째 필드로 대체됩니다."
+"`#[error(\"{0}\")]`: 이는 커스텀 에러 타입의 각 배리언트에 대해 `Display` 구현"
+"을 정의하는 구문입니다. 오류가 표시되면 `{0}`은 배리언트(이 경우 `String`)의 0"
+"번째 필드로 대체됩니다."
 
 #: src/05_ticket_v2/12_thiserror.md:45
 msgid ""
@@ -8995,26 +8874,26 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/12_thiserror)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/12_thiserror`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/05_ticket_v2/12_thiserror)에 있습니다"
 
 #: src/05_ticket_v2/13_try_from.md:1 src/05_ticket_v2/13_try_from.md:10
-#, fuzzy
 msgid "`TryFrom` and `TryInto`"
-msgstr "'TryFrom' 및 'TryInto'"
+msgstr "`TryFrom`과 `TryInto`"
 
 #: src/05_ticket_v2/13_try_from.md:3
-#, fuzzy
 msgid ""
 "In the previous chapter we looked at the [`From` and `Into` traits]"
 "(../04_traits/09_from.md), Rust's idiomatic interfaces for **infallible** "
 "type conversions.  \n"
 "But what if the conversion is not guaranteed to succeed?"
 msgstr ""
-"이전 장에서 우리는 **무결한** 유형 변환을 위한 Rust의 관용적 인터페이스인 "
-"`From`과 `Into` 특성을 살펴보았습니다.  \n"
+"이전 장에서 우리는 **무결한** 타입 변환을 위한 Rust의 관용적 인터페이스인 "
+"[`From`과 `Into` 트레잇](../04_traits/09_from.md)을 살펴보았습니다.  \n"
 "하지만 변환 성공이 보장되지 않으면 어떻게 될까요?"
 
 #: src/05_ticket_v2/13_try_from.md:7
-#, fuzzy
 msgid ""
 "We now know enough about errors to discuss the **fallible** counterparts of "
 "`From` and `Into`: `TryFrom` and `TryInto`."
@@ -9023,7 +8902,6 @@ msgstr ""
 "과 `TryInto`를 논의할 만큼 오류에 대해 충분히 알고 있습니다."
 
 #: src/05_ticket_v2/13_try_from.md:12
-#, fuzzy
 msgid ""
 "Both `TryFrom` and `TryInto` are defined in the `std::convert` module, just "
 "like `From` and `Into`."
@@ -9031,7 +8909,6 @@ msgstr ""
 "`TryFrom`과 `TryInto`는 `From`과 `Into`처럼 `std::convert` 모듈에 정의됩니다."
 
 #: src/05_ticket_v2/13_try_from.md:26
-#, fuzzy
 msgid ""
 "The main difference between `From`/`Into` and `TryFrom`/`TryInto` is that the "
 "latter return a `Result` type.  \n"
@@ -9039,45 +8916,39 @@ msgid ""
 msgstr ""
 "`From`/`Into`와 `TryFrom`/`TryInto`의 주요 차이점은 후자가 `Result` 유형을 반"
 "환한다는 것입니다.  \n"
-"이렇게 하면 변환이 실패하고 당황하는 대신 오류가 반환됩니다."
+"이렇게 하면 변환이 실패했을 때 패닉하는 대신 오류가 반환됩니다."
 
 #: src/05_ticket_v2/13_try_from.md:29
-#, fuzzy
 msgid "`Self::Error`"
-msgstr "`자기::오류`"
+msgstr "`Self::Error`"
 
 #: src/05_ticket_v2/13_try_from.md:31
-#, fuzzy
 msgid ""
 "Both `TryFrom` and `TryInto` have an associated `Error` type. This allows "
 "each implementation to specify its own error type, ideally the most "
 "appropriate for the conversion being attempted."
 msgstr ""
-"`TryFrom`과 `TryInto` 모두 연관된 `Error` 유형이 있습니다. 이를 통해 각 구현"
-"은 이상적으로는 시도 중인 변환에 가장 적합한 자체 오류 유형을 지정할 수 있습니"
-"다."
+"`TryFrom`과 `TryInto` 모두 연관 `Error` 타입이 있습니다. 이를 통해 각 구현은 "
+"이상적으로는 시도 중인 변환에 가장 적합한 자체 에러 타입을 지정할 수 있습니다."
 
 #: src/05_ticket_v2/13_try_from.md:35
-#, fuzzy
 msgid ""
 "`Self::Error` is a way to refer to the `Error` associated type defined in the "
 "trait itself."
 msgstr ""
-"`Self::Error`는 특성 자체에 정의된 `Error` 관련 유형을 참조하는 방법입니다."
+"`Self::Error`는 트레잇 자체에 정의된 `Error` 관련 타입을 참조하는 방법입니다."
 
 #: src/05_ticket_v2/13_try_from.md:37
-#, fuzzy
 msgid "Duality"
 msgstr "이중성"
 
 #: src/05_ticket_v2/13_try_from.md:39
-#, fuzzy
 msgid ""
 "Just like `From` and `Into`, `TryFrom` and `TryInto` are dual traits.  \n"
 "If you implement `TryFrom` for a type, you get `TryInto` for free."
 msgstr ""
-"`From` 및 `Into`와 마찬가지로 `TryFrom`과 `TryInto`는 이중 특성입니다.  \n"
-"유형에 대해 `TryFrom`을 구현하면 `TryInto`를 무료로 얻을 수 있습니다."
+"`From` 및 `Into`와 마찬가지로 `TryFrom`과 `TryInto`는 이중 트레잇입니다.  \n"
+"타입에 대해 `TryFrom`을 구현하면 `TryInto`를 자동으로 얻을 수 있습니다."
 
 #: src/05_ticket_v2/13_try_from.md:44
 msgid ""
@@ -9085,23 +8956,23 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/13_try_from)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/13_try_from`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/05_ticket_v2/13_try_from)에 있습니다"
 
 #: src/05_ticket_v2/14_source.md:3
-#, fuzzy
 msgid ""
 "There's one more thing we need to talk about to complete our coverage of the "
 "`Error` trait: the `source` method."
 msgstr ""
-"`Error` 특성을 완전히 다루기 위해 이야기해야 할 것이 하나 더 있습니다: "
-"`source` 메소드입니다."
+"`Error` 트레잇을 완전히 다루기 위해 이야기해야 할 것이 하나 더 있습니다: "
+"`source` 메서드입니다."
 
 #: src/05_ticket_v2/14_source.md:6
-#, fuzzy
 msgid "// Full definition this time!\n"
-msgstr "// 이번에는 완전 정의!"
+msgstr "// 이번에는 완전한 정의!\n"
 
 #: src/05_ticket_v2/14_source.md:14
-#, fuzzy
 msgid ""
 "The `source` method is a way to access the **error cause**, if any.  \n"
 "Errors are often chained, meaning that one error is the cause of another: you "
@@ -9110,20 +8981,18 @@ msgid ""
 "`source` method allows you to \"walk\" the full chain of errors, often used "
 "when capturing error context in logs."
 msgstr ""
-"`source` 메소드는 **오류 원인**(있는 경우)에 액세스하는 방법입니다.  \n"
+"`source` 메서드는 **오류 원인**(있는 경우)에 액세스하는 방법입니다.  \n"
 "오류는 흔히 연쇄적으로 발생합니다. 즉, 하나의 오류가 다른 오류의 원인이 된다"
 "는 의미입니다. 즉, 낮은 수준의 오류(예: 데이터베이스 호스트 이름을 확인할 수 "
 "없음)로 인해 발생한 높은 수준의 오류(예: 데이터베이스에 연결할 수 없음)가 발생"
-"했습니다. '소스' 방법을 사용하면 로그에서 오류 컨텍스트를 캡처할 때 자주 사용"
-"되는 전체 오류 체인을 '탐색'할 수 있습니다."
+"한다는 것입니다. `source`메서드를 사용하면 로그에서 에러 컨텍스트를 캡처할 때 "
+"자주 사용되는 전체 에러 체인을 `탐색`할 수 있습니다."
 
 #: src/05_ticket_v2/14_source.md:19
-#, fuzzy
 msgid "Implementing `source`"
-msgstr "'소스' 구현"
+msgstr "`source` 구현"
 
 #: src/05_ticket_v2/14_source.md:21
-#, fuzzy
 msgid ""
 "The `Error` trait provides a default implementation that always returns "
 "`None` (i.e. no underlying cause). That's why you didn't have to care about "
@@ -9131,70 +9000,62 @@ msgid ""
 "You can override this default implementation to provide a cause for your "
 "error type."
 msgstr ""
-"`Error` 특성은 항상 `None`(즉, 근본적인 원인이 없음)을 반환하는 기본 구현을 제"
-"공합니다. 그렇기 때문에 이전 연습에서는 '소스'에 신경 쓸 필요가 없었습니"
+"`Error` 트레잇은 항상 `None`(즉, 근본적인 원인이 없음)을 반환하는 기본 구현을 "
+"제공합니다. 그렇기 때문에 이전 연습에서는 `source`에 신경 쓸 필요가 없었습니"
 "다.  \n"
-"이 기본 구현을 재정의하여 오류 유형의 원인을 제공할 수 있습니다."
+"이 기본 구현을 재정의하여 에러 타입의 원인을 제공할 수 있습니다."
 
 #: src/05_ticket_v2/14_source.md:35 src/05_ticket_v2/14_source.md:73
 #: src/05_ticket_v2/14_source.md:85 src/05_ticket_v2/14_source.md:99
-#, fuzzy
 msgid "\"Failed to connect to the database\""
-msgstr "\"데이터베이스에 연결하지 못했습니다.\""
+msgstr "\"Failed to connect to the database\""
 
 #: src/05_ticket_v2/14_source.md:46
-#, fuzzy
 msgid ""
 "In this example, `DatabaseError` wraps an `std::io::Error` as its source. We "
 "then override the `source` method to return this source when called."
 msgstr ""
-"이 예에서 `DatabaseError`는 `std::io::Error`를 소스로 래핑합니다. 그런 다음 "
-"'source' 메서드를 재정의하여 호출 시 이 소스를 반환합니다."
+"이 예시에서 `DatabaseError`는 `std::io::Error`를 소스로 래핑합니다. 그런 다음 "
+"`source` 메서드를 재정의하여 호출 시 이 소스를 반환합니다."
 
 #: src/05_ticket_v2/14_source.md:49
-#, fuzzy
 msgid "`&(dyn Error + 'static)`"
-msgstr "`&(dyn 오류 + '정적)`"
+msgstr "`&(dyn Error + 'static)`"
 
 #: src/05_ticket_v2/14_source.md:51
-#, fuzzy
 msgid ""
 "What's this `&(dyn Error + 'static)` type?  \n"
 "Let's unpack it:"
 msgstr ""
-"이 `&(dyn Error + 'static)` 유형은 무엇인가요?  \n"
-"압축을 풀어보자:"
+"이 `&(dyn Error + 'static)` 타입은 무엇인가요?  \n"
+"한번 까봅시다:"
 
 #: src/05_ticket_v2/14_source.md:54
-#, fuzzy
 msgid ""
 "`dyn Error` is a **trait object**. It's a way to refer to any type that "
 "implements the `Error` trait."
 msgstr ""
-"`dyn Error`는 **특성 개체**입니다. 이는 `Error` 특성을 구현하는 모든 유형을 참"
-"조하는 방법입니다."
+"`dyn Error`는 **트레잇 개체**입니다. 이는 `Error` 트레잇을 구현하는 모든 타입"
+"을 참조하는 방법입니다."
 
 #: src/05_ticket_v2/14_source.md:55
-#, fuzzy
 msgid ""
 "`'static` is a special **lifetime specifier**. `'static` implies that the "
 "reference is valid for \"as long as we need it\", i.e. the entire program "
 "execution."
 msgstr ""
-"``static'은 특별한 **수명 지정자**입니다. '정적'은 참조가 \"필요한 한\", 즉 전"
-"체 프로그램 실행 동안 유효함을 의미합니다."
+"`'static`은 특별한 **수명 지정자**입니다. `'static`은 참조가 \"필요한 한\", "
+"즉 전체 프로그램 실행 동안 유효함을 의미합니다."
 
 #: src/05_ticket_v2/14_source.md:58
-#, fuzzy
 msgid ""
 "Combined: `&(dyn Error + 'static)` is a reference to a trait object that "
 "implements the `Error` trait and is valid for the entire program execution."
 msgstr ""
-"결합: `&(dyn Error + 'static)`은 `Error` 특성을 구현하는 특성 개체에 대한 참조"
-"이며 전체 프로그램 실행에 유효합니다."
+"`&(dyn Error + 'static)`의 조합은 `Error` 트레잇을 구현하는 트레잇 개체에 대"
+"한 참조이며 전체 프로그램 실행동안에 유효합니다."
 
 #: src/05_ticket_v2/14_source.md:61
-#, fuzzy
 msgid ""
 "Don't worry too much about either of these concepts for now. We'll cover them "
 "in more detail in future chapters."
@@ -9203,72 +9064,62 @@ msgstr ""
 "에 대해 더 자세히 다룰 것입니다."
 
 #: src/05_ticket_v2/14_source.md:63
-#, fuzzy
 msgid "Implementing `source` using `thiserror`"
 msgstr "`thiserror`를 사용하여 `source` 구현"
 
 #: src/05_ticket_v2/14_source.md:65
-#, fuzzy
 msgid ""
 "`thiserror` provides three ways to automatically implement `source` for your "
 "error types:"
 msgstr ""
-"`thiserror`는 오류 유형에 대해 `source`를 자동으로 구현하는 세 가지 방법을 제"
-"공합니다."
+"`thiserror`는 에러 타입에 대해 `source`를 자동으로 구현하는 세 가지 방법을 제"
+"공합니다:"
 
 #: src/05_ticket_v2/14_source.md:67
-#, fuzzy
 msgid ""
 "A field named `source` will automatically be used as the source of the error."
-msgstr "'source'라는 필드가 자동으로 오류 소스로 사용됩니다."
+msgstr "`source`라는 필드가 자동으로 에러 소스로 사용됩니다."
 
 #: src/05_ticket_v2/14_source.md:79
-#, fuzzy
 msgid ""
 "A field annotated with the `#[source]` attribute will automatically be used "
 "as the source of the error."
 msgstr ""
-"`#[source]` 속성으로 주석이 달린 필드는 자동으로 오류 소스로 사용됩니다."
+"`#[source]` 속성의 어노테이션이 달린 필드는 자동으로 오류 소스로 사용됩니다."
 
 #: src/05_ticket_v2/14_source.md:92
-#, fuzzy
 msgid ""
 "A field annotated with the `#[from]` attribute will automatically be used as "
 "the source of the error **and** `thiserror` will automatically generate a "
 "`From` implementation to convert the annotated type into your error type."
 msgstr ""
 "`#[from]` 속성으로 주석이 달린 필드는 자동으로 오류의 소스로 사용됩니다 **그리"
-"고** `thiserror`는 주석이 달린 유형을 오류 유형으로 변환하기 위해 자동으로 "
-"`From` 구현을 생성합니다."
+"고** `thiserror`는 어노테이션이 달린 타입을 에러 타입으로 변환하기 위해 자동으"
+"로 `From` 구현을 생성합니다."
 
 #: src/05_ticket_v2/14_source.md:107
-#, fuzzy
 msgid "The `?` operator"
 msgstr "`?` 연산자"
 
 #: src/05_ticket_v2/14_source.md:109
-#, fuzzy
 msgid ""
 "The `?` operator is a shorthand for propagating errors.  \n"
 "When used in a function that returns a `Result`, it will return early with an "
 "error if the `Result` is `Err`."
 msgstr ""
-"'?' 연산자는 오류 전파를 줄여서 표현한 것입니다.  \n"
+"`?` 연산자는 오류 전파를 줄여서 표현한 것입니다.  \n"
 "`Result`를 반환하는 함수에 사용될 때 `Result`가 `Err`인 경우 오류와 함께 조기"
 "에 반환됩니다."
 
 #: src/05_ticket_v2/14_source.md:118 src/05_ticket_v2/14_source.md:131
-#, fuzzy
 msgid "\"file.txt\""
-msgstr "\"파일.txt\""
+msgstr "\"file.txt\""
 
 #: src/05_ticket_v2/14_source.md:125
-#, fuzzy
 msgid "is equivalent to:"
 msgstr "다음과 같습니다:"
 
 #: src/05_ticket_v2/14_source.md:148
-#, fuzzy
 msgid ""
 "You can use the `?` operator to shorten your error handling code "
 "significantly.  \n"
@@ -9278,7 +9129,7 @@ msgid ""
 msgstr ""
 "`?` 연산자를 사용하면 오류 처리 코드를 대폭 단축할 수 있습니다.  \n"
 "특히 `?` 연산자는 변환이 가능한 경우(즉, 적절한 `From` 구현이 있는 경우) 오류"
-"가 있는 연산의 오류 유형을 함수의 오류 유형으로 자동 변환합니다."
+"가 있는 연산의 에러 타입을 함수의 에러 타입으로 자동 변환합니다."
 
 #: src/05_ticket_v2/14_source.md:154
 msgid ""
@@ -9286,22 +9137,22 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/14_source)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/14_source`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/05_ticket_v2/14_source)에 있습니다"
 
 #: src/05_ticket_v2/15_outro.md:3
-#, fuzzy
 msgid ""
 "When it comes to domain modelling, the devil is in the details.  \n"
 "Rust offers a wide range of tools to help you represent the constraints of "
 "your domain directly in the type system, but it takes some practice to get it "
 "right and write code that looks idiomatic."
 msgstr ""
-"도메인 모델링에 있어서 악마는 세부 사항에 있습니다.  \n"
-"Rust는 유형 시스템에서 도메인의 제약 조건을 직접 표현하는 데 도움이 되는 다양"
+"도메인 모델링에 있어서 악마는 디테일에 있습니다.  \n"
+"Rust는 타입 시스템에서 도메인의 제약 조건을 직접 표현하는 데 도움이 되는 다양"
 "한 도구를 제공하지만 이를 올바르게 구현하고 관용적으로 보이는 코드를 작성하려"
 "면 약간의 연습이 필요합니다."
 
 #: src/05_ticket_v2/15_outro.md:7
-#, fuzzy
 msgid ""
 "Let's close the chapter with one final refinement of our `Ticket` model.  \n"
 "We'll introduce a new type for each of the fields in `Ticket` to encapsulate "
@@ -9311,21 +9162,20 @@ msgid ""
 "have to worry about the title being empty elsewhere in the code: as long as "
 "they have a `TicketTitle`, they know it's valid **by construction**."
 msgstr ""
-"'티켓' 모델을 마지막으로 개선하면서 장을 마무리하겠습니다.  \n"
-"각 제약 조건을 캡슐화하기 위해 'Ticket'의 각 필드에 새로운 유형을 도입하겠습니"
+"`Ticket` 모델을 마지막으로 개선하면서 장을 마무리하겠습니다.  \n"
+"각 제약 조건을 캡슐화하기 위해 `Ticket`의 각 필드에 새로운 타입을 도입하겠습니"
 "다.  \n"
-"누군가 `티켓` 필드에 액세스할 때마다 유효하다고 보장된 값을 돌려받게 됩니다. "
-"`String` 대신 `TicketTitle`. 코드의 다른 곳에서 제목이 비어 있는 것에 대해 걱"
-"정할 필요가 없습니다. 'TicketTitle'이 있는 한 해당 제목이 **구조상** 유효하다"
-"는 것을 알 수 있습니다."
+"누군가 `Ticket` 필드에 액세스할 때마다 유효하다고 보장된 값을 돌려받게 됩니"
+"다. `String` 대신 `TicketTitle`. 코드의 다른 곳에서 제목이 비어 있는 것에 대"
+"해 걱정할 필요가 없습니다. `TicketTitle`이 있는 한 해당 제목이 **구조상** 유효"
+"하다는 것을 알 수 있습니다."
 
 #: src/05_ticket_v2/15_outro.md:13
-#, fuzzy
 msgid ""
 "This is just an example of how you can use Rust's type system to make your "
 "code safer and more expressive."
 msgstr ""
-"이것은 Rust의 유형 시스템을 사용하여 코드를 더욱 안전하고 표현력 있게 만드는 "
+"이것은 Rust의 타입 시스템을 사용하여 코드를 더욱 안전하고 표현력 있게 만드는 "
 "방법에 대한 예일 뿐입니다."
 
 #: src/05_ticket_v2/15_outro.md:17
@@ -9333,12 +9183,16 @@ msgid ""
 "[Parse, don't validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-"
 "don-t-validate/)"
 msgstr ""
+"[Parse, don't validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-"
+"don-t-validate/)"
 
 #: src/05_ticket_v2/15_outro.md:18
 msgid ""
 "[Using types to guarantee domain invariants](https://www.lpalmieri.com/"
 "posts/2020-12-11-zero-to-production-6-domain-modelling/)"
 msgstr ""
+"[Using types to guarantee domain invariants](https://www.lpalmieri.com/"
+"posts/2020-12-11-zero-to-production-6-domain-modelling/)"
 
 #: src/05_ticket_v2/15_outro.md:22
 msgid ""
@@ -9346,6 +9200,8 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/05_ticket_v2/15_outro)"
 msgstr ""
+"이 섹션의 예제는 [`05_ticket_v2/15_outro`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/05_ticket_v2/15_outro)에 있습니다"
 
 #: src/06_ticket_management/00_intro.md:1 src/07_threads/00_intro.md:1
 #, fuzzy
