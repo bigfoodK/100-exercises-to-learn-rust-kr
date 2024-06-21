@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 100 Exercises To Learn Rust\n"
 "POT-Creation-Date: 2024-06-20T21:50:15+09:00\n"
-"PO-Revision-Date: 2024-06-21 07:59+0900\n"
+"PO-Revision-Date: 2024-06-22 03:24+0900\n"
 "Last-Translator: bigfood <satcom1600@hanmail.net>\n"
 "Language-Team: Korean <translation-team-ko@googlegroups.com>\n"
 "Language: ko\n"
@@ -126,11 +126,11 @@ msgstr "마무리"
 
 #: src/SUMMARY.md:32 src/04_traits/00_intro.md:1 src/04_traits/01_trait.md:1
 msgid "Traits"
-msgstr "Traits"
+msgstr "트레잇"
 
 #: src/SUMMARY.md:33 src/04_traits/03_operator_overloading.md:35
 msgid "Trait"
-msgstr "Trait"
+msgstr "트레잇"
 
 #: src/SUMMARY.md:34 src/04_traits/02_orphan_rule.md:86
 msgid "Orphan rule"
@@ -147,7 +147,7 @@ msgstr "파생(Derive) 매크로"
 #: src/SUMMARY.md:37 src/04_traits/05_trait_bounds.md:1
 #: src/04_traits/05_trait_bounds.md:81
 msgid "Trait bounds"
-msgstr "Trait bounds"
+msgstr "트레잇 바운드"
 
 #: src/SUMMARY.md:38 src/04_traits/06_str_slice.md:1
 #: src/04_traits/06_str_slice.md:67
@@ -156,31 +156,31 @@ msgstr "문자열 슬라이스"
 
 #: src/SUMMARY.md:39 src/04_traits/07_deref.md:1
 msgid "`Deref` trait"
-msgstr "`Deref` trait"
+msgstr "`Deref` 트레잇"
 
 #: src/SUMMARY.md:40
 msgid "`Sized` trait"
-msgstr "`Sized` trait"
+msgstr "`Sized` 트레잇"
 
 #: src/SUMMARY.md:41
 msgid "`From` trait"
-msgstr "`From` trait"
+msgstr "`From` 트레잇"
 
 #: src/SUMMARY.md:42
 msgid "Associated vs generic types"
-msgstr "Associated vs generic types"
+msgstr "연관 vs 제네릭 타입"
 
 #: src/SUMMARY.md:43
 msgid "`Clone` trait"
-msgstr "`Clone` trait"
+msgstr "`Clone` 트레잇"
 
 #: src/SUMMARY.md:44
 msgid "`Copy` trait"
-msgstr "`Copy` trait"
+msgstr "`Copy` 트레잇"
 
 #: src/SUMMARY.md:45
 msgid "`Drop` trait"
-msgstr "`Drop` trait"
+msgstr "`Drop` 트레잇"
 
 #: src/SUMMARY.md:48
 msgid "Ticket v2"
@@ -4958,77 +4958,66 @@ msgstr ""
 "exercises-to-learn-rust/tree/main/exercises/03_ticket_v1/12_outro)에 있습니다"
 
 #: src/04_traits/00_intro.md:3
-#, fuzzy
 msgid ""
 "In the previous chapter we covered the basics of Rust's type and ownership "
 "system.  \n"
 "It's time to dig deeper: we'll explore **traits**, Rust's take on interfaces."
 msgstr ""
 "이전 장에서 우리는 Rust의 유형과 소유권 시스템의 기본을 다루었습니다.  \n"
-"이제 더 깊이 파고들 시간입니다. Rust가 인터페이스에 대해 취하는 **특성**을 살"
-"펴보겠습니다."
+"이제 더 깊이 파고들 시간입니다. Rust의 인터페이스, **Trait**를 살펴보겠습니다."
 
 #: src/04_traits/00_intro.md:6
-#, fuzzy
 msgid ""
 "Once you learn about traits, you'll start seeing their fingerprints all over "
 "the place.  \n"
 "In fact, you've already seen traits in action throughout the previous "
 "chapter, e.g. `.into()` invocations as well as operators like `==` and `+`."
 msgstr ""
-"특성에 대해 배우고 나면 곳곳에서 그들의 지문이 보이기 시작합니다.  \n"
-"사실, 이전 장 전체에서 이미 특성이 작동하는 것을 보았습니다. `.into()` 호출 "
-"및 `==` 및 `+`와 같은 연산자."
+"특성에 대해 배우고 나면 곳곳에서 그들의 흔적이 보일겁니다.  \n"
+"사실, 이전 장 전체에서 이미 트레잇이 작동하는 것을 보았습니다. `.into()` 호출 "
+"및 `==`나 `+`와 같은 연산자들 말입니다."
 
 #: src/04_traits/00_intro.md:10
-#, fuzzy
 msgid ""
 "On top of traits as a concept, we'll also cover some of the key traits that "
 "are defined in Rust's standard library:"
 msgstr ""
-"개념으로서의 특성 외에도 Rust의 표준 라이브러리에 정의된 주요 특성 중 일부도 "
-"다룰 것입니다:"
+"개념으로서의 트레잇 외에도 Rust의 표준 라이브러리에 정의된 주요 트레잇 중 일부"
+"도 다룰 것입니다:"
 
 #: src/04_traits/00_intro.md:12
-#, fuzzy
 msgid "Operator traits (e.g. `Add`, `Sub`, `PartialEq`, etc.)"
 msgstr "연산자 특성(예: `Add`, `Sub`, `PartialEq` 등)"
 
 #: src/04_traits/00_intro.md:13
-#, fuzzy
 msgid "`From` and `Into`, for infallible conversions"
-msgstr "오류 없는 변환을 위한 `From` 및 `Into`"
+msgstr "`From`과 `Into`, 오류 없는 변환을 위해"
 
 #: src/04_traits/00_intro.md:14
-#, fuzzy
 msgid "`Clone` and `Copy`, for copying values"
-msgstr "값 복사를 위한 `Clone` 및 `Copy`"
+msgstr "`Clone`과 `Copy`, 값 복사를 위해"
 
 #: src/04_traits/00_intro.md:15
-#, fuzzy
 msgid "`Deref` and deref coercion"
-msgstr "`Deref` 및 역참조 강제"
+msgstr "`Deref`와 deref 변환"
 
 #: src/04_traits/00_intro.md:16
-#, fuzzy
 msgid "`Sized`, to mark types with a known size"
-msgstr "알려진 크기로 유형을 표시하기 위한 `Sized`"
+msgstr "`Sized`, 타입의 크기가 정해졌음을 나타내기위해"
 
 #: src/04_traits/00_intro.md:17
-#, fuzzy
 msgid "`Drop`, for custom cleanup logic"
-msgstr "'Drop', 맞춤 정리 논리용"
+msgstr "'Drop', 커스텀 클린업 로직을 위해"
 
 #: src/04_traits/00_intro.md:19
-#, fuzzy
 msgid ""
 "Since we'll be talking about conversions, we'll seize the opportunity to plug "
 "some of the \"knowledge gaps\" from the previous chapter—e.g. what is `\"A "
 "title\"`, exactly? Time to learn more about slices too!"
 msgstr ""
-"전환에 관해 이야기할 것이므로 이전 장의 \"지식 격차\"를 메울 수 있는 기회를 잡"
-"을 것입니다. ``제목''이 정확히 무엇인가요? 슬라이스에 대해서도 자세히 알아볼 "
-"시간입니다!"
+"변환에 관해 이야기할 것이므로 이전 장의 \"지식 격차\"를 메울 수 있는 시간을 가"
+"지겠습니다. ``제목''이란게 정확히 무엇이었나요? 슬라이스에 대해서도 자세히 알"
+"아보겠습니다!"
 
 #: src/04_traits/00_intro.md:24
 msgid ""
@@ -5036,167 +5025,144 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/04_traits/00_intro)"
 msgstr ""
+"이 섹션의 예제는 [`04_traits/00_intro`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/04_traits/00_intro)에 있습니다"
 
 #: src/04_traits/01_trait.md:3
-#, fuzzy
 msgid "Let's look again at our `Ticket` type:"
-msgstr "'Ticket' 유형을 다시 살펴보겠습니다."
+msgstr "'Ticket' 타입을 다시 살펴보겠습니다."
 
 #: src/04_traits/01_trait.md:13
-#, fuzzy
 msgid ""
 "All our tests, so far, have been making assertions using `Ticket`'s fields."
-msgstr ""
-"지금까지 우리의 모든 테스트는 '티켓' 필드를 사용하여 어설션을 만들어 왔습니다."
+msgstr "지금까지 우리의 모든 테스트는 `Ticket`의 필드를 사용하여 비교했습니다."
 
 #: src/04_traits/01_trait.md:16
-#, fuzzy
 msgid "\"A new title\""
-msgstr "\"새로운 제목\""
+msgstr "\"A new title\""
 
 #: src/04_traits/01_trait.md:19
-#, fuzzy
 msgid "What if we wanted to compare two `Ticket` instances directly?"
-msgstr "두 개의 `Ticket` 인스턴스를 직접 비교하고 싶다면 어떻게 해야 할까요?"
+msgstr ""
+"만약 두 개의 `Ticket` 인스턴스를 직접 비교하고 싶다면 어떻게 해야 할까요?"
 
 #: src/04_traits/01_trait.md:22 src/04_traits/01_trait.md:23
-#, fuzzy
 msgid "/* ... */"
-msgstr "/\\* ... \\*/"
+msgstr "/* ... */"
 
 #: src/04_traits/01_trait.md:27
-#, fuzzy
 msgid "The compiler will stop us:"
 msgstr "컴파일러는 우리를 멈출 것입니다:"
 
 #: src/04_traits/01_trait.md:41
-#, fuzzy
 msgid ""
 "`Ticket` is a new type. Out of the box, there is **no behavior attached to "
 "it**.  \n"
 "Rust doesn't magically infer how to compare two `Ticket` instances just "
 "because they contain `String`s."
 msgstr ""
-"'티켓'은 새로운 유형입니다. 기본적으로는 **부착된 동작**이 없습니다.  \n"
+"`Ticket`은 새로운 유형입니다. 기본적으로는 **연관된 동작이 없습니다**.  \n"
 "Rust는 단지 `String`을 포함하고 있다는 이유만으로 두 개의 `Ticket` 인스턴스를 "
 "비교하는 방법을 마법처럼 추론하지 않습니다."
 
 #: src/04_traits/01_trait.md:44
-#, fuzzy
 msgid ""
 "The Rust compiler is nudging us in the right direction though: it's "
 "suggesting that we might be missing an implementation of `PartialEq`. "
 "`PartialEq` is a **trait**!"
 msgstr ""
-"Rust 컴파일러는 우리를 올바른 방향으로 인도하고 있습니다. 이는 `PartialEq` 구"
-"현이 누락되었을 수 있음을 시사합니다. `PartialEq`는 **특성**입니다!"
+"Rust 컴파일러는 우리를 올바른 방향으로 인도하고 있습니다: 이는 `PartialEq` 구"
+"현이 누락되었을 수 있음을 알려줍니다. `PartialEq`는 **트레잇**입니다!"
 
 #: src/04_traits/01_trait.md:47
-#, fuzzy
 msgid "What are traits?"
-msgstr "특성이란 무엇입니까?"
+msgstr "트레잇이란 무엇입니까?"
 
 #: src/04_traits/01_trait.md:49
-#, fuzzy
 msgid ""
 "Traits are Rust's way of defining **interfaces**.  \n"
 "A trait defines a set of methods that a type must implement to satisfy the "
 "trait's contract."
 msgstr ""
-"특성은 **인터페이스**를 정의하는 Rust의 방식입니다.  \n"
-"특성은 특성의 계약을 충족하기 위해 유형이 구현해야 하는 메서드 집합을 정의합니"
-"다."
+"트레잇은 **인터페이스**를 정의하는 Rust의 방식입니다.  \n"
+"트레잇은 트레잇의 요구사항을 충족하기 위해 타입이 구현해야 하는 메서드 집합을 "
+"정의합니다."
 
 #: src/04_traits/01_trait.md:52
-#, fuzzy
 msgid "Defining a trait"
-msgstr "특성 정의"
+msgstr "트레잇 정의"
 
 #: src/04_traits/01_trait.md:54
-#, fuzzy
 msgid "The syntax for a trait definition goes like this:"
-msgstr "특성 정의의 구문은 다음과 같습니다."
+msgstr "트레잇 정의의 구문은 다음과 같습니다."
 
 #: src/04_traits/01_trait.md:62
-#, fuzzy
 msgid ""
 "We might, for example, define a trait named `MaybeZero` that requires its "
 "implementors to define an `is_zero` method:"
 msgstr ""
-"예를 들어, 구현자가 `is_zero` 메소드를 정의하도록 요구하는 `MaybeZero`라는 특"
-"성을 정의할 수 있습니다."
+"예를 들어, 구현자가 `is_zero` 메소드를 정의하도록 요구하는 `MaybeZero`라는 트"
+"레잇을 정의할 수 있습니다:"
 
 #: src/04_traits/01_trait.md:70
-#, fuzzy
 msgid "Implementing a trait"
-msgstr "특성 구현"
+msgstr "트레잇 구현"
 
 #: src/04_traits/01_trait.md:72
-#, fuzzy
 msgid ""
 "To implement a trait for a type we use the `impl` keyword, just like we do "
 "for regular[^inherent] methods, but the syntax is a bit different:"
 msgstr ""
-"유형에 대한 특성을 구현하려면 일반[^inherent] 메소드에서와 마찬가지로 `impl` "
-"키워드를 사용하지만 구문은 약간 다릅니다."
+"타입에 대한 트레잇을 구현하려면 일반[^inherent] 메소드에서와 마찬가지로 "
+"`impl` 키워드를 사용하지만 구문은 약간 다릅니다."
 
 #: src/04_traits/01_trait.md:78
-#, fuzzy
 msgid "// Method body\n"
-msgstr "// 메소드 본문"
+msgstr "// 메서드 본문\n"
 
 #: src/04_traits/01_trait.md:83
-#, fuzzy
 msgid ""
 "For example, to implement the `MaybeZero` trait for a custom number type, "
 "`WrappingU32`:"
 msgstr ""
 "예를 들어, 사용자 정의 숫자 유형 `WrappingU32`에 대해 `MaybeZero` 특성을 구현"
-"하려면 다음을 수행하세요."
+"하려면 다음을 수행하세요:"
 
 #: src/04_traits/01_trait.md:97
-#, fuzzy
 msgid "Invoking a trait method"
-msgstr "특성 메소드 호출"
+msgstr "트레잇 메서드 호출"
 
 #: src/04_traits/01_trait.md:99
-#, fuzzy
 msgid ""
 "To invoke a trait method, we use the `.` operator, just like we do with "
 "regular methods:"
 msgstr ""
-"특성 메서드를 호출하려면 일반 메서드와 마찬가지로 `.` 연산자를 사용합니다."
+"트레잇 메서드를 호출하려면 일반 메서드와 마찬가지로 `.` 연산자를 사용합니다:"
 
 #: src/04_traits/01_trait.md:106
-#, fuzzy
 msgid "To invoke a trait method, two things must be true:"
-msgstr "특성 메서드를 호출하려면 다음 두 가지 사항이 충족되어야 합니다."
+msgstr "트레잇 메서드를 호출하려면 다음 두 가지 사항이 충족되어야 합니다:"
 
 #: src/04_traits/01_trait.md:108
-#, fuzzy
 msgid "The type must implement the trait."
-msgstr "유형은 특성을 구현해야 합니다."
+msgstr "타입은 트레잇을 구현해야 합니다."
 
 #: src/04_traits/01_trait.md:109
-#, fuzzy
 msgid "The trait must be in scope."
-msgstr "특성은 범위 내에 있어야 합니다."
+msgstr "트레잇은 스코프 내에 있어야 합니다."
 
 #: src/04_traits/01_trait.md:111
-#, fuzzy
 msgid ""
 "To satisfy the latter, you may have to add a `use` statement for the trait:"
-msgstr "후자를 만족시키려면 해당 특성에 `use` 문을 추가해야 할 수도 있습니다."
+msgstr "후자를 만족시키려면 해당 특성에 `use` 문을 추가해야 할 수도 있습니다:"
 
 #: src/04_traits/01_trait.md:117
-#, fuzzy
 msgid "This is not necessary if:"
-msgstr "다음과 같은 경우에는 필요하지 않습니다."
+msgstr "다음과 같은 경우에는 필요하지 않습니다:"
 
 #: src/04_traits/01_trait.md:119
-#, fuzzy
 msgid "The trait is defined in the same module where the invocation occurs."
-msgstr "특성은 호출이 발생하는 동일한 모듈에서 정의됩니다."
+msgstr "트레잇이 호출이 발생하는 동일한 모듈에서 정의될 때."
 
 #: src/04_traits/01_trait.md:120
 msgid ""
@@ -5205,21 +5171,25 @@ msgid ""
 "program. It's as if `use std::prelude::*;` was added at the beginning of "
 "every Rust module."
 msgstr ""
+"트레잇이 **prelude**에 정의되어있을 때. 프렐류드는 모든 러스트 프로그램에 자동"
+"으로 임포트되는 트레잇과 타입의 집합입니다. 마치 모든 러스트 모듈의 시작 부분"
+"에 `use std::prelude::*;`가 추가된 것과 같습니다."
 
 #: src/04_traits/01_trait.md:124
-#, fuzzy
 msgid ""
 "You can find the list of traits and types in the prelude in the [Rust "
 "documentation](https://doc.rust-lang.org/std/prelude/index.html)."
-msgstr "Rust 문서의 서문에서 특성과 유형 목록을 찾을 수 있습니다."
+msgstr ""
+"[Rust 문서](https://doc.rust-lang.org/std/prelude/index.html)의 프렐류드 부분"
+"에서 트레잇과 타입들을 찾을 수 있습니다."
 
 #: src/04_traits/01_trait.md:127
-#, fuzzy
 msgid ""
 "A method defined directly on a type, without using a trait, is also known as "
 "an **inherent method**."
 msgstr ""
-"특성을 사용하지 않고 유형에 직접 정의된 메서드를 **고유 메서드**라고도 합니다."
+"트레잇을 사용하지 않고 타입에 직접 정의된 메서드를 **고유 메서드**라고도 합니"
+"다."
 
 #: src/04_traits/01_trait.md:131
 msgid ""
@@ -5227,33 +5197,30 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/04_traits/01_trait)"
 msgstr ""
+"이 섹션의 예제는 [`04_traits/01_trait`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/04_traits/01_trait)에 있습니다"
 
 #: src/04_traits/02_orphan_rule.md:1
-#, fuzzy
 msgid "Implementing traits"
-msgstr "특성 구현"
+msgstr "트레잇 구현"
 
 #: src/04_traits/02_orphan_rule.md:3
-#, fuzzy
 msgid ""
 "When a type is defined in another crate (e.g. `u32`, from Rust's standard "
 "library), you can't directly define new methods for it. If you try:"
 msgstr ""
 "유형이 다른 크레이트(예: Rust 표준 라이브러리의 `u32`)에 정의되면 해당 유형에 "
-"대한 새 메서드를 직접 정의할 수 없습니다. 시도하는 경우:"
+"대한 새 메서드를 직접 정의할 수 없습니다. 다음의 경우:"
 
 #: src/04_traits/02_orphan_rule.md:14 src/05_ticket_v2/02_match.md:43
-#, fuzzy
 msgid "the compiler will complain:"
-msgstr "컴파일러는 다음과 같이 불평할 것입니다."
+msgstr "컴파일러는 다음과 같이 불평할 것입니다:"
 
 #: src/04_traits/02_orphan_rule.md:25
-#, fuzzy
 msgid "Extension trait"
-msgstr "확장 특성"
+msgstr "확장 트레잇"
 
 #: src/04_traits/02_orphan_rule.md:27
-#, fuzzy
 msgid ""
 "An **extension trait** is a trait whose primary purpose is to attach new "
 "methods to foreign types, such as `u32`. That's exactly the pattern you "
@@ -5261,109 +5228,93 @@ msgid ""
 "implementing it for `i32` and `u32`. You are then free to call `is_even` on "
 "those types as long as `IsEven` is in scope."
 msgstr ""
-"**확장 특성**은 'u32'와 같은 외부 유형에 새로운 메소드를 추가하는 것이 주요 목"
-"적인 특성입니다. 이것이 바로 이전 연습에서 'IsEven' 특성을 정의한 다음 'i32' "
-"및 'u32'에 대해 구현하여 배포한 패턴입니다. 그러면 `IsEven`이 범위 내에 있는 "
-"한 해당 유형에 대해 `is_even`을 자유롭게 호출할 수 있습니다."
+"**확장 트레잇**은 `u32`와 같은 외부 타입에 새로운 메소드를 추가하기위한 트레잇"
+"입니다. 이것이 바로 이전 예제에서 `IsEven` 트레잇을 정의한 다음 `i32` 및 `u32`"
+"에 대해 구현하여 배포한 패턴입니다. 그러면 `IsEven`이 스코프 내에 있는 한 타입"
+"에 대해 `is_even`을 자유롭게 호출할 수 있습니다."
 
 #: src/04_traits/02_orphan_rule.md:34
-#, fuzzy
 msgid "// Bring the trait in scope\n"
-msgstr "// 특성을 범위로 가져옵니다."
+msgstr "// 트레잇을 스코프로 가져옵니다\n"
 
 #: src/04_traits/02_orphan_rule.md:38
-#, fuzzy
 msgid "// Invoke its method on a type that implements it\n"
-msgstr "// 이를 구현하는 유형에서 해당 메소드를 호출합니다."
+msgstr "// 이를 구현하는 타입에서 해당 메서드를 호출합니다.\n"
 
 #: src/04_traits/02_orphan_rule.md:45
-#, fuzzy
 msgid "One implementation"
 msgstr "하나의 구현"
 
 #: src/04_traits/02_orphan_rule.md:47
-#, fuzzy
 msgid ""
 "There are limitations to the trait implementations you can write.  \n"
 "The simplest and most straight-forward one: you can't implement the same "
 "trait twice, in a crate, for the same type."
 msgstr ""
-"작성할 수 있는 특성 구현에는 제한이 있습니다.  \n"
-"가장 간단하고 간단한 방법은 동일한 유형에 대해 크레이트에서 동일한 특성을 두 "
+"트레잇을 구현하는데에는 제약사항이 있습니다.  \n"
+"가장 간단하고 단순한 것은 동일한 타입에 대해 크레이트에서 동일한 트레잇을 두 "
 "번 구현할 수 없다는 것입니다."
 
 #: src/04_traits/02_orphan_rule.md:71
-#, fuzzy
 msgid "The compiler will reject it:"
-msgstr "컴파일러는 이를 거부합니다."
+msgstr "컴파일러는 이를 거부합니다:"
 
 #: src/04_traits/02_orphan_rule.md:83
-#, fuzzy
 msgid ""
 "There can be no ambiguity as to what trait implementation should be used when "
 "`IsEven::is_even` is invoked on a `u32` value, therefore there can only be "
 "one."
 msgstr ""
-"`IsEven::is_even`이 `u32` 값에 대해 호출될 때 어떤 특성 구현을 사용해야 하는지"
-"에 대한 모호성은 없으므로 하나만 있을 수 있습니다."
+"`IsEven::is_even`이 `u32` 값에 대해 호출될 때 어떤 트레잇 구현을 사용해야 하는"
+"지에 모호하기때문에 트레잇 구현은 하나만 있어야합니다."
 
 #: src/04_traits/02_orphan_rule.md:88
-#, fuzzy
 msgid ""
 "Things get more nuanced when multiple crates are involved. In particular, at "
 "least one of the following must be true:"
 msgstr ""
-"여러 상자가 관련되면 상황이 더욱 미묘해집니다. 특히 다음 중 하나 이상이 충족되"
-"어야 합니다."
+"여러 크레이트가 관련되면 상황이 더욱 미묘해집니다. 특히 다음 중 하나 이상이 충"
+"족되어야 합니다:"
 
 #: src/04_traits/02_orphan_rule.md:91
-#, fuzzy
 msgid "The trait is defined in the current crate"
-msgstr "특성은 현재 상자에 정의되어 있습니다."
+msgstr "트레잇은 현재 크레이트에 정의되어있어야합니다"
 
 #: src/04_traits/02_orphan_rule.md:92
-#, fuzzy
 msgid "The implementor type is defined in the current crate"
-msgstr "구현자 유형은 현재 크레이트에 정의되어 있습니다."
+msgstr "타입의 구현은 현재 크레이트에서 정의되어야합니다."
 
 #: src/04_traits/02_orphan_rule.md:94
-#, fuzzy
 msgid ""
 "This is known as Rust's **orphan rule**. Its goal is to make the method "
 "resolution process unambiguous."
 msgstr ""
-"이것은 Rust의 **고아 규칙**으로 알려져 있습니다. 그 목표는 분석법 분석 프로세"
-"스를 명확하게 만드는 것입니다."
+"이것은 Rust의 **고아 규칙**으로 알려져 있습니다. 이 규칙의 목적은 매서드 해석 "
+"과정을 명확하게 만드는 것입니다."
 
 #: src/04_traits/02_orphan_rule.md:97
-#, fuzzy
 msgid "Imagine the following situation:"
-msgstr "다음 상황을 상상해 보세요."
+msgstr "다음 상황을 상상해 보세요:"
 
 #: src/04_traits/02_orphan_rule.md:99
-#, fuzzy
 msgid "Crate `A` defines the `IsEven` trait"
-msgstr "'A' 상자는 'IsEven' 특성을 정의합니다."
+msgstr "`A` 크레이트는 `IsEven` 트레잇을 정의합니다"
 
 #: src/04_traits/02_orphan_rule.md:100
-#, fuzzy
 msgid "Crate `B` implements `IsEven` for `u32`"
-msgstr "`B` 상자는 `u32`에 대해 `IsEven`을 구현합니다."
+msgstr "`B` 크레이트는 `u32`에 대해 `IsEven`을 구현합니다"
 
 #: src/04_traits/02_orphan_rule.md:101
-#, fuzzy
 msgid ""
 "Crate `C` provides a (different) implementation of the `IsEven` trait for "
 "`u32`"
-msgstr "`C` 상자는 `u32`에 대한 `IsEven` 특성의 (다른) 구현을 제공합니다."
+msgstr "`C` 크레이트는 `u32`에 대한 `IsEven` 트레잇의 (다른) 구현을 제공합니다"
 
 #: src/04_traits/02_orphan_rule.md:102
-#, fuzzy
 msgid "Crate `D` depends on both `B` and `C` and calls `1.is_even()`"
-msgstr "상자 `D`는 `B`와 `C` 모두에 의존하며 `1.is_even()`을 호출합니다."
+msgstr "크레이트 `D`는 `B`와 `C` 모두에 의존하며 `1.is_even()`을 호출합니다"
 
 #: src/04_traits/02_orphan_rule.md:104
-#, fuzzy
 msgid ""
 "Which implementation should be used? The one defined in `B`? Or the one "
 "defined in `C`?  \n"
@@ -5371,13 +5322,12 @@ msgid ""
 "scenario. Thanks to the orphan rule, neither crate `B` nor crate `C` would "
 "compile."
 msgstr ""
-"어떤 구현을 사용해야 합니까? 'B'에 정의된 것? 아니면 `C`에 정의된 것인가"
+"어떤 구현을 사용해야 합니까? `B`에 정의된 것? 아니면 `C`에 정의된 것인가"
 "요?  \n"
-"좋은 대답이 없으므로 이 시나리오를 방지하기 위해 고아 규칙이 정의되었습니다. "
-"고아 규칙 덕분에 'B' 상자나 'C' 상자는 모두 컴파일되지 않습니다."
+"정답이 없으므로 이 시나리오를 방지하기 위해 고아 규칙이 정의되었습니다. 고아 "
+"규칙 덕분에 `B` 상자나 `C` 상자는 모두 컴파일되지 않습니다."
 
 #: src/04_traits/02_orphan_rule.md:110
-#, fuzzy
 msgid ""
 "There are some caveats and exceptions to the orphan rule as stated above. "
 "Check out [the reference](https://doc.rust-lang.org/reference/items/"
@@ -5385,7 +5335,8 @@ msgid ""
 "familiar with its nuances."
 msgstr ""
 "위에서 설명한 대로 고아 규칙에는 몇 가지 주의 사항과 예외가 있습니다. 그 뉘앙"
-"스에 익숙해지고 싶다면 참고 자료를 확인하세요."
+"스에 익숙해지고 싶다면 [참고 자료]((https://doc.rust-lang.org/reference/items/"
+"implementations.html#trait-implementation-coherence))를 확인하세요."
 
 #: src/04_traits/02_orphan_rule.md:116
 msgid ""
@@ -5393,9 +5344,11 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/04_traits/02_orphan_rule)"
 msgstr ""
+"이 섹션의 예제는 [`04_traits/02_orphan_rule`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/04_traits/02_orphan_rule)에 있습니다"
 
 #: src/04_traits/03_operator_overloading.md:3
-#, fuzzy
 msgid ""
 "Now that we have a basic understanding of what traits are, let's circle back "
 "to **operator overloading**. Operator overloading is the ability to define "
@@ -5406,168 +5359,154 @@ msgstr ""
 "대한 사용자 정의 동작을 정의하는 기능입니다."
 
 #: src/04_traits/03_operator_overloading.md:6
-#, fuzzy
 msgid "Operators are traits"
-msgstr "연산자는 특성이다"
+msgstr "연산자는 트레잇입니다"
 
 #: src/04_traits/03_operator_overloading.md:8
-#, fuzzy
 msgid ""
 "In Rust, operators are traits.  \n"
 "For each operator, there is a corresponding trait that defines the behavior "
 "of that operator. By implementing that trait for your type, you **unlock** "
 "the usage of the corresponding operators."
 msgstr ""
-"Rust에서 연산자는 특성입니다.  \n"
-"각 연산자에는 해당 연산자의 동작을 정의하는 해당 특성이 있습니다. 귀하의 유형"
-"에 해당 특성을 구현함으로써 해당 연산자의 사용을 **잠금 해제**할 수 있습니다."
+"Rust에서 연산자는 트레잇입니다.  \n"
+"각 연산자에는 해당 연산자의 동작을 정의하는 해당 트레잇이 있습니다. 타입에 해"
+"당 트레잇을 구현함으로써 해당 연산자의 사용을 **잠금 해제**할 수 있습니다."
 
 #: src/04_traits/03_operator_overloading.md:12
-#, fuzzy
 msgid ""
 "For example, the [`PartialEq` trait](https://doc.rust-lang.org/std/cmp/trait."
 "PartialEq.html) defines the behavior of the `==` and `!=` operators:"
-msgstr "예를 들어 `PartialEq` 특성은 `==` 및 `!=` 연산자의 동작을 정의합니다."
+msgstr ""
+"예를 들어 [`PartialEq` trait](https://doc.rust-lang.org/std/cmp/trait."
+"PartialEq.html) 특성은 `==`와 `!=` 연산자의 동작을 정의합니다:"
 
 #: src/04_traits/03_operator_overloading.md:16
-#, fuzzy
 msgid ""
 "// The `PartialEq` trait definition, from Rust's standard library\n"
 "// (It is *slightly* simplified, for now)\n"
 msgstr ""
-"// Rust의 표준 라이브러리에 있는 `PartialEq` 특성 정의 // (지금은 _약간_ 단순"
-"화되었습니다)"
+"// Rust의 표준 라이브러리에 있는 `PartialEq` 특성 정의\n"
+"// (지금은 _약간_ 단순화되었습니다)\n"
 
 #: src/04_traits/03_operator_overloading.md:19
-#, fuzzy
 msgid ""
 "// Required method\n"
 "    //\n"
 "    // `Self` is a Rust keyword that stands for \n"
 "    // \"the type that is implementing the trait\"\n"
 msgstr ""
-"// 필수 메소드 // // `Self`는 // \"특성을 구현하는 유형\"을 나타내는 Rust 키워"
-"드입니다."
+"// 필수 메서드\n"
+"    //\n"
+"    // `Self`는 \"트레잇을 구현하는 타입\"을\n"
+"    // 의미하는 Rust 키워드입니다\n"
 
 #: src/04_traits/03_operator_overloading.md:25
-#, fuzzy
 msgid "// Provided method\n"
-msgstr "// 제공방법"
+msgstr "// 제공되는 메서드\n"
 
 #: src/04_traits/03_operator_overloading.md:30
-#, fuzzy
 msgid ""
 "When you write `x == y` the compiler will look for an implementation of the "
 "`PartialEq` trait for the types of `x` and `y` and replace `x == y` with `x."
 "eq(y)`. It's syntactic sugar!"
 msgstr ""
-"`x == y`를 작성하면 컴파일러는 `x` 및 `y` 유형에 대한 `PartialEq` 특성의 구현"
-"을 찾고 `x == y`를 `x.eq(y)`로 대체합니다. . 구문 설탕입니다!"
+"`x == y`를 작성하면 컴파일러는 `x` 및 `y` 타입에 대한 `PartialEq` 트레잇의 구"
+"현을 찾고 `x == y`를 `x.eq(y)`로 대체합니다. 이는 문법적 설탕(syntactic sugar)"
+"입니다!"
 
 #: src/04_traits/03_operator_overloading.md:33
-#, fuzzy
 msgid "This is the correspondence for the main operators:"
-msgstr "주요 운영자에 대한 서신은 다음과 같습니다."
+msgstr "주요 연산자에 대한 트레잇은 다음과 같습니다:"
 
 #: src/04_traits/03_operator_overloading.md:35
-#, fuzzy
 msgid "Operator"
-msgstr "운영자"
+msgstr "연산자"
 
 #: src/04_traits/03_operator_overloading.md:37
-#, fuzzy
 msgid "`+`"
 msgstr "`+`"
 
 #: src/04_traits/03_operator_overloading.md:37
 msgid "[`Add`](https://doc.rust-lang.org/std/ops/trait.Add.html)"
-msgstr ""
+msgstr "[`Add`](https://doc.rust-lang.org/std/ops/trait.Add.html)"
 
 #: src/04_traits/03_operator_overloading.md:38
-#, fuzzy
 msgid "`-`"
 msgstr "`-`"
 
 #: src/04_traits/03_operator_overloading.md:38
 msgid "[`Sub`](https://doc.rust-lang.org/std/ops/trait.Sub.html)"
-msgstr ""
+msgstr "[`Sub`](https://doc.rust-lang.org/std/ops/trait.Sub.html)"
 
 #: src/04_traits/03_operator_overloading.md:39
-#, fuzzy
 msgid "`*`"
 msgstr "`*`"
 
 #: src/04_traits/03_operator_overloading.md:39
 msgid "[`Mul`](https://doc.rust-lang.org/std/ops/trait.Mul.html)"
-msgstr ""
+msgstr "[`Mul`](https://doc.rust-lang.org/std/ops/trait.Mul.html)"
 
 #: src/04_traits/03_operator_overloading.md:40
-#, fuzzy
 msgid "`/`"
 msgstr "`/`"
 
 #: src/04_traits/03_operator_overloading.md:40
 msgid "[`Div`](https://doc.rust-lang.org/std/ops/trait.Div.html)"
-msgstr ""
+msgstr "[`Div`](https://doc.rust-lang.org/std/ops/trait.Div.html)"
 
 #: src/04_traits/03_operator_overloading.md:41
-#, fuzzy
 msgid "`%`"
 msgstr "`%`"
 
 #: src/04_traits/03_operator_overloading.md:41
 msgid "[`Rem`](https://doc.rust-lang.org/std/ops/trait.Rem.html)"
-msgstr ""
+msgstr "[`Rem`](https://doc.rust-lang.org/std/ops/trait.Rem.html)"
 
 #: src/04_traits/03_operator_overloading.md:42
-#, fuzzy
 msgid "`==` and `!=`"
-msgstr "`==` 및 `!=`"
+msgstr "`==`와 `!=`"
 
 #: src/04_traits/03_operator_overloading.md:42
 msgid "[`PartialEq`](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html)"
-msgstr ""
+msgstr "[`PartialEq`](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html)"
 
 #: src/04_traits/03_operator_overloading.md:43
-#, fuzzy
 msgid "`<`, `>`, `<=`, and `>=`"
-msgstr "`<`, `>`, `<=` 및 `>=`"
+msgstr "`<`, `>`, `<=` 그리고 `>=`"
 
 #: src/04_traits/03_operator_overloading.md:43
 msgid "[`PartialOrd`](https://doc.rust-lang.org/std/cmp/trait.PartialOrd.html)"
-msgstr ""
+msgstr "[`PartialOrd`](https://doc.rust-lang.org/std/cmp/trait.PartialOrd.html)"
 
 #: src/04_traits/03_operator_overloading.md:45
-#, fuzzy
 msgid ""
 "Arithmetic operators live in the [`std::ops`](https://doc.rust-lang.org/std/"
 "ops/index.html) module, while comparison ones live in the [`std::cmp`]"
 "(https://doc.rust-lang.org/std/cmp/index.html) module."
 msgstr ""
-"산술 연산자는 `std::ops` 모듈에 있고, 비교 연산자는 `std::cmp` 모듈에 있습니"
-"다."
+"산술 연산자는 [`std::ops`](https://doc.rust-lang.org/std/ops/index.html) 모듈"
+"에 있고, 비교 연산자는 [`std::cmp`](https://doc.rust-lang.org/std/cmp/index."
+"html) 모듈에 있습니다."
 
 #: src/04_traits/03_operator_overloading.md:48
-#, fuzzy
 msgid "Default implementations"
 msgstr "기본 구현"
 
 #: src/04_traits/03_operator_overloading.md:50
-#, fuzzy
 msgid ""
 "The comment on `PartialEq::ne` states that \"`ne` is a provided method\".  \n"
 "It means that `PartialEq` provides a **default implementation** for `ne` in "
 "the trait definition—the `{ ... }` elided block in the definition snippet.  \n"
 "If we expand the elided block, it looks like this:"
 msgstr ""
-"`PartialEq::ne`에 대한 주석에는 \"`ne`이 제공된 메서드입니다\"라고 명시되어 있"
-"습니다.  \n"
+"`PartialEq::ne`에 대한 주석에는 \"`ne`이 제공되는 메서드입니다\"라고 명시되어 "
+"있습니다.  \n"
 "이는 `PartialEq`가 특성 정의의 `ne`에 대한 **기본 구현**을 제공한다는 의미입니"
 "다(정의 조각에서 생략된 `{ ... }` 블록).  \n"
 "생략된 블록을 확장하면 다음과 같습니다."
 
 #: src/04_traits/03_operator_overloading.md:65
-#, fuzzy
 msgid ""
 "It's what you expect: `ne` is the negation of `eq`.  \n"
 "Since a default implementation is provided, you can skip implementing `ne` "
@@ -5578,24 +5517,21 @@ msgstr ""
 "수 있습니다. `eq`를 구현하는 것으로 충분합니다:"
 
 #: src/04_traits/03_operator_overloading.md:79
-#, fuzzy
 msgid "// No `ne` implementation here\n"
-msgstr "// 여기에는 `ne` 구현이 없습니다."
+msgstr "// 여기에는 `ne` 구현이 없습니다\n"
 
 #: src/04_traits/03_operator_overloading.md:83
-#, fuzzy
 msgid ""
 "You are not forced to use the default implementation though. You can choose "
 "to override it when you implement the trait:"
 msgstr ""
-"하지만 기본 구현을 사용해야 하는 것은 아닙니다. 특성을 구현할 때 이를 재정의하"
-"도록 선택할 수 있습니다."
+"하지만 무조건 기본 구현을 사용해야 하는 것은 아닙니다. 트레잇을 구현할 때 이"
+"를 재정의할 수 있습니다."
 
 #: src/04_traits/03_operator_overloading.md:91
 #: src/04_traits/03_operator_overloading.md:95
-#, fuzzy
 msgid "// Custom implementation\n"
-msgstr "// 사용자 정의 구현"
+msgstr "// 사용자 정의 구현\n"
 
 #: src/04_traits/03_operator_overloading.md:102
 msgid ""
@@ -5603,39 +5539,37 @@ msgid ""
 "[`04_traits/03_operator_overloading`](https://github.com/mainmatter/100-"
 "exercises-to-learn-rust/tree/main/exercises/04_traits/03_operator_overloading)"
 msgstr ""
+"이 섹션의 예제는 [`04_traits/03_operator_overloading`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/04_traits/03_operator_overloading)에 있습니다"
 
 #: src/04_traits/04_derive.md:3
-#, fuzzy
 msgid ""
 "Implementing `PartialEq` for `Ticket` was a bit tedious, wasn't it? You had "
 "to manually compare each field of the struct."
 msgstr ""
-"'Ticket'에 대해 'PartialEq'를 구현하는 것은 약간 지루한 일이었죠, 그렇죠? 구조"
+"`Ticket`에 대해 `PartialEq`를 구현하는 것은 약간 지루한 일이었죠, 그렇죠? 구조"
 "체의 각 필드를 수동으로 비교해야 했습니다."
 
 #: src/04_traits/04_derive.md:6
-#, fuzzy
 msgid "Destructuring syntax"
 msgstr "구조 분해 구문"
 
 #: src/04_traits/04_derive.md:8
-#, fuzzy
 msgid ""
 "Furthermore, the implementation is brittle: if the struct definition changes "
 "(e.g. a new field is added), you have to remember to update the `PartialEq` "
 "implementation."
 msgstr ""
-"게다가 구현이 불안정합니다. 구조체 정의가 변경되면(예: 새 필드가 추가되는 경"
-"우) `PartialEq` 구현을 업데이트해야 한다는 것을 기억해야 합니다."
+"구현이 불안정합니다. 구조체 정의가 변경되면(예: 새 필드가 추가되는 경우) "
+"`PartialEq` 구현을 업데이트해줘야합니다."
 
 #: src/04_traits/04_derive.md:11
-#, fuzzy
 msgid ""
 "You can mitigate the risk by **destructuring** the struct into its fields:"
-msgstr "구조체를 해당 필드로 **구조화**하여 위험을 완화할 수 있습니다."
+msgstr "구조체를 해당 필드로 **구조 분해**하여 위험을 줄일 수 있습니다:"
 
 #: src/04_traits/04_derive.md:26
-#, fuzzy
 msgid ""
 "If the definition of `Ticket` changes, the compiler will error out, "
 "complaining that your destructuring is no longer exhaustive.  \n"
@@ -5643,39 +5577,33 @@ msgid ""
 msgstr ""
 "`Ticket`의 정의가 변경되면 컴파일러는 구조 분해가 더 이상 완전하지 않다고 불평"
 "하면서 오류를 발생시킵니다.  \n"
-"변수 섀도잉을 방지하기 위해 구조체 필드의 이름을 바꿀 수도 있습니다."
+"변수 섀도잉을 방지하기 위해 구조체 필드의 이름을 바꿀 수도 있습니다:"
 
 #: src/04_traits/04_derive.md:48
-#, fuzzy
 msgid ""
 "Destructuring is a useful pattern to have in your toolkit, but there's an "
 "even more convenient way to do this: **derive macros**."
 msgstr ""
-"구조 분해는 툴킷에 포함할 수 있는 유용한 패턴이지만 이 작업을 수행하는 훨씬 "
-"더 편리한 방법이 있습니다: **매크로 파생**."
+"구조 분해는 자주 쓸 수 있는 유용한 패턴이지만 이 작업을 수행하는 훨씬 더 편리"
+"한 방법이 있습니다: **파생 매크로**."
 
 #: src/04_traits/04_derive.md:51
-#, fuzzy
 msgid "Macros"
 msgstr "매크로"
 
 #: src/04_traits/04_derive.md:53
-#, fuzzy
 msgid "You've already encountered a few macros in past exercises:"
-msgstr "지난 연습에서 이미 몇 가지 매크로를 접했습니다."
+msgstr "지난 예제에서 이미 몇 가지 매크로를 접했습니다:"
 
 #: src/04_traits/04_derive.md:55
-#, fuzzy
 msgid "`assert_eq!` and `assert!`, in the test cases"
-msgstr "테스트 케이스에서는 `assert_eq!` 및 `assert!`"
+msgstr "테스트에는 `assert_eq!`와 `assert!`"
 
 #: src/04_traits/04_derive.md:56
-#, fuzzy
 msgid "`println!`, to print to the console"
-msgstr "`println!`, 콘솔에 인쇄"
+msgstr "`println!`, 콘솔에 프린트 할 때"
 
 #: src/04_traits/04_derive.md:58
-#, fuzzy
 msgid ""
 "Rust macros are **code generators**.  \n"
 "They generate new Rust code based on the input you provide, and that "
@@ -5688,26 +5616,24 @@ msgstr ""
 "그들은 여러분이 제공한 입력을 기반으로 새로운 Rust 코드를 생성하고, 생성된 코"
 "드는 프로그램의 나머지 부분과 함께 컴파일됩니다. 일부 매크로는 Rust의 표준 라"
 "이브러리에 내장되어 있지만 직접 작성할 수도 있습니다. 이 과정에서는 자체 매크"
-"로를 생성하지 않지만 \"추가 자료\" 섹션에서 몇 가지 유용한 지침을 찾을 수 있습"
-"니다."
+"로를 생성하지 않지만 [\"읽을거리\" section](#further-reading)섹션에서 몇 가지 "
+"유용한 지침을 찾을 수 있습니다."
 
 #: src/04_traits/04_derive.md:64
-#, fuzzy
 msgid "Inspection"
-msgstr "점검"
+msgstr "분석"
 
 #: src/04_traits/04_derive.md:66
-#, fuzzy
 msgid ""
 "Some IDEs let you expand a macro to inspect the generated code. If that's not "
 "possible, you can use [`cargo-expand`](https://github.com/dtolnay/cargo-"
 "expand)."
 msgstr ""
-"일부 IDE에서는 매크로를 확장하여 생성된 코드를 검사할 수 있습니다. 이것이 가능"
-"하지 않다면 `cargo-expand`를 사용할 수 있습니다."
+"일부 IDE에서는 매크로를 확장하여 생성된 코드를 분석할 수 있습니다. 이게 불가능"
+"한 상황이라면 [`cargo-expand`](https://github.com/dtolnay/cargo-expand)를 사용"
+"할 수도 있습니다."
 
 #: src/04_traits/04_derive.md:71
-#, fuzzy
 msgid ""
 "A **derive macro** is a particular flavour of Rust macro. It is specified as "
 "an **attribute** on top of a struct."
@@ -5716,7 +5642,6 @@ msgstr ""
 "지정됩니다."
 
 #: src/04_traits/04_derive.md:82
-#, fuzzy
 msgid ""
 "Derive macros are used to automate the implementation of common (and "
 "\"obvious\") traits for custom types. In the example above, the `PartialEq` "
@@ -5730,18 +5655,16 @@ msgstr ""
 "적으로 동일하다는 것을 알 수 있지만 읽기가 좀 더 불편합니다."
 
 #: src/04_traits/04_derive.md:98
-#, fuzzy
 msgid "The compiler will nudge you to derive traits when possible."
-msgstr "컴파일러는 가능하면 특성을 파생하도록 유도합니다."
+msgstr "컴파일러는 가능하면 트레잇을 파생하도록 유도합니다."
 
 #: src/04_traits/04_derive.md:102
-#, fuzzy
 msgid "[The little book of Rust macros](https://veykril.github.io/tlborm/)"
-msgstr "Rust 매크로에 관한 작은 책"
+msgstr "[Rust 매크로에 관한 작은 문서]((https://veykril.github.io/tlborm/))"
 
 #: src/04_traits/04_derive.md:103
 msgid "[Proc macro workshop](https://github.com/dtolnay/proc-macro-workshop)"
-msgstr ""
+msgstr "[Proc macro workshop](https://github.com/dtolnay/proc-macro-workshop)"
 
 #: src/04_traits/04_derive.md:107
 msgid ""
@@ -5749,34 +5672,30 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/04_traits/04_derive)"
 msgstr ""
+"이 섹션의 예제는 [`04_traits/04_derive`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/04_traits/04_derive)에 있습니다"
 
 #: src/04_traits/05_trait_bounds.md:3
-#, fuzzy
 msgid "We've seen two use cases for traits so far:"
-msgstr "지금까지 특성에 대한 두 가지 사용 사례를 살펴보았습니다."
+msgstr "지금까지 트레잇에 대한 두 가지 사용 사례를 살펴보았습니다:"
 
 #: src/04_traits/05_trait_bounds.md:5
-#, fuzzy
 msgid "Unlocking \"built-in\" behaviour (e.g. operator overloading)"
-msgstr "\"기본 제공\" 동작 잠금 해제(예: 연산자 오버로드)"
+msgstr "\"빌트-인\" 동작 잠금 해제(예: 연산자 오버로드)"
 
 #: src/04_traits/05_trait_bounds.md:6
-#, fuzzy
 msgid "Adding new behaviour to existing types (i.e. extension traits)"
-msgstr "기존 유형에 새로운 동작 추가(예: 확장 특성)"
+msgstr "기존 타입에 새로운 동작 추가(예: 확장 특성)"
 
 #: src/04_traits/05_trait_bounds.md:8
-#, fuzzy
 msgid "There's a third use case: **generic programming**."
-msgstr "세 번째 사용 사례는 **일반 프로그래밍**입니다."
+msgstr "세 번째 사용 사례는 **제네릭 프로그래밍**입니다."
 
 #: src/04_traits/05_trait_bounds.md:10 src/04_traits/09_from.md:11
-#, fuzzy
 msgid "The problem"
 msgstr "문제"
 
 #: src/04_traits/05_trait_bounds.md:12
-#, fuzzy
 msgid ""
 "All our functions and methods, so far, have been working with **concrete "
 "types**.  \n"
@@ -5786,100 +5705,89 @@ msgid ""
 "`true` if an integer is even. Working with concrete types, we'd have to write "
 "a separate function for each integer type we want to support:"
 msgstr ""
-"지금까지 우리의 모든 함수와 메소드는 **구체적인 유형**으로 작업해 왔습니"
+"지금까지 우리의 모든 함수와 메서드는 **구체적인 타입**으로 작업해 왔습니"
 "다.  \n"
-"구체적인 유형에서 작동하는 코드는 일반적으로 작성하고 이해하기 쉽습니다. 그러"
-"나 재사용 가능성에도 한계가 있습니다.  \n"
-"예를 들어 정수가 짝수이면 'true'를 반환하는 함수를 작성한다고 가정해 보겠습니"
-"다. 구체적인 유형으로 작업하려면 지원하려는 각 정수 유형에 대해 별도의 함수를 "
+"구체적인 타입에서 작동하는 코드는 일반적으로 작성하고 이해하기 쉽습니다. 하지"
+"만 재사용 가능성에 한계가 있습니다.  \n"
+"예를 들어 정수가 짝수이면 `true`를 반환하는 함수를 작성한다고 가정해 보겠습니"
+"다. 구체적인 타입으로 작업하려면 지원하려는 각 정수 타입에 대해 별도의 함수를 "
 "작성해야 합니다."
 
 #: src/04_traits/05_trait_bounds.md:27 src/04_traits/05_trait_bounds.md:49
-#, fuzzy
 msgid "// Etc.\n"
-msgstr "// 등."
+msgstr "// Etc.\n"
 
 #: src/04_traits/05_trait_bounds.md:31
-#, fuzzy
 msgid ""
 "Alternatively, we could write a single extension trait and then different "
 "implementations for each integer type:"
 msgstr ""
-"또는 단일 확장 특성을 작성한 다음 각 정수 유형에 대해 서로 다른 구현을 작성할 "
-"수 있습니다."
+"또는 단일 확장 트레잇을 작성한 다음 각 정수 타입에 대해 서로 다른 구현을 작성"
+"할 수 있습니다."
 
 #: src/04_traits/05_trait_bounds.md:53
-#, fuzzy
 msgid "The duplication remains."
-msgstr "중복이 남아있습니다."
+msgstr "중복이 발생합니다."
 
 #: src/04_traits/05_trait_bounds.md:55
-#, fuzzy
 msgid "Generic programming"
-msgstr "일반 프로그래밍"
+msgstr "제네릭 프로그래밍"
 
 #: src/04_traits/05_trait_bounds.md:57
-#, fuzzy
 msgid ""
 "We can do better using **generics**.  \n"
 "Generics allow us to write code that works with a **type parameter** instead "
 "of a concrete type:"
 msgstr ""
 "**제네릭**을 사용하면 더 나은 결과를 얻을 수 있습니다.  \n"
-"제네릭을 사용하면 구체적인 유형 대신 **유형 매개변수**로 작동하는 코드를 작성"
-"할 수 있습니다."
+"제네릭을 사용하면 구체적인 타입 대신 **타입 매개변수**로 작동하는 코드를 작성"
+"할 수 있습니다:"
 
 #: src/04_traits/05_trait_bounds.md:66 src/04_traits/05_trait_bounds.md:89
-#, fuzzy
 msgid "\"{n:?} is even\""
-msgstr "\"{n:?}은 짝수입니다.\""
+msgstr "\"{n:?} is even\""
 
 #: src/04_traits/05_trait_bounds.md:71
-#, fuzzy
 msgid ""
 "`print_if_even` is a **generic function**.  \n"
 "It isn't tied to a specific input type. Instead, it works with any type `T` "
 "that:"
 msgstr ""
-"`print_if_even`은 **일반 함수**입니다.  \n"
-"특정 입력 유형에 묶여 있지 않습니다. 대신 다음과 같은 모든 유형 `T`와 함께 작"
-"동합니다."
+"`print_if_even`은 **제네릭 함수**입니다.  \n"
+"특정 입력 타입에 제한되지않습니다. 대신 다음과 같은 모든 타입 `T`와 함께 작동"
+"합니다."
 
 #: src/04_traits/05_trait_bounds.md:74
-#, fuzzy
 msgid "Implements the `IsEven` trait."
-msgstr "IsEven 특성을 구현합니다."
+msgstr "`IsEven` 트레잇을 구현할 떄."
 
 #: src/04_traits/05_trait_bounds.md:75
-#, fuzzy
 msgid "Implements the `Debug` trait."
-msgstr "'디버그' 특성을 구현합니다."
+msgstr "`Debug` 트레잇을 구현할 때."
 
 #: src/04_traits/05_trait_bounds.md:77
-#, fuzzy
 msgid ""
 "This contract is expressed with a **trait bound**: `T: IsEven + Debug`.  \n"
 "The `+` symbol is used to require that `T` implements multiple traits. `T: "
 "IsEven + Debug` is equivalent to \"where `T` implements `IsEven` **and** "
 "`Debug`\"."
 msgstr ""
-"이 계약은 **특성 경계**: `T: IsEven + Debug`로 표현됩니다.  \n"
-"`+` 기호는 `T`가 여러 특성을 구현하도록 요구하는 데 사용됩니다. `T: IsEven + "
-"Debug`는 \"`T`가 `IsEven` **및** `Debug`를 구현하는 곳\"과 동일합니다."
+"이 요구사항은 **트레잇 바운드**: `T: IsEven + Debug`로 표현됩니다.  \n"
+"`+` 기호는 `T`가 여러 트레잇을 구현하도록 요구하는 데 사용됩니다. `T: IsEven "
+"+ Debug`는 \"`T`가 `IsEven` **그리고** `Debug`를 구현할 때\"라는 말과 같습니"
+"다."
 
 #: src/04_traits/05_trait_bounds.md:83
-#, fuzzy
 msgid ""
 "What purpose do trait bounds serve in `print_if_even`?  \n"
 "To find out, let's try to remove them:"
 msgstr ""
-"`print_if_even`에서 특성 경계는 어떤 목적으로 사용됩니까?  \n"
-"알아보기 위해 이를 제거해 보겠습니다."
+"`print_if_even`에서 트레잇 바운드는 어떤 목적으로 사용될까요?  \n"
+"알아보기 위해 이를 제거해 보겠습니다:"
 
 #: src/04_traits/05_trait_bounds.md:94
-#, fuzzy
 msgid "This code won't compile:"
-msgstr "이 코드는 컴파일되지 않습니다."
+msgstr "이 코드는 컴파일되지 않습니다:"
 
 #: src/04_traits/05_trait_bounds.md:96
 msgid ""
@@ -5906,9 +5814,30 @@ msgid ""
 "  |                   +++++++++++++++++\n"
 "```"
 msgstr ""
+"```text\n"
+"error[E0599]: no method named `is_even` found for type parameter `T` in the "
+"current scope\n"
+" --> src/lib.rs:2:10\n"
+"  |\n"
+"1 | fn print_if_even<T>(n: T) {\n"
+"  |                  - method `is_even` not found for this type parameter\n"
+"2 |     if n.is_even() {\n"
+"  |          ^^^^^^^ method not found in `T`\n"
+"\n"
+"error[E0277]: `T` doesn't implement `Debug`\n"
+" --> src/lib.rs:3:19\n"
+"  |\n"
+"3 |         println!(\"{n:?} is even\");\n"
+"  |                   ^^^^^ `T` cannot be formatted using `{:?}` because it "
+"doesn't implement `Debug`\n"
+"  |\n"
+"help: consider restricting type parameter `T`\n"
+"  |\n"
+"1 | fn print_if_even<T: std::fmt::Debug>(n: T) {\n"
+"  |                   +++++++++++++++++\n"
+"```"
 
 #: src/04_traits/05_trait_bounds.md:117
-#, fuzzy
 msgid ""
 "Without trait bounds, the compiler doesn't know what `T` **can do**.  \n"
 "It doesn't know that `T` has an `is_even` method, and it doesn't know how to "
@@ -5917,65 +5846,65 @@ msgid ""
 "Trait bounds restrict the set of types that can be used by ensuring that the "
 "behaviour required by the function body is present."
 msgstr ""
-"특성 범위가 없으면 컴파일러는 `T`가 **할 수 있는** 작업을 알 수 없습니다.  \n"
-"`T`에 `is_even` 메소드가 있다는 사실도 모르고, 인쇄를 위해 `T` 형식을 지정하"
-"는 방법도 모릅니다. 컴파일러의 관점에서 보면 'T'는 전혀 동작하지 않습니다.  \n"
-"특성 경계는 함수 본문에서 요구하는 동작이 존재하는지 확인하여 사용할 수 있는 "
-"유형 집합을 제한합니다."
+"트레잇 바운드가 없으면 컴파일러는 `T`가 **할 수 있는** 작업을 알 수 없습니"
+"다.  \n"
+"`T`에 `is_even` 메서드가 있다는 사실도 모르고, 프린트를 위해 `T` 타입을 포맷팅"
+"하는 방법도 모릅니다. 컴파일러의 관점에서 보면 `T`로는 아무것도 할 수 없습니"
+"다.  \n"
+"트레잇 바운드는 함수 본문에서 요구하는 동작이 존재하는지 확인하여 함수에 사용"
+"할 수 있는 타입들을 제한합니다."
 
 #: src/04_traits/05_trait_bounds.md:123
-#, fuzzy
 msgid "Syntax: inlining trait bounds"
-msgstr "구문: 특성 범위 인라인"
+msgstr "구문: 인라인 트레잇 바운드"
 
 #: src/04_traits/05_trait_bounds.md:125
-#, fuzzy
 msgid ""
 "All the examples above used a **`where` clause** to specify trait bounds:"
 msgstr ""
-"위의 모든 예에서는 특성 범위를 지정하기 위해 **`where` 절**을 사용했습니다."
+"위의 모든 예에서는 트레잇 바운드를 지정하기 위해 **`where` 절**을 사용했습니"
+"다:"
 
 #: src/04_traits/05_trait_bounds.md:130
-#, fuzzy
 msgid ""
 "//  ^^^^^^^^^^^^^^^^^\n"
 "//  This is a `where` clause\n"
-msgstr "// ^^^^^^^^^^^^^^^^^ // `where` 절입니다."
+msgstr ""
+"//  ^^^^^^^^^^^^^^^^^\n"
+"//  이게 `where` 절입니다\n"
 
 #: src/04_traits/05_trait_bounds.md:138
-#, fuzzy
 msgid ""
 "If the trait bounds are simple, you can **inline** them directly next to the "
 "type parameter:"
 msgstr ""
-"특성 경계가 단순한 경우 유형 매개변수 바로 옆에 **인라인**할 수 있습니다."
+"트레잇 바운드가 단순한 경우 타입 매개변수 바로 옆에 **인라인**할 수 있습니다:"
 
 #: src/04_traits/05_trait_bounds.md:142
-#, fuzzy
 msgid ""
 "//           ^^^^^^^^^^^^^^^^^\n"
 "    //           This is an inline trait bound\n"
 "    // [...]\n"
-msgstr "// ^^^^^^^^^^^^^^^^^ // 이것은 인라인 특성 경계입니다. // \\[...\\]"
+msgstr ""
+"//           ^^^^^^^^^^^^^^^^^\n"
+"    //           이게 인라인 트레잇 바운드입니다\n"
+"    // [...]\n"
 
 #: src/04_traits/05_trait_bounds.md:148
-#, fuzzy
 msgid "Syntax: meaningful names"
 msgstr "구문: 의미 있는 이름"
 
 #: src/04_traits/05_trait_bounds.md:150
-#, fuzzy
 msgid ""
 "In the examples above, we used `T` as the type parameter name. This is a "
 "common convention when a function has only one type parameter.  \n"
 "Nothing stops you from using a more meaningful name, though:"
 msgstr ""
-"위의 예에서는 'T'를 유형 매개변수 이름으로 사용했습니다. 이는 함수에 유형 매개"
+"위의 예에서는 `T`를 타입 매개변수 이름으로 사용했습니다. 이는 함수에 타입 매개"
 "변수가 하나만 있는 경우 일반적인 규칙입니다.  \n"
-"하지만 더 의미 있는 이름을 사용하는 것을 방해하는 것은 없습니다."
+"더 의미 있는 이름을 사용하셔도 됩니다:"
 
 #: src/04_traits/05_trait_bounds.md:160
-#, fuzzy
 msgid ""
 "It is actually **desirable** to use meaningful names when there are multiple "
 "type parameters at play or when the name `T` doesn't convey enough "
@@ -5985,19 +5914,18 @@ msgid ""
 "for type parameter names](https://rust-lang.github.io/api-guidelines/naming."
 "html#casing-conforms-to-rfc-430-c-case)."
 msgstr ""
-"실제로 여러 유형 매개변수가 있거나 'T'라는 이름이 함수에서 해당 유형의 역할에 "
+"실제로 여러 타입 매개변수가 있거나 `T`라는 이름이 함수에서 해당 타입의 역할에 "
 "대한 충분한 정보를 전달하지 못하는 경우 의미 있는 이름을 사용하는 것이 **바람"
-"직합니다**. 변수나 함수 매개변수와 마찬가지로 유형 매개변수의 이름을 지정할 "
-"때 명확성과 가독성을 최대화하세요. 그러나 Rust의 규칙을 따르십시오. 유형 매개"
-"변수 이름에는 대문자 카멜 표기법을 사용하십시오."
+"직합니다**. 변수나 함수 매개변수와 마찬가지로 타입 매개변수의 이름을 지정할 "
+"때 명확성과 가독성을 최대화하세요. 동시에 Rust의 규칙도 지켜주세요. [타입 매개"
+"변수 이름에는 대문자 카멜케이스](https://rust-lang.github.io/api-guidelines/"
+"naming.html#casing-conforms-to-rfc-430-c-case)를 사용하십시오."
 
 #: src/04_traits/05_trait_bounds.md:165
-#, fuzzy
 msgid "The function signature is king"
-msgstr "함수 서명이 왕이다"
+msgstr "함수 시그니처는 왕이다"
 
 #: src/04_traits/05_trait_bounds.md:167
-#, fuzzy
 msgid ""
 "You may wonder why we need trait bounds at all. Can't the compiler infer the "
 "required traits from the function's body?  \n"
@@ -6009,13 +5937,13 @@ msgid ""
 "messages, better documentation, less unintentional breakages across versions, "
 "and faster compilation times."
 msgstr ""
-"특성 경계가 왜 필요한지 궁금할 수도 있습니다. 컴파일러가 함수 본문에서 필요한 "
-"특성을 추론할 수 없나요?  \n"
-"그럴 수도 있지만 그렇지 않을 것입니다.  \n"
-"그 근거는 함수 매개변수에 대한 명시적 유형 주석의 경우와 동일합니다. 각 함수 "
-"서명은 호출자와 호출 수신자 간의 계약이며 용어가 명시적으로 명시되어야 합니"
-"다. 이를 통해 더 나은 오류 메시지, 더 나은 문서화, 버전 간 의도하지 않은 중단 "
-"감소 및 더 빠른 컴파일 시간이 가능합니다."
+"트레잇 바운드가 왜 필요한지 궁금할 수도 있습니다. 컴파일러가 함수 본문에서 필"
+"요한 트레잇을 추론할 순 없나요?  \n"
+"그럴 수도 있겠지만 실제론 그렇지 않습니다.  \n"
+"그 근거는 함수 매개변수에 대한 명시적 타입 어노테이션의 경우와 동일합니다. 각 "
+"함수 시그니처는 호출자와 호출 수신자 간의 계약이며 용어가 명시적으로 명시되어"
+"야 합니다. 이를 통해 더 나은 오류 메시지, 더 나은 문서화, 버전 간 의도하지 않"
+"은 문제 감소 그리고 더 빠른 컴파일이 가능해집니다."
 
 #: src/04_traits/05_trait_bounds.md:176
 msgid ""
@@ -6023,9 +5951,11 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/04_traits/05_trait_bounds)"
 msgstr ""
+"이 섹션의 예제는 [`04_traits/05_trait_bounds`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/04_traits/05_trait_bounds)에 있습니다"
 
 #: src/04_traits/06_str_slice.md:3
-#, fuzzy
 msgid ""
 "Throughout the previous chapters you've seen quite a few **string literals** "
 "being used in the code, like `\"To-Do\"` or `\"A ticket description\"`. They "
@@ -6038,50 +5968,45 @@ msgstr ""
 "시간입니다!"
 
 #: src/04_traits/06_str_slice.md:7
-#, fuzzy
 msgid "String literals"
 msgstr "문자열 리터럴"
 
 #: src/04_traits/06_str_slice.md:9
-#, fuzzy
 msgid "You define a string literal by enclosing the raw text in double quotes:"
-msgstr "원시 텍스트를 큰따옴표로 묶어 문자열 리터럴을 정의합니다."
+msgstr "원시 텍스트를 큰따옴표로 묶어 문자열 리터럴을 정의합니다:"
 
 #: src/04_traits/06_str_slice.md:12
-#, fuzzy
 msgid "\"Hello, world!\""
-msgstr "\"안녕하세요, 세상!\""
+msgstr "\"Hello, world!\""
 
 #: src/04_traits/06_str_slice.md:15
-#, fuzzy
 msgid "The type of `s` is `&str`, a **reference to a string slice**."
 msgstr "`s`의 유형은 **문자열 슬라이스에 대한 참조**인 `&str`입니다."
 
 #: src/04_traits/06_str_slice.md:19
-#, fuzzy
 msgid ""
 "`&str` and `String` are different types—they're not interchangeable.  \n"
 "Let's recall the memory layout of a `String` from our [previous exploration]"
 "(../03_ticket_v1/09_heap.md). If we run:"
 msgstr ""
 "`&str`과 `String`은 서로 다른 유형이므로 서로 바꿔 사용할 수 없습니다.  \n"
-"이전 탐색에서 'String'의 메모리 레이아웃을 떠올려 보겠습니다. 실행하면:"
+"[이전 시간](../03_ticket_v1/09_heap.md)에서 본 `String`의 메모리 레이아웃을 떠"
+"올려 보겠습니다. 다음을 실행하면:"
 
 #: src/04_traits/06_str_slice.md:29
-#, fuzzy
 msgid "we'll get this scenario in memory:"
-msgstr "우리는 이 시나리오를 메모리에 넣을 것입니다:"
+msgstr "우리는 이 상황에서 메모리는 다음과 같습니다:"
 
 #: src/04_traits/06_str_slice.md:44
-#, fuzzy
 msgid ""
 "If you remember, we've [also examined]"
 "(../03_ticket_v1/10_references_in_memory.md) how a `&String` is laid out in "
 "memory:"
-msgstr "기억하신다면 `&String`이 메모리에 어떻게 배치되는지도 살펴보았습니다."
+msgstr ""
+"`&String`이 메모리에 어떻게 배치되는지도 [살펴보았습니다]"
+"(../03_ticket_v1/10_references_in_memory.md):"
 
 #: src/04_traits/06_str_slice.md:62
-#, fuzzy
 msgid ""
 "`&String` points to the memory location where the `String`'s metadata is "
 "stored.  \n"
@@ -6089,55 +6014,48 @@ msgid ""
 "we get to the first byte of the string, `H`."
 msgstr ""
 "`&String`은 `String`의 메타데이터가 저장되는 메모리 위치를 가리킵니다.  \n"
-"포인터를 따라가면 힙에 할당된 데이터에 도달합니다. 특히, 문자열의 첫 번째 바이"
-"트 `H`에 도달합니다."
+"포인터를 따라가면 힙에 할당된 데이터에 도달합니다. 정확히는, 문자열의 첫 번째 "
+"바이트 `H`에 도달합니다."
 
 #: src/04_traits/06_str_slice.md:65
-#, fuzzy
 msgid ""
 "What if we wanted a type that represents a **substring** of `s`? E.g. `ello` "
 "in `Hello`?"
 msgstr ""
-"`s`의 **하위 문자열**을 나타내는 유형을 원하면 어떻게 될까요? 예: '안녕'에 '안"
-"녕하세요'?"
+"`s`의 **서브스트링**을 나타내는 타입은 어떻게 표현할까요? 예: 'Hello'의 "
+"'ello'같이?"
 
 #: src/04_traits/06_str_slice.md:69
-#, fuzzy
 msgid ""
 "A `&str` is a **view** into a string, a **reference** to a sequence of UTF-8 "
 "bytes stored elsewhere. You can, for example, create a `&str` from a `String` "
 "like this:"
 msgstr ""
-"`&str`은 문자열에 대한 **보기**, 다른 곳에 저장된 UTF-8 바이트 시퀀스에 대한 "
-"**참조**입니다. 예를 들어 다음과 같이 `String`에서 `&str`을 만들 수 있습니다."
+"`&str`은 문자열에 대한 **뷰**, 다른 곳에 저장된 UTF-8 바이트 시퀀스에 대한 **"
+"참조**입니다. 예를 들어 다음과 같이 `String`에서 `&str`을 만들 수 있습니다."
 
 #: src/04_traits/06_str_slice.md:74 src/04_traits/08_sized.md:13
-#, fuzzy
 msgid ""
 "// Create a string slice reference from the `String`, skipping the first "
 "byte.\n"
 msgstr ""
-"// `String`에서 문자열 슬라이스 참조를 생성하고 첫 번째 바이트를 건너뜁니다."
+"// `String`에서 문자열 슬라이스 참조를 생성하고 첫 번째 바이트를 건너뜁니다.\n"
 
 #: src/04_traits/06_str_slice.md:79
-#, fuzzy
 msgid "In memory, it'd look like this:"
-msgstr "기억상으로는 다음과 같습니다."
+msgstr "메모리에서는 다음과 같습니다:"
 
 #: src/04_traits/06_str_slice.md:98
-#, fuzzy
 msgid "`slice` stores two pieces of information on the stack:"
-msgstr "`slice`는 스택에 두 가지 정보를 저장합니다."
+msgstr "`slice`는 스택에 두 가지 정보를 저장합니다:"
 
 #: src/04_traits/06_str_slice.md:100
-#, fuzzy
 msgid "A pointer to the first byte of the slice."
-msgstr "슬라이스의 첫 번째 바이트에 대한 포인터입니다."
+msgstr "슬라이스의 첫 번째 바이트에 대한 포인터."
 
 #: src/04_traits/06_str_slice.md:101
-#, fuzzy
 msgid "The length of the slice."
-msgstr "슬라이스의 길이입니다."
+msgstr "슬라이스의 길이."
 
 #: src/04_traits/06_str_slice.md:103
 msgid ""
@@ -6150,23 +6068,20 @@ msgid ""
 msgstr ""
 
 #: src/04_traits/06_str_slice.md:108
-#, fuzzy
 msgid "`&str` vs `&String`"
-msgstr "`&str` 대 `&String`"
+msgstr "`&str` vs `&String`"
 
 #: src/04_traits/06_str_slice.md:110
-#, fuzzy
 msgid ""
 "As a rule of thumb, use `&str` rather than `&String` whenever you need a "
 "reference to textual data.  \n"
 "`&str` is more flexible and generally considered more idiomatic in Rust code."
 msgstr ""
-"경험상 텍스트 데이터에 대한 참조가 필요할 때마다 `&String` 대신 `&str`을 사용"
-"하세요.  \n"
-"`&str`은 더 유연하고 일반적으로 Rust 코드에서 더 관용적으로 간주됩니다."
+"경험상 텍스트 데이터에 대한 참조가 필요할 때는 `&String` 대신 `&str`을 사용하"
+"는 것이 좋습니다.  \n"
+"`&str`은 더 유연하고 일반적으로 Rust에서 더 관용적입니다."
 
 #: src/04_traits/06_str_slice.md:113
-#, fuzzy
 msgid ""
 "If a method returns a `&String`, you're promising that there is heap-"
 "allocated UTF-8 text somewhere that **matches exactly** the one you're "
@@ -6175,11 +6090,11 @@ msgid ""
 "just saying that _somewhere_ there's a bunch of text data and that a subset "
 "of it matches what you need, therefore you're returning a reference to it."
 msgstr ""
-"메소드가 `&String`을 반환하는 경우 참조를 반환하는 항목과 **정확히 일치**하는 "
-"힙 할당 UTF-8 텍스트가 어딘가에 있다고 약속하는 것입니다.  \n"
-"대신 메소드가 `&str`을 반환하면 훨씬 더 자유로워집니다. _어디에_ 많은 텍스트 "
-"데이터가 있고 그 하위 집합이 필요한 것과 일치하므로 다음에 대한 참조를 반환한"
-"다고 말하는 것입니다. 그것."
+"메서드가 `&String`을 반환하면, 힙에 할당된 UTF-8 텍스트가 있으며, 해당 텍스트"
+"가 반환되는 참조와 **정확히 일치**한다는 것을 의미합니다.\n"
+"반면에 메서드가 `&str`을 반환하면, 훨씬 더 많은 자유를 가지게 됩니다: _어딘가"
+"에_ 텍스트 데이터가 있으며, 그 일부가 필요한 것과 일치한다는 것만을 말하는 것"
+"이므로 그 부분에 대한 참조를 반환하는 것입니다."
 
 #: src/04_traits/06_str_slice.md:120
 msgid ""
@@ -6187,127 +6102,113 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/04_traits/06_str_slice)"
 msgstr ""
+"이 섹션의 예제는 [`04_traits/06_str_slice`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/04_traits/06_str_slice)에 있습니다"
 
 #: src/04_traits/07_deref.md:3
-#, fuzzy
 msgid "In the previous exercise you didn't have to do much, did you?"
-msgstr "이전 연습에서는 많은 일을 할 필요가 없었습니다. 그렇죠?"
+msgstr "이전 예제에서는 많은 일을 할 필요가 없었습니다. 그렇죠?"
 
 #: src/04_traits/07_deref.md:5
-#, fuzzy
 msgid "Changing"
-msgstr "바꾸다"
+msgstr "이것을"
 
 #: src/04_traits/07_deref.md:15
-#, fuzzy
 msgid "to"
-msgstr "에게"
+msgstr "이렇게"
 
 #: src/04_traits/07_deref.md:25
-#, fuzzy
 msgid ""
 "was all you needed to do to get the code to compile and the tests to pass. "
 "Some alarm bells should be ringing in your head though."
 msgstr ""
-"코드를 컴파일하고 테스트를 통과하기 위해 해야 할 일은 이것이 전부였습니다. 하"
-"지만 일부 알람 벨이 머리 속에서 울려야 합니다."
+"바꾸는 것이 코드를 컴파일하고 테스트를 통과하기 위해 해야 할 일의 전부였습니"
+"다. 하지만 머리에 번뜩 떠오르는 것이 있어야 합니다."
 
 #: src/04_traits/07_deref.md:28
-#, fuzzy
 msgid "It shouldn't work, but it does"
 msgstr "작동하면 안 되지만 작동합니다"
 
 #: src/04_traits/07_deref.md:30
-#, fuzzy
 msgid "Let's review the facts:"
-msgstr "사실을 검토해 보겠습니다."
+msgstr "다음을 확인해봅시다:"
 
 #: src/04_traits/07_deref.md:32
-#, fuzzy
 msgid "`self.title` is a `String`"
-msgstr "`self.title`은 `문자열`입니다."
+msgstr "`self.title`은 `String`입니다"
 
 #: src/04_traits/07_deref.md:33
-#, fuzzy
 msgid "`&self.title` is, therefore, a `&String`"
-msgstr "따라서 `&self.title`은 `&String`입니다."
+msgstr "따라서 `&self.title`은 `&String`입니다"
 
 #: src/04_traits/07_deref.md:34
-#, fuzzy
 msgid "The output of the (modified) `title` method is `&str`"
-msgstr "(수정된) `title` 메소드의 출력은 `&str`입니다."
+msgstr "(수정된) `title` 메소드의 출력은 `&str`입니다"
 
 #: src/04_traits/07_deref.md:36
-#, fuzzy
 msgid ""
 "You would expect a compiler error, wouldn't you? `Expected &String, found "
 "&str` or something similar. Instead, it just works. **Why**?"
 msgstr ""
-"컴파일러 오류가 발생할 것으로 예상하지 않습니까? `예상된 &String, 발견된 "
-"&str` 또는 이와 유사한 것. 대신 작동합니다. **왜**?"
+"컴파일러 오류가 발생해야할 것 같지 않나요? `Expected &String, found &str`같은 "
+"오류 말입니다. 근데 작동합니다. **왜**그럴까요?"
 
 #: src/04_traits/07_deref.md:39
-#, fuzzy
 msgid "`Deref` to the rescue"
-msgstr "구조를 위한 'Deref'"
+msgstr "`Deref`가 당신을 구원합니다"
 
 #: src/04_traits/07_deref.md:41
-#, fuzzy
 msgid ""
 "The `Deref` trait is the mechanism behind the language feature known as "
 "[**deref coercion**](https://doc.rust-lang.org/std/ops/trait.Deref.html#deref-"
 "coercion).  \n"
 "The trait is defined in the standard library, in the `std::ops` module:"
 msgstr ""
-"`Deref` 특성은 **deref 강제**라고 알려진 언어 기능 뒤에 있는 메커니즘입니"
-"다.  \n"
-"특성은 표준 라이브러리의 `std::ops` 모듈에 정의되어 있습니다."
+"`Deref` 트레잇은 [**deref coercion**](https://doc.rust-lang.org/std/ops/trait."
+"Deref.html#deref-coercion)라고 알려진 언어 기능 뒤에 있는 메커니즘입니다.  \n"
+"이 트레잇은 표준 라이브러리의 `std::ops` 모듈에 정의되어 있습니다."
 
 #: src/04_traits/07_deref.md:45
-#, fuzzy
 msgid ""
 "// I've slightly simplified the definition for now.\n"
 "// We'll see the full definition later on.\n"
 msgstr ""
-"// 지금은 정의를 약간 단순화했습니다. // 나중에 전체 정의를 살펴보겠습니다."
+"// 지금은 정의를 약간 단순화했습니다.\n"
+"// 나중에 전체 정의를 살펴보겠습니다.\n"
 
 #: src/04_traits/07_deref.md:54
-#, fuzzy
 msgid ""
 "`type Target` is an **associated type**.  \n"
 "It's a placeholder for a concrete type that must be specified when the trait "
 "is implemented."
 msgstr ""
-"`type Target`은 **연관된 유형**입니다.  \n"
-"이는 특성이 구현될 때 지정되어야 하는 구체적인 유형에 대한 자리 표시자입니다."
+"`type Target`은 **연관된 타입**입니다.  \n"
+"이는 트레잇이 구현될 때 지정되어야 하는 구체적인 타입에 대한 플레이스 홀더입니"
+"다."
 
 #: src/04_traits/07_deref.md:57
-#, fuzzy
 msgid "Deref coercion"
-msgstr "역참조 강제"
+msgstr "Deref coercion"
 
 #: src/04_traits/07_deref.md:59
-#, fuzzy
 msgid ""
 "By implementing `Deref<Target = U>` for a type `T` you're telling the "
 "compiler that `&T` and `&U` are somewhat interchangeable.  \n"
 "In particular, you get the following behavior:"
 msgstr ""
-"`T` 유형에 대해 `Deref<Target = U>`를 구현하면 컴파일러에게 `&T`와 `&U`가 어"
+"`T` 타입에 대해 `Deref<Target = U>`를 구현하면 컴파일러에게 `&T`와 `&U`가 어"
 "느 정도 상호 교환 가능하다는 것을 알리게 됩니다.  \n"
-"특히 다음과 같은 동작이 발생합니다."
+"특히 다음과 같은 동작이 발생합니다:"
 
 #: src/04_traits/07_deref.md:63
-#, fuzzy
 msgid ""
 "References to `T` are implicitly converted into references to `U` (i.e. `&T` "
 "becomes `&U`)"
 msgstr ""
-"`T`에 대한 참조는 암시적으로 `U`에 대한 참조로 변환됩니다(예: `&T`는 `&U`가 됩"
+"`T`에 대한 참조는 암시적으로 `U`에 대한 참조로 변환됩니다(즉: `&T`는 `&U`가 됩"
 "니다)."
 
 #: src/04_traits/07_deref.md:64
-#, fuzzy
 msgid ""
 "You can call on `&T` all the methods defined on `U` that take `&self` as "
 "input."
@@ -6316,7 +6217,6 @@ msgstr ""
 "니다."
 
 #: src/04_traits/07_deref.md:66
-#, fuzzy
 msgid ""
 "There is one more thing around the dereference operator, `*`, but we don't "
 "need it yet (see `std`'s docs if you're curious)."
@@ -6325,49 +6225,43 @@ msgstr ""
 "`std` 문서를 참조하세요)."
 
 #: src/04_traits/07_deref.md:69
-#, fuzzy
 msgid "`String` implements `Deref`"
-msgstr "`String`은 `Deref`를 구현합니다."
+msgstr "`String`은 `Deref`를 구현합니다"
 
 #: src/04_traits/07_deref.md:71
-#, fuzzy
 msgid "`String` implements `Deref` with `Target = str`:"
-msgstr "`String`은 `Target = str`을 사용하여 `Deref`를 구현합니다."
+msgstr "`String`은 `Target = str`을 사용하여 `Deref`를 구현합니다:"
 
 #: src/04_traits/07_deref.md:83
-#, fuzzy
 msgid ""
 "Thanks to this implementation and deref coercion, a `&String` is "
 "automatically converted into a `&str` when needed."
 msgstr ""
-"이 구현과 역참조 강제 덕분에 `&String`은 필요할 때 자동으로 `&str`로 변환됩니"
-"다."
+"이 구현과 Deref coercion 덕분에 `&String`은 필요할 때 자동으로 `&str`로 변환됩"
+"니다."
 
 #: src/04_traits/07_deref.md:85
-#, fuzzy
 msgid "Don't abuse deref coercion"
-msgstr "역참조 강제를 남용하지 마세요."
+msgstr "deref coercion을 남용하지 마세요"
 
 #: src/04_traits/07_deref.md:87
-#, fuzzy
 msgid ""
 "Deref coercion is a powerful feature, but it can lead to confusion.  \n"
 "Automatically converting types can make the code harder to read and "
 "understand. If a method with the same name is defined on both `T` and `U`, "
 "which one will be called?"
 msgstr ""
-"역참조 강제는 강력한 기능이지만 혼란을 초래할 수 있습니다.  \n"
-"유형을 자동으로 변환하면 코드를 읽고 이해하기가 더 어려워질 수 있습니다. `T`"
-"와 `U`에 동일한 이름의 메소드가 정의된 경우 어느 메소드가 호출됩니까?"
+"Deref coercion은 강력한 기능이지만 혼란을 초래할 수 있습니다.  \n"
+"타입을 자동으로 변환하면 코드를 읽고 이해하기가 더 어려워질 수 있습니다. `T`"
+"와 `U`에 동일한 이름의 메소드가 정의된 경우 어느 메소드가 호출될까요?"
 
 #: src/04_traits/07_deref.md:91
-#, fuzzy
 msgid ""
 "We'll examine later in the course the \"safest\" use cases for deref "
 "coercion: smart pointers."
 msgstr ""
-"역참조 강제에 대한 \"가장 안전한\" 사용 사례인 스마트 포인터에 대해 나중에 과"
-"정에서 살펴보겠습니다."
+"Deref coercion에 대한 \"가장 안전한\" 사용 사례인 스마트 포인터에 대해 나중에 "
+"과정에서 살펴보겠습니다."
 
 #: src/04_traits/07_deref.md:95
 msgid ""
@@ -6375,14 +6269,14 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/04_traits/07_deref)"
 msgstr ""
+"이 섹션의 예제는 [`04_traits/07_deref`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/04_traits/07_deref)에 있습니다"
 
 #: src/04_traits/08_sized.md:1
-#, fuzzy
 msgid "`Sized`"
-msgstr "'크기'"
+msgstr "`Sized`"
 
 #: src/04_traits/08_sized.md:3
-#, fuzzy
 msgid ""
 "There's more to `&str` than meets the eye, even after having investigated "
 "deref coercion.  \n"
@@ -6393,30 +6287,26 @@ msgid ""
 "the pointer: the length of the slice it points to. Going back to the example "
 "from [a previous section](06_str_slice.md):"
 msgstr ""
-"역참조 강제를 조사한 후에도 `&str`에는 눈에 보이는 것보다 더 많은 것이 있습니"
-"다.  \n"
+"Deref coercion에 대해 알아본 후에도 `&str`에는 눈에 보이는 것보다 더 많은 것"
+"이 있습니다.  \n"
 "메모리 레이아웃에 대한 이전 논의에서 `&str`이 스택에서 단일 `usize`인 포인터"
 "로 표현될 것으로 예상하는 것이 합리적이었습니다. 하지만 그렇지 않습니다. "
 "`&str`은 포인터 옆에 일부 **메타데이터**, 즉 포인터가 가리키는 슬라이스의 길이"
-"를 저장합니다. 이전 섹션의 예로 돌아가면 다음과 같습니다."
+"를 저장합니다. 이전 섹션의 예로 돌아가면 다음과 같습니다:"
 
 #: src/04_traits/08_sized.md:18
-#, fuzzy
 msgid "In memory, we get:"
-msgstr "메모리에서는 다음을 얻습니다."
+msgstr "메모리는 다음과 같습니다:"
 
 #: src/04_traits/08_sized.md:37
-#, fuzzy
 msgid "What's going on?"
-msgstr "무슨 일이야?"
+msgstr "무슨 일일까요?"
 
 #: src/04_traits/08_sized.md:39
-#, fuzzy
 msgid "Dynamically sized types"
-msgstr "동적으로 크기가 조정되는 유형"
+msgstr "동적 크기 타입"
 
 #: src/04_traits/08_sized.md:41
-#, fuzzy
 msgid ""
 "`str` is a **dynamically sized type** (DST).  \n"
 "A DST is a type whose size is not known at compile time. Whenever you have a "
@@ -6425,42 +6315,36 @@ msgid ""
 "In the case of `&str`, it stores the length of the slice it points to. We'll "
 "see more examples of DSTs in the rest of the course."
 msgstr ""
-"`str`은 **동적 크기 유형**(DST)입니다.  \n"
-"DST는 컴파일 타임에 크기를 알 수 없는 유형입니다. `&str`과 같은 DST에 대한 참"
+"`str`은 **동적 크기 타입**(DST)입니다.  \n"
+"DST는 컴파일 타임에 크기를 알 수 없는 타입입니다. `&str`과 같은 DST에 대한 참"
 "조가 있을 때마다 참조가 가리키는 데이터에 대한 추가 정보를 포함해야 합니다. **"
-"뚱뚱한 포인터**입니다.  \n"
-"`&str`의 경우 가리키는 슬라이스의 길이를 저장합니다. 나머지 과정에서는 DST의 "
-"더 많은 예를 살펴보겠습니다."
+"팻 포인터**입니다.  \n"
+"`&str`의 경우 가리키는 슬라이스의 길이를 저장합니다. 뒤에서는 DST의 더 많은 예"
+"를 살펴보겠습니다."
 
 #: src/04_traits/08_sized.md:48
-#, fuzzy
 msgid "The `Sized` trait"
-msgstr "'크기' 특성"
+msgstr "`Sized` 트레잇"
 
 #: src/04_traits/08_sized.md:50
-#, fuzzy
 msgid "Rust's `std` library defines a trait called `Sized`."
-msgstr "Rust의 `std` 라이브러리는 `Sized`라는 특성을 정의합니다."
+msgstr "Rust의 `std` 라이브러리는 `Sized`라는 트레잇을 정의합니다."
 
 #: src/04_traits/08_sized.md:54
-#, fuzzy
 msgid "// This is an empty trait, no methods to implement.\n"
-msgstr "// 이것은 빈 특성이므로 구현할 메서드가 없습니다."
+msgstr "// 이것은 빈 특성이므로 구현할 메서드가 없습니다.\n"
 
 #: src/04_traits/08_sized.md:58
-#, fuzzy
 msgid ""
 "A type is `Sized` if its size is known at compile time. In other words, it's "
 "not a DST."
 msgstr "컴파일 타임에 크기가 알려지면 유형은 `Sized`입니다. 즉, DST가 아닙니다."
 
 #: src/04_traits/08_sized.md:60
-#, fuzzy
 msgid "Marker traits"
-msgstr "마커 특성"
+msgstr "Marker 트레잇"
 
 #: src/04_traits/08_sized.md:62
-#, fuzzy
 msgid ""
 "`Sized` is your first example of a **marker trait**.  \n"
 "A marker trait is a trait that doesn't require any methods to be implemented. "
@@ -6468,15 +6352,14 @@ msgid ""
 "certain properties. The mark is then leveraged by the compiler to enable "
 "certain behaviors or optimizations."
 msgstr ""
-"'크기'는 **마커 특성**의 첫 번째 예입니다.  \n"
-"마커 특성은 구현하는 데 메서드가 필요하지 않은 특성입니다. 어떤 행동도 정의하"
-"지 않습니다. 특정 속성이 있는 유형을 **표시**하는 역할만 합니다. 그런 다음 컴"
-"파일러는 마크를 활용하여 특정 동작이나 최적화를 활성화합니다."
+"`Sized`는 **marker 트레잇**의 첫 번째 예입니다.  \n"
+"marker 트레잇은 구현하는 데 메서드가 필요하지 않은 특성입니다. 어떤 행동도 정"
+"의하지 않습니다. 특정 속성이 있는 타입을 **표시**하는 역할만 합니다. 그런 다"
+"음 컴파일러는 표시를 활용하여 특정 동작이나 최적화를 활성화합니다."
 
 #: src/04_traits/08_sized.md:67
-#, fuzzy
 msgid "Auto traits"
-msgstr "자동 특성"
+msgstr "Auto 트레잇"
 
 #: src/04_traits/08_sized.md:69
 msgid ""
@@ -6484,29 +6367,29 @@ msgid ""
 "You don't need to implement it explicitly; the compiler implements it "
 "automatically for you based on the type's definition."
 msgstr ""
+"사실, `Sized`도 **auto 트레잇**입니다.  \n"
+"명시적으로 구현할 필요가 없으며, 컴파일러가 타입의 정의를 기반으로 자동으로 구"
+"현해줍니다."
 
 #: src/04_traits/08_sized.md:73
-#, fuzzy
 msgid "Examples"
-msgstr "예"
+msgstr "예시"
 
 #: src/04_traits/08_sized.md:75
-#, fuzzy
 msgid ""
 "All the types we've seen so far are `Sized`: `u32`, `String`, `bool`, etc."
 msgstr ""
-"지금까지 우리가 본 모든 유형은 `Sized`입니다: `u32`, `String`, `bool` 등."
+"지금까지 우리가 본 모든 타입은 `Sized`입니다: `u32`, `String`, `bool` 등."
 
 #: src/04_traits/08_sized.md:77
-#, fuzzy
 msgid ""
 "`str`, as we just saw, is not `Sized`.  \n"
 "`&str` is `Sized` though! We know its size at compile time: two `usize`s, one "
 "for the pointer and one for the length."
 msgstr ""
-"방금 본 것처럼 'str'은 'Sized'가 아닙니다.  \n"
-"`&str`은 `Sized`입니다! 우리는 컴파일 타임에 그 크기를 알고 있습니다. 두 개의 "
-"`usize`, 하나는 포인터용이고 다른 하나는 길이용입니다."
+"방금 본 것처럼 `str`은 `Sized`가 아닙니다.  \n"
+"하지만 `&str`은 `Sized`입니다! 우리는 컴파일 타임에 그 크기를 알고 있습니다. "
+"두 개의 `usize`, 하나는 포인터용이고 다른 하나는 길이용입니다."
 
 #: src/04_traits/08_sized.md:83
 msgid ""
@@ -6514,38 +6397,33 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/04_traits/08_sized)"
 msgstr ""
+"이 섹션의 예제는 [`04_traits/08_sized`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/04_traits/08_sized)에 있습니다"
 
 #: src/04_traits/09_from.md:1 src/04_traits/09_from.md:27
-#, fuzzy
 msgid "`From` and `Into`"
-msgstr "'프롬'과 '인투'"
+msgstr "`From`과 `Into`"
 
 #: src/04_traits/09_from.md:3
-#, fuzzy
 msgid "Let's go back to where our string journey started:"
-msgstr "문자열 여행이 시작된 곳으로 돌아가 보겠습니다."
+msgstr "문자열 여행이 시작된 곳으로 돌아가 보겠습니다:"
 
 #: src/04_traits/09_from.md:6 src/04_traits/09_from.md:106
-#, fuzzy
 msgid "\"A title\""
-msgstr "\"제목\""
+msgstr "\"A title\""
 
 #: src/04_traits/09_from.md:6
-#, fuzzy
 msgid "\"A description\""
-msgstr "\"설명\""
+msgstr "\"A description\""
 
 #: src/04_traits/09_from.md:9
-#, fuzzy
 msgid "We now know enough to start unpacking what `.into()` is doing here."
 msgstr ""
-"이제 우리는 `.into()`가 여기서 무엇을 하는지 풀기 시작할 만큼 충분히 알고 있습"
-"니다."
+"이제 우리는 `.into()`가 여기서 무엇을 하는지 이해할 만큼 충분히 알고 있습니다."
 
 #: src/04_traits/09_from.md:13
-#, fuzzy
 msgid "This is the signature of the `new` method:"
-msgstr "이것은 `new` 메소드의 시그니처입니다:"
+msgstr "이것은 `new` 메서드의 시그니처입니다:"
 
 #: src/04_traits/09_from.md:23
 msgid ""
@@ -6555,95 +6433,89 @@ msgid ""
 "No magical coercion will come to save us this time; we need **to perform a "
 "conversion**."
 msgstr ""
+"문자열 리터럴(예: \"A title\")이 `&str` 타입이라는 것도 보았습니다.\n"
+"여기서 타입 불일치가 발생합니다: `String`일것으로 예상하지만 우리는 `&str`을 "
+"가지고 있습니다. 이번에는 마법 같은 강제 변환이 우리를 구해주지 않을 것입니"
+"다; 우리는 직접 **변환을 수행해야 합니다**."
 
 #: src/04_traits/09_from.md:29
-#, fuzzy
 msgid ""
 "The Rust standard library defines two traits for **infallible conversions**: "
 "`From` and `Into`, in the `std::convert` module."
 msgstr ""
 "Rust 표준 라이브러리는 `std::convert` 모듈에서 **무결한 변환**에 대한 두 가지 "
-"특성, 즉 `From`과 `Into`를 정의합니다."
+"트레잇, 즉 `From`과 `Into`를 정의합니다."
 
 #: src/04_traits/09_from.md:42
-#, fuzzy
 msgid ""
 "These trait definitions showcase a few concepts that we haven't seen before: "
 "**supertraits** and **implicit trait bounds**. Let's unpack those first."
 msgstr ""
-"이러한 특성 정의는 이전에 보지 못한 몇 가지 개념인 **초특성** 및 **암시적 특"
-"성 경계**를 보여줍니다. 먼저 포장을 풀어보겠습니다."
+"이러한 트레잇 정의는 이전에 보지 못한 몇 가지 개념인 **슈퍼 트레잇** 및 **암시"
+"적 트레잇 바운드**를 보여줍니다. 이것들을 먼저 살펴보겠습니다."
 
 #: src/04_traits/09_from.md:45
-#, fuzzy
 msgid "Supertrait / Subtrait"
-msgstr "슈퍼특성/하위특성"
+msgstr "슈퍼 트레잇 / 서브 트레잇"
 
 #: src/04_traits/09_from.md:47
-#, fuzzy
 msgid ""
 "The `From: Sized` syntax implies that `From` is a **subtrait** of `Sized`: "
 "any type that implements `From` must also implement `Sized`. Alternatively, "
 "you could say that `Sized` is a **supertrait** of `From`."
 msgstr ""
-"`From: Sized` 구문은 `From`이 `Sized`의 **하위 특성**임을 의미합니다. `From`"
-"을 구현하는 모든 유형은 `Sized`도 구현해야 합니다. 또는 'Sized'가 'From'의 **"
-"초특성**이라고 말할 수도 있습니다."
+"`From: Sized` 구문은 `From`이 `Sized`의 **서브 트레잇**임을 의미합니다. `From`"
+"을 구현하는 모든 타입은 `Sized`도 구현해야 합니다. 또는 `Sized`가 `From`의 **"
+"슈퍼 트레잇**이라고 말할 수도 있습니다."
 
 #: src/04_traits/09_from.md:51
-#, fuzzy
 msgid "Implicit trait bounds"
-msgstr "암시적 특성 범위"
+msgstr "암시적 트레잇 바운드"
 
 #: src/04_traits/09_from.md:53
-#, fuzzy
 msgid ""
 "Every time you have a generic type parameter, the compiler implicitly assumes "
 "that it's `Sized`."
 msgstr ""
-"일반 유형 매개변수가 있을 때마다 컴파일러는 암시적으로 해당 매개변수가 `Sized`"
+"일반 타입 매개변수가 있을 때마다 컴파일러는 암시적으로 해당 매개변수가 `Sized`"
 "라고 가정합니다."
 
 #: src/04_traits/09_from.md:63
-#, fuzzy
 msgid "is actually equivalent to:"
-msgstr "실제로는 다음과 같습니다."
+msgstr "실제로는 다음과 같습니다:"
 
 #: src/04_traits/09_from.md:72
-#, fuzzy
 msgid "In the case of `From<T>`, the trait definition is equivalent to:"
-msgstr "`From<T>`의 경우 특성 정의는 다음과 동일합니다."
+msgstr "`From<T>`의 경우 트레잇 정의는 다음과 동일합니다:"
 
 #: src/04_traits/09_from.md:80
-#, fuzzy
 msgid ""
 "In other words, _both_ `T` and the type implementing `From<T>` must be "
 "`Sized`, even though the former bound is implicit."
 msgstr ""
-"즉, `T`와 `From<T>`를 구현하는 유형은 둘 다 `Sized`여야 합니다. 전자의 경계가 "
-"암시적이라 할지라도 말이죠."
+"즉, `T`와 `From<T>`를 구현하는 유형은 _둘 다_ `Sized`여야 합니다. 전자의 바운"
+"드가 암시적이라 할지라도 말이죠."
 
 #: src/04_traits/09_from.md:83
-#, fuzzy
 msgid "Negative trait bounds"
-msgstr "부정적인 특성 범위"
+msgstr "네거티브 트레잇 바운드"
 
 #: src/04_traits/09_from.md:85
-#, fuzzy
 msgid ""
 "You can opt out of the implicit `Sized` bound with a **negative trait bound**:"
 msgstr ""
-"**음수 특성 경계**를 사용하여 암시적 `Sized` 경계를 선택 해제할 수 있습니다."
+"**네거티브 트레잇 바운드**를 사용하여 암시적 `Sized` 바운드를 제외할 수 있습니"
+"다."
 
 #: src/04_traits/09_from.md:89
-#, fuzzy
 msgid ""
 "//            ^^^^^^^\n"
 "    //            This is a negative trait bound\n"
-msgstr "// ^^^^^^^ // 이것은 부정적인 특성 경계입니다."
+msgstr ""
+"//            ^^^^^^^\n"
+"    //            이게 네거티브 트레잇 바운드입니다\n"
 
 #: src/04_traits/09_from.md:95
-#, fuzzy
 msgid ""
 "This syntax reads as \"`T` may or may not be `Sized`\", and it allows you to "
 "bind `T` to a DST (e.g. `Foo<str>`). It is a special case, though: negative "
@@ -6651,16 +6523,14 @@ msgid ""
 msgstr ""
 "이 구문은 \"`T`는 `Sized`일 수도 있고 아닐 수도 있음\"으로 읽혀지며, 이를 통"
 "해 `T`를 DST(예: `Foo<str>`)에 바인딩할 수 있습니다. 하지만 이것은 특별한 경우"
-"입니다. 부정적인 특성 범위는 `Sized`에만 적용되며 다른 특성과 함께 사용할 수 "
+"입니다. 네거티브 트레잇 바운드는 `Sized`에만 적용되며 다른 특성에는 사용할 수 "
 "없습니다."
 
 #: src/04_traits/09_from.md:99
-#, fuzzy
 msgid "`&str` to `String`"
-msgstr "`&str`을 `문자열`로"
+msgstr "`&str`을 `String`으로"
 
 #: src/04_traits/09_from.md:101
-#, fuzzy
 msgid ""
 "In [`std`'s documentation](https://doc.rust-lang.org/std/convert/trait.From."
 "html#implementors) you can see which `std` types implement the `From` "
@@ -6668,13 +6538,13 @@ msgid ""
 "You'll find that `String` implements `From<&str> for String`. Thus, we can "
 "write:"
 msgstr ""
-"`std` 문서에서 어떤 `std` 유형이 `From` 특성을 구현하는지 확인할 수 있습니"
-"다.  \n"
+"[`std` 문서](https://doc.rust-lang.org/std/convert/trait.From."
+"html#implementors)에서 어떤 `std` 타입이 `From` 트레잇을 구현하는지 확인할 수 "
+"있습니다.  \n"
 "`String`은 `From<&str> for String`을 구현한다는 것을 알 수 있습니다. 따라서 우"
 "리는 다음과 같이 쓸 수 있습니다:"
 
 #: src/04_traits/09_from.md:109
-#, fuzzy
 msgid ""
 "We've been primarily using `.into()`, though.  \n"
 "If you check out the [implementors of `Into`](https://doc.rust-lang.org/std/"
@@ -6683,17 +6553,16 @@ msgid ""
 msgstr ""
 "하지만 우리는 주로 `.into()`를 사용해 왔습니다.  \n"
 "`Into` 구현자를 확인해 보면 `Into<&str> for String`을 찾을 수 없습니다. 무슨 "
-"일이야?"
+"일일까요?"
 
 #: src/04_traits/09_from.md:113
-#, fuzzy
 msgid ""
 "`From` and `Into` are **dual traits**.  \n"
 "In particular, `Into` is implemented for any type that implements `From` "
 "using a **blanket implementation**:"
 msgstr ""
-"'From'과 'Into'는 **이중 특성**입니다.  \n"
-"특히 `Into`는 **블랭킷 구현**을 사용하여 `From`을 구현하는 모든 유형에 대해 구"
+"`From`과 `Into`는 **듀얼 트레잇**입니다.  \n"
+"특히 `Into`는 **블랭킷 구현**을 사용하여 `From`을 구현하는 모든 타입에 대해 구"
 "현됩니다."
 
 #: src/04_traits/09_from.md:127
@@ -6701,47 +6570,46 @@ msgid ""
 "If a type `U` implements `From<T>`, then `Into<U> for T` is automatically "
 "implemented. That's why we can write `let title = \"A title\".into();`."
 msgstr ""
+"타입 `U`가 `From<T>`를 구현하면, `Into<U> for T`는 자동으로 구현됩니다. 그래"
+"서 `let title = \"A title\".into();`와 같이 쓸 수 있는 것입니다."
 
 #: src/04_traits/09_from.md:130
-#, fuzzy
 msgid "`.into()`"
 msgstr "`.into()`"
 
 #: src/04_traits/09_from.md:132
-#, fuzzy
 msgid ""
 "Every time you see `.into()`, you're witnessing a conversion between "
 "types.  \n"
 "What's the target type, though?"
 msgstr ""
-"`.into()`를 볼 때마다 유형 간의 변환을 목격하고 있는 것입니다.  \n"
-"그런데 대상 유형은 무엇입니까?"
+"`.into()`를 볼 때마다 타입 간의 변환을 목격하고 있는 것입니다.  \n"
+"그런데 대상 타입은 무엇일까요?"
 
 #: src/04_traits/09_from.md:135
-#, fuzzy
 msgid "In most cases, the target type is either:"
-msgstr "대부분의 경우 대상 유형은 다음 중 하나입니다."
+msgstr "대부분의 경우 대상 타입은 다음 중 하나입니다:"
 
 #: src/04_traits/09_from.md:137
-#, fuzzy
 msgid ""
 "Specified by the signature of a function/method (e.g. `Ticket::new` in our "
 "example above)"
-msgstr "함수/메서드의 시그니처로 지정됩니다(예: 위 예의 `Ticket::new`)"
+msgstr "함수/메서드의 시그니처로 지정된 것(예: 이전 예시의 `Ticket::new`)"
 
 #: src/04_traits/09_from.md:138
 msgid ""
 "Specified in the variable declaration with a type annotation (e.g. `let "
 "title: String = \"A title\".into();`)"
 msgstr ""
+"변수 선언때 타입 어노테이션으로 명시된 것 (예:` let title: String = \"A "
+"title\".into();`)"
 
 #: src/04_traits/09_from.md:140
-#, fuzzy
 msgid ""
 "`.into()` will work out of the box as long as the compiler can infer the "
 "target type from the context without ambiguity."
 msgstr ""
-"`.into()`는 컴파일러가 모호함 없이 컨텍스트에서 대상 유형을 추론할 수 있는 한 "
+"`.into()`는 컴파일러가 모호함 없이 컨텍스트에서 대상 타입을 추론할 수 있다면 "
 "즉시 작동합니다."
 
 #: src/04_traits/09_from.md:144
@@ -6750,143 +6618,127 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/04_traits/09_from)"
 msgstr ""
+"이 섹션의 예제는 [`04_traits/09_from`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/04_traits/09_from)에 있습니다"
 
 #: src/04_traits/10_assoc_vs_generic.md:1
-#, fuzzy
 msgid "Generics and associated types"
-msgstr "제네릭 및 관련 유형"
+msgstr "제네릭과 연관된 타입"
 
 #: src/04_traits/10_assoc_vs_generic.md:3
-#, fuzzy
 msgid ""
 "Let's re-examine the definition for two of the traits we studied so far, "
 "`From` and `Deref`:"
 msgstr ""
-"지금까지 연구한 두 가지 특성인 'From'과 'Deref'에 대한 정의를 다시 살펴보겠습"
-"니다."
+"지금까지 공부한 두 가지 트레잇인 `From`과 `Deref`에 대한 정의를 다시 살펴보겠"
+"습니다:"
 
 #: src/04_traits/10_assoc_vs_generic.md:17
-#, fuzzy
 msgid ""
 "They both feature type parameters.  \n"
 "In the case of `From`, it's a generic parameter, `T`.  \n"
 "In the case of `Deref`, it's an associated type, `Target`."
 msgstr ""
 "둘 다 기능 유형 매개변수입니다.  \n"
-"'From'의 경우에는 일반 매개변수인 'T'입니다.  \n"
-"`Deref`의 경우 연관된 유형인 `Target`입니다."
+"`From`의 경우에는 제네릭 매개변수인 `T`입니다.  \n"
+"`Deref`의 경우 연관된 타입인 `Target`입니다."
 
 #: src/04_traits/10_assoc_vs_generic.md:21
-#, fuzzy
 msgid "What's the difference? Why use one over the other?"
-msgstr "차이점이 뭐야? 왜 다른 것을 사용합니까?"
+msgstr "뭐가 다를까요? 왜 두 개를 구분해서 쓸까요?"
 
 #: src/04_traits/10_assoc_vs_generic.md:23
-#, fuzzy
 msgid "At most one implementation"
 msgstr "최대 1개의 구현"
 
 #: src/04_traits/10_assoc_vs_generic.md:25
-#, fuzzy
 msgid ""
 "Due to how deref coercion works, there can only be one \"target\" type for a "
 "given type. E.g. `String` can only deref to `str`. It's about avoiding "
 "ambiguity: if you could implement `Deref` multiple times for a type, which "
 "`Target` type should the compiler choose when you call a `&self` method?"
 msgstr ""
-"역참조 강제가 작동하는 방식으로 인해 특정 유형에 대해 하나의 \"대상\" 유형만 "
-"있을 수 있습니다. 예: `String`은 `str`로만 역참조될 수 있습니다. 모호함을 피하"
-"는 것입니다. 한 유형에 대해 `Deref`를 여러 번 구현할 수 있다면 `&self` 메소드"
-"를 호출할 때 컴파일러가 어떤 `Target` 유형을 선택해야 할까요?"
+"Deref coercion가 작동하는 방식으로 인해 특정 타입에 대해 하나의 \"대상\" 타입"
+"만 존재해야합니다. 예: `String`은 `str`로만 역참조될 수 있습니다. 모호함을 피"
+"하기 위함입니다. 한 타입에 대해 `Deref`를 여러 번 구현할 수 있다면 `&self` 메"
+"서드를 호출할 때 컴파일러가 어떤 `Target` 타입을 선택해야 할까요?"
 
 #: src/04_traits/10_assoc_vs_generic.md:30
-#, fuzzy
 msgid ""
 "That's why `Deref` uses an associated type, `Target`.  \n"
 "An associated type is uniquely determined **by the trait implementation**. "
 "Since you can't implement `Deref` more than once, you'll only be able to "
 "specify one `Target` for a given type and there won't be any ambiguity."
 msgstr ""
-"이것이 `Deref`가 연관된 유형인 `Target`을 사용하는 이유입니다.  \n"
-"연관된 유형은 **특성 구현**에 의해 고유하게 결정됩니다. `Deref`를 두 번 이상 "
-"구현할 수 없기 때문에 주어진 유형에 대해 하나의 `Target`만 지정할 수 있으며 모"
-"호성은 없습니다."
+"이것이 `Deref`가 연관 타입인 `Target`을 사용하는 이유입니다.  \n"
+"연관 타입은 **특성 구현에 의해** 고유하게 결정됩니다. `Deref`를 두 번 이상 구"
+"현할 수 없기 때문에 주어진 타입에 대해 하나의 `Target`만 지정할 수 있으며 모호"
+"성은 없습니다."
 
 #: src/04_traits/10_assoc_vs_generic.md:35
-#, fuzzy
 msgid "Generic traits"
-msgstr "일반적인 특성"
+msgstr "제네릭 트레잇"
 
 #: src/04_traits/10_assoc_vs_generic.md:37
-#, fuzzy
 msgid ""
 "On the other hand, you can implement `From` multiple times for a type, **as "
 "long as the input type `T` is different**. For example, you can implement "
 "`From` for `WrappingU32` using both `u32` and `u16` as input types:"
 msgstr ""
-"반면에 **입력 유형 `T`가 다른 한** 한 유형에 대해 `From`을 여러 번 구현할 수 "
-"있습니다. 예를 들어 'u32'와 'u16'을 모두 입력 유형으로 사용하여 "
-"'WrappingU32'에 대해 'From'을 구현할 수 있습니다."
+"반면에 **입력 타입 `T`가 다른 한** 한 타입에 대해 `From`을 여러 번 구현할 수 "
+"있습니다. 예를 들어 `u32`와 `u16`을 모두 입력 타입으로 사용하여 `WrappingU32`"
+"에 대해 `From`을 구현할 수 있습니다."
 
 #: src/04_traits/10_assoc_vs_generic.md:54
-#, fuzzy
 msgid ""
 "This works because `From<u16>` and `From<u32>` are considered **different "
 "traits**.  \n"
 "There is no ambiguity: the compiler can determine which implementation to use "
 "based on type of the value being converted."
 msgstr ""
-"이는 `From<u16>`과 `From<u32>`가 **다른 특성**으로 간주되기 때문에 작동합니"
+"이는 `From<u16>`과 `From<u32>`가 **다른 트레잇**으로 간주되기 때문에 작동합니"
 "다.  \n"
-"모호성은 없습니다. 컴파일러는 변환되는 값의 유형에 따라 사용할 구현을 결정할 "
+"모호성은 없습니다. 컴파일러는 변환되는 값의 타입에 따라 사용할 구현을 결정할 "
 "수 있습니다."
 
 #: src/04_traits/10_assoc_vs_generic.md:57
-#, fuzzy
 msgid "Case study: `Add`"
-msgstr "사례 연구: '추가'"
+msgstr "사례 연구: `Add`"
 
 #: src/04_traits/10_assoc_vs_generic.md:59
-#, fuzzy
 msgid ""
 "As a closing example, consider the `Add` trait from the standard library:"
-msgstr "마지막 예로, 표준 라이브러리의 `Add` 특성을 고려해보세요."
+msgstr "마지막 예로, 표준 라이브러리의 `Add` 트레잇을 생각해봅시다:"
 
 #: src/04_traits/10_assoc_vs_generic.md:69
-#, fuzzy
 msgid "It uses both mechanisms:"
-msgstr "두 가지 메커니즘을 모두 사용합니다."
+msgstr "두 가지 메커니즘을 모두 사용합니다:"
 
 #: src/04_traits/10_assoc_vs_generic.md:71
-#, fuzzy
 msgid ""
 "it has a generic parameter, `RHS` (right-hand side), which defaults to `Self`"
 msgstr ""
-"여기에는 `RHS`(오른쪽)라는 일반 매개변수가 있으며 기본값은 `Self`입니다."
+"여기에는 `RHS`(오른쪽)라는 제네릭 매개변수가 있으며 기본값은 `Self`입니다"
 
 #: src/04_traits/10_assoc_vs_generic.md:72
-#, fuzzy
 msgid ""
 "it has an associated type, `Output`, the type of the result of the addition"
-msgstr "여기에는 덧셈의 결과 유형인 `Output`이라는 연관된 유형이 있습니다."
+msgstr "여기에는 덧셈의 결과 타입인 `Output`이라는 연관 타입이 있습니다."
 
 #: src/04_traits/10_assoc_vs_generic.md:74
-#, fuzzy
 msgid "`RHS`"
-msgstr "'우측'"
+msgstr "`RHS`"
 
 #: src/04_traits/10_assoc_vs_generic.md:76
-#, fuzzy
 msgid ""
 "`RHS` is a generic parameter to allow for different types to be added "
 "together.  \n"
 "For example, you'll find these two implementations in the standard library:"
 msgstr ""
-"`RHS`는 다양한 유형을 함께 추가할 수 있는 일반 매개변수입니다.  \n"
-"예를 들어 표준 라이브러리에서 다음 두 가지 구현을 찾을 수 있습니다."
+"`RHS`는 다양한 타입을 함께 더할 수 있는 제네릭 매개변수입니다.  \n"
+"예를 들어 표준 라이브러리에서 다음 두 가지 구현을 찾을 수 있습니다:"
 
 #: src/04_traits/10_assoc_vs_generic.md:84
-#, fuzzy
 msgid ""
 "//                      ^^^\n"
 "      // This could be written as `Self::Output` instead.\n"
@@ -6895,45 +6747,42 @@ msgid ""
 "      // right above.\n"
 "      // [...]\n"
 msgstr ""
-"// ^^^ // 대신 `Self::Output`으로 쓸 수도 있습니다. // 여기에 지정한 유형"
-"이 // 바로 위의 `Output`에 할당한 // 유형과 일치하는 한 컴파일러는 상관하지 않"
-"습니다. // \\[...\\]"
+"//                      ^^^\n"
+"      // 대신 `Self::Output`으로 쓸 수도 있습니다.\n"
+"      // 여기에 지정한 타입이\n"
+"      // 바로 위의 `Output`에 할당한 \n"
+"      // 타입과 일치하는 한 컴파일러는 상관하지 않습니다.\n"
+"      // [...]\n"
 
 #: src/04_traits/10_assoc_vs_generic.md:102
-#, fuzzy
 msgid "This allows the following code to compile:"
-msgstr "이를 통해 다음 코드를 컴파일할 수 있습니다."
+msgstr "이를 통해 다음 코드를 컴파일할 수 있습니다:"
 
 #: src/04_traits/10_assoc_vs_generic.md:108
-#, fuzzy
 msgid "because `u32` implements `Add<&u32>` _as well as_ `Add<u32>`."
 msgstr ""
-"왜냐하면 `u32`는 `Add<&u32>`뿐만 아니라_ `Add<u32>`도 구현하기 때문입니다."
+"왜냐하면 `u32`는 `Add<u32>` _뿐만 아니라_ `Add<&u32>`도 구현하기 때문입니다."
 
 #: src/04_traits/10_assoc_vs_generic.md:110
-#, fuzzy
 msgid "`Output`"
-msgstr "`출력`"
+msgstr "`Output`"
 
 #: src/04_traits/10_assoc_vs_generic.md:112
-#, fuzzy
 msgid "`Output` represents the type of the result of the addition."
-msgstr "'Output'은 덧셈 결과의 유형을 나타냅니다."
+msgstr "'Output'은 덧셈 결과의 타입을 나타냅니다."
 
 #: src/04_traits/10_assoc_vs_generic.md:114
-#, fuzzy
 msgid ""
 "Why do we need `Output` in the first place? Can't we just use `Self` as "
 "output, the type implementing `Add`? We could, but it would limit the "
 "flexibility of the trait. In the standard library, for example, you'll find "
 "this implementation:"
 msgstr ""
-"애초에 '출력'이 필요한 이유는 무엇입니까? `Self`를 출력으로 `Add`를 구현하는 "
-"유형으로 사용할 수는 없나요? 할 수는 있지만 특성의 유연성이 제한됩니다. 예를 "
-"들어 표준 라이브러리에서는 다음과 같은 구현을 찾을 수 있습니다."
+"애초에 `Output`이 필요한 이유는 무엇입니까? `Self`를 아웃풋으로 `Add`를 구현하"
+"는 타입으로 사용할 수는 없나요? 할 수는 있지만 트레잇의 유연성이 제한됩니다. "
+"예를 들어 표준 라이브러리에서는 다음과 같은 구현을 찾을 수 있습니다:"
 
 #: src/04_traits/10_assoc_vs_generic.md:128
-#, fuzzy
 msgid ""
 "The type they're implementing the trait for is `&u32`, but the result of the "
 "addition is `u32`.  \n"
@@ -6941,63 +6790,58 @@ msgid ""
 "to return `Self`, i.e. `&u32` in this case. `Output` lets `std` decouple the "
 "implementor from the return type, thus supporting this case."
 msgstr ""
-"특성을 구현하는 유형은 '&u32'이지만 추가 결과는 'u32'입니다.  \n"
+"트레잇을 구현하는 타입은 `&u32`이지만 덧셈 결과는 `u32`입니다.  \n"
 "`add`가 `Self`를 반환해야 한다면(예: 이 경우 `&u32`) 이 구현을 제공하는 것은 "
-"불가능[^유연]합니다. `Output`을 사용하면 `std`가 구현자를 반환 유형에서 분리하"
-"여 이 경우를 지원합니다."
+"불가능[^flexible]합니다. `Output`을 사용하면 `std`가 구현자를 반환 타입에서 분"
+"리하여 이 케이스를 지원합니다."
 
 #: src/04_traits/10_assoc_vs_generic.md:132
-#, fuzzy
 msgid ""
 "On the other hand, `Output` can't be a generic parameter. The output type of "
 "the operation **must** be uniquely determined once the types of the operands "
 "are known. That's why it's an associated type: for a given combination of "
 "implementor and generic parameters, there is only one `Output` type."
 msgstr ""
-"반면에 `Output`은 일반 매개변수가 될 수 없습니다. 연산의 출력 유형은 피연산자"
-"의 유형을 알고 나면 **반드시** 고유하게 결정되어야 합니다. 이것이 연관 유형인 "
-"이유입니다. 구현자와 일반 매개변수의 특정 조합에 대해 `출력` 유형은 하나만 있"
-"습니다."
+"반면에 `Output`은 제네릭 매개변수가 될 수 없습니다. 연산의 출력 타입은 피연산"
+"자의 타입을 알고 나면 **반드시** 고유하게 결정되어야 합니다. 이것이 연관 타입"
+"인 이유입니다. 구현자와 제네릭 매개변수의 특정 조합에 대해 `Output` 타입은 하"
+"나만 존재합니다."
 
 #: src/04_traits/10_assoc_vs_generic.md:136
-#, fuzzy
 msgid "Conclusion"
 msgstr "결론"
 
 #: src/04_traits/10_assoc_vs_generic.md:138
-#, fuzzy
 msgid "To recap:"
 msgstr "요약하자면:"
 
 #: src/04_traits/10_assoc_vs_generic.md:140
-#, fuzzy
 msgid ""
 "Use an **associated type** when the type must be uniquely determined for a "
 "given trait implementation."
 msgstr ""
-"특정 특성 구현에 대해 유형을 고유하게 결정해야 하는 경우 **연관 유형**을 사용"
-"하세요."
+"특정 트레잇 구현에 대해 타입을 고유하게 결정해야 하는 경우 **연관 타입**을 사"
+"용하세요."
 
 #: src/04_traits/10_assoc_vs_generic.md:141
-#, fuzzy
 msgid ""
 "Use a **generic parameter** when you want to allow multiple implementations "
 "of the trait for the same type, with different input types."
 msgstr ""
-"다양한 입력 유형을 사용하여 동일한 유형에 대한 특성의 여러 구현을 허용하려면 "
-"**일반 매개변수**를 사용하세요."
+"다양한 입력 타입을 사용하여 동일한 타입에 대한 트레잇의 여러 구현을 허용하려"
+"면 **제네릭 매개변수**를 사용하세요."
 
 #: src/04_traits/10_assoc_vs_generic.md:144
-#, fuzzy
 msgid ""
 "Flexibility is rarely free: the trait definition is more complex due to "
 "`Output`, and implementors have to reason about what they want to return. The "
 "trade-off is only justified if that flexibility is actually needed. Keep that "
 "in mind when designing your own traits."
 msgstr ""
-"유연성이 무료인 경우는 거의 없습니다. 특성 정의는 '출력'으로 인해 더 복잡하며 "
-"구현자는 반환하려는 항목에 대해 추론해야 합니다. 유연성이 실제로 필요한 경우에"
-"만 절충이 정당화됩니다. 자신만의 특성을 디자인할 때 이 점을 명심하세요."
+"유연성이 공짜인 경우는 거의 없습니다. 트레잇 정의는 'Output'으로 인해 더 복잡"
+"하며 구현자는 반환하려는 항목에 대해 추론해야 합니다. 유연성이 실제로 필요한 "
+"경우에만 절충이 정당화됩니다. 자신만의 트레잇을 디자인할 때 이 점을 명심하세"
+"요."
 
 #: src/04_traits/10_assoc_vs_generic.md:150
 msgid ""
@@ -7005,28 +6849,27 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/04_traits/10_assoc_vs_generic)"
 msgstr ""
+"이 섹션의 예제는 [`04_traits/10_assoc_vs_generic`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/04_traits/10_assoc_vs_generic)에 있습니다"
 
 #: src/04_traits/11_clone.md:1
-#, fuzzy
 msgid "Copying values, pt. 1"
 msgstr "값 복사, pt. 1"
 
 #: src/04_traits/11_clone.md:3
-#, fuzzy
 msgid ""
 "In the previous chapter we introduced ownership and borrowing.  \n"
 "We stated, in particular, that:"
 msgstr ""
 "이전 장에서는 소유권과 차용에 대해 소개했습니다.  \n"
-"우리는 특히 다음과 같이 말했습니다."
+"우리는 특히 다음과 같이 말했습니다:"
 
 #: src/04_traits/11_clone.md:6
-#, fuzzy
 msgid "Every value in Rust has a single owner at any given time."
 msgstr "Rust의 모든 값은 언제든지 단일 소유자를 갖습니다."
 
 #: src/04_traits/11_clone.md:7
-#, fuzzy
 msgid ""
 "When a function takes ownership of a value (\"it consumes it\"), the caller "
 "can't use that value anymore."
@@ -7035,7 +6878,6 @@ msgstr ""
 "수 없습니다."
 
 #: src/04_traits/11_clone.md:9
-#, fuzzy
 msgid ""
 "These restrictions can be somewhat limiting.  \n"
 "Sometimes we might have to call a function that takes ownership of a value, "
@@ -7050,68 +6892,57 @@ msgstr ""
 #: src/08_futures/03_runtime.md:52 src/08_futures/04_future.md:12
 #: src/08_futures/07_cancellation.md:35 src/08_futures/07_cancellation.md:36
 msgid "/* */"
-msgstr ""
+msgstr "/* */"
 
 #: src/04_traits/11_clone.md:17 src/04_traits/11_clone.md:45
-#, fuzzy
 msgid "\"hello\""
-msgstr "\"안녕하세요\""
+msgstr "\"hello\""
 
 #: src/04_traits/11_clone.md:19 src/04_traits/11_clone.md:48
-#, fuzzy
 msgid "\", world!\""
-msgstr "\", 세계!\""
+msgstr "\", world!\""
 
 #: src/04_traits/11_clone.md:19
-#, fuzzy
 msgid "// error: value borrowed here after move\n"
-msgstr "// 오류: 이동 후 여기에 빌린 값"
+msgstr "// 오류: 소유권 이전 후 빌린 값\n"
 
 #: src/04_traits/11_clone.md:23
-#, fuzzy
 msgid "That's where `Clone` comes in."
-msgstr "이것이 바로 'Clone'이 등장하는 곳입니다."
+msgstr "이곳이 바로 `Clone`이 필요한 곳입니다."
 
 #: src/04_traits/11_clone.md:25
-#, fuzzy
 msgid "`Clone`"
-msgstr "'클론'"
+msgstr "`Clone`"
 
 #: src/04_traits/11_clone.md:27
-#, fuzzy
 msgid "`Clone` is a trait defined in Rust's standard library:"
-msgstr "`Clone`은 Rust의 표준 라이브러리에 정의된 특성입니다:"
+msgstr "`Clone`은 Rust의 표준 라이브러리에 정의된 트레잇입니다:"
 
 #: src/04_traits/11_clone.md:35
-#, fuzzy
 msgid ""
 "Its method, `clone`, takes a reference to `self` and returns a new **owned** "
 "instance of the same type."
 msgstr ""
-"해당 메서드 `clone`은 `self`에 대한 참조를 가져와 동일한 유형의 새로운 **소유"
+"해당 메서드 `clone`은 `self`에 대한 참조를 가져와 동일한 타입의 새로운 **소유"
 "** 인스턴스를 반환합니다."
 
 #: src/04_traits/11_clone.md:37
-#, fuzzy
 msgid "In action"
-msgstr "실행 중"
+msgstr "사용 사례"
 
 #: src/04_traits/11_clone.md:39
-#, fuzzy
 msgid ""
 "Going back to the example above, we can use `clone` to create a new `String` "
 "instance before calling `consumer`:"
 msgstr ""
 "위의 예시로 돌아가서, `consumer`를 호출하기 전에 `clone`을 사용하여 새로운 "
-"`String` 인스턴스를 생성할 수 있습니다."
+"`String` 인스턴스를 생성할 수 있습니다:"
 
 #: src/04_traits/11_clone.md:48
-#, fuzzy
 msgid "// no error\n"
-msgstr "// 오류 없음"
+msgstr "// 오류 없음\n"
 
 #: src/04_traits/11_clone.md:52
-#, fuzzy
 msgid ""
 "Instead of giving ownership of `s` to `consumer`, we create a new `String` "
 "(by cloning `s`) and give that to `consumer` instead.  \n"
@@ -7122,27 +6953,26 @@ msgstr ""
 "`s`는 `consumer`를 호출한 후에도 유효하고 사용 가능한 상태로 유지됩니다."
 
 #: src/04_traits/11_clone.md:56
-#, fuzzy
 msgid "In memory"
-msgstr "기억 속에"
+msgstr "메모리에서는"
 
 #: src/04_traits/11_clone.md:58
 msgid ""
 "Let's look at what happened in memory in the example above. When `let mut s: "
 "String::from(\"hello\");` is executed, the memory looks like this:"
 msgstr ""
+"위 예제에서 메모리에서 무슨 일이 일어났는지 살펴봅시다. `let mut s: String::"
+"from(\"hello\");`가 실행되면, 메모리는 다음과 같습니다:"
 
 #: src/04_traits/11_clone.md:75
-#, fuzzy
 msgid ""
 "When `let t = s.clone()` is executed, a whole new region is allocated on the "
 "heap to store a copy of the data:"
 msgstr ""
 "`let t = s.clone()`이 실행되면 데이터 복사본을 저장하기 위해 완전히 새로운 영"
-"역이 힙에 할당됩니다."
+"역이 힙에 할당됩니다:"
 
 #: src/04_traits/11_clone.md:91
-#, fuzzy
 msgid ""
 "If you're coming from a language like Java, you can think of `clone` as a way "
 "to create a deep copy of an object."
@@ -7151,27 +6981,23 @@ msgstr ""
 "로 생각할 수 있습니다."
 
 #: src/04_traits/11_clone.md:93
-#, fuzzy
 msgid "Implementing `Clone`"
-msgstr "'클론' 구현"
+msgstr "`Clone` 구현"
 
 #: src/04_traits/11_clone.md:95
-#, fuzzy
 msgid ""
 "To make a type `Clone`\\-able, we have to implement the `Clone` trait for "
 "it.  \n"
 "You almost always implement `Clone` by deriving it:"
 msgstr ""
-"`Clone` 유형을 가능하게 만들려면 `Clone` 특성을 구현해야 합니다.  \n"
-"거의 항상 `Clone`을 파생하여 구현합니다."
+"`Clone` 타입을 가능하게 만들려면 `Clone` 트레잇을 구현해야 합니다.  \n"
+"거의 항상 `Clone`은 파생 매크로로 구현합니다."
 
 #: src/04_traits/11_clone.md:101
-#, fuzzy
 msgid "// fields\n"
-msgstr "// 필드"
+msgstr "// 필드\n"
 
 #: src/04_traits/11_clone.md:105
-#, fuzzy
 msgid ""
 "The compiler implements `Clone` for `MyType` as you would expect: it clones "
 "each field of `MyType` individually and then constructs a new `MyType` "
@@ -7182,8 +7008,8 @@ msgstr ""
 "컴파일러는 예상대로 `MyType`에 대해 `Clone`을 구현합니다. 즉, `MyType`의 각 필"
 "드를 개별적으로 복제한 다음 복제된 필드를 사용하여 새로운 `MyType` 인스턴스를 "
 "구성합니다.  \n"
-"`cargo Expand`(또는 IDE)를 사용하여 `derive` 매크로에 의해 생성된 코드를 탐색"
-"할 수 있다는 점을 기억하세요."
+"`cargo expand`(또는 IDE)를 사용하여 `파생` 매크로에 의해 생성된 코드를 탐색할 "
+"수 있다는 점을 기억하세요."
 
 #: src/04_traits/11_clone.md:111
 msgid ""
@@ -7191,47 +7017,42 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/04_traits/11_clone)"
 msgstr ""
+"이 섹션의 예제는 [`04_traits/11_clone`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/04_traits/11_clone)에 있습니다"
 
 #: src/04_traits/12_copy.md:1
-#, fuzzy
 msgid "Copying values, pt. 2"
 msgstr "값 복사, pt. 2"
 
 #: src/04_traits/12_copy.md:3
-#, fuzzy
 msgid ""
 "Let's consider the same example as before, but with a slight twist: using "
 "`u32` rather than `String` as a type."
 msgstr ""
-"이전과 동일한 예를 약간 변형하여 살펴보겠습니다. 유형으로 `String` 대신 `u32`"
+"이전과 동일한 예를 약간 변형하여 살펴보겠습니다. 타입으로 `String` 대신 `u32`"
 "를 사용하는 것입니다."
 
 #: src/04_traits/12_copy.md:15
-#, fuzzy
 msgid ""
 "It'll compile without errors! What's going on here? What's the difference "
 "between `String` and `u32` that makes the latter work without `.clone()`?"
 msgstr ""
 "오류 없이 컴파일됩니다! 여기서 무슨 일이 일어나고 있는 걸까요? `.clone()` 없이"
-"도 작동하도록 하는 `String`과 `u32`의 차이점은 무엇입니까?"
+"도 작동하도록 하는 `String`과 `u32`의 차이점은 무엇일까요?"
 
 #: src/04_traits/12_copy.md:18
-#, fuzzy
 msgid "`Copy`"
-msgstr "`복사`"
+msgstr "`Copy`"
 
 #: src/04_traits/12_copy.md:20
-#, fuzzy
 msgid "`Copy` is another trait defined in Rust's standard library:"
-msgstr "`Copy`는 Rust의 표준 라이브러리에 정의된 또 다른 특성입니다:"
+msgstr "`Copy`는 Rust의 표준 라이브러리에 정의된 또 다른 트레잇입니다:"
 
 #: src/04_traits/12_copy.md:26
-#, fuzzy
 msgid "It is a marker trait, just like `Sized`."
-msgstr "이는 'Sized'와 마찬가지로 마커 특성입니다."
+msgstr "이는 `Sized`와 마찬가지로 마커 트레잇입니다."
 
 #: src/04_traits/12_copy.md:28
-#, fuzzy
 msgid ""
 "If a type implements `Copy`, there's no need to call `.clone()` to create a "
 "new instance of the type: Rust does it **implicitly** for you.  \n"
@@ -7241,62 +7062,54 @@ msgid ""
 "then passes that new instance to `consumer`. It all happens behind the "
 "scenes, without you having to do anything."
 msgstr ""
-"유형이 `Copy`를 구현하는 경우 해당 유형의 새 인스턴스를 생성하기 위해 `."
+"타입이 `Copy`를 구현하는 경우 해당 타입의 새 인스턴스를 생성하기 위해 `."
 "clone()`을 호출할 필요가 없습니다. Rust가 이를 **암시적으로** 수행합니다.  \n"
-"`u32`는 `Copy`를 구현하는 유형의 예입니다. 이것이 위의 예가 오류 없이 컴파일되"
-"는 이유입니다. `consumer(s)`가 호출되면 Rust는 **비트 단위 복사를 수행하여 새"
-"로운 `u32` 인스턴스를 생성합니다. ** of `s`를 선택한 다음 해당 새 인스턴스를 "
-"`consumer`에 전달합니다. 이 모든 일은 사용자가 아무것도 하지 않아도 뒤에서 발"
-"생합니다."
+"`u32`는 `Copy`를 구현하는 타입의 예입니다. 이것이 위의 예가 오류 없이 컴파일되"
+"는 이유입니다. `consumer(s)`가 호출되면 Rust가 `s`를 **비트 단위 복사**해 새로"
+"운 `u32` 인스턴스를 생성합니다. 그리고 그 새 인스턴스를 `consumer`에 전달합니"
+"다. 이 모든 일은 사용자가 아무것도 하지 않아도 이루어집니다."
 
 #: src/04_traits/12_copy.md:34
-#, fuzzy
 msgid "What can be `Copy`?"
-msgstr "'복사'란 무엇입니까?"
+msgstr "`Copy`란 무엇일까요?"
 
 #: src/04_traits/12_copy.md:36
-#, fuzzy
 msgid ""
 "`Copy` is not equivalent to \"automatic cloning\", although it implies it.  \n"
 "Types must meet a few requirements in order to be allowed to implement `Copy`."
 msgstr ""
-"'복사'는 \"자동 복제\"를 의미하지만 \"자동 복제\"와 동일하지 않습니다.  \n"
-"'복사' 구현을 허용하려면 유형이 몇 가지 요구 사항을 충족해야 합니다."
+"`Copy`는 \"자동 복제\"를 의미하지만 \"자동 복제\"와 동일하지 않습니다.  \n"
+"`Copy` 구현을 허용하려면 타입이 몇 가지 요구 사항을 충족해야 합니다."
 
 #: src/04_traits/12_copy.md:39
-#, fuzzy
 msgid ""
 "First of all, it must implement `Clone`, since `Copy` is a subtrait of "
 "`Clone`. This makes sense: if Rust can create a new instance of a type "
 "_implicitly_, it should also be able to create a new instance _explicitly_ by "
 "calling `.clone()`."
 msgstr ""
-"우선 `Copy`는 `Clone`의 하위 특성이므로 `Clone`을 구현해야 합니다. 이는 의미"
-"가 있습니다: Rust가 _암시적으로_ 유형의 새 인스턴스를 생성할 수 있다면 `."
-"clone()`을 호출하여 _명시적으로_ 새 인스턴스를 생성할 수도 있어야 합니다."
+"우선 `Copy`는 `Clone`의 하위 특성이므로 `Clone`을 구현해야 합니다. 이는 말이 "
+"됩니다: Rust가 _암시적으로_ 타입의 새 인스턴스를 생성할 수 있다면 `.clone()`"
+"을 호출하여 _명시적으로_ 새 인스턴스를 생성할 수도 있어야 합니다."
 
 #: src/04_traits/12_copy.md:43
-#, fuzzy
 msgid "That's not all, though. A few more conditions must be met:"
-msgstr "하지만 그게 전부는 아닙니다. 몇 가지 조건이 더 충족되어야 합니다."
+msgstr "하지만 그게 전부는 아닙니다. 몇 가지 조건이 더 충족되어야 합니다:"
 
 #: src/04_traits/12_copy.md:45
-#, fuzzy
 msgid ""
 "The type doesn't manage any _additional_ resources (e.g. heap memory, file "
 "handles, etc.) beyond the `std::mem::size_of` bytes that it occupies in "
 "memory."
 msgstr ""
-"이 유형은 메모리에서 차지하는 `std::mem::size_of` 바이트를 초과하는 _추가_ 리"
-"소스(예: 힙 메모리, 파일 핸들 등)를 관리하지 않습니다."
+"타입이 메모리에서 차지하는 `std::mem::size_of` 바이트를 초과하는 _추가_ 리소스"
+"(예: 힙 메모리, 파일 핸들 등)를 관리하지 않아야합니다."
 
 #: src/04_traits/12_copy.md:47
-#, fuzzy
 msgid "The type is not a mutable reference (`&mut T`)."
-msgstr "유형이 변경 가능한 참조(`&mut T`)가 아닙니다."
+msgstr "타입이 변경 가능한 참조(`&mut T`)가 아니어야합니다."
 
 #: src/04_traits/12_copy.md:49
-#, fuzzy
 msgid ""
 "If both conditions are met, then Rust can safely create a new instance of the "
 "type by performing a **bitwise copy** of the original instance—this is often "
@@ -7304,27 +7117,24 @@ msgid ""
 "that performs the bitwise copy."
 msgstr ""
 "두 조건이 모두 충족되면 Rust는 원래 인스턴스의 **비트 복사**를 수행하여 해당 "
-"유형의 새 인스턴스를 안전하게 생성할 수 있습니다. 이는 C 표준 라이브러리 함수 "
-"다음에 나오는 `memcpy` 작업이라고도 합니다. 비트 단위 복사를 수행합니다."
+"타입의 새 인스턴스를 안전하게 생성할 수 있습니다. 이는 C 표준 라이브러리의 "
+"`memcpy` 작업이라고도 합니다. 비트 단위 복사를 수행합니다."
 
 #: src/04_traits/12_copy.md:53
-#, fuzzy
 msgid "Case study 1: `String`"
-msgstr "사례 연구 1: '문자열'"
+msgstr "사례 연구 1: `String`"
 
 #: src/04_traits/12_copy.md:55
-#, fuzzy
 msgid ""
 "`String` is a type that doesn't implement `Copy`.  \n"
 "Why? Because it manages an additional resource: the heap-allocated memory "
 "buffer that stores the string's data."
 msgstr ""
-"`String`은 `Copy`를 구현하지 않는 유형입니다.  \n"
-"왜? 추가 리소스, 즉 문자열의 데이터를 저장하는 힙 할당 메모리 버퍼를 관리하기 "
-"때문입니다."
+"`String`은 `Copy`를 구현하지 않는 타입입니다.  \n"
+"왜일까요? 추가 리소스, 즉 문자열의 데이터를 저장하는 힙 할당 메모리 버퍼를 관"
+"리하기 때문입니다."
 
 #: src/04_traits/12_copy.md:58
-#, fuzzy
 msgid ""
 "Let's imagine that Rust allowed `String` to implement `Copy`.  \n"
 "Then, when a new `String` instance is created by performing a bitwise copy of "
@@ -7333,59 +7143,54 @@ msgid ""
 msgstr ""
 "Rust가 `String`이 `Copy`를 구현하도록 허용했다고 상상해 봅시다.  \n"
 "그런 다음 원본 인스턴스의 비트 단위 복사를 수행하여 새 `String` 인스턴스가 생"
-"성되면 원본 인스턴스와 새 인스턴스 모두 동일한 메모리 버퍼를 가리킵니다."
+"성되면 원본 인스턴스와 새 인스턴스 모두 동일한 메모리 버퍼를 가리킵니다:"
 
 #: src/04_traits/12_copy.md:79
-#, fuzzy
 msgid ""
 "This is bad! Both `String` instances would try to free the memory buffer when "
 "they go out of scope, leading to a double-free error. You could also create "
 "two distinct `&mut String` references that point to the same memory buffer, "
 "violating Rust's borrowing rules."
 msgstr ""
-"이건 나쁘다! 두 `String` 인스턴스 모두 범위를 벗어날 때 메모리 버퍼를 해제하려"
-"고 시도하여 이중 해제 오류가 발생합니다. 또한 동일한 메모리 버퍼를 가리키는 "
-"두 개의 서로 다른 `&mut String` 참조를 생성하여 Rust의 차용 규칙을 위반할 수"
-"도 있습니다."
+"이건 잘못되었습니다! 두 `String` 인스턴스 모두 스코프를 벗어날 때 메모리 버퍼"
+"를 해제하려고 시도하여 더블 프리 오류가 발생합니다. 또한 동일한 메모리 버퍼를 "
+"가리키는 두 개의 서로 다른 `&mut String` 참조를 생성하여 Rust의 차용 규칙을 위"
+"반할 수도 있습니다."
 
 #: src/04_traits/12_copy.md:85
-#, fuzzy
 msgid "Case study 2: `u32`"
 msgstr "사례 연구 2: `u32`"
 
 #: src/04_traits/12_copy.md:87
-#, fuzzy
 msgid ""
 "`u32` implements `Copy`. All integer types do, in fact.  \n"
 "An integer is \"just\" the bytes that represent the number in memory. There's "
 "nothing more! If you copy those bytes, you get another perfectly valid "
 "integer instance. Nothing bad can happen, so Rust allows it."
 msgstr ""
-"`u32`는 `복사`를 구현합니다. 실제로 모든 정수 유형이 그렇습니다.  \n"
-"정수는 메모리의 숫자를 나타내는 바이트 \"단지\"입니다. 더 이상 아무것도 없습니"
-"다! 해당 바이트를 복사하면 완벽하게 유효한 또 다른 정수 인스턴스를 얻게 됩니"
-"다. 나쁜 일은 일어날 수 없으므로 Rust는 그것을 허용합니다."
+"`u32`는 `Copy`를 구현합니다. 실제로 모든 정수 타입이 그렇습니다.  \n"
+"정수는 메모리의 숫자를 나타내는 \"그냥\" 바이트입니다. 그게 전부입니다! 해당 "
+"바이트를 복사하면 완벽하게 유효한 또 다른 정수 인스턴스를 얻게 됩니다. 나쁜 일"
+"은 일어날 수 없으므로 Rust는 그것을 허용합니다."
 
 #: src/04_traits/12_copy.md:92
-#, fuzzy
 msgid "Case study 3: `&mut u32`"
 msgstr "사례 연구 3: `&mut u32`"
 
 #: src/04_traits/12_copy.md:94
-#, fuzzy
 msgid ""
 "When we introduced ownership and mutable borrows, we stated one rule quite "
 "clearly: there can only ever be _one_ mutable borrow of a value at any given "
 "time.  \n"
 "That's why `&mut u32` doesn't implement `Copy`, even though `u32` does."
 msgstr ""
-"소유권과 변경 가능한 빌림을 도입했을 때 우리는 한 가지 규칙을 아주 명확하게 명"
-"시했습니다. 즉, 주어진 시간에 값의 변경 가능한 빌림은 _하나_만 있을 수 있다는 "
-"것입니다.  \n"
-"이것이 `u32`가 구현하더라도 `&mut u32`가 `Copy`를 구현하지 않는 이유입니다."
+"소유권과 변경 가능한 차용을 소개할 때 우리는 한 가지 규칙을 아주 명확하게 명시"
+"했습니다. 즉, 주어진 시간에 값의 변경 가능한 차용은 _하나_만 있을 수 있다는 것"
+"입니다.  \n"
+"이것이 `u32`가 `Copy`를 구현하더라도 `&mut u32`는 `Copy`를 구현하지 않는 이유"
+"입니다."
 
 #: src/04_traits/12_copy.md:98
-#, fuzzy
 msgid ""
 "If `&mut u32` implemented `Copy`, you could create multiple mutable "
 "references to the same value and modify it in multiple places at the same "
@@ -7398,18 +7203,16 @@ msgstr ""
 "하지 않습니다."
 
 #: src/04_traits/12_copy.md:103
-#, fuzzy
 msgid "Implementing `Copy`"
-msgstr "'복사' 구현"
+msgstr "`Copy` 구현"
 
 #: src/04_traits/12_copy.md:105
-#, fuzzy
 msgid ""
 "In most cases, you don't need to manually implement `Copy`. You can just "
 "derive it, like this:"
 msgstr ""
-"대부분의 경우 '복사'를 수동으로 구현할 필요가 없습니다. 다음과 같이 파생시킬 "
-"수 있습니다."
+"대부분의 경우 `Copy`를 수동으로 구현할 필요가 없습니다. 다음과 같이 파생시킬 "
+"수 있습니다:"
 
 #: src/04_traits/12_copy.md:117
 msgid ""
@@ -7417,68 +7220,63 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/04_traits/12_copy)"
 msgstr ""
+"이 섹션의 예제는 [`04_traits/12_copy`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/04_traits/12_copy)에 있습니다"
 
 #: src/04_traits/13_drop.md:1
-#, fuzzy
 msgid "The `Drop` trait"
-msgstr "'드롭' 특성"
+msgstr "`Drop` 트레잇"
 
 #: src/04_traits/13_drop.md:3
-#, fuzzy
 msgid ""
 "When we introduced [destructors](../03_ticket_v1/11_destructor.md), we "
 "mentioned that the `drop` function:"
-msgstr "소멸자를 소개했을 때 `drop` 함수에 대해 언급했습니다."
+msgstr ""
+"[소멸자](../03_ticket_v1/11_destructor.md)를 소개했을 때 `drop` 함수에 대해 언"
+"급했습니다."
 
 #: src/04_traits/13_drop.md:6
-#, fuzzy
 msgid ""
 "reclaims the memory occupied by the type (i.e. `std::mem::size_of` bytes)"
 msgstr ""
-"해당 유형(예: `std::mem::size_of` 바이트)이 차지하는 메모리를 회수합니다."
+"해당 타입이 차지하는 메모리를 회수합니다(예: `std::mem::size_of` 바이트)."
 
 #: src/04_traits/13_drop.md:7
-#, fuzzy
 msgid ""
 "cleans up any additional resources that the value might be managing (e.g. the "
 "heap buffer of a `String`)"
 msgstr "값이 관리할 수 있는 추가 리소스를 정리합니다(예: `String`의 힙 버퍼)."
 
 #: src/04_traits/13_drop.md:9
-#, fuzzy
 msgid "Step 2. is where the `Drop` trait comes in."
-msgstr "2단계는 `Drop` 특성이 들어오는 곳입니다."
+msgstr "Step 2.는 `Drop` 트레잇이 필요한 곳입니다."
 
 #: src/04_traits/13_drop.md:17
-#, fuzzy
 msgid ""
 "The `Drop` trait is a mechanism for you to define _additional_ cleanup logic "
 "for your types, beyond what the compiler does for you automatically.  \n"
 "Whatever you put in the `drop` method will be executed when the value goes "
 "out of scope."
 msgstr ""
-"`Drop` 특성은 컴파일러가 자동으로 수행하는 것 이상으로 유형에 대한 _추가_ 정"
+"`Drop` 트레잇은 컴파일러가 자동으로 수행하는 것 이상으로 타입에 대한 _추가_ 정"
 "리 논리를 정의하는 메커니즘입니다.  \n"
-"'drop' 메소드에 무엇을 넣었든 값이 범위를 벗어나면 실행됩니다."
+"'drop' 메서드에 무엇을 넣었든 값이 스코프를 벗어나면 실행됩니다."
 
 #: src/04_traits/13_drop.md:21
-#, fuzzy
 msgid "`Drop` and `Copy`"
-msgstr "'삭제' 및 '복사'"
+msgstr "`Drop`과 `Copy`"
 
 #: src/04_traits/13_drop.md:23
-#, fuzzy
 msgid ""
 "When talking about the `Copy` trait, we said that a type can't implement "
 "`Copy` if it manages additional resources beyond the `std::mem::size_of` "
 "bytes that it occupies in memory."
 msgstr ""
-"`Copy` 특성에 대해 이야기할 때, 메모리에서 차지하는 `std::mem::size_of` 바이트"
-"를 초과하는 추가 리소스를 관리하는 경우 유형은 `Copy`를 구현할 수 없다고 말했"
-"습니다."
+"`Copy` 트레잇에 대해 이야기할 때, 메모리에서 차지하는 `std::mem::size_of` 바이"
+"트를 초과하는 추가 리소스를 관리하는 경우 타입은 `Copy`를 구현할 수 없다고 말"
+"했습니다."
 
 #: src/04_traits/13_drop.md:26
-#, fuzzy
 msgid ""
 "You might wonder: how does the compiler know if a type manages additional "
 "resources? That's right: `Drop` trait implementations!  \n"
@@ -7486,29 +7284,26 @@ msgid ""
 "that your type has additional resources attached to it and won't allow you to "
 "implement `Copy`."
 msgstr ""
-"유형이 추가 리소스를 관리하는지 여부를 컴파일러가 어떻게 알 수 있는지 궁금할 "
-"것입니다. 맞습니다: `Drop` 특성 구현입니다!  \n"
-"유형에 명시적인 `Drop` 구현이 있는 경우 컴파일러는 유형에 추가 리소스가 첨부되"
+"타입이 추가 리소스를 관리하는지 여부를 컴파일러가 어떻게 알 수 있는지 궁금할 "
+"것입니다. 맞습니다: `Drop` 트레잇 구현입니다!  \n"
+"타입에 명시적인 `Drop` 구현이 있는 경우 컴파일러는 타입에 추가 리소스가 첨부되"
 "어 있다고 가정하고 `Copy` 구현을 허용하지 않습니다."
 
 #: src/04_traits/13_drop.md:32
-#, fuzzy
 msgid "// This is a unit struct, i.e. a struct with no fields.\n"
-msgstr "// 이것은 단위 구조체, 즉 필드가 없는 구조체입니다."
+msgstr "// 이것은 단위 구조체, 즉 필드가 없는 구조체입니다.\n"
 
 #: src/04_traits/13_drop.md:38
-#, fuzzy
 msgid ""
 "// We don't need to do anything here,\n"
 "       // it's enough to have an \"empty\" Drop implementation\n"
 msgstr ""
-"// 여기서는 아무것도 할 필요가 없습니다. // \"빈\" Drop 구현만 있으면 충분합니"
-"다."
+"// 여기서는 아무것도 할 필요가 없습니다.\n"
+"       // \"빈\" Drop 구현만 있으면 충분합니다.\n"
 
 #: src/04_traits/13_drop.md:44
-#, fuzzy
 msgid "The compiler will complain with this error message:"
-msgstr "컴파일러는 다음 오류 메시지를 표시합니다."
+msgstr "컴파일러는 다음 오류 메시지를 표시합니다:"
 
 #: src/04_traits/13_drop.md:56
 msgid ""
@@ -7516,76 +7311,68 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/04_traits/13_drop)"
 msgstr ""
+"이 섹션의 예제는 [`04_traits/13_drop`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/04_traits/13_drop)에 있습니다"
 
 #: src/04_traits/14_outro.md:3
-#, fuzzy
 msgid ""
 "We've covered quite a few different traits in this chapter—and we've only "
 "scratched the surface! It may feel like you have a lot to remember, but don't "
 "worry: you'll bump into these traits so often when writing Rust code that "
 "they'll soon become second nature."
 msgstr ""
-"우리는 이번 장에서 꽤 많은 다른 특징들을 다루었습니다. 그리고 우리는 표면적인 "
-"부분만 살펴봤습니다! 기억할 것이 많다고 느껴질 수도 있지만 걱정하지 마십시오. "
-"Rust 코드를 작성할 때 이러한 특성을 너무 자주 접하게 되므로 곧 제2의 천성이 "
+"우리는 이번 장에서 꽤 많은 다른 트레잇들을 다루었습니다. 하지만 우리는 표면적"
+"인 부분만 살펴봤습니다! 기억할 것이 많다고 느껴질 수도 있지만 걱정하지 마십시"
+"오. Rust 코드를 작성할 때 이러한 트레잇을 아주 많이 접하게 되므로 곧 본능이 "
 "될 것입니다."
 
 #: src/04_traits/14_outro.md:7
-#, fuzzy
 msgid "Closing thoughts"
-msgstr "마무리 생각"
+msgstr "생각 정리"
 
 #: src/04_traits/14_outro.md:9
-#, fuzzy
 msgid ""
 "Traits are powerful, but don't overuse them.  \n"
 "A few guidelines to keep in mind:"
 msgstr ""
-"특성은 강력하지만 남용하지 마십시오.  \n"
+"트레잇은 강력하지만 남용하지 마십시오.  \n"
 "명심해야 할 몇 가지 지침:"
 
 #: src/04_traits/14_outro.md:12
-#, fuzzy
 msgid ""
 "Don't make a function generic if it is always invoked with a single type. It "
 "introduces indirection in your codebase, making it harder to understand and "
 "maintain."
 msgstr ""
-"항상 단일 유형으로 호출되는 함수를 일반 함수로 만들지 마십시오. 코드베이스에 "
-"간접 참조가 도입되어 이해하고 유지 관리가 더 어려워집니다."
+"항상 단일 타입으로 호출되는 함수를 제네릭 함수로 만들지 마십시오. 코드베이스"
+"에 간접 참조가 도입되어 이해하고 유지 관리가 더 어려워집니다."
 
 #: src/04_traits/14_outro.md:14
-#, fuzzy
 msgid ""
 "Don't create a trait if you only have one implementation. It's a sign that "
 "the trait is not needed."
 msgstr ""
-"구현이 하나만 있는 경우 특성을 생성하지 마세요. 특성이 필요하지 않다는 신호입"
-"니다."
+"구현이 하나만 있는 경우 트레잇을 생성하지 마세요. 트레잇이 필요하지 않다는 신"
+"호입니다."
 
 #: src/04_traits/14_outro.md:15
-#, fuzzy
 msgid ""
 "Implement standard traits for your types (`Debug`, `PartialEq`, etc.) "
 "whenever it makes sense. It will make your types more idiomatic and easier to "
 "work with, unlocking a lot of functionality provided by the standard library "
 "and ecosystem crates."
 msgstr ""
-"타당할 때마다 유형(`Debug`, `PartialEq` 등)에 대한 표준 특성을 구현하십시오. "
-"이는 유형을 더욱 관용적이고 작업하기 쉽게 만들어 표준 라이브러리 및 생태계 상"
-"자에서 제공하는 많은 기능을 잠금 해제합니다."
+"필요할 때마다 타입에 대한 표준 특성을 구현하십시오(`Debug`, `PartialEq` 등). "
+"이는 타입을 더욱 관용적이고 작업하기 쉽게 만들어 표준 라이브러리 및 생태계 상"
+"자에서 제공하는 많은 기능을 사용할 수 있게 합니다."
 
 #: src/04_traits/14_outro.md:18
-#, fuzzy
 msgid ""
 "Implement traits from third-party crates if you need the functionality they "
 "unlock within their ecosystem."
-msgstr ""
-"생태계 내에서 잠금 해제되는 기능이 필요한 경우 타사 크레이트의 특성을 구현하세"
-"요."
+msgstr "외부 생태계의 기능이 필요한 경우 외부 크레이트의 트레잇을 구현하세요."
 
 #: src/04_traits/14_outro.md:19
-#, fuzzy
 msgid ""
 "Beware of making code generic solely to use mocks in your tests. The "
 "maintainability cost of this approach can be high, and it's often better to "
@@ -7593,25 +7380,23 @@ msgid ""
 "github.com/mainmatter/rust-advanced-testing-workshop) for details on high-"
 "fidelity testing."
 msgstr ""
-"테스트에서 모의 ​​객체만을 사용하기 위해 코드를 일반화하지 않도록 주의하세요. "
-"이 접근 방식의 유지 관리 비용은 높을 수 있으므로 다른 테스트 전략을 사용하는 "
-"것이 더 나은 경우가 많습니다. 고충실도 테스트에 대한 자세한 내용은 테스트 마스"
-"터클래스를 확인하세요."
+"테스트에서 mock만을 위해 코드를 일반화하지 않도록 주의하세요. 이 접근 방식의 "
+"유지 관리 비용은 높을 수 있으므로 다른 테스트 전략을 사용하는 것이 더 나은 경"
+"우가 많습니다. 고충실도 테스트에 대한 자세한 내용은 [testing masterclass]"
+"(https://github.com/mainmatter/rust-advanced-testing-workshop)를 확인하세요."
 
 #: src/04_traits/14_outro.md:24
-#, fuzzy
 msgid "Testing your knowledge"
 msgstr "지식 테스트"
 
 #: src/04_traits/14_outro.md:26
-#, fuzzy
 msgid ""
 "Before moving on, let's go through one last exercise to consolidate what "
 "we've learned. You'll have minimal guidance this time—just the exercise "
 "description and the tests to guide you."
 msgstr ""
-"계속 진행하기 전에 마지막 연습을 통해 배운 내용을 통합해 보겠습니다. 이번에는 "
-"최소한의 지침만 제공됩니다. 연습 설명과 안내할 테스트만 제공됩니다."
+"계속 진행하기 전에 마지막 예제을 통해 배운 내용을 통합해 보겠습니다. 이번에는 "
+"최소한의 지침만 제공됩니다. 예제 설명과 가이드할 테스트만 제공됩니다."
 
 #: src/04_traits/14_outro.md:31
 msgid ""
@@ -7619,11 +7404,12 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/04_traits/14_outro)"
 msgstr ""
+"이 섹션의 예제는 [`04_traits/14_outro`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/04_traits/14_outro)에 있습니다"
 
 #: src/05_ticket_v2/00_intro.md:1
-#, fuzzy
 msgid "Modelling A Ticket, pt. 2"
-msgstr "티켓 모델링, pt. 2"
+msgstr "Ticket 모델링, pt. 2"
 
 #: src/05_ticket_v2/00_intro.md:3
 #, fuzzy
