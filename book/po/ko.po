@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 100 Exercises To Learn Rust\n"
 "POT-Creation-Date: 2024-06-20T21:50:15+09:00\n"
-"PO-Revision-Date: 2024-06-22 07:07+0900\n"
+"PO-Revision-Date: 2024-06-22 08:20+0900\n"
 "Last-Translator: bigfood <satcom1600@hanmail.net>\n"
 "Language-Team: Korean <translation-team-ko@googlegroups.com>\n"
 "Language: ko\n"
@@ -13285,42 +13285,35 @@ msgstr ""
 "exercises-to-learn-rust/tree/main/exercises/07_threads/14_sync)에 있습니다"
 
 #: src/08_futures/00_intro.md:1
-#, fuzzy
 msgid "Async Rust"
 msgstr "비동기 러스트"
 
 #: src/08_futures/00_intro.md:3
-#, fuzzy
 msgid ""
 "Threads are not the only way to write concurrent programs in Rust.  \n"
 "In this chapter we'll explore another approach: **asynchronous programming**."
 msgstr ""
-"스레드는 Rust에서 동시성 프로그램을 작성하는 유일한 방법은 아닙니다.  \n"
+"스레드가 Rust에서 동시성 프로그램을 작성하는 유일한 방법은 아닙니다.  \n"
 "이번 장에서는 **비동기 프로그래밍**이라는 또 다른 접근 방식을 살펴보겠습니다."
 
 #: src/08_futures/00_intro.md:6
-#, fuzzy
 msgid "In particular, you'll get an introduction to:"
-msgstr "특히 다음 내용을 소개하게 됩니다."
+msgstr "특히 다음 내용을 소개하게 됩니다:"
 
 #: src/08_futures/00_intro.md:8
-#, fuzzy
 msgid "The `async`/`.await` keywords, to write asynchronous code effortlessly"
 msgstr "비동기 코드를 쉽게 작성하기 위한 `async`/`.await` 키워드"
 
 #: src/08_futures/00_intro.md:9
-#, fuzzy
 msgid ""
 "The `Future` trait, to represent computations that may not be complete yet"
-msgstr "아직 완료되지 않은 계산을 나타내는 `Future` 특성"
+msgstr "아직 완료되지 않은 계산을 나타내는 `Future` 트레잇"
 
 #: src/08_futures/00_intro.md:10
-#, fuzzy
 msgid "`tokio`, the most popular runtime for running asynchronous code"
-msgstr "비동기 코드 실행을 위한 가장 인기 있는 런타임인 'tokio'"
+msgstr "비동기 코드 실행을 위한 가장 인기 있는 런타임인 `tokio`"
 
 #: src/08_futures/00_intro.md:11
-#, fuzzy
 msgid ""
 "The cooperative nature of Rust asynchronous model, and how this affects your "
 "code"
@@ -13332,9 +13325,10 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/08_futures/00_intro)"
 msgstr ""
+"이 섹션의 예제는 [`08_futures/00_intro`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/08_futures/00_intro)에 있습니다"
 
 #: src/08_futures/01_async_fn.md:3
-#, fuzzy
 msgid ""
 "All the functions and methods you've written so far were eager.  \n"
 "Nothing happened until you invoked them. But once you did, they ran to "
@@ -13346,7 +13340,6 @@ msgstr ""
 "다."
 
 #: src/08_futures/01_async_fn.md:7
-#, fuzzy
 msgid ""
 "Sometimes that's undesirable.  \n"
 "For example, if you're writing an HTTP server, there might be a lot of "
@@ -13359,7 +13352,6 @@ msgstr ""
 "대기**가 있을 수 있습니다."
 
 #: src/08_futures/01_async_fn.md:12
-#, fuzzy
 msgid ""
 "What if you could do something else while you're waiting?  \n"
 "What if you could choose to give up midway through a computation?  \n"
@@ -13370,42 +13362,34 @@ msgstr ""
 "현재 작업보다 다른 작업의 우선순위를 선택할 수 있다면 어떨까요?"
 
 #: src/08_futures/01_async_fn.md:16
-#, fuzzy
 msgid "That's where **asynchronous functions** come in."
-msgstr "이것이 바로 **비동기 함수**가 등장하는 곳입니다."
+msgstr "이곳이 바로 **비동기 함수**가 등장하는 곳입니다."
 
 #: src/08_futures/01_async_fn.md:18
-#, fuzzy
 msgid "`async fn`"
-msgstr "`비동기 fn`"
+msgstr "`async fn`"
 
 #: src/08_futures/01_async_fn.md:20
-#, fuzzy
 msgid "You use the `async` keyword to define an asynchronous function:"
-msgstr "비동기 함수를 정의하려면 `async` 키워드를 사용합니다."
+msgstr "비동기 함수를 정의하려면 `async` 키워드를 사용합니다:"
 
 #: src/08_futures/01_async_fn.md:24
-#, fuzzy
 msgid "// This function is asynchronous\n"
-msgstr "// 이 함수는 비동기식입니다."
+msgstr "// 이 함수는 비동기식입니다\n"
 
 #: src/08_futures/01_async_fn.md:31
-#, fuzzy
 msgid "What happens if you call `bind_random` as you would a regular function?"
-msgstr "일반 함수처럼 `bind_random`을 호출하면 어떻게 되나요?"
+msgstr "일반 함수처럼 `bind_random`을 호출하면 어떻게 될까요?"
 
 #: src/08_futures/01_async_fn.md:35
-#, fuzzy
 msgid "// Invoke `bind_random`\n"
-msgstr "// `bind_random` 호출"
+msgstr "// `bind_random` 호출\n"
 
 #: src/08_futures/01_async_fn.md:37
-#, fuzzy
 msgid "// Now what?\n"
-msgstr "// 이제 뭐?"
+msgstr "// 뭣?\n"
 
 #: src/08_futures/01_async_fn.md:41
-#, fuzzy
 msgid ""
 "Nothing happens!  \n"
 "Rust doesn't start executing `bind_random` when you call it, not even as a "
@@ -13420,52 +13404,46 @@ msgstr ""
 "아무 반응이 없습니다!  \n"
 "Rust는 호출할 때 `bind_random` 실행을 시작하지 않습니다. (다른 언어 사용 경험"
 "을 바탕으로 예상할 수 있듯이) 백그라운드 작업으로도 실행하지 않습니다. Rust의 "
-"비동기 함수는 **게으르다**: 명시적으로 요청하기 전까지는 어떤 작업도 수행하지 "
-"않습니다. Rust의 용어를 사용하면 'bind_random'이 나중에 완료될 수 있는 계산을 "
-"나타내는 유형인 **future**를 반환한다고 말합니다. 이것들은 이 장의 뒷부분에서 "
-"자세히 살펴볼 인터페이스인 `Future` 특성을 구현하기 때문에 미래라고 불립니다."
+"비동기 함수는 **게으릅니다**: 명시적으로 요청하기 전까지는 어떤 작업도 수행하"
+"지 않습니다. Rust의 용어를 사용하면 `bind_random`이 나중에 완료될 수 있는 연산"
+"을 나타내는 타입인 **future**를 반환한다고 말합니다. 이것들은 이 장의 뒷부분에"
+"서 자세히 살펴볼 인터페이스인 `Future` 트레잇을 구현하기 때문에 future라고 불"
+"립니다."
 
 #: src/08_futures/01_async_fn.md:52
-#, fuzzy
 msgid "`.await`"
-msgstr "`.기다려`"
+msgstr "`.await`"
 
 #: src/08_futures/01_async_fn.md:54
-#, fuzzy
 msgid ""
 "The most common way to ask an asynchronous function to do some work is to use "
 "the `.await` keyword:"
 msgstr ""
 "비동기 함수에 작업을 요청하는 가장 일반적인 방법은 `.await` 키워드를 사용하는 "
-"것입니다."
+"것입니다:"
 
 #: src/08_futures/01_async_fn.md:65
-#, fuzzy
 msgid "// Invoke `bind_random` and wait for it to complete\n"
-msgstr "// `bind_random`을 호출하고 완료될 때까지 기다립니다."
+msgstr "// `bind_random`을 호출하고 완료될 때까지 기다립니다\n"
 
 #: src/08_futures/01_async_fn.md:67
-#, fuzzy
 msgid "// Now `listener` is ready\n"
-msgstr "// 이제 `listener`가 준비되었습니다."
+msgstr "// 이제 `listener`가 준비되었습니다\n"
 
 #: src/08_futures/01_async_fn.md:71
-#, fuzzy
 msgid ""
 "`.await` doesn't return control to the caller until the asynchronous function "
 "has run to completion—e.g. until the `TcpListener` has been created in the "
 "example above."
 msgstr ""
 "`.await`는 비동기 함수 실행이 완료될 때까지 호출자에게 제어권을 반환하지 않습"
-"니다. 위의 예에서 `TcpListener`가 생성될 때까지."
+"니다. 위의 예시에서는 `TcpListener`가 생성될 때까지입니다."
 
 #: src/08_futures/01_async_fn.md:74
-#, fuzzy
 msgid "Runtimes"
 msgstr "런타임"
 
 #: src/08_futures/01_async_fn.md:76
-#, fuzzy
 msgid ""
 "If you're puzzled, you're right to be!  \n"
 "We've just said that the perk of asynchronous functions is that they don't do "
@@ -13473,13 +13451,13 @@ msgid ""
 "until the asynchronous function has run to completion. Haven't we just re-"
 "introduced the problem we were trying to solve? What's the point?"
 msgstr ""
-"당신이 의아해한다면, 당신이 옳습니다!  \n"
-"비동기 함수의 장점은 **모든** 작업을 한 번에 수행하지 않는다는 것입니다. 그런 "
-"다음 비동기 함수 실행이 완료될 때까지 반환되지 않는 `.await`를 도입했습니다. "
-"우리가 해결하려고 했던 문제를 다시 도입하지 않았나요? 점은 무엇인가?"
+"혼란스럽다면, 그럴 만도 합니다!\n"
+"비동기 함수의 장점은 모든 작업을 한 번에 수행하지 않는다는 점이라고 말했습니"
+"다. 그 후에, 비동기 함수가 완료될 때까지 반환하지 않는 `.await`를 도입했습니"
+"다. 우리가 해결하려고 했던 문제를 다시 발생시킨 것이 아닌가요? 그럼 이게 무슨 "
+"의미가 있는 걸까요?"
 
 #: src/08_futures/01_async_fn.md:82
-#, fuzzy
 msgid ""
 "Not quite! A lot happens behind the scenes when you call `.await`!  \n"
 "You're yielding control to an **async runtime**, also known as an **async "
@@ -13487,18 +13465,16 @@ msgid ""
 "managing all your ongoing asynchronous **tasks**. In particular, they balance "
 "two different goals:"
 msgstr ""
-"좀 빠지는! `.await`를 호출하면 뒤에서 많은 일이 일어납니다!  \n"
+"어림도 없지! `.await`를 호출하면 뒤에서 많은 일이 일어납니다!  \n"
 "**비동기 실행기**라고도 알려진 **비동기 런타임**에 제어권을 양보하고 있습니"
 "다. 실행자는 마법이 일어나는 곳입니다. 실행 중인 모든 비동기 **작업**을 관리하"
-"는 역할을 담당합니다. 특히 두 가지 목표의 균형을 유지합니다."
+"는 역할을 담당합니다. 특히 두 가지 목표의 균형을 유지합니다:"
 
 #: src/08_futures/01_async_fn.md:87
-#, fuzzy
 msgid "**Progress**: they make sure that tasks make progress whenever they can."
 msgstr "**진행**: 가능할 때마다 작업이 진행되도록 합니다."
 
 #: src/08_futures/01_async_fn.md:88
-#, fuzzy
 msgid ""
 "**Efficiency**: if a task is waiting for something, they try to make sure "
 "that another task can run in the meantime, fully utilising the available "
@@ -13508,12 +13484,10 @@ msgstr ""
 "용하여 그 동안 다른 작업이 실행될 수 있는지 확인하려고 합니다."
 
 #: src/08_futures/01_async_fn.md:91
-#, fuzzy
 msgid "No default runtime"
 msgstr "기본 런타임 없음"
 
 #: src/08_futures/01_async_fn.md:93
-#, fuzzy
 msgid ""
 "Rust is fairly unique in its approach to asynchronous programing: there is no "
 "default runtime. The standard library doesn't ship with one. You need to "
@@ -13523,7 +13497,6 @@ msgstr ""
 "습니다. 표준 라이브러리는 함께 제공되지 않습니다. 직접 가져와야합니다!"
 
 #: src/08_futures/01_async_fn.md:97
-#, fuzzy
 msgid ""
 "In most cases, you'll choose one of the options available in the ecosystem. "
 "Some runtimes are designed to be broadly applicable, a solid option for most "
@@ -13533,65 +13506,58 @@ msgstr ""
 "대부분의 경우 생태계에서 사용 가능한 옵션 중 하나를 선택하게 됩니다. 일부 런타"
 "임은 광범위하게 적용 가능하도록 설계되어 대부분의 애플리케이션에 확실한 옵션입"
 "니다. `tokio`와 `async-std`가 이 범주에 속합니다. 다른 런타임은 특정 사용 사례"
-"에 최적화되어 있습니다. 임베디드 시스템을 위한 `대사관`."
+"에 최적화되어 있습니다. 임베디드 시스템을 위한 `embassy`같은 것이 있습니다."
 
 #: src/08_futures/01_async_fn.md:102
-#, fuzzy
 msgid ""
 "Throughout this course we'll rely on `tokio`, the most popular runtime for "
 "general-purpose asynchronous programming in Rust."
 msgstr ""
 "이 과정 전체에서 우리는 Rust의 범용 비동기 프로그래밍을 위한 가장 인기 있는 런"
-"타임인 'tokio'를 사용하게 됩니다."
+"타임인 `tokio`를 사용하게 됩니다."
 
 #: src/08_futures/01_async_fn.md:105
-#, fuzzy
 msgid "`#[tokio::main]`"
-msgstr "`#[토키오::메인]`"
+msgstr "`#[tokio::main]`"
 
 #: src/08_futures/01_async_fn.md:107
-#, fuzzy
 msgid ""
 "The entrypoint of your executable, the `main` function, must be a synchronous "
 "function. That's where you're supposed to set up and launch your chosen async "
 "runtime."
 msgstr ""
-"실행 파일의 진입점인 'main' 함수는 동기 함수여야 합니다. 여기에서 선택한 비동"
+"실행 파일의 진입점인 `main` 함수는 동기 함수여야 합니다. 여기에서 선택한 비동"
 "기 런타임을 설정하고 실행해야 합니다."
 
 #: src/08_futures/01_async_fn.md:110
-#, fuzzy
 msgid ""
 "Most runtimes provides a macro to make this easier. For `tokio`, it's `tokio::"
 "main`:"
 msgstr ""
 "대부분의 런타임은 이를 더 쉽게 하기 위해 매크로를 제공합니다. `tokio`의 경우 "
-"`tokio::main`입니다."
+"`tokio::main`입니다:"
 
 #: src/08_futures/01_async_fn.md:115
-#, fuzzy
 msgid "// Your async code goes here\n"
-msgstr "// 비동기 코드가 여기에 들어갑니다."
+msgstr "// 비동기 코드가 여기에 들어갑니다\n"
 
 #: src/08_futures/01_async_fn.md:119
-#, fuzzy
 msgid "which expands to:"
-msgstr "이는 다음으로 확장됩니다."
+msgstr "이는 다음으로 확장됩니다:"
 
 #: src/08_futures/01_async_fn.md:125
-#, fuzzy
 msgid ""
 "// Your async function goes here\n"
 "        // [...]\n"
-msgstr "// 비동기 함수가 여기에 위치합니다. // \\[...\\]"
+msgstr ""
+"// 비동기 함수는 여기에 들어갑니다\n"
+"        // [...]\n"
 
 #: src/08_futures/01_async_fn.md:131
-#, fuzzy
 msgid "`#[tokio::test]`"
-msgstr "`#[tokio::테스트]`"
+msgstr "`#[tokio::test]`"
 
 #: src/08_futures/01_async_fn.md:133
-#, fuzzy
 msgid ""
 "The same goes for tests: they must be synchronous functions.  \n"
 "Each test function is run in its own thread, and you're responsible for "
@@ -13605,9 +13571,8 @@ msgstr ""
 "`tokio`는 이 작업을 더 쉽게 하기 위해 `#[tokio::test]` 매크로를 제공합니다:"
 
 #: src/08_futures/01_async_fn.md:142
-#, fuzzy
 msgid "// Your async test code goes here\n"
-msgstr "// 비동기 테스트 코드가 여기에 들어갑니다."
+msgstr "// 비동기 테스트 코드가 여기에 들어갑니다\n"
 
 #: src/08_futures/01_async_fn.md:148
 msgid ""
@@ -13615,27 +13580,26 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/08_futures/01_async_fn)"
 msgstr ""
+"이 섹션의 예제는 [`08_futures/01_async_fn`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/08_futures/01_async_fn)에 있습니다"
 
 #: src/08_futures/02_spawn.md:3
-#, fuzzy
 msgid "Your solution to the previous exercise should look something like this:"
-msgstr "이전 연습에 대한 솔루션은 다음과 같습니다."
+msgstr "이전 예제에 대한 솔루션은 다음과 같습니다:"
 
 #: src/08_futures/02_spawn.md:15
-#, fuzzy
 msgid ""
 "This is not bad!  \n"
 "If a long time passes between two incoming connections, the `echo` function "
 "will be idle (since `TcpListener::accept` is an asynchronous function), thus "
 "allowing the executor to run other tasks in the meantime."
 msgstr ""
-"이것은 나쁘지 않습니다!  \n"
+"나쁘지 않습니다!  \n"
 "두 개의 들어오는 연결 사이에 오랜 시간이 지나면 `echo` 함수는 유휴 상태가 되며"
 "(`TcpListener::accept`는 비동기 함수이므로) 실행기가 그 동안 다른 작업을 실행"
 "할 수 있습니다."
 
 #: src/08_futures/02_spawn.md:20
-#, fuzzy
 msgid ""
 "But how can we actually have multiple tasks running concurrently?  \n"
 "If we always run our asynchronous functions until completion (by using `."
@@ -13646,17 +13610,14 @@ msgstr ""
 "개 이상의 작업이 실행되지 않습니다."
 
 #: src/08_futures/02_spawn.md:24
-#, fuzzy
 msgid "This is where the `tokio::spawn` function comes in."
-msgstr "이것이 `tokio::spawn` 함수가 들어오는 곳입니다."
+msgstr "여기가 `tokio::spawn` 함수가 필요한 곳입니다."
 
 #: src/08_futures/02_spawn.md:26
-#, fuzzy
 msgid "`tokio::spawn`"
 msgstr "`tokio::spawn`"
 
 #: src/08_futures/02_spawn.md:28
-#, fuzzy
 msgid ""
 "`tokio::spawn` allows you to hand off a task to the executor, **without "
 "waiting for it to complete**.  \n"
@@ -13670,81 +13631,72 @@ msgstr ""
 "된 작업과 **동시에** 계속 실행하라고 지시하는 것입니다."
 
 #: src/08_futures/02_spawn.md:32
-#, fuzzy
 msgid "Here's how you can use it to process multiple connections concurrently:"
-msgstr "이를 사용하여 여러 연결을 동시에 처리하는 방법은 다음과 같습니다."
+msgstr "이를 사용하여 여러 연결을 동시에 처리하는 방법은 다음과 같습니다:"
 
 #: src/08_futures/02_spawn.md:40
-#, fuzzy
 msgid ""
 "// Spawn a background task to handle the connection\n"
 "        // thus allowing the main task to immediately start \n"
 "        // accepting new connections\n"
 msgstr ""
-"// 연결을 처리하기 위해 백그라운드 작업을 생성합니다. // 따라서 기본 작업이 즉"
-"시 시작될 수 있습니다. // 새 연결을 수락합니다."
+"// 연결을 처리하기 위해 백그라운드 작업을 생성합니다.\n"
+"        // 따라서 기본 작업이 즉시 시작될 수 있습니다.\n"
+"        // 새 연결을 수락합니다\n"
 
 #: src/08_futures/02_spawn.md:51
-#, fuzzy
 msgid "Asynchronous blocks"
 msgstr "비동기 블록"
 
 #: src/08_futures/02_spawn.md:53
-#, fuzzy
 msgid ""
 "In this example, we've passed an **asynchronous block** to `tokio::spawn`: "
 "`async move { /* */ }` Asynchronous blocks are a quick way to mark a region "
 "of code as asynchronous without having to define a separate async function."
 msgstr ""
 "이 예에서는 **비동기 블록**을 `tokio::spawn`에 전달했습니다. `async move { /* "
-"*/ }` 비동기 블록은 코드 영역을 비동기로 표시할 수 있는 빠른 방법입니다. 별도"
-"의 비동기 함수를 정의합니다."
+"*/ }` 비동기 블록은 별도의 비동기 함수를 정의하지않고도 코드 영역을 비동기로 "
+"만들 수 있는 빠른 방법입니다."
 
 #: src/08_futures/02_spawn.md:57
-#, fuzzy
 msgid "`JoinHandle`"
-msgstr "'조인핸들'"
+msgstr "`JoinHandle`"
 
 #: src/08_futures/02_spawn.md:59
-#, fuzzy
 msgid ""
 "`tokio::spawn` returns a `JoinHandle`.  \n"
 "You can use `JoinHandle` to `.await` the background task, in the same way we "
 "used `join` for spawned threads."
 msgstr ""
 "`tokio::spawn`은 `JoinHandle`을 반환합니다.  \n"
-"생성된 스레드에 대해 'join'을 사용한 것과 같은 방식으로 'JoinHandle'을 사용하"
-"여 백그라운드 작업을 '.await'할 수 있습니다."
+"생성된 스레드에 대해 `join`을 사용한 것과 같은 방식으로 `JoinHandle`을 사용하"
+"여 백그라운드 작업을 `.await`할 수 있습니다."
 
 #: src/08_futures/02_spawn.md:65
-#, fuzzy
 msgid ""
 "// Spawn a background task to ship telemetry data\n"
 "    // to a remote server\n"
 msgstr ""
-"// 원격 서버에 원격 측정 데이터를 전송하기 위한 백그라운드 작업을 생성합니다."
+"// 원격 서버에 원격 측정 데이터를 전송하기 위한\n"
+"      // 백그라운드 작업을 생성합니다\n"
 
 #: src/08_futures/02_spawn.md:68
-#, fuzzy
 msgid "// In the meantime, do some other useful work\n"
-msgstr "// 그동안 다른 유용한 작업을 수행합니다."
+msgstr "// 그동안 다른 유용한 작업을 수행합니다\n"
 
 #: src/08_futures/02_spawn.md:70
-#, fuzzy
 msgid ""
 "// But don't return to the caller until \n"
 "    // the telemetry data has been successfully delivered\n"
 msgstr ""
-"// 하지만 원격 측정 데이터가 성공적으로 전달될 때까지 // 호출자에게 반환하지 "
-"마세요."
+"// 하지만 원격 측정 데이터가 성공적으로 전달될 때까지\n"
+"    // 호출자에게 반환하지 마세요\n"
 
 #: src/08_futures/02_spawn.md:84
-#, fuzzy
 msgid "Panic boundary"
 msgstr "패닉 경계"
 
 #: src/08_futures/02_spawn.md:86
-#, fuzzy
 msgid ""
 "If a task spawned with `tokio::spawn` panics, the panic will be caught by the "
 "executor.  \n"
@@ -13760,35 +13712,33 @@ msgstr ""
 "니다.  \n"
 "해당하는 `JoinHandle`을 `.await`하지 않으면 패닉이 생성자에게 전파되지 않습니"
 "다. `JoinHandle`을 `.await`하더라도 패닉이 자동으로 전파되지 않습니다. "
-"'JoinHandle'을 기다리면 오류 유형이 'JoinError'인 '결과'가 반환됩니다. 그런 다"
-"음 `JoinError::is_panic`을 호출하여 작업에 패닉이 발생했는지 확인하고 패닉 처"
-"리 방법(기록, 무시 또는 전파)을 선택할 수 있습니다."
+"`JoinHandle`을 기다리면 에러 타입이 [`JoinError`](https://docs.rs/tokio/"
+"latest/tokio/task/struct.JoinError.html)인 `Result`가 반환됩니다. 그런 다음 "
+"`JoinError::is_panic`을 호출하여 작업에 패닉이 발생했는지 확인하고 패닉 처리 "
+"방법(기록, 무시 또는 전파)을 선택할 수 있습니다."
 
 #: src/08_futures/02_spawn.md:100
-#, fuzzy
 msgid ""
 "// The task has panicked\n"
 "            // We resume unwinding the panic,\n"
 "            // thus propagating it to the current task\n"
 msgstr ""
-"// 작업에 패닉이 발생했습니다. // 패닉 해제를 재개하여 // 이를 현재 작업에 전"
-"파합니다."
+"// 작업에 패닉이 발생했습니다\n"
+"            // 패닉 해제를 재개하여,\n"
+"            // 이를 현재 작업에 전파합니다\n"
 
 #: src/08_futures/02_spawn.md:113
-#, fuzzy
 msgid "`std::thread::spawn` vs `tokio::spawn`"
-msgstr "`std::thread::spawn` 대 `tokio::spawn`"
+msgstr "`std::thread::spawn` vs `tokio::spawn`"
 
 #: src/08_futures/02_spawn.md:115
-#, fuzzy
 msgid ""
 "You can think of `tokio::spawn` as the asynchronous sibling of `std::spawn::"
 "thread`."
 msgstr ""
-"`tokio::spawn`을 `std::spawn::thread`의 비동기 형제로 생각할 수 있습니다."
+"`tokio::spawn`을 `std::spawn::thread`의 비동기 버전이라고 생각할 수 있습니다."
 
 #: src/08_futures/02_spawn.md:117
-#, fuzzy
 msgid ""
 "Notice a key difference: with `std::thread::spawn`, you're delegating control "
 "to the OS scheduler. You're not in control of how threads are scheduled."
@@ -13797,7 +13747,6 @@ msgstr ""
 "에 위임합니다. 스레드 예약 방법을 제어할 수 없습니다."
 
 #: src/08_futures/02_spawn.md:120
-#, fuzzy
 msgid ""
 "With `tokio::spawn`, you're delegating to an async executor that runs "
 "entirely in user space. The underlying OS scheduler is not involved in the "
@@ -13815,14 +13764,14 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/08_futures/02_spawn)"
 msgstr ""
+"이 섹션의 예제는 [`08_futures/02_spawn`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/08_futures/02_spawn)에 있습니다"
 
 #: src/08_futures/03_runtime.md:1
-#, fuzzy
 msgid "Runtime architecture"
 msgstr "런타임 아키텍처"
 
 #: src/08_futures/03_runtime.md:3
-#, fuzzy
 msgid ""
 "So far we've been talking about async runtimes as an abstract concept. Let's "
 "dig a bit deeper into the way they are implemented—as you'll see soon enough, "
@@ -13833,37 +13782,31 @@ msgstr ""
 "미칩니다."
 
 #: src/08_futures/03_runtime.md:7
-#, fuzzy
 msgid "Flavors"
-msgstr "맛"
+msgstr "성향"
 
 #: src/08_futures/03_runtime.md:9
-#, fuzzy
 msgid "`tokio` ships two different runtime _flavors_."
-msgstr "`tokio`는 두 가지 다른 런타임 _flavors_를 제공합니다."
+msgstr "`tokio`는 두 가지 다른 런타임 _성향_을 제공합니다."
 
 #: src/08_futures/03_runtime.md:11
-#, fuzzy
 msgid "You can configure your runtime via `tokio::runtime::Builder`:"
-msgstr "`tokio::runtime::Builder`를 통해 런타임을 구성할 수 있습니다."
+msgstr "`tokio::runtime::Builder`를 통해 런타임을 구성할 수 있습니다:"
 
 #: src/08_futures/03_runtime.md:13
-#, fuzzy
 msgid ""
 "`Builder::new_multi_thread` gives you a **multithreaded `tokio` runtime**"
 msgstr ""
-"`Builder::new_multi_thread`는 **멀티스레드 `tokio` 런타임**을 제공합니다."
+"`Builder::new_multi_thread`는 **멀티스레드 `tokio` 런타임**을 제공합니다"
 
 #: src/08_futures/03_runtime.md:14
-#, fuzzy
 msgid ""
 "`Builder::new_current_thread` will instead rely on the **current thread** for "
 "execution."
 msgstr ""
-"대신 `Builder::new_current_thread`는 실행을 위해 **현재 스레드**에 의존합니다."
+"`Builder::new_current_thread`는 실행을 위해 **현재 스레드**에만 의존합니다."
 
 #: src/08_futures/03_runtime.md:16
-#, fuzzy
 msgid ""
 "`#[tokio::main]` returns a multithreaded runtime by default, while `#[tokio::"
 "test]` uses a current thread runtime out of the box."
@@ -13872,12 +13815,10 @@ msgstr ""
 "test]`는 기본적으로 현재 스레드 런타임을 사용합니다."
 
 #: src/08_futures/03_runtime.md:19
-#, fuzzy
 msgid "Current thread runtime"
 msgstr "현재 스레드 런타임"
 
 #: src/08_futures/03_runtime.md:21
-#, fuzzy
 msgid ""
 "The current-thread runtime, as the name implies, relies exclusively on the OS "
 "thread it was launched on to schedule and execute tasks.  \n"
@@ -13891,24 +13832,21 @@ msgstr ""
 "비동기 작업은 인터리브되지만 주어진 시간에 항상 최대 하나의 작업이 실행됩니다."
 
 #: src/08_futures/03_runtime.md:27
-#, fuzzy
 msgid "Multithreaded runtime"
 msgstr "멀티스레드 런타임"
 
 #: src/08_futures/03_runtime.md:29
-#, fuzzy
 msgid ""
 "When using the multithreaded runtime, instead, there can up to `N` tasks "
 "running _in parallel_ at any given time, where `N` is the number of threads "
 "used by the runtime. By default, `N` matches the number of available CPU "
 "cores."
 msgstr ""
-"대신 멀티스레드 런타임을 사용하는 경우 주어진 시간에 최대 'N'개의 작업을 _병렬"
-"_로 실행할 수 있습니다. 여기서 'N'은 런타임에서 사용하는 스레드 수입니다. 기본"
-"적으로 'N'은 사용 가능한 CPU 코어 수와 일치합니다."
+"대신 멀티스레드 런타임을 사용하는 경우 주어진 시간에 최대 `N`개의 작업을 _병렬"
+"_로 실행할 수 있습니다. 여기서 `N`은 런타임에서 사용하는 스레드 수입니다. 기본"
+"적으로 `N`은 사용 가능한 CPU 코어 수와 같습니다."
 
 #: src/08_futures/03_runtime.md:33
-#, fuzzy
 msgid ""
 "There's more: `tokio` performs **work-stealing**.  \n"
 "If a thread is idle, it won't wait around: it'll try to find a new task "
@@ -13926,12 +13864,10 @@ msgstr ""
 "다."
 
 #: src/08_futures/03_runtime.md:41
-#, fuzzy
 msgid "Implications"
 msgstr "시사점"
 
 #: src/08_futures/03_runtime.md:43
-#, fuzzy
 msgid ""
 "`tokio::spawn` is flavor-agnostic: it'll work no matter if you're running on "
 "the multithreaded or current-thread runtime. The downside is that the "
@@ -13939,45 +13875,42 @@ msgid ""
 "accordingly:"
 msgstr ""
 "`tokio::spawn`은 버전에 구애받지 않습니다. 다중 스레드 런타임이나 현재 스레드 "
-"런타임에서 실행 중인지 상관없이 작동합니다. 단점은 서명이 최악의 경우(예: 다"
-"중 스레드)를 가정하고 이에 따라 제한된다는 것입니다."
+"런타임에서 실행 중인지 상관없이 작동합니다. 단점은 시그니처가 최악의 경우(예: "
+"다중 스레드)를 가정하고 이에 따라 제한된다는 것입니다."
 
 #: src/08_futures/03_runtime.md:55
-#, fuzzy
 msgid ""
 "Let's ignore the `Future` trait for now to focus on the rest.  \n"
 "`spawn` is asking all its inputs to be `Send` and have a `'static` lifetime."
 msgstr ""
-"지금은 '미래' 특성을 무시하고 나머지 부분에 집중하겠습니다.  \n"
-"`spawn`은 모든 입력이 `Send`이고 `정적` 수명을 갖도록 요청합니다."
+"지금은 `Future` 트레잇을 무시하고 나머지 부분에 집중하겠습니다.  \n"
+"`spawn`은 모든 입력이 `Send`이고 `'static` 수명을 갖도록 요구합니다."
 
 #: src/08_futures/03_runtime.md:58
-#, fuzzy
 msgid ""
 "The `'static` constraint follows the same rationale of the `'static` "
 "constraint on `std::thread::spawn`: the spawned task may outlive the context "
 "it was spawned from, therefore it shouldn't depend on any local data that may "
 "be de-allocated after the spawning context is destroyed."
 msgstr ""
-"`정적` 제약 조건은 `std::thread::spawn`에 대한 `정적` 제약 조건과 동일한 근거"
-"를 따릅니다. 생성된 작업은 생성된 컨텍스트보다 오래 지속될 수 있으므로 로컬 데"
-"이터에 의존해서는 안 됩니다. 생성 컨텍스트가 삭제된 후 할당이 취소될 수 있습니"
-"다."
+"`'static` 제약 조건은 `std::thread::spawn`에 대한 `'static` 제약 조건과 동일"
+"한 근거를 따릅니다. 생성된 작업은 생성된 컨텍스트보다 오래 지속될 수 있으므로 "
+"로컬 데이터에 의존해서는 안 됩니다. 생성 컨텍스트가 삭제된 후에야 할당이 취소"
+"될 수 있습니다."
 
 #: src/08_futures/03_runtime.md:66
-#, fuzzy
 msgid ""
 "// This won't work, since `&v` doesn't\n"
 "    // live long enough.\n"
-msgstr "// `&v`는 // 충분히 오래 지속되지 않기 때문에 작동하지 않습니다."
+msgstr ""
+"// `&v`는 충분히 오래 지속되지 않기 \n"
+"    // 않기 때문에 작동하지 않습니다.\n"
 
 #: src/08_futures/03_runtime.md:70
-#, fuzzy
 msgid "\"{x}\""
-msgstr "\"{엑스}\""
+msgstr "\"{x}\""
 
 #: src/08_futures/03_runtime.md:76
-#, fuzzy
 msgid ""
 "`Send`, on the other hand, is a direct consequence of `tokio`'s work-stealing "
 "strategy: a task that was spawned on thread `A` may end up being moved to "
@@ -13986,15 +13919,15 @@ msgid ""
 msgstr ""
 "반면에 `Send`는 `tokio`의 작업 도용 전략의 직접적인 결과입니다. 스레드 `A`에"
 "서 생성된 작업은 스레드 `B`가 유휴 상태인 경우 결국 스레드 `B`로 이동될 수 있"
-"습니다. 스레드 경계를 넘었기 때문에 `Send` 경계입니다."
+"습니다. 스레드 경계를 넘었기 때문에 `Send`여야합니다."
 
 #: src/08_futures/03_runtime.md:82
-#, fuzzy
 msgid ""
 "// This won't work either, because\n"
 "    // `Rc` isn't `Send`.\n"
 msgstr ""
-"// 이 역시 작동하지 않습니다. 왜냐하면 // `Rc`는 `Send`가 아니기 때문입니다."
+"// 이 역시 작동하지 않습니다. 왜냐하면\n"
+"    // `Rc`는 `Send`가 아니기 때문입니다.\n"
 
 #: src/08_futures/03_runtime.md:92
 msgid ""
@@ -14002,66 +13935,63 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/08_futures/03_runtime)"
 msgstr ""
+"이 섹션의 예제는 [`08_futures/03_runtime`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/08_futures/03_runtime)에 있습니다"
 
 #: src/08_futures/04_future.md:1 src/08_futures/04_future.md:71
-#, fuzzy
 msgid "The `Future` trait"
-msgstr "'미래' 특성"
+msgstr "`Future` 트레잇"
 
 #: src/08_futures/04_future.md:3
-#, fuzzy
 msgid "The local `Rc` problem"
-msgstr "지역 `Rc` 문제"
+msgstr "로컬 `Rc` 문제"
 
 #: src/08_futures/04_future.md:5
-#, fuzzy
 msgid "Let's go back to `tokio::spawn`'s signature:"
-msgstr "`tokio::spawn`의 서명으로 돌아가 보겠습니다."
+msgstr "`tokio::spawn`의 시그니처로 돌아가 봅시다:"
 
 #: src/08_futures/04_future.md:15
-#, fuzzy
 msgid ""
 "What does it _actually_ mean for `F` to be `Send`?  \n"
 "It implies, as we saw in the previous section, that whatever value it "
 "captures from the spawning environment has to be `Send`. But it goes further "
 "than that."
 msgstr ""
-"`F`가 `보내기`라는 것이 _실제로_ 무엇을 의미하나요?  \n"
-"이는 이전 섹션에서 본 것처럼 생성 환경에서 캡처하는 값이 무엇이든 'Send'여야 "
-"함을 의미합니다. 그러나 그것은 그 이상입니다."
+"`F`가 `Send`라는 것이 _실제로_ 무엇을 의미하나요?  \n"
+"이는 이전 섹션에서 본 것처럼 생성 환경에서 캡처하는 값이 무엇이든 `Send`여야 "
+"함을 의미합니다. 그러나 그것은 그 이상을 의미합니다."
 
 #: src/08_futures/04_future.md:19
-#, fuzzy
 msgid ""
 "Any value that's _held across a .await point_ has to be `Send`.  \n"
 "Let's look at an example:"
 msgstr ""
-".await 지점 전체에 걸쳐 _보유된_ 모든 값은 `Send`여야 합니다.  \n"
+"_.await 지점 전체에 걸쳐 보유된 모든 값_은 `Send`여야 합니다.  \n"
 "예를 살펴보겠습니다:"
 
 #: src/08_futures/04_future.md:31
-#, fuzzy
 msgid ""
 "// A value that's not `Send`,\n"
 "    // created _inside_ the async function\n"
-msgstr "// `Send`가 아닌 값, // 비동기 함수 _내부_에서 생성됨"
+msgstr ""
+"// `Send`가 아닌 값,\n"
+"    // 비동기 함수 _내부_에서 생성됨\n"
 
 #: src/08_futures/04_future.md:35
-#, fuzzy
 msgid "// A `.await` point that does nothing\n"
-msgstr "// 아무것도 하지 않는 `.await` 지점"
+msgstr "// 아무것도 하지 않는 `.await` 지점\n"
 
 #: src/08_futures/04_future.md:38
-#, fuzzy
 msgid ""
 "// The local non-`Send` value is still needed\n"
 "    // after the `.await`\n"
-msgstr "// `.await` 뒤에는 `Send`가 아닌 로컬 값이 여전히 필요합니다."
+msgstr ""
+"// `.await` 뒤에는 `Send`가 아닌\n"
+"    // 로컬 값이 여전히 필요합니다\n"
 
 #: src/08_futures/04_future.md:44
-#, fuzzy
 msgid "The compiler will reject this code:"
-msgstr "컴파일러는 다음 코드를 거부합니다."
+msgstr "컴파일러는 다음 코드를 거부합니다:"
 
 #: src/08_futures/04_future.md:46
 msgid ""
@@ -14088,9 +14018,30 @@ msgid ""
 "    |                     ^^^^ required by this bound in `spawn`\n"
 "```"
 msgstr ""
+"```text\n"
+"error: future cannot be sent between threads safely\n"
+"    |\n"
+"5   |     tokio::spawn(example());\n"
+"    |                  ^^^^^^^^^ future returned by `example` is not `Send`\n"
+"    |\n"
+"note: future is not `Send` as this value is used across an await\n"
+"    |\n"
+"11  |     let non_send = Rc::new(1);\n"
+"    |         -------- has type `Rc<i32>` which is not `Send`\n"
+"12  |     // A `.await` point\n"
+"13  |     yield_now().await;\n"
+"    |                 ^^^^^ await occurs here, with `non_send` maybe used "
+"later\n"
+"note: required by a bound in `tokio::spawn`\n"
+"    |\n"
+"164 |     pub fn spawn<F>(future: F) -> JoinHandle<F::Output>\n"
+"    |            ----- required by a bound in this function\n"
+"165 |     where\n"
+"166 |         F: Future + Send + 'static,\n"
+"    |                     ^^^^ required by this bound in `spawn`\n"
+"```"
 
 #: src/08_futures/04_future.md:68
-#, fuzzy
 msgid ""
 "To understand why that's the case, we need to refine our understanding of "
 "Rust's asynchronous model."
@@ -14098,43 +14049,36 @@ msgstr ""
 "왜 그런 경우인지 이해하려면 Rust의 비동기 모델에 대한 이해를 개선해야 합니다."
 
 #: src/08_futures/04_future.md:73
-#, fuzzy
 msgid ""
 "We stated early on that `async` functions return **futures**, types that "
 "implement the `Future` trait. You can think of a future as a **state "
 "machine**. It's in one of two states:"
 msgstr ""
-"우리는 `async` 함수가 `Future` 특성을 구현하는 유형인 **futures**를 반환한다"
+"우리는 `async` 함수가 `Future` 트레잇을 구현하는 타입인 **futures**를 반환한다"
 "고 일찍 밝혔습니다. 미래를 **상태 머신**으로 생각할 수 있습니다. 다음 두 가지 "
-"상태 중 하나입니다."
+"상태 중 하나입니다:"
 
 #: src/08_futures/04_future.md:77
-#, fuzzy
 msgid "**pending**: the computation has not finished yet."
 msgstr "**보류 중**: 계산이 아직 완료되지 않았습니다."
 
 #: src/08_futures/04_future.md:78
-#, fuzzy
 msgid "**ready**: the computation has finished, here's the output."
 msgstr "**준비**: 계산이 완료되었습니다. 출력은 다음과 같습니다."
 
 #: src/08_futures/04_future.md:80
-#, fuzzy
 msgid "This is encoded in the trait definition:"
-msgstr "이는 특성 정의에 인코딩되어 있습니다."
+msgstr "이는 트레잇 정의에 인코딩되어 있습니다:"
 
 #: src/08_futures/04_future.md:86
-#, fuzzy
 msgid "// Ignore `Pin` and `Context` for now\n"
-msgstr "// 지금은 `Pin`과 `Context`를 무시합니다."
+msgstr "// 지금은 `Pin`과 `Context`를 무시하세요\n"
 
 #: src/08_futures/04_future.md:91
-#, fuzzy
 msgid "`poll`"
-msgstr "'설문조사'"
+msgstr "`poll`"
 
 #: src/08_futures/04_future.md:93
-#, fuzzy
 msgid ""
 "The `poll` method is the heart of the `Future` trait.  \n"
 "A future on its own doesn't do anything. It needs to be **polled** to make "
@@ -14142,99 +14086,87 @@ msgid ""
 "When you call `poll`, you're asking the future to do some work. `poll` tries "
 "to make progress, and then returns one of the following:"
 msgstr ""
-"'Poll' 방법은 'Future' 특성의 핵심입니다.  \n"
-"미래 그 자체로는 아무것도 할 수 없습니다. 진행하려면 **폴링**이 필요합니"
+"`Poll` 방법은 `Future` 트레잇의 핵심입니다.  \n"
+"퓨처 그 자체로는 아무것도 할 수 없습니다. 진행하려면 **폴링**이 필요합니"
 "다.  \n"
-"'poll'을 호출하면 미래에 작업을 요청하는 것입니다. `poll`은 진행을 시도한 후 "
-"다음 중 하나를 반환합니다."
+"`poll`을 호출하면 퓨처에게 작업을 요청하는 것입니다. `poll`은 진행을 시도한 "
+"후 다음 중 하나를 반환합니다:"
 
 #: src/08_futures/04_future.md:98
-#, fuzzy
 msgid ""
 "`Poll::Pending`: the future is not ready yet. You need to call `poll` again "
 "later."
 msgstr ""
-"`Poll::Pending`: 미래는 아직 준비되지 않았습니다. 나중에 'poll'을 다시 호출해"
+"`Poll::Pending`: 퓨처가 아직 준비되지 않았습니다. 나중에 `poll`을 다시 호출해"
 "야 합니다."
 
 #: src/08_futures/04_future.md:99
-#, fuzzy
 msgid ""
 "`Poll::Ready(value)`: the future has finished. `value` is the result of the "
 "computation, of type `Self::Output`."
 msgstr ""
-"`Poll::Ready(value)`: future가 완료되었습니다. 'value'는 'Self::Output' 유형"
-"의 계산 결과입니다."
+"`Poll::Ready(value)`: 퓨처가가 완료되었습니다. 계산된 `value`는 `Self::"
+"Output` 타입입니다."
 
 #: src/08_futures/04_future.md:102
-#, fuzzy
 msgid ""
 "Once `Future::poll` returns `Poll::Ready`, it should not be polled again: the "
 "future has completed, there's nothing left to do."
 msgstr ""
-"`Future::poll`이 `Poll::Ready`를 반환하면 다시 폴링해서는 안 됩니다. future가 "
-"완료되었으므로 더 이상 할 일이 없습니다."
+"`Future::poll`이 `Poll::Ready`를 반환하면 다시 폴링해서는 안 됩니다. 퓨처가 완"
+"료되었으므로 더 이상 할 일이 없습니다."
 
 #: src/08_futures/04_future.md:105
-#, fuzzy
 msgid "The role of the runtime"
 msgstr "런타임의 역할"
 
 #: src/08_futures/04_future.md:107
-#, fuzzy
 msgid ""
 "You'll rarely, if ever, be calling poll directly.  \n"
 "That's the job of your async runtime: it has all the required information "
 "(the `Context` in `poll`'s signature) to ensure that your futures are making "
 "progress whenever they can."
 msgstr ""
-"설문 조사를 직접 호출하는 경우는 거의 없습니다.  \n"
-"이것이 비동기 런타임의 임무입니다. 미래가 가능할 때마다 진행되고 있는지 확인하"
-"는 데 필요한 모든 정보(`poll` 서명의 `Context`)가 있습니다."
+"poll을 직접 호출하는 경우는 거의 없습니다.  \n"
+"저게 비동기 런타임의 역할입니다. 퓨쳐가 가능할 때마다 진행되고 있는지 확인하"
+"는 데 필요한 모든 정보(`poll` 시그니처의 `Context`)가 있습니다."
 
 #: src/08_futures/04_future.md:111
-#, fuzzy
 msgid "`async fn` and futures"
-msgstr "`async fn`과 미래"
+msgstr "`async fn`과 퓨처"
 
 #: src/08_futures/04_future.md:113
-#, fuzzy
 msgid ""
 "We've worked with the high-level interface, asynchronous functions.  \n"
 "We've now looked at the low-level primitive, the `Future trait`."
 msgstr ""
-"우리는 높은 수준의 인터페이스인 비동기 기능을 사용해 작업했습니다.  \n"
-"우리는 이제 저수준 프리미티브인 '미래 특성'을 살펴보았습니다."
+"우리는 높은 수준의 인터페이스인 비동기 함수을 사용해 작업했습니다.  \n"
+"우리는 이제 저수준 프리미티브인 `Future 트레잇`을 살펴보았습니다."
 
 #: src/08_futures/04_future.md:116
-#, fuzzy
 msgid "How are they related?"
-msgstr "그들은 어떻게 관련되어 있습니까?"
+msgstr "그들은 어떻게 관련되어 있을까요?"
 
 #: src/08_futures/04_future.md:118
-#, fuzzy
 msgid ""
 "Every time you mark a function as asynchronous, that function will return a "
 "future. The compiler will transform the body of your asynchronous function "
 "into a **state machine**: one state for each `.await` point."
 msgstr ""
-"함수를 비동기로 표시할 때마다 해당 함수는 future를 반환합니다. 컴파일러는 비동"
-"기 함수의 본문을 **상태 머신**으로 변환합니다. 각 `.await` 지점에 대해 하나의 "
-"상태입니다."
+"함수를 비동기로 표시할 때마다 해당 함수는 퓨처를 반환합니다. 컴파일러는 비동"
+"기 함수의 본문을 **상태 머신**으로 변환합니다: 각 `.await` 지점마다 하나의 상"
+"태가 됩니다."
 
 #: src/08_futures/04_future.md:122
-#, fuzzy
 msgid "Going back to our `Rc` example:"
 msgstr "`Rc` 예제로 돌아가면:"
 
 #: src/08_futures/04_future.md:135
-#, fuzzy
 msgid ""
 "The compiler would transform it into an enum that looks somewhat like this:"
-msgstr "컴파일러는 이를 다음과 같은 열거형으로 변환합니다."
+msgstr "컴파일러는 이를 다음과 같은 열거형으로 변환합니다:"
 
 #: src/08_futures/04_future.md:145
-#, fuzzy
 msgid ""
 "When `example` is called, it returns `ExampleFuture::NotStarted`. The future "
 "has never been polled yet, so nothing has happened.  \n"
@@ -14244,16 +14176,15 @@ msgid ""
 "When it's polled again, it'll execute the remaining code (`println!`) and "
 "return `Poll::Ready(())`."
 msgstr ""
-"`example`이 호출되면 `ExampleFuture::NotStarted`를 반환합니다. 미래는 아직 폴"
+"`example`이 호출되면 `ExampleFuture::NotStarted`를 반환합니다. 퓨처는 아직 폴"
 "링된 적이 없으므로 아무 일도 일어나지 않았습니다.  \n"
 "런타임이 처음으로 폴링하면 `ExampleFuture`는 다음 `.await` 지점까지 진행됩니"
-"다. 상태 시스템의 `ExampleFuture::YieldNow(Rc<i32>)` 단계에서 멈추고 `Poll'을 "
-"반환합니다. ::보류중`.  \n"
-"다시 폴링되면 나머지 코드(`println!`)를 실행하고 `Poll::Ready(())`를 반환합니"
+"다. 상태 시스템의 `ExampleFuture::YieldNow(Rc<i32>)` 단계에서 멈추고 `Poll::"
+"Pending`을 반환합니다.  \n"
+"다시 폴링되면 나머지 코드(`println!`)을 실행하고 `Poll::Ready(())`를 반환합니"
 "다."
 
 #: src/08_futures/04_future.md:153
-#, fuzzy
 msgid ""
 "When you look at its state machine representation, `ExampleFuture`, it is now "
 "clear why `example` is not `Send`: it holds an `Rc`, therefore it cannot be "
@@ -14263,12 +14194,10 @@ msgstr ""
 "분명해졌습니다. 여기에는 `Rc`가 있으므로 `Send`가 될 수 없습니다."
 
 #: src/08_futures/04_future.md:157
-#, fuzzy
 msgid "Yield points"
-msgstr "항복점"
+msgstr "양보 지점"
 
 #: src/08_futures/04_future.md:159
-#, fuzzy
 msgid ""
 "As you've just seen with `example`, every `.await` point creates a new "
 "intermediate state in the lifecycle of a future.  \n"
@@ -14277,17 +14206,16 @@ msgid ""
 "runtime to pause it and (if necessary) schedule another task for execution, "
 "thus making progress on multiple fronts concurrently."
 msgstr ""
-"방금 `example`에서 본 것처럼 모든 `.await` 지점은 future의 수명 주기에서 새로"
-"운 중간 상태를 생성합니다.  \n"
-"그렇기 때문에 `.await` 포인트는 **수율 포인트**라고도 알려져 있습니다. 미래의 "
-"_수율 제어_는 이를 폴링한 런타임으로 돌아가서 런타임이 이를 일시 중지하고 (필"
-"요한 경우) 실행을 위해 다른 작업을 예약할 수 있도록 합니다. 여러 분야에서 동시"
-"에 진행됩니다."
+"방금 `example`에서 본 것처럼 모든 `.await` 지점은 퓨처의 수명 주기에서 새로운 "
+"중간 상태를 생성합니다.  \n"
+"그렇기 때문에 `.await` 포인트는 **양보 지점(yield points)**라고도 알려져 있습"
+"니다. 퓨처의 _양보 제어_는 이를 폴링한 런타임으로 돌아가서 런타임이 이를 일시 "
+"중지하고 (필요한 경우) 실행을 위해 다른 작업을 예약할 수 있도록 합니다. 이렇"
+"게 함으로써 여러 작업을 동시에 진행할 수 있습니다."
 
 #: src/08_futures/04_future.md:165
-#, fuzzy
 msgid "We'll come back to the importance of yielding in a later section."
-msgstr "우리는 나중 섹션에서 양보의 중요성으로 다시 돌아오겠습니다."
+msgstr "양보의 중요성을 나중에 다시 알아보겠습니다."
 
 #: src/08_futures/04_future.md:169
 msgid ""
@@ -14295,23 +14223,22 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/08_futures/04_future)"
 msgstr ""
+"이 섹션의 예제는 [`08_futures/04_future`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/08_futures/04_future)에 있습니다"
 
 #: src/08_futures/05_blocking.md:1
-#, fuzzy
 msgid "Don't block the runtime"
 msgstr "런타임을 차단하지 마세요"
 
 #: src/08_futures/05_blocking.md:3
-#, fuzzy
 msgid ""
 "Let's circle back to yield points.  \n"
 "Unlike threads, **Rust tasks cannot be preempted**."
 msgstr ""
-"항복점으로 다시 돌아갑시다.  \n"
+"양보 지점으로 다시 돌아갑시다.  \n"
 "스레드와 달리 **Rust 작업은 선점될 수 없습니다**."
 
 #: src/08_futures/05_blocking.md:6
-#, fuzzy
 msgid ""
 "`tokio` cannot, on its own, decide to pause a task and run another one in its "
 "place. The control goes back to the executor **exclusively** when the task "
@@ -14320,11 +14247,10 @@ msgid ""
 msgstr ""
 "'tokio'는 자체적으로 작업을 일시 중지하고 그 자리에서 다른 작업을 실행하기로 "
 "결정할 수 없습니다. 작업이 양보되면 제어권은 **독점적으로** 실행자에게 돌아갑"
-"니다. 즉, `Future::poll`이 `Poll::Pending`을 반환할 때 또는 `async fn`의 경우 "
-"미래를 `.await`할 때."
+"니다. 즉, `Future::poll`이 `Poll::Pending`을 반환할 때, `async fn`의 경우에는 "
+"퓨처를 `.await`할 때."
 
 #: src/08_futures/05_blocking.md:11
-#, fuzzy
 msgid ""
 "This exposes the runtime to a risk: if a task never yields, the runtime will "
 "never be able to run another task. This is called **blocking the runtime**."
@@ -14333,12 +14259,10 @@ msgstr ""
 "른 작업을 실행할 수 없습니다. 이를 **런타임 차단**이라고 합니다."
 
 #: src/08_futures/05_blocking.md:14
-#, fuzzy
 msgid "What is blocking?"
 msgstr "차단이란 무엇입니까?"
 
 #: src/08_futures/05_blocking.md:16
-#, fuzzy
 msgid ""
 "How long is too long? How much time can a task spend without yielding before "
 "it becomes a problem?"
@@ -14347,28 +14271,24 @@ msgstr ""
 "수 있습니까?"
 
 #: src/08_futures/05_blocking.md:19
-#, fuzzy
 msgid ""
 "It depends on the runtime, the application, the number of in-flight tasks, "
 "and many other factors. But, as a general rule of thumb, try to spend less "
 "than 100 microseconds between yield points."
 msgstr ""
 "런타임, 애플리케이션, 진행 중인 작업 수 및 기타 여러 요인에 따라 달라집니다. "
-"그러나 일반적으로 항복점 사이에 100마이크로초 미만의 시간을 소비하도록 노력하"
-"십시오."
+"그러나 일반적으로 항복 지점 사이에 100마이크로초 미만의 시간을 사용하도록 노력"
+"하세요."
 
 #: src/08_futures/05_blocking.md:23
-#, fuzzy
 msgid "Consequences"
 msgstr "결과"
 
 #: src/08_futures/05_blocking.md:25
-#, fuzzy
 msgid "Blocking the runtime can lead to:"
-msgstr "런타임을 차단하면 다음과 같은 결과가 발생할 수 있습니다."
+msgstr "런타임을 차단하면 다음과 같은 결과가 발생할 수 있습니다:"
 
 #: src/08_futures/05_blocking.md:27
-#, fuzzy
 msgid ""
 "**Deadlocks**: if the task that's not yielding is waiting for another task to "
 "complete, and that task is waiting for the first one to yield, you have a "
@@ -14380,7 +14300,6 @@ msgstr ""
 "런타임이 다른 스레드에서 다른 작업을 예약할 수 없으면 진행이 불가능합니다."
 
 #: src/08_futures/05_blocking.md:31
-#, fuzzy
 msgid ""
 "**Starvation**: other tasks might not be able to run, or might run after a "
 "long delay, which can lead to poor performances (e.g. high tail latencies)."
@@ -14389,19 +14308,16 @@ msgstr ""
 "인해 성능이 저하될 수 있습니다(예: 긴 꼬리 지연 시간)."
 
 #: src/08_futures/05_blocking.md:34
-#, fuzzy
 msgid "Blocking is not always obvious"
-msgstr "차단이 항상 명확한 것은 아닙니다."
+msgstr "차단이 항상 명확한 것은 아닙니다"
 
 #: src/08_futures/05_blocking.md:36
-#, fuzzy
 msgid ""
 "Some types of operations should generally be avoided in async code, like:"
 msgstr ""
-"다음과 같은 일부 유형의 작업은 일반적으로 비동기 코드에서 피해야 합니다."
+"다음과 같은 일부 타입의 작업은 일반적으로 비동기 코드에서 피해야 합니다:"
 
 #: src/08_futures/05_blocking.md:38
-#, fuzzy
 msgid ""
 "Synchronous I/O. You can't predict how long it will take, and it's likely to "
 "be longer than 100 microseconds."
@@ -14410,9 +14326,8 @@ msgstr ""
 "능성이 높습니다."
 
 #: src/08_futures/05_blocking.md:40
-#, fuzzy
 msgid "Expensive CPU-bound computations."
-msgstr "CPU 바인딩된 계산 비용이 많이 듭니다."
+msgstr "무거운 CPU 바인딩 계산 작업."
 
 #: src/08_futures/05_blocking.md:42
 msgid ""
@@ -14420,27 +14335,27 @@ msgid ""
 "vector with a few elements is not a problem; that evaluation changes if the "
 "vector has billions of entries."
 msgstr ""
+"하지만 후자의 범주는 항상 명확하지는 않습니다. 예를 들어, 몇 개의 요소를 가진 "
+"벡터를 정렬하는 것은 문제가 되지 않습니다. 그러나 벡터에 수십억 개의 항목이 있"
+"는 경우에는 이야기가 달라집니다."
 
 #: src/08_futures/05_blocking.md:46
-#, fuzzy
 msgid "How to avoid blocking"
 msgstr "차단을 피하는 방법"
 
 #: src/08_futures/05_blocking.md:48
-#, fuzzy
 msgid ""
 "OK, so how do you avoid blocking the runtime assuming you _must_ perform an "
 "operation that qualifies or risks qualifying as blocking?  \n"
 "You need to move the work to a different thread. You don't want to use the so-"
 "called runtime threads, the ones used by `tokio` to run tasks."
 msgstr ""
-"그렇다면 차단 자격을 갖추거나 차단 자격을 얻을 위험이 있는 작업을 _반드시_ 수"
-"행해야 한다고 가정할 때 런타임 차단을 어떻게 방지할 수 있을까요?  \n"
+"그렇다면 차단 위험이 있는 작업을 _반드시_ 수행해야 한다고 가정할 때 런타임 차"
+"단을 어떻게 방지할 수 있을까요?  \n"
 "작업을 다른 스레드로 이동해야 합니다. 작업을 실행하기 위해 `tokio`에서 사용하"
-"는 소위 런타임 스레드를 사용하고 싶지 않습니다."
+"는 소위 런타임 스레드를 사용하는 것이 아닙니다."
 
 #: src/08_futures/05_blocking.md:53
-#, fuzzy
 msgid ""
 "`tokio` provides a dedicated threadpool for this purpose, called the "
 "**blocking pool**. You can spawn a synchronous operation on the blocking pool "
@@ -14453,27 +14368,26 @@ msgstr ""
 "를 반환합니다."
 
 #: src/08_futures/05_blocking.md:67
-#, fuzzy
 msgid "// Do other stuff in the meantime\n"
-msgstr "// 그동안 다른 일을 하세요"
+msgstr "// 그동안 다른 일을 하세요\n"
 
 #: src/08_futures/05_blocking.md:72
-#, fuzzy
 msgid ""
 "The blocking pool is long-lived. `spawn_blocking` should be faster than "
 "creating a new thread directly via `std::thread::spawn` because the cost of "
 "thread initialization is amortized over multiple calls."
 msgstr ""
-"차단 풀은 수명이 길다. 스레드 초기화 비용은 여러 호출을 통해 분할되므로 "
+"차단 풀은 수명이 깁니다. 스레드 초기화 비용은 여러 호출을 통해 분할되므로 "
 "`spawn_blocking`은 `std::thread::spawn`을 통해 직접 새 스레드를 생성하는 것보"
 "다 더 빠릅니다."
 
 #: src/08_futures/05_blocking.md:78
-#, fuzzy
 msgid ""
 "Check out [Alice Ryhl's blog post](https://ryhl.io/blog/async-what-is-"
 "blocking/) on the topic."
-msgstr "해당 주제에 대한 Alice Ryhl의 블로그 게시물을 확인하세요."
+msgstr ""
+"해당 주제에 대한 [Alice Ryhl의 블로그 게시물](https://ryhl.io/blog/async-what-"
+"is-blocking/)을 확인하세요."
 
 #: src/08_futures/05_blocking.md:83
 msgid ""
@@ -14481,20 +14395,20 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/08_futures/05_blocking)"
 msgstr ""
+"이 섹션의 예제는 [`08_futures/05_blocking`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/08_futures/05_blocking)에 있습니다"
 
 #: src/08_futures/06_async_aware_primitives.md:3
-#, fuzzy
 msgid ""
 "If you browse `tokio`'s documentation, you'll notice that it provides a lot "
 "of types that \"mirror\" the ones in the standard library, but with an "
 "asynchronous twist: locks, channels, timers, and more."
 msgstr ""
-"`tokio`의 문서를 찾아보면 표준 라이브러리의 유형을 \"미러링\"하지만 잠금, 채"
-"널, 타이머 등 비동기식 변형이 포함된 많은 유형을 제공한다는 것을 알 수 있습니"
+"`tokio`의 문서를 찾아보면 표준 라이브러리의 타입을 \"미러링\"하지만 잠금, 채"
+"널, 타이머 등 비동기식 변형이 포함된 많은 타입을 제공한다는 것을 알 수 있습니"
 "다."
 
 #: src/08_futures/06_async_aware_primitives.md:7
-#, fuzzy
 msgid ""
 "When working in an asynchronous context, you should prefer these asynchronous "
 "alternatives to their synchronous counterparts."
@@ -14503,73 +14417,63 @@ msgstr ""
 "선호해야 합니다."
 
 #: src/08_futures/06_async_aware_primitives.md:10
-#, fuzzy
 msgid ""
 "To understand why, let's take a look at `Mutex`, the mutually exclusive lock "
 "we explored in the previous chapter."
 msgstr ""
-"그 이유를 이해하기 위해 이전 장에서 살펴본 상호 배타적 잠금 장치인 'Mutex'를 "
+"그 이유를 이해하기 위해 이전 장에서 살펴본 상호 배타적 잠금 장치인 `Mutex`를 "
 "살펴보겠습니다."
 
 #: src/08_futures/06_async_aware_primitives.md:13
-#, fuzzy
 msgid "Case study: `Mutex`"
 msgstr "사례 연구: '뮤텍스'"
 
 #: src/08_futures/06_async_aware_primitives.md:15
-#, fuzzy
 msgid "Let's look at a simple example:"
-msgstr "간단한 예를 살펴보겠습니다."
+msgstr "간단한 예를 살펴보겠습니다:"
 
 #: src/08_futures/06_async_aware_primitives.md:23
 #: src/08_futures/06_async_aware_primitives.md:70
-#, fuzzy
 msgid "\"Sent {:?} to the server\""
-msgstr "\"{:?}을(를) 서버로 보냈습니다.\""
+msgstr "\"Sent {:?} to the server\""
 
 #: src/08_futures/06_async_aware_primitives.md:24
 #: src/08_futures/06_async_aware_primitives.md:71
-#, fuzzy
 msgid "// `guard` is dropped here\n"
-msgstr "// `guard`가 여기에 삭제되었습니다."
+msgstr "// `guard`가 여기에 삭제되었습니다\n"
 
 #: src/08_futures/06_async_aware_primitives.md:26
-#, fuzzy
 msgid "/// Use `v` as the body of an HTTP call.\n"
-msgstr "/// `v`를 HTTP 호출의 본문으로 사용합니다."
+msgstr "/// `v`를 HTTP 호출의 본문으로 사용하세요.\n"
 
 #: src/08_futures/06_async_aware_primitives.md:33
-#, fuzzy
 msgid "`std::sync::MutexGuard` and yield points"
-msgstr "`std::sync::MutexGuard` 및 항복점"
+msgstr "`std::sync::MutexGuard`와 양보 지점"
 
 #: src/08_futures/06_async_aware_primitives.md:35
-#, fuzzy
 msgid "This code will compile, but it's dangerous."
 msgstr "이 코드는 컴파일되지만 위험합니다."
 
 #: src/08_futures/06_async_aware_primitives.md:37
-#, fuzzy
 msgid ""
 "We try to acquire a lock over a `Mutex` from `std` in an asynchronous "
 "context. We then hold on to the resulting `MutexGuard` across a yield point "
 "(the `.await` on `http_call`)."
 msgstr ""
 "비동기 컨텍스트의 `std`에서 `Mutex`에 대한 잠금을 획득하려고 합니다. 그런 다"
-"음 항복 지점(`http_call`의 `.await`)에서 결과 `MutexGuard`를 유지합니다."
+"음 결과로 얻은 `MutexGuard`를 양보 지점(즉, `http_call`의 `.await`)에서 가지고"
+"있을겁니다."
 
 #: src/08_futures/06_async_aware_primitives.md:41
-#, fuzzy
 msgid ""
 "Let's imagine that there are two tasks executing `run`, concurrently, on a "
 "single-threaded runtime. We observe the following sequence of scheduling "
 "events:"
 msgstr ""
-"단일 스레드 런타임에서 'run'을 동시에 실행하는 두 가지 작업이 있다고 가정해 보"
-"겠습니다. 우리는 다음과 같은 일정 이벤트 순서를 관찰합니다."
+"단일 스레드 런타임에서 `run`을 동시에 실행하는 두 가지 작업이 있다고 가정해 보"
+"겠습니다. 우리는 다음과 같은 순서의 스케줄 이벤트를 볼 수 있습니다."
 
 #: src/08_futures/06_async_aware_primitives.md:55
-#, fuzzy
 msgid ""
 "We have a deadlock. Task B we'll never manage to acquire the lock, because "
 "the lock is currently held by task A, which has yielded to the runtime before "
@@ -14581,34 +14485,30 @@ msgstr ""
 "으며 런타임이 작업 B를 선점할 수 없기 때문에 다시 예약되지 않습니다."
 
 #: src/08_futures/06_async_aware_primitives.md:59
-#, fuzzy
 msgid "`tokio::sync::Mutex`"
-msgstr "`tokio::sync::뮤텍스`"
+msgstr "`tokio::sync::Mutex`"
 
 #: src/08_futures/06_async_aware_primitives.md:61
-#, fuzzy
 msgid "You can solve the issue by switching to `tokio::sync::Mutex`:"
-msgstr "`tokio::sync::Mutex`로 전환하면 문제를 해결할 수 있습니다."
+msgstr "`tokio::sync::Mutex`로 전환하면 문제를 해결할 수 있습니다:"
 
 #: src/08_futures/06_async_aware_primitives.md:75
-#, fuzzy
 msgid ""
 "Acquiring the lock is now an asynchronous operation, which yields back to the "
 "runtime if it can't make progress.  \n"
 "Going back to the previous scenario, the following would happen:"
 msgstr ""
-"잠금 획득은 이제 비동기식 작업으로 진행되지 않으면 런타임으로 반환됩니다.  \n"
-"이전 시나리오로 돌아가면 다음과 같은 일이 발생합니다."
+"잠금 획득은 이제 비동기식 작업입니다, 잠금을 획득하지 못하면 런타임으로 돌아가"
+"게됩니다.  \n"
+"이전 시나리오로 돌아가면 다음과 같은 일이 발생합니다:"
 
 #: src/08_futures/06_async_aware_primitives.md:104
-#, fuzzy
 msgid "All good!"
-msgstr "문제 없다!"
+msgstr "문제 해결!"
 
 #: src/08_futures/06_async_aware_primitives.md:106
-#, fuzzy
 msgid "Multithreaded won't save you"
-msgstr "멀티스레드로는 당신을 구할 수 없습니다"
+msgstr "멀티스레드로는 당신을 구원하지 않습니다"
 
 #: src/08_futures/06_async_aware_primitives.md:108
 msgid ""
@@ -14620,9 +14520,13 @@ msgid ""
 "runtime, we would need `N+1` tasks, where `N` is the number of runtime "
 "threads."
 msgstr ""
+"이전 예제에서 실행 컨텍스트로 단일 스레드 런타임을 사용했지만, 멀티스레드 런타"
+"임을 사용할 때도 동일한 위험이 존재합니다.\n"
+"차이점은 데드락을 생성하는 데 필요한 동시 작업의 수입니다: 단일 스레드 런타임"
+"에서는 2개의 작업이면 충분하고, 멀티스레드 런타임에서는 런타임 스레드 수를 `N`"
+"이라고 할 때 `N+1`개의 작업이 필요합니다."
 
 #: src/08_futures/06_async_aware_primitives.md:117
-#, fuzzy
 msgid ""
 "Having an async-aware `Mutex` comes with a performance penalty.  \n"
 "If you're confident that the lock isn't under significant contention _and_ "
@@ -14635,18 +14539,15 @@ msgstr ""
 "사용할 수 있습니다."
 
 #: src/08_futures/06_async_aware_primitives.md:122
-#, fuzzy
 msgid ""
 "But weigh the performance benefit against the liveness risk you will incur."
-msgstr "하지만 발생할 수 있는 활성 위험과 성능상의 이점을 비교해보세요."
+msgstr "하지만 발생할 수 있는 위험과 성능상의 이점을 비교해보세요."
 
 #: src/08_futures/06_async_aware_primitives.md:125
-#, fuzzy
 msgid "Other primitives"
 msgstr "기타 프리미티브"
 
 #: src/08_futures/06_async_aware_primitives.md:127
-#, fuzzy
 msgid ""
 "We used `Mutex` as an example, but the same applies to `RwLock`, semaphores, "
 "etc.  \n"
@@ -14654,8 +14555,8 @@ msgid ""
 "minimise the risk of issues."
 msgstr ""
 "예시로 `Mutex`를 사용했지만 `RwLock`, 세마포어 등에도 동일하게 적용됩니다.  \n"
-"문제 위험을 최소화하려면 비동기 컨텍스트에서 작업할 때 비동기 인식 버전을 선호"
-"하세요."
+"문제 위험을 최소화하려면 비동기 컨텍스트에서 작업할 때 비동기 버전을 선호하세"
+"요."
 
 #: src/08_futures/06_async_aware_primitives.md:133
 msgid ""
@@ -14664,44 +14565,41 @@ msgid ""
 "exercises-to-learn-rust/tree/main/"
 "exercises/08_futures/06_async_aware_primitives)"
 msgstr ""
+"이 섹션의 예제는 [`08_futures/06_async_aware_primitives`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/08_futures/06_async_aware_primitives)에 있습니다"
 
 #: src/08_futures/07_cancellation.md:3
-#, fuzzy
 msgid ""
 "What happens when a pending future is dropped?  \n"
 "The runtime will no longer poll it, therefore it won't make any further "
 "progress. In other words, its execution has been **cancelled**."
 msgstr ""
-"보류 중인 미래가 삭제되면 어떻게 되나요?  \n"
+"보류 중인 퓨처가 삭제되면 어떻게 될까요?  \n"
 "런타임은 더 이상 폴링하지 않으므로 더 이상 진행되지 않습니다. 즉, 실행이 **취"
-"소**되었습니다."
+"소**됩니다."
 
 #: src/08_futures/07_cancellation.md:7
-#, fuzzy
 msgid "In the wild, this often happens when working with timeouts. For example:"
-msgstr "실제로는 시간 초과 작업을 할 때 이런 일이 자주 발생합니다. 예를 들어:"
+msgstr "실제로는 타임아웃때 이런 일이 자주 발생합니다. 예시:"
 
 #: src/08_futures/07_cancellation.md:20
-#, fuzzy
 msgid "// Wrap the future with a `Timeout` set to expire in 10 milliseconds.\n"
-msgstr "// 10밀리초 후에 만료되도록 설정된 'Timeout'으로 future를 래핑합니다."
+msgstr "// 10밀리초 후에 만료되도록 설정된 `Timeout`으로 퓨처를 래핑합니다.\n"
 
 #: src/08_futures/07_cancellation.md:23
-#, fuzzy
 msgid "\"Didn't receive a value within 10 ms\""
-msgstr "\"10ms 이내에 값을 받지 못했습니다.\""
+msgstr "\"Didn't receive a value within 10 ms\""
 
 #: src/08_futures/07_cancellation.md:28
-#, fuzzy
 msgid ""
 "When the timeout expires, the future returned by `http_call` will be "
 "cancelled. Let's imagine that this is `http_call`'s body:"
 msgstr ""
-"제한 시간이 만료되면 `http_call`에 의해 반환된 future가 취소됩니다. 이것이 "
+"제한 시간이 만료되면 `http_call`에 의해 반환된 퓨처가 취소됩니다. 이것이 "
 "`http_call`의 본문이라고 상상해 봅시다:"
 
 #: src/08_futures/07_cancellation.md:41
-#, fuzzy
 msgid ""
 "Each yield point becomes a **cancellation point**.  \n"
 "`http_call` can't be preempted by the runtime, so it can only be discarded "
@@ -14714,17 +14612,15 @@ msgstr ""
 "각 항복 지점은 **취소 지점**이 됩니다.  \n"
 "`http_call`은 런타임에 의해 선점될 수 없으므로 `.await`를 통해 실행자에게 제어"
 "권을 다시 넘겨준 후에만 폐기될 수 있습니다. 이는 재귀적으로 적용됩니다. "
-"`stream.write_all(&request)`는 구현 시 여러 항복 지점을 가질 가능성이 높습니"
+"`stream.write_all(&request)`는 구현 시 여러 양보 지점을 가질 가능성이 높습니"
 "다. `http_call`이 취소되기 전에 _partial_ 요청을 푸시하여 연결이 끊어지고 본"
 "문 전송이 완료되지 않는 것을 볼 수 있습니다."
 
 #: src/08_futures/07_cancellation.md:49
-#, fuzzy
 msgid "Clean up"
-msgstr "정리하다"
+msgstr "뒷처리"
 
 #: src/08_futures/07_cancellation.md:51
-#, fuzzy
 msgid ""
 "Rust's cancellation mechanism is quite powerful—it allows the caller to "
 "cancel an ongoing task without needing any form of cooperation from the task "
@@ -14739,52 +14635,44 @@ msgstr ""
 "도록 **정상적인 취소**를 수행하는 것이 바람직할 수 있습니다."
 
 #: src/08_futures/07_cancellation.md:57
-#, fuzzy
 msgid "For example, consider this fictional API for a SQL transaction:"
-msgstr "예를 들어 SQL 트랜잭션에 대한 다음 가상 API를 생각해 보세요."
+msgstr "예를 들어 SQL 트랜잭션에 대한 다음 가상 API를 생각해 보세요:"
 
 #: src/08_futures/07_cancellation.md:73
-#, fuzzy
 msgid ""
 "On cancellation, it'd be ideal to explicitly abort the pending transaction "
 "rather than leaving it hanging. Rust, unfortunately, doesn't provide a bullet-"
 "proof mechanism for this kind of **asynchronous** clean up operations."
 msgstr ""
 "취소 시 보류 중인 트랜잭션을 그대로 두는 것보다 명시적으로 중단하는 것이 이상"
-"적입니다. 안타깝게도 Rust는 이러한 종류의 **비동기** 정리 작업에 대한 완벽한 "
-"메커니즘을 제공하지 않습니다."
+"적입니다. 안타깝게도 Rust는 이러한 종류의 **비동기** 뒷처리 작업에 대한 완벽"
+"한 메커니즘을 제공하지 않습니다."
 
 #: src/08_futures/07_cancellation.md:78
-#, fuzzy
 msgid ""
 "The most common strategy is to rely on the `Drop` trait to schedule the "
 "required clean-up work. This can be by:"
 msgstr ""
-"가장 일반적인 전략은 'Drop' 특성을 사용하여 필요한 정리 작업을 예약하는 것입니"
-"다. 이는 다음과 같이 할 수 있습니다."
+"가장 일반적인 전략은 `Drop` 트레잇을 사용하여 필요한 뒷처리 작업을 예약하는 것"
+"입니다. 이는 다음과 같이 할 수 있습니다:"
 
 #: src/08_futures/07_cancellation.md:81
-#, fuzzy
 msgid "Spawning a new task on the runtime"
 msgstr "런타임에 새 작업 생성"
 
 #: src/08_futures/07_cancellation.md:82
-#, fuzzy
 msgid "Enqueueing a message on a channel"
 msgstr "채널의 대기열에 메시지 추가"
 
 #: src/08_futures/07_cancellation.md:83
-#, fuzzy
 msgid "Spawning a background thread"
 msgstr "백그라운드 스레드 생성"
 
 #: src/08_futures/07_cancellation.md:85
-#, fuzzy
 msgid "The optimal choice is contextual."
 msgstr "최적의 선택은 상황에 따라 다릅니다."
 
 #: src/08_futures/07_cancellation.md:87
-#, fuzzy
 msgid "Cancelling spawned tasks"
 msgstr "생성된 작업 취소"
 
@@ -14794,19 +14682,20 @@ msgid ""
 "belongs to the runtime.  \n"
 "Nonetheless, you can use its `JoinHandle` to cancel it if needed:"
 msgstr ""
+"`tokio::spawn`으로 작업을 생성하면 해당 작업을 더 이상 버릴 수 없으며, 그것은 "
+"런타임에 속합니다.\n"
+"그럼에도 불구하고, 필요한 경우 `JoinHandle`을 사용하여 작업을 취소할 수 있습니"
+"다:"
 
 #: src/08_futures/07_cancellation.md:95
-#, fuzzy
 msgid "/* some async task */"
-msgstr "/\\* 일부 비동기 작업 \\*/"
+msgstr "/* 비동기 작업 */"
 
 #: src/08_futures/07_cancellation.md:96
-#, fuzzy
 msgid "// Cancel the spawned task\n"
-msgstr "// 생성된 작업 취소"
+msgstr "// 생성된 작업 취소\n"
 
 #: src/08_futures/07_cancellation.md:103
-#, fuzzy
 msgid ""
 "Be extremely careful when using `tokio`'s `select!` macro to \"race\" two "
 "different futures. Retrying the same task in a loop is dangerous unless you "
@@ -14816,22 +14705,23 @@ msgid ""
 "a channel), prefer using [`StreamExt::merge`](https://docs.rs/tokio-stream/"
 "latest/tokio_stream/trait.StreamExt.html#method.merge) instead."
 msgstr ""
-"두 개의 서로 다른 미래를 \"경쟁\"하기 위해 `tokio`의 `select!` 매크로를 사용"
+"두 개의 서로 다른 퓨처를 \"경쟁\"하기 위해 `tokio`의 `select!` 매크로를 사용"
 "할 때는 매우 주의하십시오. **취소 안전**을 보장할 수 없다면 루프에서 동일한 작"
-"업을 다시 시도하는 것은 위험합니다. 자세한 내용은 `select!`의 문서를 확인하세"
-"요.  \n"
+"업을 다시 시도하는 것은 위험합니다. 자세한 내용은 [`select!` 문서](https://"
+"tokio.rs/tokio/tutorial/select)를 확인하세요.  \n"
 "두 개의 비동기 데이터 스트림(예: 소켓 및 채널)을 인터리브해야 하는 경우 "
-"`StreamExt::merge`를 대신 사용하는 것이 좋습니다."
+"[`StreamExt::merge`](https://docs.rs/tokio-stream/latest/tokio_stream/trait."
+"StreamExt.html#method.merge)를 대신 사용하는 것이 좋습니다."
 
 #: src/08_futures/07_cancellation.md:108
-#, fuzzy
 msgid ""
 "Rather than \"abrupt\" cancellation, it can be preferable to rely on "
 "[`CancellationToken`](https://docs.rs/tokio-util/latest/tokio_util/sync/"
 "struct.CancellationToken.html)."
 msgstr ""
-"\"갑작스러운\" 취소보다는 'CancellationToken'을 사용하는 것이 더 나을 수 있습"
-"니다."
+"\"갑작스러운\" 취소보다는 [`CancellationToken`](https://docs.rs/tokio-util/"
+"latest/tokio_util/sync/struct.CancellationToken.html)을 사용하는 것이 더 나을 "
+"수 있습니다."
 
 #: src/08_futures/07_cancellation.md:113
 msgid ""
@@ -14839,37 +14729,36 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/08_futures/07_cancellation)"
 msgstr ""
+"이 섹션의 예제는 [`08_futures/07_cancellation`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/08_futures/07_cancellation)에 있습니다"
 
 #: src/08_futures/08_outro.md:3
-#, fuzzy
 msgid ""
 "Rust's asynchronous model is quite powerful, but it does introduce additional "
 "complexity. Take time to know your tools: dive deep into `tokio`'s "
 "documentation and get familiar with its primitives to make the most out of it."
 msgstr ""
 "Rust의 비동기 모델은 매우 강력하지만 추가적인 복잡성을 초래합니다. 도구를 알아"
-"가는 데 시간을 투자하세요. 'tokio'의 문서를 자세히 살펴보고 문서를 최대한 활용"
+"가는 데 시간을 투자하세요. `tokio`의 문서를 자세히 살펴보고 문서를 최대한 활용"
 "하기 위해 기본 요소에 익숙해지세요."
 
 #: src/08_futures/08_outro.md:7
-#, fuzzy
 msgid ""
 "Keep in mind, as well, that there is ongoing work at the language and `std` "
 "level to streamline and \"complete\" Rust's asynchronous story. You may "
 "experience some rough edges in your day-to-day work due to some of these "
 "missing pieces."
 msgstr ""
-"또한 Rust의 비동기 스토리를 간소화하고 \"완성\"하기 위해 언어 및 'std' 수준에"
+"또한 Rust의 비동기 스토리를 간소화하고 \"완성\"하기 위해 언어 및 `std` 수준에"
 "서 지속적인 작업이 진행 중이라는 점을 명심하세요. 이러한 누락된 부분으로 인해 "
-"일상적인 작업에서 약간의 거친 부분이 발생할 수 있습니다."
+"일상적인 작업에서 약간 매끄럽지 않은 부분이 있을 수 있습니다."
 
 #: src/08_futures/08_outro.md:11
-#, fuzzy
 msgid "A few recommendations for a mostly-pain-free async experience:"
 msgstr "거의 고통 없는 비동기 환경을 위한 몇 가지 권장 사항:"
 
 #: src/08_futures/08_outro.md:13
-#, fuzzy
 msgid ""
 "**Pick a runtime and stick to it.**  \n"
 "Some primitives (e.g. timers, I/O) are not portable across runtimes. Trying "
@@ -14884,7 +14773,6 @@ msgstr ""
 "면 피하세요."
 
 #: src/08_futures/08_outro.md:18
-#, fuzzy
 msgid ""
 "**There is no stable `Stream`/`AsyncIterator` interface yet.**  \n"
 "An `AsyncIterator` is, conceptually, an iterator that yields new items "
@@ -14893,12 +14781,12 @@ msgid ""
 "latest/tokio_stream/) as your go-to interface."
 msgstr ""
 "**안정적인 `Stream`/`AsyncIterator` 인터페이스는 아직 없습니다.**  \n"
-"'AsyncIterator'는 개념적으로 새 항목을 비동기적으로 생성하는 반복자입니다. 디"
+"`AsyncIterator`는 개념적으로 새 항목을 비동기적으로 생성하는 반복자입니다. 디"
 "자인 작업이 진행 중이지만 (아직) 합의가 이루어지지 않았습니다. `tokio`를 사용"
-"하는 경우 이동 인터페이스로 `tokio_stream`을 참조하세요."
+"하는 경우 기본 인터페이스로 [`tokio_stream`](https://docs.rs/tokio-stream/"
+"latest/tokio_stream/)을 참조하세요."
 
 #: src/08_futures/08_outro.md:23
-#, fuzzy
 msgid ""
 "**Be careful with buffering.**  \n"
 "It is often the cause of subtle bugs. Check out [\"Barbara battles buffered "
@@ -14906,21 +14794,22 @@ msgid ""
 "status_quo/barbara_battles_buffered_streams.html) for more details."
 msgstr ""
 "**버퍼링에 주의하세요.**  \n"
-"미묘한 버그의 원인이 되는 경우가 많습니다. 자세한 내용은 \"Barbara 전투 버퍼"
-"링 스트림\"을 확인하세요."
+"미묘한 버그의 원인이 되는 경우가 많습니다. 자세한 내용은 [\"Barbara battles "
+"buffered streams\"](https://rust-lang.github.io/wg-async/vision/"
+"submitted_stories/status_quo/barbara_battles_buffered_streams.html)를 확인하세"
+"요."
 
 #: src/08_futures/08_outro.md:27
-#, fuzzy
 msgid ""
 "**There is no equivalent of scoped threads for asynchronous tasks**.  \n"
 "Check out [\"The scoped task trilemma\"](https://without.boats/blog/the-"
 "scoped-task-trilemma/) for more details."
 msgstr ""
 "**비동기 작업에는 범위가 지정된 스레드와 동등한 것이 없습니다**.  \n"
-"자세한 내용은 \"범위가 지정된 작업 트릴레마\"를 확인하세요."
+"자세한 내용은 [\"The scoped task trilemma\"](https://without.boats/blog/the-"
+"scoped-task-trilemma/)를 확인하세요."
 
 #: src/08_futures/08_outro.md:31
-#, fuzzy
 msgid ""
 "Don't let these caveats scare you: asynchronous Rust is being used "
 "effectively at _massive_ scale (e.g. AWS, Meta) to power foundational "
@@ -14928,8 +14817,8 @@ msgid ""
 "You will have to master it if you're planning building networked applications "
 "in Rust."
 msgstr ""
-"이러한 주의 사항에 겁먹지 마세요. 비동기식 Rust는 기본 서비스를 강화하기 위해 "
-"_대규모_ 규모(예: AWS, Meta)에서 효과적으로 사용되고 있습니다.  \n"
+"이러한 주의 사항에 겁먹지 마세요: 비동기식 Rust는 _엄청난_ 규모(예: AWS, Meta)"
+"에서 기반 서비스를 위해 효과적으로 사용되고있습니다.  \n"
 "Rust로 네트워크 애플리케이션을 구축할 계획이라면 이를 마스터해야 합니다."
 
 #: src/08_futures/08_outro.md:38
@@ -14938,14 +14827,14 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/08_futures/08_outro)"
 msgstr ""
+"이 섹션의 예제는 [`08_futures/08_outro`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/08_futures/08_outro)에 있습니다"
 
 #: src/going_further.md:1
-#, fuzzy
 msgid "Epilogue"
-msgstr "발문"
+msgstr "에필로그"
 
 #: src/going_further.md:3
-#, fuzzy
 msgid ""
 "Our tour of Rust ends here.  \n"
 "It has been quite extensive, but by no means exhaustive: Rust is a language "
@@ -14958,11 +14847,10 @@ msgstr ""
 "상당히 광범위했지만 결코 철저하지는 않았습니다. Rust는 표면적이 넓고 생태계도 "
 "훨씬 더 큰 언어입니다!  \n"
 "하지만 겁먹지 마세요. **모든 것을 배울 필요는 없습니다**. **프로젝트 작업** 중"
-"에 도메인(백엔드, 임베디드, CLI, GUI 등)에서 효율성을 높이는 데 필요한 모든 것"
-"을 선택하게 됩니다."
+"에 도메인(백엔드, 임베디드, CLI, GUI 등)에서 효율성을 높이는 데 필요한 것이라"
+"면 무엇이든 사용하게될겁니다."
 
 #: src/going_further.md:10
-#, fuzzy
 msgid ""
 "In the end, there are no shortcuts: if you want to get good at something, you "
 "need to do it, over and over again. Throughout this course you wrote a fair "
@@ -14971,13 +14859,11 @@ msgid ""
 "moment will come without a doubt if you keep practicing."
 msgstr ""
 "결국 지름길은 없습니다. 어떤 일을 잘하고 싶다면 계속해서 그 일을 해야 합니다. "
-"이 코스 전반에 걸쳐 여러분은 언어와 그 구문을 손가락으로 짚어볼 수 있을 만큼 "
-"충분한 양의 Rust를 작성했습니다. \"자신의 것\"이라고 느끼려면 훨씬 더 많은 코"
-"드 라인이 필요하지만, 계속 연습하면 그 순간은 의심할 여지 없이 찾아올 것입니"
-"다."
+"이 코스 전반에 걸쳐 여러분은 언어와 그 구문이 손에 익을 만큼 충분한 양의 Rust"
+"를 작성했습니다. \"자신의 것\"이라고 느끼려면 훨씬 더 많은 코드를 작성해야겠지"
+"만, 계속 연습하면 그 순간은 눈 깜빡할 사이에 찾아올겁니다."
 
 #: src/going_further.md:18
-#, fuzzy
 msgid ""
 "Let's close with some pointers to additional resources that you might find "
 "useful as you move forward in your journey with Rust."
@@ -14986,22 +14872,20 @@ msgstr ""
 "몇 가지 지침으로 마무리하겠습니다."
 
 #: src/going_further.md:21
-#, fuzzy
 msgid "Exercises"
-msgstr "수업 과정"
+msgstr "연습문제"
 
 #: src/going_further.md:23
-#, fuzzy
 msgid ""
 "You can find more exercises to practice Rust in the [`rustlings`](https://"
 "github.com/rust-lang/rustlings) project and on [exercism.io](https://exercism."
 "io)'s Rust track."
 msgstr ""
-"Rust를 연습하기 위한 더 많은 연습문제는 `rustlings` 프로젝트와 exercism.io의 "
-"Rust 트랙에서 찾을 수 있습니다."
+"Rust를 연습하기 위한 더 많은 연습문제는 [`rustlings`](https://github.com/rust-"
+"lang/rustlings) 프로젝트와 [exercism.io](https://exercism.io)의 Rust 트랙에서 "
+"찾을 수 있습니다."
 
 #: src/going_further.md:26
-#, fuzzy
 msgid "Introductory material"
 msgstr "입문 자료"
 
@@ -15014,14 +14898,17 @@ msgid ""
 "something new since they don't cover exactly the same topics; Rust has a lot "
 "of surface area!"
 msgstr ""
+"이 과정에서 다룬 개념에 대해 다른 관점을 찾고 있다면 [the Rust book](https://"
+"doc.rust-lang.org/book/title-page.html)과 [\"Programming Rust\"](https://www."
+"oreilly.com/library/view/programming-rust-2nd/9781492052586/)를 확인해보세요. "
+"정확히 같은 주제를 다루지는 않기 때문에 새로운 것을 반드시 배우게 될 것입니"
+"다. Rust는 매우 넓은 영역을 다루고 있습니다!"
 
 #: src/going_further.md:33
-#, fuzzy
 msgid "Advanced material"
-msgstr "고급 소재"
+msgstr "고급 자료"
 
 #: src/going_further.md:35
-#, fuzzy
 msgid ""
 "If you want to dive deeper into the language, refer to the [Rustonomicon]"
 "(https://doc.rust-lang.org/nomicon/) and [\"Rust for Rustaceans\"](https://"
@@ -15030,35 +14917,34 @@ msgid ""
 "list=PLqbS7AVVErFirH9armw8yXlE6dacF-A6z) is another excellent resource to "
 "learn more about the internals of many of the most popular Rust libraries."
 msgstr ""
-"언어에 대해 더 깊이 알고 싶다면 Rustonomicon과 \"Rust for Rustaceans\"를 참조"
-"하세요.  \n"
-"\"Decrusted\" 시리즈는 가장 인기 있는 Rust 라이브러리의 내부에 대해 자세히 알"
-"아볼 수 있는 또 다른 훌륭한 리소스입니다."
+"언어에 대해 더 깊이 알고 싶다면 [Rustonomicon](https://doc.rust-lang.org/"
+"nomicon/)과 [\"Rust for Rustaceans\"](https://nostarch.com/rust-rustaceans)를 "
+"참조하세요.  \n"
+"[\"Decrusted\" series](https://www.youtube.com/playlist?"
+"list=PLqbS7AVVErFirH9armw8yXlE6dacF-A6z) 시리즈는 가장 인기 있는 Rust 라이브러"
+"리의 내부에 대해 자세히 알아볼 수 있는 또 다른 훌륭한 리소스입니다."
 
 #: src/going_further.md:40
-#, fuzzy
 msgid "Domain-specific material"
 msgstr "도메인별 자료"
 
 #: src/going_further.md:42
-#, fuzzy
 msgid ""
 "If you want to use Rust for backend development, check out [\"Zero to "
 "Production in Rust\"](https://zero2prod.com).  \n"
 "If you want to use Rust for embedded development, check out the [Embedded "
 "Rust book](https://docs.rust-embedded.org/book/)."
 msgstr ""
-"백엔드 개발에 Rust를 사용하고 싶다면 \"Zero to Production in Rust\"를 확인하세"
-"요.  \n"
-"임베디드 개발에 Rust를 사용하고 싶다면 Embedded Rust 책을 확인해 보세요."
+"백엔드 개발에 Rust를 사용하고 싶다면 [\"Zero to Production in Rust\"](https://"
+"zero2prod.com)를 확인하세요.  \n"
+"임베디드 개발에 Rust를 사용하고 싶다면 [Embedded Rust book](https://docs.rust-"
+"embedded.org/book/)을 확인해 보세요."
 
 #: src/going_further.md:47
-#, fuzzy
 msgid "Masterclasses"
 msgstr "마스터클래스"
 
 #: src/going_further.md:49
-#, fuzzy
 msgid ""
 "You can then find resources on key topics that cut across domains.  \n"
 "For testing, check out [\"Advanced testing, going beyond the basics\"]"
@@ -15067,8 +14953,10 @@ msgid ""
 "github.com/mainmatter/rust-telemetry-workshop)."
 msgstr ""
 "그런 다음 도메인 전반에 걸친 주요 주제에 대한 리소스를 찾을 수 있습니다.  \n"
-"테스트에 대해서는 \"기본을 넘어서는 고급 테스트\"를 참고하세요.  \n"
-"원격 측정의 경우 \"볼 수 없는 것은 고칠 수 없습니다\"를 확인하세요."
+"테스트에 대해서는 [\"Advanced testing, going beyond the basics\"](https://"
+"github.com/mainmatter/rust-advanced-testing-workshop)를 참고하세요.  \n"
+"원격 측정의 경우 [\"You can't fix what you can't see\"](https://github.com/"
+"mainmatter/rust-telemetry-workshop)를 확인하세요."
 
 #~ msgid "The exercise for this section is located in `01_intro/00_welcome`"
 #~ msgstr "이 섹션의 예제는 `01_intro/00_welcome`에 있습니다."
