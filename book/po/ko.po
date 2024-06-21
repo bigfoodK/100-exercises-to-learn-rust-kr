@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 100 Exercises To Learn Rust\n"
 "POT-Creation-Date: 2024-06-20T21:50:15+09:00\n"
-"PO-Revision-Date: 2024-06-22 05:55+0900\n"
+"PO-Revision-Date: 2024-06-22 07:07+0900\n"
 "Last-Translator: bigfood <satcom1600@hanmail.net>\n"
 "Language-Team: Korean <translation-team-ko@googlegroups.com>\n"
 "Language: ko\n"
@@ -367,7 +367,7 @@ msgstr "채널 없이"
 
 #: src/SUMMARY.md:97
 msgid "`Sync` trait"
-msgstr "`Sync` trait"
+msgstr "`Sync` 트레잇"
 
 #: src/SUMMARY.md:99
 msgid "Futures"
@@ -11145,55 +11145,48 @@ msgstr ""
 "exercises/06_ticket_management/16_btreemap)에 있습니다"
 
 #: src/07_threads/00_intro.md:3
-#, fuzzy
 msgid ""
 "One of Rust's big promises is _fearless concurrency_: making it easier to "
 "write safe, concurrent programs. We haven't seen much of that yet. All the "
 "work we've done so far has been single-threaded. Time to change that!"
 msgstr ""
-"Rust의 가장 큰 약속 중 하나는 _두려움 없는 동시성_입니다. 즉, 안전한 동시 프로"
-"그램 작성을 더 쉽게 만드는 것입니다. 우리는 아직 그런 것을 많이 보지 못했습니"
-"다. 지금까지 우리가 수행한 모든 작업은 단일 스레드였습니다. 이제 그것을 바꿀 "
-"시간입니다!"
+"Rust의 가장 큰 약속 중 하나는 _두려움 없는 동시성_입니다. 즉, 안전한 동시성 프"
+"로그램 작성을 더 쉽게 만드는 것입니다. 우리는 아직 그런 것을 많이 보지 못했습"
+"니다. 지금까지 우리가 수행한 모든 작업은 단일 스레드였습니다. 이제 바뀔 시간입"
+"니다!"
 
 #: src/07_threads/00_intro.md:7
-#, fuzzy
 msgid ""
 "In this chapter we'll make our ticket store multithreaded.  \n"
 "We'll have the opportunity to touch most of Rust's core concurrency features, "
 "including:"
 msgstr ""
-"이번 장에서는 티켓 상점을 멀티스레드로 만들겠습니다.  \n"
-"우리는 다음을 포함하여 Rust의 핵심 동시성 기능 대부분을 다룰 기회를 갖게 될 것"
-"입니다:"
+"이번 장에서는 티켓 스토어를 멀티스레드로 만들겠습니다.  \n"
+"우리는 다음을 포함해 Rust의 핵심 동시성 기능 대부분을 다룰 기회를 갖게 될 것입"
+"니다:"
 
 #: src/07_threads/00_intro.md:10
-#, fuzzy
 msgid "Threads, using the `std::thread` module"
-msgstr "`std::thread` 모듈을 사용하는 스레드"
+msgstr "스레드, `std::thread` 모듈를 사용"
 
 #: src/07_threads/00_intro.md:11
-#, fuzzy
 msgid "Message passing, using channels"
 msgstr "메시지 전달, 채널 사용"
 
 #: src/07_threads/00_intro.md:12
-#, fuzzy
 msgid "Shared state, using `Arc`, `Mutex` and `RwLock`"
-msgstr "`Arc`, `Mutex` 및 `RwLock`을 사용하는 공유 상태"
+msgstr "공유 상태, `Arc`, `Mutex`그리고 `RwLock`을 사용"
 
 #: src/07_threads/00_intro.md:13
-#, fuzzy
 msgid "`Send` and `Sync`, the traits that encode Rust's concurrency guarantees"
-msgstr "Rust의 동시성을 보장하는 특성인 `Send`와 `Sync`"
+msgstr "`Send`와 `Sync`, Rust의 동시성을 보장하는 트레잇"
 
 #: src/07_threads/00_intro.md:15
-#, fuzzy
 msgid ""
 "We'll also discuss various design patterns for multithreaded systems and some "
 "of their trade-offs."
 msgstr ""
-"또한 다중 스레드 시스템의 다양한 디자인 패턴과 그 장단점에 대해서도 논의할 것"
+"또한 멀티 스레드 시스템의 다양한 디자인 패턴과 그 장단점에 대해서도 논의할 것"
 "입니다."
 
 #: src/07_threads/00_intro.md:19
@@ -11202,23 +11195,22 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/07_threads/00_intro)"
 msgstr ""
+"이 섹션의 예제는 [`07_threads/00_intro`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/07_threads/00_intro)에 있습니다"
 
 #: src/07_threads/01_threads.md:3
-#, fuzzy
 msgid ""
 "Before we start writing multithreaded code, let's take a step back and talk "
 "about what threads are and why we might want to use them."
 msgstr ""
 "멀티스레드 코드 작성을 시작하기 전에 한발 물러서서 스레드가 무엇인지, 왜 스레"
-"드를 사용하고 싶은지에 대해 이야기해 보겠습니다."
+"드를 사용하려는지에 대해 이야기해 보겠습니다."
 
 #: src/07_threads/01_threads.md:6
-#, fuzzy
 msgid "What is a thread?"
-msgstr "스레드란 무엇입니까?"
+msgstr "스레드란 무엇일까요?"
 
 #: src/07_threads/01_threads.md:8
-#, fuzzy
 msgid ""
 "A **thread** is an execution context managed by the underlying operating "
 "system.  \n"
@@ -11228,7 +11220,6 @@ msgstr ""
 "각 스레드에는 자체 스택, 명령 포인터 및 프로그램 카운터가 있습니다."
 
 #: src/07_threads/01_threads.md:11
-#, fuzzy
 msgid ""
 "A single **process** can manage multiple threads. These threads share the "
 "same memory space, which means they can access the same data."
@@ -11237,7 +11228,6 @@ msgstr ""
 "메모리 공간을 공유하므로 동일한 데이터에 액세스할 수 있습니다."
 
 #: src/07_threads/01_threads.md:14
-#, fuzzy
 msgid ""
 "Threads are a **logical** construct. In the end, you can only run one set of "
 "instructions at a time on a CPU core, the **physical** execution unit.  \n"
@@ -11253,12 +11243,10 @@ msgstr ""
 "에 CPU 시간을 분할하는 일을 담당합니다."
 
 #: src/07_threads/01_threads.md:20
-#, fuzzy
 msgid "`main`"
-msgstr "'메인'"
+msgstr "`main`"
 
 #: src/07_threads/01_threads.md:22
-#, fuzzy
 msgid ""
 "When a Rust program starts, it runs on a single thread, the **main "
 "thread**.  \n"
@@ -11266,20 +11254,17 @@ msgid ""
 "the `main` function."
 msgstr ""
 "Rust 프로그램이 시작되면 단일 스레드인 **메인 스레드**에서 실행됩니다.  \n"
-"이 스레드는 운영 체제에 의해 생성되며 'main' 기능 실행을 담당합니다."
+"이 스레드는 운영 체제에 의해 생성되며 `main` 함수 실행을 담당합니다."
 
 #: src/07_threads/01_threads.md:33 src/07_threads/01_threads.md:63
-#, fuzzy
 msgid "\"Hello from the main thread!\""
-msgstr "\"메인 스레드에서 안녕하세요!\""
+msgstr "\"Hello from the main thread!\""
 
 #: src/07_threads/01_threads.md:38
-#, fuzzy
 msgid "`std::thread`"
-msgstr "`표준::스레드`"
+msgstr "`std::thread`"
 
 #: src/07_threads/01_threads.md:40
-#, fuzzy
 msgid ""
 "Rust's standard library provides a module, `std::thread`, that allows you to "
 "create and manage threads."
@@ -11288,12 +11273,10 @@ msgstr ""
 "을 제공합니다."
 
 #: src/07_threads/01_threads.md:43
-#, fuzzy
 msgid "`spawn`"
-msgstr "'산란'"
+msgstr "`spawn`"
 
 #: src/07_threads/01_threads.md:45
-#, fuzzy
 msgid ""
 "You can use `std::thread::spawn` to create new threads and execute code on "
 "them."
@@ -11303,12 +11286,10 @@ msgstr ""
 
 #: src/07_threads/01_threads.md:57 src/07_threads/01_threads.md:85
 #: src/07_threads/01_threads.md:105
-#, fuzzy
 msgid "\"Hello from a thread!\""
-msgstr "\"스레드에서 안녕하세요!\""
+msgstr "\"Hello from a thread!\""
 
 #: src/07_threads/01_threads.md:68
-#, fuzzy
 msgid ""
 "If you execute this program on the [Rust playground](https://play.rust-lang."
 "org/?"
@@ -11316,27 +11297,26 @@ msgid ""
 "you'll see that the main thread and the spawned thread run concurrently.  \n"
 "Each thread makes progress independently of the other."
 msgstr ""
-"Rust 플레이그라운드에서 이 프로그램을 실행하면 메인 스레드와 생성된 스레드가 "
-"동시에 실행되는 것을 볼 수 있습니다.  \n"
+"[Rust playground](https://play.rust-lang.org/?"
+"version=stable&mode=debug&edition=2021&gist=afedf7062298ca8f5a248bc551062eaa)"
+"에서 이 프로그램을 실행하면 메인 스레드와 생성된 스레드가 동시에 실행되는 것"
+"을 볼 수 있습니다.  \n"
 "각 스레드는 서로 독립적으로 진행됩니다."
 
 #: src/07_threads/01_threads.md:72
-#, fuzzy
 msgid "Process termination"
 msgstr "프로세스 종료"
 
 #: src/07_threads/01_threads.md:74
-#, fuzzy
 msgid ""
 "When the main thread finishes, the overall process will exit.  \n"
 "A spawned thread will continue running until it finishes or the main thread "
 "finishes."
 msgstr ""
 "메인 스레드가 완료되면 전체 프로세스가 종료됩니다.  \n"
-"생성된 스레드는 완료되거나 기본 스레드가 완료될 때까지 계속 실행됩니다."
+"생성된 스레드는 완료되거나 메인 스레드가 종료될 때까지 계속 실행됩니다."
 
 #: src/07_threads/01_threads.md:93
-#, fuzzy
 msgid ""
 "In the example above, you can expect to see the message \"Hello from a thread!"
 "\" printed roughly five times.  \n"
@@ -11344,17 +11324,15 @@ msgid ""
 "spawned thread will be terminated since the overall process exits."
 msgstr ""
 "위의 예에서는 \"Hello from a thread!\"라는 메시지가 표시될 것으로 예상할 수 있"
-"습니다. 대략 5번 정도 인쇄되었습니다.  \n"
+"습니다. 대략 5번 정도 프린트되었습니다.  \n"
 "그런 다음 메인 스레드가 종료되고(`sleep` 호출이 반환될 때) 전체 프로세스가 종"
 "료되므로 생성된 스레드가 종료됩니다."
 
 #: src/07_threads/01_threads.md:97
-#, fuzzy
 msgid "`join`"
-msgstr "'가입'"
+msgstr "`join`"
 
 #: src/07_threads/01_threads.md:99
-#, fuzzy
 msgid ""
 "You can also wait for a spawned thread to finish by calling the `join` method "
 "on the `JoinHandle` that `spawn` returns."
@@ -11363,7 +11341,6 @@ msgstr ""
 "드가 완료될 때까지 기다릴 수도 있습니다."
 
 #: src/07_threads/01_threads.md:112
-#, fuzzy
 msgid ""
 "In this example, the main thread will wait for the spawned thread to finish "
 "before exiting.  \n"
@@ -11376,7 +11353,7 @@ msgstr ""
 "다.  \n"
 "이렇게 하면 두 스레드 간에 일종의 **동기화**가 도입됩니다. 즉, \"Hello from a "
 "thread!\"라는 메시지가 표시됩니다. 생성된 스레드가 완료될 때까지 메인 스레드"
-"가 종료되지 않기 때문에 프로그램이 종료되기 전에 인쇄됩니다."
+"가 종료되지 않기 때문에 프로그램이 종료되기 전에 프린트됩니다."
 
 #: src/07_threads/01_threads.md:119
 msgid ""
@@ -11384,58 +11361,52 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/07_threads/01_threads)"
 msgstr ""
+"이 섹션의 예제는 [`07_threads/01_threads`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/07_threads/01_threads)에 있습니다"
 
 #: src/07_threads/02_static.md:1
-#, fuzzy
 msgid "`'static`"
-msgstr "``정적``"
+msgstr "`'static`"
 
 #: src/07_threads/02_static.md:3
-#, fuzzy
 msgid ""
 "If you tried to borrow a slice from the vector in the previous exercise, you "
 "probably got a compiler error that looks something like this:"
 msgstr ""
-"이전 연습에서 벡터의 슬라이스를 빌리려고 시도했다면 아마도 다음과 같은 컴파일"
-"러 오류가 발생했을 것입니다."
+"이전 연습에서 벡터의 슬라이스를 차용하려고 시도했다면 아마도 다음과 같은 컴파"
+"일러 오류가 발생했을 것입니다:"
 
 #: src/07_threads/02_static.md:21
-#, fuzzy
 msgid "`argument requires that v is borrowed for 'static`, what does that mean?"
-msgstr "`인수는 v를 '정적'으로 빌려야 한다는 뜻입니다. 그게 무슨 뜻인가요?"
+msgstr "`argument requires that v is borrowed for 'static`. 이게 무슨 말일까요?"
 
 #: src/07_threads/02_static.md:23
-#, fuzzy
 msgid ""
 "The `'static` lifetime is a special lifetime in Rust.  \n"
 "It means that the value will be valid for the entire duration of the program."
 msgstr ""
-"``정적' 수명은 Rust에서 특별한 수명입니다.  \n"
+"`'static` 수명은 Rust에서 특별한 수명입니다.  \n"
 "이는 해당 값이 프로그램 전체 기간 동안 유효함을 의미합니다."
 
 #: src/07_threads/02_static.md:26
-#, fuzzy
 msgid "Detached threads"
 msgstr "분리된 스레드"
 
 #: src/07_threads/02_static.md:28
-#, fuzzy
 msgid ""
 "A thread launched via `thread::spawn` can **outlive** the thread that spawned "
 "it.  \n"
 "For example:"
 msgstr ""
-"`thread::spawn`을 통해 시작된 스레드는 이를 생성한 스레드보다 **오래 지속**할 "
-"수 있습니다.  \n"
-"예를 들어:"
+"`thread::spawn`을 통해 시작된 스레드는 이를 생성한 스레드보다 **오래 살아**있"
+"을 수 있습니다.  \n"
+"예시:"
 
 #: src/07_threads/02_static.md:39
-#, fuzzy
 msgid "\"Hello from the detached thread!\""
-msgstr "\"분리된 스레드에서 안녕하세요!\""
+msgstr "\"Hello from the detached thread!\""
 
 #: src/07_threads/02_static.md:46
-#, fuzzy
 msgid ""
 "In this example, the first spawned thread will in turn spawn a child thread "
 "that prints a message every second.  \n"
@@ -11444,26 +11415,24 @@ msgid ""
 "running.  \n"
 "In Rust's lingo, we say that the child thread has **outlived** its parent."
 msgstr ""
-"이 예에서 첫 번째 생성된 스레드는 매초 메시지를 인쇄하는 하위 스레드를 생성합"
-"니다.  \n"
+"이 예시에서 첫 번째 생성된 스레드는 매초 메시지를 프린트하는 하위 스레드를 생"
+"성합니다.  \n"
 "그러면 첫 번째 스레드가 완료되고 종료됩니다. 그런 일이 발생하면 해당 하위 스레"
 "드는 전체 프로세스가 실행되는 동안 **계속 실행**됩니다.  \n"
-"Rust의 용어에서는 하위 스레드가 상위 스레드보다 **오래 살았다**고 말합니다."
+"Rust의 용어에서는 하위 스레드가 상위 스레드보다 **오래 살았다(outlived)**고 말"
+"합니다."
 
 #: src/07_threads/02_static.md:56
-#, fuzzy
 msgid "Since a spawned thread can:"
-msgstr "생성된 스레드는 다음을 수행할 수 있으므로:"
+msgstr "생성된 스레드는 다음과 같은 것이 가능하기때문에:"
 
 #: src/07_threads/02_static.md:58
-#, fuzzy
 msgid "outlive the thread that spawned it (its parent thread)"
-msgstr "자신을 생성한 스레드(상위 스레드)보다 오래 지속됩니다."
+msgstr "자신을 생성한 스레드(상위 스레드)보다 오래 살 수 있음"
 
 #: src/07_threads/02_static.md:59
-#, fuzzy
 msgid "run until the program exits"
-msgstr "프로그램이 종료될 때까지 실행"
+msgstr "프로그램이 종료될 때까지 실행됨"
 
 #: src/07_threads/02_static.md:61
 msgid ""
@@ -11472,89 +11441,83 @@ msgid ""
 "That's why `std::thread::spawn`'s signature requires that the closure passed "
 "to it has the `'static` lifetime:"
 msgstr ""
+"그 함수가 종료되기 전에 삭제될 수 있는 어떤 값도 차용할 수 없습니다. 이 제약"
+"을 위반하면 사용 후 메모리 해제 후에도 사용할 수 있는 버그가 발생할 수 있습니"
+"다.\n"
+"그것이 `std::thread::spawn`의 시그니처가 전달된 클로저가 `'static` 수명을 가져"
+"야 한다고 요구하는 이유입니다:"
 
 #: src/07_threads/02_static.md:72
 msgid "// [..]\n"
-msgstr ""
+msgstr "// [..]\n"
 
 #: src/07_threads/02_static.md:76
-#, fuzzy
 msgid "`'static` is not (just) about references"
-msgstr "``static'은 (그냥) 참조에 관한 것이 아닙니다."
+msgstr "``static'은 (그냥) 참조에 관한 것이 아닙니다"
 
 #: src/07_threads/02_static.md:78
-#, fuzzy
 msgid "All values in Rust have a lifetime, not just references."
 msgstr "Rust의 모든 값에는 참조뿐만 아니라 수명이 있습니다."
 
 #: src/07_threads/02_static.md:80
-#, fuzzy
 msgid ""
 "In particular, a type that owns its data (like a `Vec` or a `String`) "
 "satisfies the `'static` constraint: if you own it, you can keep working with "
 "it for as long as you want, even after the function that originally created "
 "it has returned."
 msgstr ""
-"특히, 데이터를 소유한 유형(예: `Vec` 또는 `String`)은 `정적` 제약 조건을 충족"
-"합니다. 이를 소유하고 있으면 원하는 만큼 계속 작업할 수 있습니다. 원래 생성한 "
-"함수가 반환되었습니다."
+"특히, 데이터를 소유한 타입(예: `Vec` 또는 `String`)은 `'static` 제약 조건을 충"
+"족합니다. 이를 소유하고 있으면 원하는 만큼 계속 작업할 수 있습니다. 원래 생성"
+"한 함수가 반환되더라도 말입니다."
 
 #: src/07_threads/02_static.md:85
-#, fuzzy
 msgid "You can thus interpret `'static` as a way to say:"
-msgstr "따라서 '정적'을 다음과 같이 해석할 수 있습니다."
+msgstr "따라서 `'static`을 다음과 같이 해석할 수 있습니다:"
 
 #: src/07_threads/02_static.md:87
-#, fuzzy
 msgid "Give me an owned value"
-msgstr "나에게 소유된 가치를 주세요"
+msgstr "나에게 소유권이 있는 값을 주세요"
 
 #: src/07_threads/02_static.md:88
-#, fuzzy
 msgid "Give me a reference that's valid for the entire duration of the program"
-msgstr "프로그램 전체 기간 동안 유효한 참고자료를 제공해 주세요."
+msgstr "프로그램 전체 기간 동안 유효한 참조를 제공해 주세요"
 
 #: src/07_threads/02_static.md:90
-#, fuzzy
 msgid ""
 "The first approach is how you solved the issue in the previous exercise: by "
 "allocating new vectors to hold the left and right parts of the original "
 "vector, which were then moved into the spawned threads."
 msgstr ""
 "첫 번째 접근 방식은 이전 연습에서 문제를 해결한 방법입니다. 즉, 원래 벡터의 왼"
-"쪽과 오른쪽 부분을 유지하기 위해 새 벡터를 할당한 다음 생성된 스레드로 이동하"
-"는 것입니다."
+"쪽과 오른쪽 부분을 유지하기 위해 새 벡터를 할당한 다음 생성된 스레드로 보내 "
+"준 것입니다."
 
 #: src/07_threads/02_static.md:94
-#, fuzzy
 msgid "`'static` references"
-msgstr "``정적' 참조"
+msgstr "`'static` 참조"
 
 #: src/07_threads/02_static.md:96
-#, fuzzy
 msgid ""
 "Let's talk about the second case, references that are valid for the entire "
 "duration of the program."
 msgstr ""
-"프로그램 전체 기간 동안 유효한 참조인 두 번째 사례에 대해 이야기해 보겠습니다."
+"프로그램 전체 기간 동안 유효한 참조인 두 번째 케이스에 대해 이야기해 보겠습니"
+"다."
 
 #: src/07_threads/02_static.md:99
-#, fuzzy
 msgid "Static data"
 msgstr "정적 데이터"
 
 #: src/07_threads/02_static.md:101
-#, fuzzy
 msgid ""
 "The most common case is a reference to **static data**, such as string "
 "literals:"
 msgstr ""
-"가장 일반적인 경우는 문자열 리터럴과 같은 **정적 데이터**에 대한 참조입니다."
+"가장 일반적인 경우는 문자열 리터럴과 같은 **정적 데이터**에 대한 참조입니다:"
 
 #: src/07_threads/02_static.md:104
-#, fuzzy
 msgid "\"Hello world!\""
-msgstr "\"안녕하세요!\""
+msgstr "\"Hello world!\""
 
 #: src/07_threads/02_static.md:107
 msgid ""
@@ -11563,10 +11526,14 @@ msgid ""
 "references pointing to that region will therefore be valid for as long as the "
 "program runs; they satisfy the `'static` contract."
 msgstr ""
+"문자열 리터럴은 컴파일 시점에서 알려져 있기 때문에, Rust는 이들을 실행파일 _내"
+"부의_ **읽기 전용 데이터 세그먼트**에 저장합니다. 따라서 그 영역을 가리키는 모"
+"든 참조는 프로그램이 실행되는 동안 유효할 것입니다. 이는 `'static` 조건을 만족"
+"시킵니다."
 
 #: src/07_threads/02_static.md:114
 msgid "[The data segment](https://en.wikipedia.org/wiki/Data_segment)"
-msgstr ""
+msgstr "[The data segment](https://en.wikipedia.org/wiki/Data_segment)"
 
 #: src/07_threads/02_static.md:118
 msgid ""
@@ -11574,14 +11541,14 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/07_threads/02_static)"
 msgstr ""
+"이 섹션의 예제는 [`07_threads/02_static`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/07_threads/02_static)에 있습니다"
 
 #: src/07_threads/03_leak.md:1
-#, fuzzy
 msgid "Leaking data"
 msgstr "데이터 유출"
 
 #: src/07_threads/03_leak.md:3
-#, fuzzy
 msgid ""
 "The main concern around passing references to spawned threads is use-after-"
 "free bugs: accessing data using a pointer to a memory region that's already "
@@ -11594,57 +11561,50 @@ msgstr ""
 "다. 즉, 이미 해제/할당 해제된 메모리 영역에 대한 포인터를 사용하여 데이터에 액"
 "세스하는 것입니다.  \n"
 "힙 할당 데이터로 작업하는 경우 Rust에 해당 메모리를 절대 회수하지 않을 것이라"
-"고 알려줌으로써 문제를 피할 수 있습니다. 의도적으로 **메모리 누수**를 선택합니"
-"다."
+"고 알려줌으로써 문제를 피할 수 있습니다. 의도적으로 **메모리 누수**를 발생시키"
+"는겁니다."
 
 #: src/07_threads/03_leak.md:9
-#, fuzzy
 msgid ""
 "This can be done, for example, using the `Box::leak` method from Rust's "
 "standard library:"
 msgstr ""
 "예를 들어 Rust의 표준 라이브러리에 있는 `Box::leak` 메서드를 사용하면 이 작업"
-"을 수행할 수 있습니다."
+"을 수행할 수 있습니다:"
 
 #: src/07_threads/03_leak.md:12
-#, fuzzy
 msgid "// Allocate a `u32` on the heap, by wrapping it in a `Box`.\n"
-msgstr "// `u32`를 `Box`로 감싸서 힙에 할당합니다."
+msgstr "// `u32`를 `Box`로 감싸서 힙에 할당합니다.\n"
 
 #: src/07_threads/03_leak.md:13
-#, fuzzy
 msgid ""
 "// Tell Rust that you'll never free that heap allocation\n"
 "// using `Box::leak`. You can thus get back a 'static reference.\n"
 msgstr ""
-"// `Box::leak`을 사용하여 해당 힙 할당을 // 해제하지 않을 것이라고 Rust에 알립"
-"니다. 따라서 '정적 참조'를 다시 얻을 수 있습니다."
+"// `Box::leak`을 사용하여 해당 힙 할당을 해제하지 않을 것이라고\n"
+"// Rust에 알립니다. 따라서 'static 참조를 얻을 수 있습니다.\n"
 
 #: src/07_threads/03_leak.md:19
-#, fuzzy
 msgid "Data leakage is process-scoped"
-msgstr "데이터 유출은 프로세스 범위에 속합니다."
+msgstr "데이터 유출은 프로세스 스코프에 속합니다."
 
 #: src/07_threads/03_leak.md:21
-#, fuzzy
 msgid ""
 "Leaking data is dangerous: if you keep leaking memory, you'll eventually run "
 "out and crash with an out-of-memory error."
 msgstr ""
 "데이터 누출은 위험합니다. 메모리 누출이 계속되면 결국 메모리 부족 오류로 인해 "
-"메모리가 부족해지고 충돌하게 됩니다."
+"메모리가 부족해지고 크래시가 발생하게됩니다."
 
 #: src/07_threads/03_leak.md:25
-#, fuzzy
 msgid ""
 "// If you leave this running for a while, \n"
 "// it'll eventually use all the available memory.\n"
 msgstr ""
-"// 한동안 실행 상태로 놔두면 // 결국 사용 가능한 메모리를 모두 사용하게 됩니"
-"다."
+"// 한동안 실행 상태로 놔두면\n"
+"// 결국 사용 가능한 메모리를 모두 사용하게 됩니다.\n"
 
 #: src/07_threads/03_leak.md:35
-#, fuzzy
 msgid ""
 "At the same time, memory leaked via `Box::leak` is not truly forgotten.  \n"
 "The operating system can map each memory region to the process responsible "
@@ -11655,26 +11615,22 @@ msgstr ""
 "다. 프로세스가 종료되면 운영 체제는 해당 메모리를 회수합니다."
 
 #: src/07_threads/03_leak.md:39
-#, fuzzy
 msgid "Keeping this in mind, it can be OK to leak memory when:"
-msgstr "이 점을 염두에 두고 다음과 같은 경우 메모리 누수가 허용될 수 있습니다."
+msgstr "이 점을 염두에 두고 다음과 같은 경우 메모리 누수가 허용될 수 있습니다:"
 
 #: src/07_threads/03_leak.md:41
-#, fuzzy
 msgid "The amount of memory you need to leak is not unbounded/known upfront, or"
-msgstr "누수해야 하는 메모리 양이 무제한이거나 미리 알려져 있지 않거나"
+msgstr "누수해야 하는 메모리 양이 유한하거나/양을 알고있을 때, 혹은"
 
 #: src/07_threads/03_leak.md:42
-#, fuzzy
 msgid ""
 "Your process is short-lived and you're confident you won't exhaust all the "
 "available memory before it exits"
 msgstr ""
 "프로세스의 수명이 짧고 종료되기 전에 사용 가능한 메모리가 모두 소진되지 않을 "
-"것이라고 확신합니다."
+"것이라고 확신할 때"
 
 #: src/07_threads/03_leak.md:45
-#, fuzzy
 msgid ""
 "\"Let the OS deal with it\" is a perfectly valid memory management strategy "
 "if your usecase allows for it."
@@ -11688,9 +11644,10 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/07_threads/03_leak)"
 msgstr ""
+"이 섹션의 예제는 [`07_threads/03_leak`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/07_threads/03_leak)에 있습니다"
 
 #: src/07_threads/04_scoped_threads.md:3
-#, fuzzy
 msgid ""
 "All the lifetime issues we discussed so far have a common source: the spawned "
 "thread can outlive its parent.  \n"
@@ -11701,59 +11658,50 @@ msgstr ""
 "**범위 스레드**를 사용하면 이 문제를 피할 수 있습니다."
 
 #: src/07_threads/04_scoped_threads.md:14 src/07_threads/04_scoped_threads.md:47
-#, fuzzy
 msgid "\"Here's the first half of v: {first:?}\""
-msgstr "\"v의 전반부는 다음과 같습니다: {첫 번째:?}\""
+msgstr "\"Here's the first half of v: {first:?}\""
 
 #: src/07_threads/04_scoped_threads.md:18 src/07_threads/04_scoped_threads.md:51
-#, fuzzy
 msgid "\"Here's the second half of v: {second:?}\""
-msgstr "\"v의 후반부입니다: {초:?}\""
+msgstr "\"Here's the second half of v: {second:?}\""
 
 #: src/07_threads/04_scoped_threads.md:22 src/07_threads/04_scoped_threads.md:57
-#, fuzzy
 msgid "\"Here's v: {v:?}\""
-msgstr "\"여기 v: {v:?}가 있습니다.\""
+msgstr "\"Here's v: {v:?}\""
 
 #: src/07_threads/04_scoped_threads.md:25
-#, fuzzy
 msgid "Let's unpack what's happening."
-msgstr "무슨 일이 일어나고 있는지 풀어보자."
+msgstr "무슨 일이 일어나고 있는지 파헤쳐봅시다."
 
 #: src/07_threads/04_scoped_threads.md:27
-#, fuzzy
 msgid "`scope`"
-msgstr "'범위'"
+msgstr "`scope`"
 
 #: src/07_threads/04_scoped_threads.md:29
-#, fuzzy
 msgid ""
 "The `std::thread::scope` function creates a new **scope**.  \n"
 "`std::thread::scope` takes as input a closure, with a single argument: a "
 "`Scope` instance."
 msgstr ""
-"`std::thread::scope` 함수는 새로운 **범위**를 생성합니다.  \n"
-"`std::thread::scope`는 단일 인수인 `Scope` 인스턴스와 함께 클로저를 입력으로 "
+"`std::thread::scope` 함수는 새로운 **스코프**를 생성합니다.  \n"
+"`std::thread::scope`는 단일 인수인 `Scope` 인스턴스와 함께 클로저를 인풋으로 "
 "사용합니다."
 
 #: src/07_threads/04_scoped_threads.md:32
-#, fuzzy
 msgid "Scoped spawns"
-msgstr "범위가 지정된 스폰"
+msgstr "Scoped spawns"
 
 #: src/07_threads/04_scoped_threads.md:34
-#, fuzzy
 msgid ""
 "`Scope` exposes a `spawn` method.  \n"
 "Unlike `std::thread::spawn`, all threads spawned using a `Scope` will be "
 "**automatically joined** when the scope ends."
 msgstr ""
-"'Scope'는 'spawn' 메서드를 노출합니다.  \n"
+"`Scope`는 `spawn` 메서드를 제공합니다.  \n"
 "`std::thread::spawn`과 달리 `Scope`를 사용하여 생성된 모든 스레드는 범위가 끝"
-"나면 **자동으로 결합**됩니다."
+"나면 **자동으로 조인**됩니다."
 
 #: src/07_threads/04_scoped_threads.md:38
-#, fuzzy
 msgid ""
 "If we were to \"translate\" the previous example to `std::thread::spawn`, "
 "it'd look like this:"
@@ -11761,22 +11709,19 @@ msgstr ""
 "이전 예제를 `std::thread::spawn`으로 \"번역\"한다면 다음과 같을 것입니다:"
 
 #: src/07_threads/04_scoped_threads.md:60
-#, fuzzy
 msgid "Borrowing from the environment"
-msgstr "환경에서 빌리기"
+msgstr "환경에서 차용하기"
 
 #: src/07_threads/04_scoped_threads.md:62
-#, fuzzy
 msgid ""
 "The translated example wouldn't compile, though: the compiler would complain "
 "that `&v` can't be used from our spawned threads since its lifetime isn't "
 "`'static`."
 msgstr ""
-"하지만 번역된 예제는 컴파일되지 않습니다. 컴파일러는 수명이 ``정적'이 아니기 "
-"때문에 생성된 스레드에서 `&v`를 사용할 수 없다고 불평합니다."
+"하지만 번역된 예제는 컴파일되지 않습니다. 컴파일러는 수명이 `'static`이 아니"
+"기 때문에 생성된 스레드에서 `&v`를 사용할 수 없다고 불평합니다."
 
 #: src/07_threads/04_scoped_threads.md:66
-#, fuzzy
 msgid ""
 "That's not an issue with `std::thread::scope`—you can **safely borrow from "
 "the environment**."
@@ -11785,19 +11730,17 @@ msgstr ""
 "릴 수 있습니다**."
 
 #: src/07_threads/04_scoped_threads.md:68
-#, fuzzy
 msgid ""
 "In our example, `v` is created before the spawning points. It will only be "
 "dropped _after_ `scope` returns. At the same time, all threads spawned inside "
 "`scope` are guaranteed to finish _before_ `scope` returns, therefore there is "
 "no risk of having dangling references."
 msgstr ""
-"이 예에서는 'v'가 생성 지점 앞에 생성됩니다. `scope`가 반환된 _이후_에만 삭제"
-"됩니다. 동시에 'scope' 내부에 생성된 모든 스레드는 'scope'가 반환되기 _전에_ "
-"완료가 보장되므로 참조가 매달릴 위험이 없습니다."
+"이 예에서는 `v`가 생성 지점 앞에 생성됩니다. `scope`가 반환된 _이후_에만 삭제"
+"됩니다. 동시에 `scope` 내부에 생성된 모든 스레드는 `scope`가 반환되기 _전에_ "
+"완료가 보장되므로 댕글링 포인터가 생길 위험이 없습니다."
 
 #: src/07_threads/04_scoped_threads.md:73
-#, fuzzy
 msgid "The compiler won't complain!"
 msgstr "컴파일러는 불평하지 않을 것입니다!"
 
@@ -11807,9 +11750,11 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/07_threads/04_scoped_threads)"
 msgstr ""
+"이 섹션의 예제는 [`07_threads/04_scoped_threads`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/07_threads/04_scoped_threads)에 있습니다"
 
 #: src/07_threads/05_channels.md:3
-#, fuzzy
 msgid ""
 "All our spawned threads have been fairly short-lived so far.  \n"
 "Get some input, run a computation, return the result, shut down."
@@ -11818,7 +11763,6 @@ msgstr ""
 "입력을 받고, 계산을 실행하고, 결과를 반환하고, 종료합니다."
 
 #: src/07_threads/05_channels.md:6
-#, fuzzy
 msgid ""
 "For our ticket management system, we want to do something different: a client-"
 "server architecture."
@@ -11827,7 +11771,6 @@ msgstr ""
 "니다."
 
 #: src/07_threads/05_channels.md:9
-#, fuzzy
 msgid ""
 "We will have **one long-running server thread**, responsible for managing our "
 "state, the stored tickets."
@@ -11836,7 +11779,6 @@ msgstr ""
 "게 됩니다."
 
 #: src/07_threads/05_channels.md:12
-#, fuzzy
 msgid ""
 "We will then have **multiple client threads**.  \n"
 "Each client will be able to send **commands** and **queries** to the stateful "
@@ -11848,46 +11790,39 @@ msgstr ""
 "각 클라이언트는 상태를 변경(예: 새 티켓 추가)하거나 정보를 검색(예: 티켓 상태 "
 "가져오기)하기 위해 상태 저장 스레드에 **명령** 및 **쿼리**를 보낼 수 있습니"
 "다.  \n"
-"클라이언트 스레드가 동시에 실행됩니다."
+"클라이언트 스레드들은 동시에 실행될겁니다."
 
 #: src/07_threads/05_channels.md:18
-#, fuzzy
 msgid "Communication"
-msgstr "의사소통"
+msgstr "커뮤니케이션"
 
 #: src/07_threads/05_channels.md:20
-#, fuzzy
 msgid "So far we've only had very limited parent-child communication:"
-msgstr "지금까지 우리는 부모-자식 의사소통이 매우 제한적이었습니다."
+msgstr "지금까지 우리는 부모-자식 커뮤니케이션이 매우 제한적이었습니다:"
 
 #: src/07_threads/05_channels.md:22
-#, fuzzy
 msgid "The spawned thread borrowed/consumed data from the parent context"
-msgstr "생성된 스레드는 상위 컨텍스트에서 데이터를 빌리고 소비했습니다."
+msgstr "생성된 스레드는 상위 컨텍스트에서 데이터를 차용/소비했습니다"
 
 #: src/07_threads/05_channels.md:23
-#, fuzzy
 msgid "The spawned thread returned data to the parent when joined"
-msgstr "생성된 스레드는 조인 시 상위 스레드에 데이터를 반환했습니다."
+msgstr "생성된 스레드는 조인 시 상위 스레드에 데이터를 반환했습니다"
 
 #: src/07_threads/05_channels.md:25
-#, fuzzy
 msgid ""
 "This isn't enough for a client-server design.  \n"
 "Clients need to be able to send and receive data from the server thread "
 "_after_ it has been launched."
 msgstr ""
 "클라이언트-서버 설계에는 이것만으로는 충분하지 않습니다.  \n"
-"클라이언트는 서버 스레드가 시작된 후_서버 스레드에서 데이터를 보내고 받을 수 "
+"클라이언트는 서버 스레드가 시작된 _후_ 서버 스레드에 데이터를 보내고 받을 수 "
 "있어야 합니다."
 
 #: src/07_threads/05_channels.md:29
-#, fuzzy
 msgid "We can solve the issue using **channels**."
 msgstr "**채널**을 사용하여 문제를 해결할 수 있습니다."
 
 #: src/07_threads/05_channels.md:33
-#, fuzzy
 msgid ""
 "Rust's standard library provides **multi-producer, single-consumer** (mpsc) "
 "channels in its `std::sync::mpsc` module.  \n"
@@ -11896,16 +11831,14 @@ msgid ""
 msgstr ""
 "Rust의 표준 라이브러리는 `std::sync::mpsc` 모듈에서 **다중 생산자, 단일 소비자"
 "**(mpsc) 채널을 제공합니다.  \n"
-"채널에는 제한된 채널과 무제한된 채널의 두 가지 유형이 있습니다. 지금은 무제한 "
-"버전을 고수하겠지만 장단점에 대해서는 나중에 논의하겠습니다."
+"채널에는 제한된 채널과 무제한 채널의 두 가지 타입이 있습니다. 지금은 무제한 버"
+"전을 고수하겠지만 장단점에 대해서는 나중에 논의하겠습니다."
 
 #: src/07_threads/05_channels.md:38
-#, fuzzy
 msgid "Channel creation looks like this:"
-msgstr "채널 생성은 다음과 같습니다."
+msgstr "채널 생성은 다음과 같습니다:"
 
 #: src/07_threads/05_channels.md:46
-#, fuzzy
 msgid ""
 "You get a sender and a receiver.  \n"
 "You call `send` on the sender to push data into the channel.  \n"
@@ -11916,12 +11849,10 @@ msgstr ""
 "채널에서 데이터를 가져오려면 수신기에서 `recv`를 호출합니다."
 
 #: src/07_threads/05_channels.md:50
-#, fuzzy
 msgid "Multiple senders"
 msgstr "여러 발신자"
 
 #: src/07_threads/05_channels.md:52
-#, fuzzy
 msgid ""
 "`Sender` is clonable: we can create multiple senders (e.g. one for each "
 "client thread) and they will all push data into the same channel."
@@ -11930,7 +11861,6 @@ msgstr ""
 "언트 스레드에 대해 하나씩) 모두 동일한 채널에 데이터를 푸시합니다."
 
 #: src/07_threads/05_channels.md:55
-#, fuzzy
 msgid ""
 "`Receiver`, instead, is not clonable: there can only be a single receiver for "
 "a given channel."
@@ -11939,36 +11869,30 @@ msgstr ""
 "습니다."
 
 #: src/07_threads/05_channels.md:58
-#, fuzzy
 msgid "That's what **mpsc** (multi-producer single-consumer) stands for!"
-msgstr "이것이 **mpsc**(다중 생산자 단일 소비자)의 약자입니다!"
+msgstr "이것이 **mpsc**(다중 생산자 단일 소비자)가 의미하는 것입니다!"
 
 #: src/07_threads/05_channels.md:60
-#, fuzzy
 msgid "Message type"
-msgstr "메시지 유형"
+msgstr "메시지 타입"
 
 #: src/07_threads/05_channels.md:62
-#, fuzzy
 msgid ""
 "Both `Sender` and `Receiver` are generic over a type parameter `T`.  \n"
 "That's the type of the _messages_ that can travel on our channel."
 msgstr ""
-"`Sender`와 `Receiver`는 모두 유형 매개변수 `T`에 대해 일반적입니다.  \n"
-"이것이 바로 우리 채널을 통해 전달될 수 있는 _메시지_ 유형입니다."
+"`Sender`와 `Receiver`는 모두 타입 매개변수 `T`로 일반화됩니다.  \n"
+"이것이 바로 우리 채널을 통해 전달될 수 있는 _메시지_ 타입입니다."
 
 #: src/07_threads/05_channels.md:65
-#, fuzzy
 msgid "It could be a `u64`, a struct, an enum, etc."
-msgstr "'u64', 구조체, 열거형 등이 될 수 있습니다."
+msgstr "`u64`, 구조체, 열거형 등이 될 수 있습니다."
 
 #: src/07_threads/05_channels.md:67
-#, fuzzy
 msgid "Errors"
-msgstr "오류"
+msgstr "에러"
 
 #: src/07_threads/05_channels.md:69
-#, fuzzy
 msgid ""
 "Both `send` and `recv` can fail.  \n"
 "`send` returns an error if the receiver has been dropped.  \n"
@@ -11980,11 +11904,10 @@ msgstr ""
 "모든 발신자가 삭제되고 채널이 비어 있으면 `recv`는 오류를 반환합니다."
 
 #: src/07_threads/05_channels.md:73
-#, fuzzy
 msgid ""
 "In other words, `send` and `recv` error when the channel is effectively "
 "closed."
-msgstr "즉, 채널이 효과적으로 닫힐 때 'send' 및 'recv' 오류가 발생합니다."
+msgstr "즉, 사실상 채널이 닫힐 때 `send`와 `recv`는 오류를 발생시킵니다."
 
 #: src/07_threads/05_channels.md:77
 msgid ""
@@ -11992,14 +11915,14 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/07_threads/05_channels)"
 msgstr ""
+"이 섹션의 예제는 [`07_threads/05_channels`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/07_threads/05_channels)에 있습니다"
 
 #: src/07_threads/06_interior_mutability.md:3
-#, fuzzy
 msgid "Let's take a moment to reason about the signature of `Sender`'s `send`:"
-msgstr "`Sender`의 `send` 서명에 대해 잠시 생각해 보겠습니다."
+msgstr "`Sender`의 `send` 시그니처에 대해 잠시 생각해 봅시다:"
 
 #: src/07_threads/06_interior_mutability.md:13
-#, fuzzy
 msgid ""
 "`send` takes `&self` as its argument.  \n"
 "But it's clearly causing a mutation: it's adding a new message to the "
@@ -12014,57 +11937,48 @@ msgstr ""
 "가 있을 수 있습니다."
 
 #: src/07_threads/06_interior_mutability.md:18
-#, fuzzy
 msgid ""
 "That's the key property we are using to build this client-server "
 "architecture. But why does it work? Doesn't it violate Rust's rules about "
 "borrowing? How are we performing mutations via an _immutable_ reference?"
 msgstr ""
 "이것이 바로 우리가 클라이언트-서버 아키텍처를 구축하는 데 사용하는 핵심 속성입"
-"니다. 그런데 왜 작동합니까? 차용에 관한 Rust의 규칙을 위반하지 않습니까? "
-"_immutable_ 참조를 통해 돌연변이를 어떻게 수행합니까?"
+"니다. 그런데 왜 이게 가능할까요? 차용에 관한 Rust의 규칙을 위반하지 않나요? _"
+"불변_ 참조를 통해 변형을 일으킬 수 있을까요?"
 
 #: src/07_threads/06_interior_mutability.md:21
-#, fuzzy
 msgid "Shared rather than immutable references"
 msgstr "불변 참조가 아닌 공유 참조"
 
 #: src/07_threads/06_interior_mutability.md:23
-#, fuzzy
 msgid ""
 "When we introduced the borrow-checker, we named the two types of references "
 "we can have in Rust:"
 msgstr ""
-"빌림 검사기를 도입했을 때 우리는 Rust에서 가질 수 있는 참조 유형을 두 가지로 "
+"차용 검사기를 도입했을 때 우리는 Rust에서 가질 수 있는 참조 타입을 두 가지로 "
 "명명했습니다:"
 
 #: src/07_threads/06_interior_mutability.md:25
-#, fuzzy
 msgid "immutable references (`&T`)"
-msgstr "불변 참조(`&T`)"
+msgstr "불변 참조 (`&T`)"
 
 #: src/07_threads/06_interior_mutability.md:26
-#, fuzzy
 msgid "mutable references (`&mut T`)"
-msgstr "변경 가능한 참조(`&mut T`)"
+msgstr "변경 가능한 참조 (`&mut T`)"
 
 #: src/07_threads/06_interior_mutability.md:28
-#, fuzzy
 msgid "It would have been more accurate to name them:"
-msgstr "이름을 지정하는 것이 더 정확했을 것입니다."
+msgstr "이런 이름을 지어주는 것이 더 정확할겁니다:"
 
 #: src/07_threads/06_interior_mutability.md:30
-#, fuzzy
 msgid "shared references (`&T`)"
-msgstr "공유 참조(`&T`)"
+msgstr "공유 참조 (`&T`)"
 
 #: src/07_threads/06_interior_mutability.md:31
-#, fuzzy
 msgid "exclusive references (`&mut T`)"
-msgstr "독점 참조(`&mut T`)"
+msgstr "독점 참조 (`&mut T`)"
 
 #: src/07_threads/06_interior_mutability.md:33
-#, fuzzy
 msgid ""
 "Immutable/mutable is a mental model that works for the vast majority of "
 "cases, and it's a great one to get started with Rust. But it's not the whole "
@@ -12074,27 +11988,24 @@ msgid ""
 "terms are a bit more nuanced than they might seem at first."
 msgstr ""
 "불변/변경 가능은 대부분의 경우에 작동하는 정신 모델이며 Rust를 시작하기에 좋"
-"은 모델입니다. 하지만 방금 본 것처럼 이것이 전부는 아닙니다. '&T'는 실제로 가"
+"은 모델입니다. 하지만 방금 본 것처럼 이것이 전부는 아닙니다. `&T`는 실제로 가"
 "리키는 데이터가 불변임을 보장하지 않습니다.  \n"
 "하지만 걱정하지 마십시오. Rust는 여전히 약속을 지키고 있습니다. 단지 용어가 처"
 "음에 보이는 것보다 조금 더 미묘하다는 것뿐입니다."
 
 #: src/07_threads/06_interior_mutability.md:39
-#, fuzzy
 msgid "`UnsafeCell`"
-msgstr "'안전하지 않은 셀'"
+msgstr "`UnsafeCell`"
 
 #: src/07_threads/06_interior_mutability.md:41
-#, fuzzy
 msgid ""
 "Whenever a type allows you to mutate data through a shared reference, you're "
 "dealing with **interior mutability**."
 msgstr ""
-"유형이 공유 참조를 통해 데이터를 변경할 수 있도록 허용할 때마다 **내부 변경 가"
+"타입이 공유 참조를 통해 데이터를 변경할 수 있도록 허용할 때마다 **내부 변경 가"
 "능성**을 다루고 있는 것입니다."
 
 #: src/07_threads/06_interior_mutability.md:43
-#, fuzzy
 msgid ""
 "By default, the Rust compiler assumes that shared references are immutable. "
 "It **optimises your code** based on that assumption.  \n"
@@ -12107,7 +12018,6 @@ msgstr ""
 "를 더 빠르게 만들 수 있습니다."
 
 #: src/07_threads/06_interior_mutability.md:46
-#, fuzzy
 msgid ""
 "You can tell the compiler \"No, this shared reference is actually mutable\" "
 "by wrapping the data in an `UnsafeCell`.  \n"
@@ -12120,11 +12030,10 @@ msgstr ""
 "다\"라고 컴파일러에 알릴 수 있습니다.  \n"
 "내부 가변성을 허용하는 유형을 볼 때마다 `UnsafeCell`이 직접적으로든 간접적으로"
 "든 관련되어 있음을 확신할 수 있습니다.  \n"
-"'UnsafeCell', 원시 포인터 및 'unsafe' 코드를 사용하면 공유 참조를 통해 데이터"
+"`UnsafeCell`, 원시 포인터 및 `unsafe` 코드를 사용하면 공유 참조를 통해 데이터"
 "를 변경할 수 있습니다."
 
 #: src/07_threads/06_interior_mutability.md:51
-#, fuzzy
 msgid ""
 "Let's be clear, though: `UnsafeCell` isn't a magic wand that allows you to "
 "ignore the borrow-checker!  \n"
@@ -12134,16 +12043,15 @@ msgid ""
 "use the `unsafe` keyword you're telling the compiler: \"I know what I'm "
 "doing, I won't violate your invariants, trust me.\""
 msgstr ""
-"하지만 분명히 해두자면 `UnsafeCell`은 빌림 검사기를 무시할 수 있게 해주는 마"
+"하지만 분명히 해두자면 `UnsafeCell`은 차용 검사기를 무시할 수 있게 해주는 마"
 "술 지팡이가 아닙니다!  \n"
-"'안전하지 않은' 코드에는 여전히 차용 및 별칭에 대한 Rust의 규칙이 적용됩니다. "
-"이는 Rust의 유형 시스템에서 안전성을 직접 표현할 수 없는 **안전한 추상화**를 "
-"구축하는 데 활용할 수 있는 (고급) 도구입니다. 'unsafe' 키워드를 사용할 때마다 "
-"컴파일러에게 다음과 같이 말하는 것입니다. \"나는 내가 무엇을 하는지 알고 있습"
-"니다. 나는 당신의 불변성을 위반하지 않을 것입니다. 나를 믿으십시오.\""
+"`unsafe` 코드에는 여전히 차용 및 별칭에 대한 Rust의 규칙이 적용됩니다. 이는 "
+"Rust의 타입 시스템에서 안전성을 직접 표현할 수 없는 **안전한 추상화**를 구축하"
+"는 데 활용할 수 있는 (고급) 도구입니다. `unsafe` 키워드를 사용할 때마다 컴파일"
+"러에게 다음과 같이 말하는 것입니다. \"나는 내가 무엇을 하는지 알고 있습니다. "
+"나는 당신의 불변성을 위반하지 않을 것입니다. 나를 믿으십시오.\""
 
 #: src/07_threads/06_interior_mutability.md:57
-#, fuzzy
 msgid ""
 "Every time you call an `unsafe` function, there will be documentation "
 "explaining its **safety preconditions**: under what circumstances it's safe "
@@ -12151,12 +12059,12 @@ msgid ""
 "`std`'s documentation](https://doc.rust-lang.org/std/cell/struct.UnsafeCell."
 "html)."
 msgstr ""
-"`안전하지 않은` 함수를 호출할 때마다 **안전 전제 조건**을 설명하는 문서가 있습"
-"니다. 어떤 상황에서 `안전하지 않은` 블록을 실행하는 것이 안전한지 설명합니다. "
-"`std` 문서에서 `UnsafeCell`에 대한 내용을 찾을 수 있습니다."
+"`unsafe` 함수를 호출할 때마다 **안전 전제 조건**을 설명하는 문서가 있을겁니"
+"다. 어떤 상황에서 `unsafe` 블록을 실행하는 것이 안전한지 설명합니다. [`std` 문"
+"서에서](https://doc.rust-lang.org/std/cell/struct.UnsafeCell.html) "
+"`UnsafeCell`에 대한 내용을 찾을 수 있습니다."
 
 #: src/07_threads/06_interior_mutability.md:61
-#, fuzzy
 msgid ""
 "We won't be using `UnsafeCell` directly in this course, nor will we be "
 "writing `unsafe` code. But it's important to know that it's there, why it "
@@ -12164,32 +12072,28 @@ msgid ""
 msgstr ""
 "이 과정에서는 `UnsafeCell`을 직접 사용하지 않을 것이며 `unsafe` 코드를 작성하"
 "지도 않을 것입니다. 하지만 그것이 존재하는지, 그것이 왜 존재하는지, 그리고 그"
-"것이 Rust에서 매일 사용하는 유형과 어떻게 관련되는지를 아는 것이 중요합니다."
+"것이 Rust에서 매일 사용하는 타입과 어떻게 관련되는지를 아는 것이 중요합니다."
 
 #: src/07_threads/06_interior_mutability.md:65
-#, fuzzy
 msgid "Key examples"
 msgstr "주요 사례"
 
 #: src/07_threads/06_interior_mutability.md:67
-#, fuzzy
 msgid ""
 "Let's go through a couple of important `std` types that leverage interior "
 "mutability.  \n"
 "These are types that you'll encounter somewhat often in Rust code, especially "
 "if you peek under the hood of some the libraries you use."
 msgstr ""
-"내부 가변성을 활용하는 몇 가지 중요한 `std` 유형을 살펴보겠습니다.  \n"
+"내부 가변성을 활용하는 몇 가지 중요한 `std` 타입을 살펴보겠습니다.  \n"
 "이는 Rust 코드에서 다소 자주 접하게 될 유형입니다. 특히 사용하는 일부 라이브러"
 "리의 내부를 들여다보면 더욱 그렇습니다."
 
 #: src/07_threads/06_interior_mutability.md:71
-#, fuzzy
 msgid "Reference counting"
 msgstr "참조 카운팅"
 
 #: src/07_threads/06_interior_mutability.md:73
-#, fuzzy
 msgid ""
 "`Rc` is a reference-counted pointer.  \n"
 "It wraps around a value and keeps track of how many references to the value "
@@ -12200,38 +12104,33 @@ msgstr ""
 "`Rc`는 참조 카운트 포인터입니다.  \n"
 "이는 값을 둘러싸며 해당 값에 대한 참조 수를 추적합니다. 마지막 참조가 삭제되"
 "면 값의 할당이 취소됩니다.  \n"
-"`Rc`에 포함된 값은 변경할 수 없습니다. 이에 대한 공유 참조만 얻을 수 있습니다."
+"`Rc`에 포함된 값은 변경할 수 없습니다: 값에 대한 공유 참조만 얻을 수 있습니다."
 
 #: src/07_threads/06_interior_mutability.md:81
-#, fuzzy
 msgid "\"My string\""
-msgstr "\"내 문자열\""
+msgstr "\"My string\""
 
 #: src/07_threads/06_interior_mutability.md:81
-#, fuzzy
 msgid "// Only one reference to the string data exists.\n"
-msgstr "// 문자열 데이터에 대한 참조는 하나만 존재합니다."
+msgstr "// 문자열 데이터에 대한 참조는 하나만 존재합니다.\n"
 
 #: src/07_threads/06_interior_mutability.md:84
-#, fuzzy
 msgid ""
 "// When we call `clone`, the string data is not copied!\n"
 "// Instead, the reference count for `Rc` is incremented.\n"
 msgstr ""
-"// `clone`을 호출하면 문자열 데이터가 복사되지 않습니다! // 대신 `Rc`에 대한 "
-"참조 횟수가 증가합니다."
+"// `clone`을 호출하면 문자열 데이터가 복사되지 않습니다!\n"
+"// 대신 `Rc`에 대한 참조 횟수가 증가합니다.\n"
 
 #: src/07_threads/06_interior_mutability.md:89
-#, fuzzy
 msgid ""
 "// ^ Both `a` and `b` point to the same string data\n"
 "//   and share the same reference counter.\n"
 msgstr ""
-"// ^ `a`와 `b`는 모두 동일한 문자열 데이터를 가리키며 // 동일한 참조 카운터를 "
-"공유합니다."
+"// ^ `a`와 `b`는 모두 동일한 문자열 데이터를 가리키며\n"
+"//   동일한 참조 카운터를 공유합니다.\n"
 
 #: src/07_threads/06_interior_mutability.md:94
-#, fuzzy
 msgid ""
 "`Rc` uses `UnsafeCell` internally to allow shared references to increment and "
 "decrement the reference count."
@@ -12240,12 +12139,10 @@ msgstr ""
 "줄일 수 있도록 합니다."
 
 #: src/07_threads/06_interior_mutability.md:96
-#, fuzzy
 msgid "`RefCell`"
 msgstr "`RefCell`"
 
 #: src/07_threads/06_interior_mutability.md:98
-#, fuzzy
 msgid ""
 "`RefCell` is one of the most common examples of interior mutability in Rust. "
 "It allows you to mutate the value wrapped in a `RefCell` even if you only "
@@ -12255,7 +12152,6 @@ msgstr ""
 "에 대한 불변 참조만 있는 경우에도 `RefCell`에 래핑된 값을 변경할 수 있습니다."
 
 #: src/07_threads/06_interior_mutability.md:102
-#, fuzzy
 msgid ""
 "This is done via **runtime borrow checking**. The `RefCell` keeps track of "
 "the number (and type) of references to the value it contains at runtime. If "
@@ -12263,20 +12159,18 @@ msgid ""
 "the program will panic, ensuring that Rust's borrowing rules are always "
 "enforced."
 msgstr ""
-"이는 **런타임 빌림 검사**를 통해 수행됩니다. `RefCell`은 런타임에 포함된 값에 "
-"대한 참조 수(및 유형)를 추적합니다. 이미 불변적으로 빌린 값을 변경 가능하게 빌"
-"리려고 하면 프로그램은 패닉 상태가 되어 Rust의 빌리기 규칙이 항상 시행되도록 "
-"합니다."
+"이는 **런타임 차용 검사**를 통해 수행됩니다. `RefCell`은 런타임에 포함된 값에 "
+"대한 참조 수(및 타입)를 추적합니다. 이미 불변적으로 빌린 값을 변경 가능하게 빌"
+"리려고 하면 프로그램은 패닉 상태가 되어 Rust의 차용 규칙이 항상 시행되도록 합"
+"니다."
 
 #: src/07_threads/06_interior_mutability.md:112
-#, fuzzy
 msgid "// Immutable borrow\n"
-msgstr "// 불변 빌림"
+msgstr "// 불변 차용\n"
 
 #: src/07_threads/06_interior_mutability.md:113
-#, fuzzy
 msgid "// Panics! There is an active immutable borrow.\n"
-msgstr "// 패닉! 활성 불변 빌림이 있습니다."
+msgstr "// 패닉! 이미 불변 차용이 존재합니다.\n"
 
 #: src/07_threads/06_interior_mutability.md:118
 msgid ""
@@ -12284,14 +12178,15 @@ msgid ""
 "[`07_threads/06_interior_mutability`](https://github.com/mainmatter/100-"
 "exercises-to-learn-rust/tree/main/exercises/07_threads/06_interior_mutability)"
 msgstr ""
+"이 섹션의 예제는 [`07_threads/06_interior_mutability`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/07_threads/06_interior_mutability)에 있습니다"
 
 #: src/07_threads/07_ack.md:1
-#, fuzzy
 msgid "Two-way communication"
 msgstr "양방향 통신"
 
 #: src/07_threads/07_ack.md:3
-#, fuzzy
 msgid ""
 "In our current client-server implementation, communication flows in one "
 "direction: from the client to the server.  \n"
@@ -12304,17 +12199,14 @@ msgstr ""
 "수 없습니다. 그것은 이상적이지 않습니다."
 
 #: src/07_threads/07_ack.md:7
-#, fuzzy
 msgid "To solve this issue, we can introduce a two-way communication system."
 msgstr "이 문제를 해결하기 위해 양방향 통신 시스템을 도입할 수 있습니다."
 
 #: src/07_threads/07_ack.md:9
-#, fuzzy
 msgid "Response channel"
-msgstr "대응채널"
+msgstr "응답 채널"
 
 #: src/07_threads/07_ack.md:11
-#, fuzzy
 msgid ""
 "We need a way for the server to send a response back to the client.  \n"
 "There are various ways to do this, but the simplest option is to include a "
@@ -12324,11 +12216,10 @@ msgid ""
 msgstr ""
 "서버가 클라이언트에 응답을 다시 보낼 수 있는 방법이 필요합니다.  \n"
 "이를 수행하는 방법은 다양하지만 가장 간단한 옵션은 클라이언트가 서버에 보내는 "
-"메시지에 'Sender' 채널을 포함시키는 것입니다. 메시지를 처리한 후 서버는 이 채"
+"메시지에 `Sender` 채널을 포함시키는 것입니다. 메시지를 처리한 후 서버는 이 채"
 "널을 사용하여 클라이언트에 응답을 다시 보낼 수 있습니다."
 
 #: src/07_threads/07_ack.md:16
-#, fuzzy
 msgid ""
 "This is a fairly common pattern in Rust applications built on top of message-"
 "passing primitives."
@@ -12342,30 +12233,29 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/07_threads/07_ack)"
 msgstr ""
+"이 섹션의 예제는 [`07_threads/07_ack`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/07_threads/07_ack)에 있습니다"
 
 #: src/07_threads/08_client.md:1
-#, fuzzy
 msgid "A dedicated `Client` type"
-msgstr "전용 `클라이언트` 유형"
+msgstr "전용 `클라이언트` 타입"
 
 #: src/07_threads/08_client.md:3
-#, fuzzy
 msgid ""
 "All the interactions from the client side have been fairly low-level: you "
 "have to manually create a response channel, build the command, send it to the "
 "server, and then call `recv` on the response channel to get the response."
 msgstr ""
 "클라이언트 측의 모든 상호 작용은 상당히 낮은 수준이었습니다. 수동으로 응답 채"
-"널을 만들고, 명령을 빌드하고, 이를 서버로 보낸 다음 응답 채널에서 'recv'를 호"
+"널을 만들고, 명령을 빌드하고, 이를 서버로 보낸 다음 응답 채널에서 `recv`를 호"
 "출하여 응답을 받아야 합니다."
 
 #: src/07_threads/08_client.md:7
-#, fuzzy
 msgid ""
 "This is a lot of boilerplate code that could be abstracted away, and that's "
 "exactly what we're going to do in this exercise."
 msgstr ""
-"이것은 추상화할 수 있는 많은 상용구 코드이며 이것이 바로 우리가 이 연습에서 수"
+"이것은 추상화할 수 있는 많은 상용구 코드이며 이것이 바로 우리가 이 예제에서 수"
 "행할 작업입니다."
 
 #: src/07_threads/08_client.md:12
@@ -12374,14 +12264,14 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/07_threads/08_client)"
 msgstr ""
+"이 섹션의 예제는 [`07_threads/08_client`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/07_threads/08_client)에 있습니다"
 
 #: src/07_threads/09_bounded.md:1
-#, fuzzy
 msgid "Bounded vs unbounded channels"
 msgstr "제한된 채널과 무제한 채널"
 
 #: src/07_threads/09_bounded.md:3
-#, fuzzy
 msgid ""
 "So far we've been using unbounded channels.  \n"
 "You can send as many messages as you want, and the channel will grow to "
@@ -12399,7 +12289,6 @@ msgstr ""
 "속 성장하여 잠재적으로 사용 가능한 모든 메모리를 소비하게 됩니다."
 
 #: src/07_threads/09_bounded.md:9
-#, fuzzy
 msgid ""
 "Our recommendation is to **never** use an unbounded channel in a production "
 "system.  \n"
@@ -12412,36 +12301,31 @@ msgstr ""
 "상 적용해야 합니다."
 
 #: src/07_threads/09_bounded.md:15
-#, fuzzy
 msgid ""
 "A bounded channel has a fixed capacity.  \n"
 "You can create one by calling `sync_channel` with a capacity greater than "
 "zero:"
 msgstr ""
 "제한된 채널에는 고정된 용량이 있습니다.  \n"
-"0보다 큰 용량으로 `sync_channel`을 호출하여 채널을 생성할 수 있습니다."
+"0보다 큰 용량으로 `sync_channel`을 호출하여 채널을 생성할 수 있습니다:"
 
 #: src/07_threads/09_bounded.md:24
-#, fuzzy
 msgid ""
 "`receiver` has the same type as before, `Receiver<T>`.  \n"
 "`sender`, instead, is an instance of `SyncSender<T>`."
 msgstr ""
-"`receiver`는 이전과 동일한 유형인 `Receiver<T>`를 갖습니다.  \n"
+"`receiver`는 이전과 동일한 타입인 `Receiver<T>`를 갖습니다.  \n"
 "대신 `sender`는 `SyncSender<T>`의 인스턴스입니다."
 
 #: src/07_threads/09_bounded.md:27
-#, fuzzy
 msgid "Sending messages"
 msgstr "메시지 보내기"
 
 #: src/07_threads/09_bounded.md:29
-#, fuzzy
 msgid "You have two different methods to send messages through a `SyncSender`:"
-msgstr "`SyncSender`를 통해 메시지를 보내는 방법에는 두 가지가 있습니다."
+msgstr "`SyncSender`를 통해 메시지를 보내는 방법에는 두 가지가 있습니다:"
 
 #: src/07_threads/09_bounded.md:31
-#, fuzzy
 msgid ""
 "`send`: if there is space in the channel, it will enqueue the message and "
 "return `Ok(())`.  \n"
@@ -12452,7 +12336,6 @@ msgstr ""
 "채널이 가득 차면 사용 가능한 공간이 생길 때까지 차단하고 기다립니다."
 
 #: src/07_threads/09_bounded.md:33
-#, fuzzy
 msgid ""
 "`try_send`: if there is space in the channel, it will enqueue the message and "
 "return `Ok(())`.  \n"
@@ -12465,17 +12348,14 @@ msgstr ""
 "는 전송할 수 없는 메시지입니다."
 
 #: src/07_threads/09_bounded.md:36
-#, fuzzy
 msgid "Depending on your use case, you might want to use one or the other."
-msgstr "사용 사례에 따라 둘 중 하나를 사용하고 싶을 수도 있습니다."
+msgstr "케이스에 따라 둘 중 하나를 골라 사용하면 됩니다."
 
 #: src/07_threads/09_bounded.md:38
-#, fuzzy
 msgid "Backpressure"
 msgstr "배압"
 
 #: src/07_threads/09_bounded.md:40
-#, fuzzy
 msgid ""
 "The main advantage of using bounded channels is that they provide a form of "
 "**backpressure**.  \n"
@@ -12485,9 +12365,9 @@ msgid ""
 "requests."
 msgstr ""
 "제한된 채널을 사용하는 주요 이점은 **배압** 형태를 제공한다는 것입니다.  \n"
-"소비자가 따라잡을 수 없으면 생산자가 속도를 늦추도록 강요합니다. 그런 다음 역"
+"소비자가 따라잡을 수 없으면 생산자가 속도를 늦추도록 강요합니다. 그런 다음 배"
 "압이 시스템을 통해 전파되어 잠재적으로 전체 아키텍처에 영향을 미치고 최종 사용"
-"자가 요청으로 시스템을 압도하는 것을 방지할 수 있습니다."
+"자가 요청으로 시스템을 압박하는 것을 방지할 수 있습니다."
 
 #: src/07_threads/09_bounded.md:47
 msgid ""
@@ -12495,14 +12375,14 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/07_threads/09_bounded)"
 msgstr ""
+"이 섹션의 예제는 [`07_threads/09_bounded`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/07_threads/09_bounded)에 있습니다"
 
 #: src/07_threads/10_patch.md:1
-#, fuzzy
 msgid "Update operations"
 msgstr "업데이트 작업"
 
 #: src/07_threads/10_patch.md:3
-#, fuzzy
 msgid ""
 "So far we've implemented only insertion and retrieval operations.  \n"
 "Let's see how we can expand the system to provide an update operation."
@@ -12511,12 +12391,10 @@ msgstr ""
 "업데이트 작업을 제공하기 위해 시스템을 어떻게 확장할 수 있는지 살펴보겠습니다."
 
 #: src/07_threads/10_patch.md:6
-#, fuzzy
 msgid "Legacy updates"
 msgstr "레거시 업데이트"
 
 #: src/07_threads/10_patch.md:8
-#, fuzzy
 msgid ""
 "In the non-threaded version of the system, updates were fairly "
 "straightforward: `TicketStore` exposed a `get_mut` method that allowed the "
@@ -12524,15 +12402,13 @@ msgid ""
 msgstr ""
 "스레드되지 않은 시스템 버전에서는 업데이트가 매우 간단했습니다. `TicketStore`"
 "는 호출자가 티켓에 대한 변경 가능한 참조를 얻은 다음 이를 수정할 수 있도록 하"
-"는 `get_mut` 메서드를 노출했습니다."
+"는 `get_mut` 메서드를 제공했습니다."
 
 #: src/07_threads/10_patch.md:11
-#, fuzzy
 msgid "Multithreaded updates"
 msgstr "멀티스레드 업데이트"
 
 #: src/07_threads/10_patch.md:13
-#, fuzzy
 msgid ""
 "The same strategy won't work in the current multi-threaded version, because "
 "the mutable reference would have to be sent over a channel. The borrow "
@@ -12540,12 +12416,11 @@ msgid ""
 "lifetime requirement of `SyncSender::send`."
 msgstr ""
 "변경 가능한 참조를 채널을 통해 전송해야 하기 때문에 현재 멀티 스레드 버전에서"
-"는 동일한 전략이 작동하지 않습니다. 빌림 검사기는 `&mut Ticket`이 "
-"`SyncSender::send`의 `정적` 수명 요구 사항을 충족하지 않기 때문에 우리를 막을 "
-"것입니다."
+"는 동일한 전략이 작동하지 않습니다. 차용 검사기는 `&mut Ticket`이 "
+"`SyncSender::send`의 `'static` 수명 요구 사항을 충족하지 않기 때문에 우리를 막"
+"을 것입니다."
 
 #: src/07_threads/10_patch.md:17
-#, fuzzy
 msgid ""
 "There are a few ways to work around this limitation. We'll explore a few of "
 "them in the following exercises."
@@ -12554,7 +12429,6 @@ msgstr ""
 "가지를 살펴보겠습니다."
 
 #: src/07_threads/10_patch.md:21
-#, fuzzy
 msgid ""
 "We can't send a `&mut Ticket` over a channel, therefore we can't mutate on "
 "the client-side.  \n"
@@ -12562,10 +12436,9 @@ msgid ""
 msgstr ""
 "채널을 통해 `&mut Ticket`을 보낼 수 없으므로 클라이언트 측에서 변경할 수 없습"
 "니다.  \n"
-"서버 측에서 변경할 수 있나요?"
+"서버 측에서 변경할 순 없을까요?"
 
 #: src/07_threads/10_patch.md:24
-#, fuzzy
 msgid ""
 "We can, if we tell the server what needs to be changed. In other words, if we "
 "send a **patch** to the server:"
@@ -12574,22 +12447,19 @@ msgstr ""
 "우:"
 
 #: src/07_threads/10_patch.md:35
-#, fuzzy
 msgid ""
 "The `id` field is mandatory, since it's required to identify the ticket that "
 "needs to be updated.  \n"
 "All other fields are optional:"
 msgstr ""
-"'id' 필드는 업데이트해야 하는 티켓을 식별하는 데 필요하므로 필수입니다.  \n"
-"다른 모든 필드는 선택사항입니다."
+"`id` 필드는 업데이트해야 하는 티켓을 식별하는 데 필요하므로 필수입니다.  \n"
+"다른 모든 필드는 선택사항입니다:"
 
 #: src/07_threads/10_patch.md:38
-#, fuzzy
 msgid "If a field is `None`, it means that the field should not be changed."
-msgstr "필드가 'None'인 경우 해당 필드를 변경해서는 안 된다는 의미입니다."
+msgstr "필드가 `None`인 경우 해당 필드를 변경해서는 안 된다는 의미입니다."
 
 #: src/07_threads/10_patch.md:39
-#, fuzzy
 msgid ""
 "If a field is `Some(value)`, it means that the field should be changed to "
 "`value`."
@@ -12602,14 +12472,14 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/07_threads/10_patch)"
 msgstr ""
+"이 섹션의 예제는 [`07_threads/10_patch`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/07_threads/10_patch)에 있습니다"
 
 #: src/07_threads/11_locks.md:1
-#, fuzzy
 msgid "Locks, `Send` and `Arc`"
-msgstr "잠금, '보내기' 및 '아크'"
+msgstr "Locks, `Send` 그리고 `Arc`"
 
 #: src/07_threads/11_locks.md:3
-#, fuzzy
 msgid ""
 "The patching strategy you just implemented has a major drawback: it's "
 "racy.  \n"
@@ -12617,18 +12487,17 @@ msgid ""
 "server will apply them in an arbitrary order. Whoever enqueues their patch "
 "last will overwrite the changes made by the other client."
 msgstr ""
-"방금 구현한 패치 전략에는 큰 단점이 있습니다. 바로 선정적이라는 것입니다.  \n"
+"방금 구현한 패치 전략에는 큰 단점이 있습니다. 바로 경쟁 조건이 발생할 수 있다"
+"는 것입니다.  \n"
 "두 클라이언트가 거의 동시에 동일한 티켓에 대한 패치를 보내는 경우 서버는 이를 "
 "임의의 순서로 적용합니다. 패치를 마지막으로 대기열에 추가하는 사람은 다른 클라"
 "이언트의 변경 사항을 덮어쓰게 됩니다."
 
 #: src/07_threads/11_locks.md:7
-#, fuzzy
 msgid "Version numbers"
 msgstr "버전 번호"
 
 #: src/07_threads/11_locks.md:9
-#, fuzzy
 msgid ""
 "We could try to fix this by using a **version number**.  \n"
 "Each ticket gets assigned a version number upon creation, set to `0`.  \n"
@@ -12637,13 +12506,12 @@ msgid ""
 "patch if the version number matches the one it has stored."
 msgstr ""
 "**버전 번호**를 사용하여 이 문제를 해결할 수 있습니다.  \n"
-"각 티켓에는 생성 시 '0'으로 설정된 버전 번호가 할당됩니다.  \n"
+"각 티켓에는 생성 시 `0`으로 설정된 버전 번호가 할당됩니다.  \n"
 "클라이언트가 패치를 보낼 때마다 원하는 변경 사항과 함께 티켓의 현재 버전 번호"
 "를 포함해야 합니다. 서버는 버전 번호가 저장된 버전 번호와 일치하는 경우에만 패"
 "치를 적용합니다."
 
 #: src/07_threads/11_locks.md:14
-#, fuzzy
 msgid ""
 "In the scenario described above, the server would reject the second patch, "
 "because the version number would have been incremented by the first patch and "
@@ -12654,7 +12522,6 @@ msgstr ""
 "문입니다."
 
 #: src/07_threads/11_locks.md:17
-#, fuzzy
 msgid ""
 "This approach is fairly common in distributed systems (e.g. when client and "
 "servers don't share memory), and it is known as **optimistic concurrency "
@@ -12670,12 +12537,10 @@ msgstr ""
 "있을 만큼 Rust에 대해 충분히 알고 있습니다."
 
 #: src/07_threads/11_locks.md:22
-#, fuzzy
 msgid "Locking"
 msgstr "잠금"
 
 #: src/07_threads/11_locks.md:24
-#, fuzzy
 msgid ""
 "We can also fix the race condition by introducing a **lock**.  \n"
 "Whenever a client wants to update a ticket, they must first acquire a lock on "
@@ -12687,7 +12552,6 @@ msgstr ""
 "습니다."
 
 #: src/07_threads/11_locks.md:28
-#, fuzzy
 msgid ""
 "Rust's standard library provides two different locking primitives: `Mutex<T>` "
 "and `RwLock<T>`.  \n"
@@ -12697,12 +12561,11 @@ msgid ""
 msgstr ""
 "Rust의 표준 라이브러리는 `Mutex<T>`와 `RwLock<T>`라는 두 가지 잠금 기본 요소"
 "를 제공합니다.  \n"
-"`Mutex<T>`부터 시작해 보겠습니다. 이는 **상호 **배제**를 의미하며 가장 간단한 "
-"종류의 잠금입니다. 읽기용이든 쓰기용이든 관계없이 하나의 스레드만 데이터에 액"
-"세스할 수 있도록 허용합니다."
+"`Mutex<T>`부터 시작해 보겠습니다. 이는 **mut**ual **ex**clusion(상호 배제)을 "
+"의미하며 가장 간단한 종류의 잠금입니다. 읽기용이든 쓰기용이든 관계없이 하나의 "
+"스레드만 데이터에 액세스할 수 있도록 허용합니다."
 
 #: src/07_threads/11_locks.md:32
-#, fuzzy
 msgid ""
 "`Mutex<T>` wraps the data it protects, and it's therefore generic over the "
 "type of the data.  \n"
@@ -12713,49 +12576,45 @@ msgid ""
 "Both methods return a guard object that dereferences to the data, allowing "
 "you to modify it. The lock is released when the guard is dropped."
 msgstr ""
-"`Mutex<T>`는 보호하는 데이터를 래핑하므로 데이터 유형에 대해 일반적입니다.  \n"
-"데이터에 직접 액세스할 수 없습니다. 유형 시스템은 `Mutex::lock` 또는 `Mutex::"
-"try_lock`을 사용하여 먼저 잠금을 획득하도록 강제합니다. 전자는 잠금을 획득할 "
-"때까지 차단하고 후자는 잠금을 획득할 수 없는 경우 오류와 함께 즉시 반환합니"
-"다.  \n"
+"`Mutex<T>`는 보호하는 데이터를 래핑하므로 데이터 타입으로 일반화됩니다.  \n"
+"데이터에 직접 액세스할 수는 없습니다. 타입 시스템은 `Mutex::lock` 또는 "
+"`Mutex::try_lock`을 사용하여 먼저 잠금을 획득하도록 강제합니다. 전자는 잠금을 "
+"획득할 때까지 차단하고 후자는 잠금을 획득할 수 없는 경우 오류와 함께 즉시 반환"
+"합니다.  \n"
 "두 메서드 모두 데이터를 역참조하는 가드 개체를 반환하므로 데이터를 수정할 수 "
-"있습니다. 가드를 떨어뜨리면 잠금이 해제됩니다."
+"있습니다. 가드를 삭제하면 잠금이 해제됩니다."
 
 #: src/07_threads/11_locks.md:41
-#, fuzzy
 msgid "// An integer protected by a mutex lock\n"
-msgstr "// 뮤텍스 잠금으로 보호되는 정수"
+msgstr "// 뮤텍스 잠금으로 보호되는 정수\n"
 
 #: src/07_threads/11_locks.md:44
-#, fuzzy
 msgid "// Acquire a lock on the mutex\n"
-msgstr "// 뮤텍스에 대한 잠금을 획득합니다."
+msgstr "// 뮤텍스에 대한 잠금을 획득합니다\n"
 
 #: src/07_threads/11_locks.md:47
-#, fuzzy
 msgid ""
 "// Modify the data through the guard,\n"
 "// leveraging its `Deref` implementation\n"
-msgstr "// 'Deref' 구현을 활용하여 가드를 통해 데이터를 수정합니다."
+msgstr ""
+"// `Deref` 구현을 활용하여 가드를\n"
+"// 통해 데이터를 수정합니다\n"
 
 #: src/07_threads/11_locks.md:51
-#, fuzzy
 msgid ""
 "// The lock is released when `data` goes out of scope\n"
 "// This can be done explicitly by dropping the guard\n"
 "// or happen implicitly when the guard goes out of scope\n"
 msgstr ""
-"// `data`가 범위를 벗어날 때 잠금이 해제됩니다. // 이는 가드를 삭제하여 명시적"
-"으로 수행할 수 있거나 // 가드가 범위를 벗어날 때 암시적으로 발생할 수 있습니"
-"다."
+"// `data`가 스코프를 벗어날 때 잠금이 해제됩니다\n"
+"// 이는 가드를 삭제하여 명시적으로 수행할 수도 있고\n"
+"// 가드가 스코프를 벗어날 때 암시적으로 발생할 수 있습니다\n"
 
 #: src/07_threads/11_locks.md:58
-#, fuzzy
 msgid "Locking granularity"
 msgstr "잠금 세분성"
 
 #: src/07_threads/11_locks.md:60
-#, fuzzy
 msgid ""
 "What should our `Mutex` wrap?  \n"
 "The simplest option would be the wrap the entire `TicketStore` in a single "
@@ -12765,14 +12624,13 @@ msgid ""
 "to wait for the lock to be released.  \n"
 "This is known as **coarse-grained locking**."
 msgstr ""
-"'Mutex'는 무엇을 포장해야 할까요?  \n"
+"`Mutex`는 무엇을 감싸야 할까요?  \n"
 "가장 간단한 옵션은 전체 `TicketStore`를 하나의 `Mutex`로 묶는 것입니다.  \n"
 "이는 작동하지만 시스템 성능을 심각하게 제한합니다. 모든 읽기는 잠금이 해제될 "
 "때까지 기다려야 하기 때문에 티켓을 병렬로 읽을 수 없습니다.  \n"
 "이를 **대략적인 잠금**이라고 합니다."
 
 #: src/07_threads/11_locks.md:66
-#, fuzzy
 msgid ""
 "It would be better to use **fine-grained locking**, where each ticket is "
 "protected by its own lock. This way, clients can keep working with tickets in "
@@ -12783,9 +12641,8 @@ msgstr ""
 "을 계속해서 병렬로 수행할 수 있습니다."
 
 #: src/07_threads/11_locks.md:70
-#, fuzzy
 msgid "// The new structure, with a lock for each ticket\n"
-msgstr "// 각 티켓에 대한 잠금 장치가 있는 새로운 구조"
+msgstr "// 각 티켓에 대한 잠금 장치가 있는 새로운 구조\n"
 
 #: src/07_threads/11_locks.md:76
 msgid ""
@@ -12794,14 +12651,16 @@ msgid ""
 "`TicketStore` has been blissfully ignoring the existence of threads.  \n"
 "Let's go for it anyway."
 msgstr ""
+"이 접근 방식은 더 효율적이지만 단점도 있습니다: `TicketStore`가 시스템의 멀티"
+"스레드 특성을 **인지**해야 합니다. 지금까지 `TicketStore`는 스레드의 존재를 신"
+"경 쓰지 않고 있었습니다.\n"
+"일단 한번 해봅시다."
 
 #: src/07_threads/11_locks.md:80
-#, fuzzy
 msgid "Who holds the lock?"
-msgstr "자물쇠는 누가 쥐고 있나요?"
+msgstr "누가 lock을 걸고있나요?"
 
 #: src/07_threads/11_locks.md:82
-#, fuzzy
 msgid ""
 "For the whole scheme to work, the lock must be passed to the client that "
 "wants to modify the ticket.  \n"
@@ -12814,7 +12673,6 @@ msgstr ""
 "완료되면 잠금을 해제할 수 있습니다."
 
 #: src/07_threads/11_locks.md:85
-#, fuzzy
 msgid ""
 "This is a bit tricky.  \n"
 "We can't send a `Mutex<Ticket>` over a channel, because `Mutex` is not "
@@ -12826,31 +12684,28 @@ msgstr ""
 "통해 `Mutex<Ticket>`을 보낼 수 없습니다. 대신 `MutexGuard`를 보낼 수 있나요?"
 
 #: src/07_threads/11_locks.md:89
-#, fuzzy
 msgid "Let's test the idea with a small example:"
-msgstr "작은 예를 통해 아이디어를 테스트해 보겠습니다."
+msgstr "작은 예를 통해 아이디어를 테스트해 보겠습니다:"
 
 #: src/07_threads/11_locks.md:105
-#, fuzzy
 msgid ""
 "// Try to send the guard over the channel\n"
 "    // to another thread\n"
-msgstr "// 채널을 통해 가드를 // 다른 스레드로 보내려고 합니다."
+msgstr ""
+"// 채널을 통해 가드를\n"
+"    // 다른 스레드로 보내려고 합니다\n"
 
 #: src/07_threads/11_locks.md:111
-#, fuzzy
 msgid "The compiler is not happy with this code:"
-msgstr "컴파일러는 이 코드에 만족하지 않습니다."
+msgstr "컴파일러는 이 코드에 만족하지 않습니다:"
 
 #: src/07_threads/11_locks.md:130
-#, fuzzy
 msgid "`MutexGuard<'_, i32>` is not `Send`: what does it mean?"
-msgstr "`MutexGuard<'_, i32>`는 `보내기`가 아닙니다. 무슨 뜻인가요?"
+msgstr "`MutexGuard<'_, i32>`는 `Send`가 아니랍니다. 무슨 뜻일까요?"
 
 #: src/07_threads/11_locks.md:132
-#, fuzzy
 msgid "`Send`"
-msgstr "보내기"
+msgstr "`Send`"
 
 #: src/07_threads/11_locks.md:134
 msgid ""
@@ -12863,14 +12718,19 @@ msgid ""
 "`unsafe` since you have to guarantee that the type is indeed safe to send "
 "between threads for reasons that the compiler can't automatically verify."
 msgstr ""
+"`Send`는 타입이 한 스레드에서 다른 스레드로 안전하게 전송될 수 있음을 나타내"
+"는 마커 트레잇입니다.\n"
+"`Send`는 `Sized`처럼 자동 트레잇이기도 합니다. 컴파일러가 타입의 정의를 기반으"
+"로 자동으로 구현하거나 구현하지 않기도 합니다.\n"
+"`Send`를 직접 구현할 수도 있지만, 이 경우 `unsafe`가 필요합니다. 이는 컴파일러"
+"가 자동으로 확인할 수 없는 이유로 타입이 스레드 간에 안전하게 전송될 수 있음"
+"을 보장해야 하기 때문입니다."
 
 #: src/07_threads/11_locks.md:140
-#, fuzzy
 msgid "Channel requirements"
 msgstr "채널 요구 사항"
 
 #: src/07_threads/11_locks.md:142
-#, fuzzy
 msgid ""
 "`Sender<T>`, `SyncSender<T>` and `Receiver<T>` are `Send` if and only if `T` "
 "is `Send`.  \n"
@@ -12883,12 +12743,10 @@ msgstr ""
 "전송하는 것이 안전하지 않기 때문입니다."
 
 #: src/07_threads/11_locks.md:146
-#, fuzzy
 msgid "`MutexGuard`"
-msgstr "'뮤텍스가드'"
+msgstr "`MutexGuard`"
 
 #: src/07_threads/11_locks.md:148
-#, fuzzy
 msgid ""
 "`MutexGuard` is not `Send` because the underlying operating system primitives "
 "that `Mutex` uses to implement the lock require (on some platforms) that the "
@@ -12903,17 +12761,14 @@ msgstr ""
 "지 않은 동작이 발생하게 됩니다."
 
 #: src/07_threads/11_locks.md:153
-#, fuzzy
 msgid "Our challenges"
-msgstr "우리의 도전"
+msgstr "도전과제"
 
 #: src/07_threads/11_locks.md:155
-#, fuzzy
 msgid "Summing it up:"
-msgstr "요약하면 다음과 같습니다."
+msgstr "요약하면 다음과 같습니다:"
 
 #: src/07_threads/11_locks.md:157
-#, fuzzy
 msgid ""
 "We can't send a `MutexGuard` over a channel. So we can't lock on the server-"
 "side and then modify the ticket on the client-side."
@@ -12922,41 +12777,35 @@ msgstr ""
 "언트 측에서 티켓을 수정할 수 없습니다."
 
 #: src/07_threads/11_locks.md:159
-#, fuzzy
 msgid ""
 "We can send a `Mutex` over a channel because it's `Send` as long as the data "
 "it protects is `Send`, which is the case for `Ticket`. At the same time, we "
 "can't move the `Mutex` out of the `TicketStore` nor clone it."
 msgstr ""
-"보호하는 데이터가 'Send'인 한 'Send'이기 때문에 채널을 통해 'Mutex'를 보낼 수 "
-"있습니다. 이는 'Ticket'의 경우입니다. 동시에 `TicketStore`에서 `Mutex`를 이동"
+"보호하는 데이터가 `Send`인 한 `Send`이기 때문에 채널을 통해 `Mutex`를 보낼 수 "
+"있습니다. 이는 `Ticket`의 경우입니다. 동시에 `TicketStore`에서 `Mutex`를 이동"
 "하거나 복제할 수 없습니다."
 
 #: src/07_threads/11_locks.md:163
-#, fuzzy
 msgid ""
 "How can we solve this conundrum?  \n"
 "We need to look at the problem from a different angle. To lock a `Mutex`, we "
 "don't need an owned value. A shared reference is enough, since `Mutex` uses "
 "internal mutability:"
 msgstr ""
-"이 수수께끼를 어떻게 해결할 수 있습니까?  \n"
-"우리는 다른 각도에서 문제를 볼 필요가 있습니다. `Mutex`를 잠그려면 소유된 값"
-"이 필요하지 않습니다. `Mutex`는 내부 가변성을 사용하므로 공유 참조로 충분합니"
-"다."
+"이 수수께끼를 어떻게 해결할 수 있을까요?  \n"
+"우리는 다른 각도에서 문제를 볼 필요가 있습니다. `Mutex`를 잠글 때 값을 소유 "
+"할 필요가 없습니다. `Mutex`는 내부 가변성을 사용하므로 공유 참조로 충분합니다."
 
 #: src/07_threads/11_locks.md:169
-#, fuzzy
 msgid "// `&self`, not `self`!\n"
-msgstr "// `&self`, `self`가 아닙니다!"
+msgstr "// `self`가 아니라 `&self`!\n"
 
 #: src/07_threads/11_locks.md:171
-#, fuzzy
 msgid "// Implementation details\n"
-msgstr "// 구현 세부사항"
+msgstr "// 세부 구현\n"
 
 #: src/07_threads/11_locks.md:176
-#, fuzzy
 msgid ""
 "It is therefore enough to send a shared reference to the client.  \n"
 "We can't do that directly, though, because the reference would have to be "
@@ -12965,18 +12814,16 @@ msgid ""
 "type that fits the bill: `Arc`."
 msgstr ""
 "따라서 클라이언트에 공유 참조를 보내는 것으로 충분합니다.  \n"
-"하지만 참조는 '정적'이어야 하는데 그렇지 않기 때문에 직접적으로 그렇게 할 수"
-"는 없습니다.  \n"
-"어떤 면에서는 \"소유된 공유 참조\"가 필요합니다. Rust에는 'Arc'라는 목적에 맞"
-"는 유형이 있다는 것이 밝혀졌습니다."
+"하지만 참조는 `'static`이어야 하는데 그렇지 않기 때문에 직접적으로 그렇게 할 "
+"수는 없습니다.  \n"
+"어떤 면에서는 \"소유된 공유 참조\"가 필요합니다. Rust에는 `Arc`라는 우리 목적"
+"에 맞는 타입이 있습니다."
 
 #: src/07_threads/11_locks.md:180
-#, fuzzy
 msgid "`Arc` to the rescue"
-msgstr "구조에 '아크'"
+msgstr "우리를 구원해줄 `Arc`"
 
 #: src/07_threads/11_locks.md:182
-#, fuzzy
 msgid ""
 "`Arc` stands for **atomic reference counting**.  \n"
 "`Arc` wraps around a value and keeps track of how many references to the "
@@ -12984,23 +12831,21 @@ msgid ""
 "The value wrapped in an `Arc` is immutable: you can only get shared "
 "references to it."
 msgstr ""
-"'Arc'는 **원자 참조 카운팅**을 의미합니다.  \n"
-"`Arc`는 값을 둘러싸며 해당 값에 대한 참조가 얼마나 많이 존재하는지 추적합니"
-"다. 마지막 참조가 삭제되면 값의 할당이 취소됩니다.  \n"
+"`Arc`는 **원자 참조 카운팅**을 의미합니다.  \n"
+"`Arc`는 값을 감싸고 해당 값에 대한 참조가 얼마나 많이 존재하는지 추적합니다. "
+"마지막 참조가 삭제되면 값의 할당이 취소됩니다.  \n"
 "`Arc`에 포함된 값은 변경할 수 없습니다. 이에 대한 공유 참조만 얻을 수 있습니"
 "다."
 
 #: src/07_threads/11_locks.md:192
-#, fuzzy
 msgid ""
 "// `Arc<T>` implements `Deref<T>`, so can convert \n"
 "// a `&Arc<T>` to a `&T` using deref coercion\n"
 msgstr ""
-"// `Arc<T>`는 `Deref<T>`를 구현하므로 // 역참조 강제를 사용하여 `&Arc<T>`를 "
-"`&T`로 변환할 수 있습니다."
+"// `Arc<T>`는 `Deref<T>`를 구현하므로\n"
+"// deref coercion을 사용하여 `&Arc<T>`를 `&T`로 변환할 수 있습니다\n"
 
 #: src/07_threads/11_locks.md:198
-#, fuzzy
 msgid ""
 "If you're having a déjà vu moment, you're right: `Arc` sounds very similar to "
 "`Rc`, the reference-counted pointer we introduced when talking about interior "
@@ -13009,79 +12854,71 @@ msgid ""
 "\"normal\" integer, while `Arc` uses an **atomic** integer, which can be "
 "safely shared and modified across threads."
 msgstr ""
-"데자뷰 순간을 겪고 계시다면 맞습니다. 'Arc'는 내부 가변성에 대해 이야기할 때 "
-"소개한 참조 카운트 포인터인 'Rc'와 매우 유사하게 들립니다. 차이점은 스레드 안"
-"전성입니다. `Rc`는 `Send`가 아니지만 `Arc`는 그렇습니다. 이는 참조 카운트가 구"
-"현되는 방식으로 요약됩니다. `Rc`는 \"일반\" 정수를 사용하는 반면, `Arc`는 스레"
-"드 간에 안전하게 공유되고 수정될 수 있는 **원자** 정수를 사용합니다."
+"데자뷰를 겪고 계시다면 맞습니다. `Arc`는 내부 가변성에 대해 이야기할 때 소개"
+"한 참조 카운트 포인터인 `Rc`와 매우 유사해 보입니다. 차이점은 스레드 안전성입"
+"니다. `Rc`는 `Send`가 아니지만 `Arc`는 그렇습니다. 이는 참조 카운트가 구현되"
+"는 방식으로 요약됩니다. `Rc`는 \"일반\" 정수를 사용하는 반면, `Arc`는 스레드 "
+"간에 안전하게 공유되고 수정될 수 있는 **원자** 정수를 사용합니다."
 
 #: src/07_threads/11_locks.md:203
-#, fuzzy
 msgid "`Arc<Mutex<T>>`"
-msgstr "`아크<뮤텍스<T>>`"
+msgstr "`Arc<Mutex<T>>`"
 
 #: src/07_threads/11_locks.md:205
-#, fuzzy
 msgid "If we pair `Arc` with `Mutex`, we finally get a type that:"
 msgstr ""
-"`Arc`와 `Mutex`를 쌍으로 사용하면 마침내 다음과 같은 유형을 얻게 됩니다."
+"`Arc`와 `Mutex`를 쌍으로 사용하면 마침내 다음과 같은 타입을 얻게 됩니다."
 
 #: src/07_threads/11_locks.md:207
-#, fuzzy
 msgid "Can be sent between threads, because:"
-msgstr "다음과 같은 이유로 스레드 간에 전송될 수 있습니다."
+msgstr "다음과 같은 이유로 스레드 간에 전송될 수 있습니다:"
 
 #: src/07_threads/11_locks.md:208
-#, fuzzy
 msgid "`Arc` is `Send` if `T` is `Send`, and"
-msgstr "'T'가 'Send'이면 'Arc'는 'Send'이고,"
+msgstr "`T`가 `Send`이면 `Arc`는 `Send`이고"
 
 #: src/07_threads/11_locks.md:209
-#, fuzzy
 msgid "`Mutex` is `Send` if `T` is `Send`."
 msgstr "`T`가 `Send`이면 `Mutex`는 `Send`입니다."
 
 #: src/07_threads/11_locks.md:210
-#, fuzzy
 msgid "`T` is `Ticket`, which is `Send`."
-msgstr "'T'는 '티켓', 즉 '보내기'입니다."
+msgstr "`T`는 `Ticket`, 즉 `Send`입니다."
 
 #: src/07_threads/11_locks.md:211
-#, fuzzy
 msgid ""
 "Can be cloned, because `Arc` is `Clone` no matter what `T` is. Cloning an "
 "`Arc` increments the reference count, the data is not copied."
 msgstr ""
-"`T`가 무엇이든 `Arc`는 `Clone`이기 때문에 복제될 수 있습니다. 'Arc'를 복제하"
+"`T`가 무엇이든 `Arc`는 `Clone`이기 때문에 복제될 수 있습니다. `Arc`를 복제하"
 "면 참조 카운트가 증가하지만 데이터는 복사되지 않습니다."
 
 #: src/07_threads/11_locks.md:213
-#, fuzzy
 msgid ""
 "Can be used to modify the data it wraps, because `Arc` lets you get a shared "
 "reference to `Mutex<T>` which can in turn be used to acquire a lock."
 msgstr ""
-"'Arc'를 사용하면 잠금을 획득하는 데 사용할 수 있는 'Mutex<T>'에 대한 공유 참조"
+"`Arc`를 사용하면 잠금을 획득하는 데 사용할 수 있는 `Mutex<T>`에 대한 공유 참조"
 "를 얻을 수 있으므로 래핑된 데이터를 수정하는 데 사용할 수 있습니다."
 
 #: src/07_threads/11_locks.md:216
-#, fuzzy
 msgid ""
 "We have all the pieces we need to implement the locking strategy for our "
 "ticket store."
 msgstr ""
-"우리는 티켓 매장의 잠금 전략을 구현하는 데 필요한 모든 요소를 ​​갖추고 있습니다."
+"우리는 티켓 스토어의 잠금 전략을 구현하는 데 필요한 모든 요소를 ​​갖추고 있습니"
+"다."
 
 #: src/07_threads/11_locks.md:220
-#, fuzzy
 msgid ""
 "We won't be covering the details of atomic operations in this course, but you "
 "can find more information [in the `std` documentation](https://doc.rust-lang."
 "org/std/sync/atomic/index.html) as well as in the [\"Rust atomics and locks\" "
 "book](https://marabos.nl/atomics/)."
 msgstr ""
-"이 과정에서는 원자 연산에 대한 세부 사항을 다루지 않지만 `std` 문서와 \"Rust "
-"원자 및 잠금\" 책에서 더 많은 정보를 찾을 수 있습니다."
+"이 과정에서는 원자 연산에 대한 세부 사항을 다루지 않지만 [`std` 문서](https://"
+"doc.rust-lang.org/std/sync/atomic/index.html)와 [\"Rust atomics and locks\" "
+"book](https://marabos.nl/atomics/) 책에서 더 많은 정보를 찾을 수 있습니다."
 
 #: src/07_threads/11_locks.md:226
 msgid ""
@@ -13089,25 +12926,24 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/07_threads/11_locks)"
 msgstr ""
+"이 섹션의 예제는 [`07_threads/11_locks`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/07_threads/11_locks)에 있습니다"
 
 #: src/07_threads/12_rw_lock.md:1
-#, fuzzy
 msgid "Readers and writers"
-msgstr "독자와 작가"
+msgstr "Readers와 writers"
 
 #: src/07_threads/12_rw_lock.md:3
-#, fuzzy
 msgid ""
 "Our new `TicketStore` works, but its read performance is not great: there can "
 "only be one client at a time reading a specific ticket, because `Mutex<T>` "
 "doesn't distinguish between readers and writers."
 msgstr ""
-"새로운 `TicketStore`는 작동하지만 읽기 성능은 좋지 않습니다. `Mutex<T>`는 판독"
-"기와 작성기를 구별하지 않기 때문에 특정 티켓을 읽는 데 한 번에 하나의 클라이언"
-"트만 있을 수 있습니다."
+"새로운 `TicketStore`는 작동하지만 읽기 성능은 좋지 않습니다. `Mutex<T>`는 리더"
+"와 라이터를 구별하지 않기 때문에 특정 티켓을 한 번에 하나의 클라이언트만 읽을 "
+"수 있습니다."
 
 #: src/07_threads/12_rw_lock.md:6
-#, fuzzy
 msgid ""
 "We can solve the issue by using a different locking primitive: "
 "`RwLock<T>`.  \n"
@@ -13115,62 +12951,53 @@ msgid ""
 "access the data simultaneously, but only one writer at a time."
 msgstr ""
 "다른 잠금 기본 요소인 `RwLock<T>`를 사용하여 문제를 해결할 수 있습니다.  \n"
-"`RwLock<T>`는 **읽기-쓰기 잠금**을 나타냅니다. **여러 판독기**가 동시에 데이터"
-"에 액세스할 수 있지만 한 번에 한 명의 작성자만 액세스할 수 있습니다."
+"`RwLock<T>`는 **읽기-쓰기 잠금**을 나타냅니다. **여러 리더**가 동시에 데이터"
+"에 액세스할 수 있지만 한 번에 한 명의 라이터만 액세스할 수 있습니다."
 
 #: src/07_threads/12_rw_lock.md:10
-#, fuzzy
 msgid ""
 "`RwLock<T>` has two methods to acquire a lock: `read` and `write`.  \n"
 "`read` returns a guard that allows you to read the data, while `write` "
 "returns a guard that allows you to modify it."
 msgstr ""
 "`RwLock<T>`에는 잠금을 획득하는 두 가지 방법, `읽기`와 `쓰기`가 있습니다.  \n"
-"'read'는 데이터를 읽을 수 있는 가드를 반환하고, 'write'는 데이터를 수정할 수 "
+"`read`는 데이터를 읽을 수 있는 가드를 반환하고, `write`는 데이터를 수정할 수 "
 "있는 가드를 반환합니다."
 
 #: src/07_threads/12_rw_lock.md:15
-#, fuzzy
 msgid "// An integer protected by a read-write lock\n"
-msgstr "// 읽기-쓰기 잠금으로 보호되는 정수"
+msgstr "// 읽기-쓰기 잠금으로 보호되는 정수\n"
 
 #: src/07_threads/12_rw_lock.md:18
-#, fuzzy
 msgid "// Acquire a read lock on the RwLock\n"
-msgstr "// RwLock에 대한 읽기 잠금을 획득합니다."
+msgstr "// RwLock에 대한 읽기 잠금을 획득합니다\n"
 
 #: src/07_threads/12_rw_lock.md:21
-#, fuzzy
 msgid ""
 "// Acquire a **second** read lock\n"
 "// while the first one is still active\n"
 msgstr ""
-"// 첫 번째 읽기 잠금이 아직 활성화되어 있는 동안 // **두 번째** 읽기 잠금을 획"
-"득합니다."
+"// 첫 번째 읽기 잠금이 아직 활성화되어 있는 동안\n"
+"// **두 번째** 읽기 잠금을 획득합니다\n"
 
 #: src/07_threads/12_rw_lock.md:27
-#, fuzzy
 msgid "Trade-offs"
-msgstr "절충안"
+msgstr "장단점"
 
 #: src/07_threads/12_rw_lock.md:29
-#, fuzzy
 msgid ""
 "On the surface, `RwLock<T>` seems like a no-brainer: it provides a superset "
 "of the functionality of `Mutex<T>`. Why would you ever use `Mutex<T>` if you "
 "can use `RwLock<T>` instead?"
 msgstr ""
 "표면적으로 `RwLock<T>`는 당연한 것처럼 보입니다. 이는 `Mutex<T>` 기능의 상위 "
-"집합을 제공합니다. 대신 `RwLock<T>`를 사용할 수 있는데 왜 `Mutex<T>`를 사용하"
-"겠습니까?"
+"집합을 제공합니다. `RwLock<T>`를 사용할 수 있는데 왜 `Mutex<T>`를 사용할까요?"
 
 #: src/07_threads/12_rw_lock.md:32
-#, fuzzy
 msgid "There are two key reasons:"
-msgstr "두 가지 주요 이유가 있습니다."
+msgstr "두 가지 주요 이유가 있습니다:"
 
 #: src/07_threads/12_rw_lock.md:34
-#, fuzzy
 msgid ""
 "Locking a `RwLock<T>` is more expensive than locking a `Mutex<T>`.  \n"
 "This is because `RwLock<T>` has to keep track of the number of active readers "
@@ -13187,7 +13014,6 @@ msgstr ""
 "`Mutex<T>`가 더 나은 선택일 수 있습니다."
 
 #: src/07_threads/12_rw_lock.md:39
-#, fuzzy
 msgid ""
 "`RwLock<T>` can cause **writer starvation**.  \n"
 "If there are always readers waiting to acquire the lock, writers might never "
@@ -13204,7 +13030,6 @@ msgstr ""
 "지며, 이는 작성자에게 공평하지 않을 수 있습니다."
 
 #: src/07_threads/12_rw_lock.md:44
-#, fuzzy
 msgid ""
 "In our case, we can expect the workload to be read-heavy (since most clients "
 "will be reading tickets, not modifying them), so `RwLock<T>` is a good choice."
@@ -13218,40 +13043,35 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/07_threads/12_rw_lock)"
 msgstr ""
+"이 섹션의 예제는 [`07_threads/12_rw_lock`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/07_threads/12_rw_lock)에 있습니다"
 
 #: src/07_threads/13_without_channels.md:1
-#, fuzzy
 msgid "Design review"
 msgstr "디자인 리뷰"
 
 #: src/07_threads/13_without_channels.md:3
-#, fuzzy
 msgid "Let's take a moment to review the journey we've been through."
 msgstr "잠시 우리가 겪어온 여정을 되돌아보겠습니다."
 
 #: src/07_threads/13_without_channels.md:5
-#, fuzzy
 msgid "Lockless with channel serialization"
 msgstr "채널 직렬화를 통한 잠금 없음"
 
 #: src/07_threads/13_without_channels.md:7
-#, fuzzy
 msgid "Our first implementation of a multithreaded ticket store used:"
-msgstr "사용된 멀티스레드 티켓 저장소의 첫 번째 구현은 다음과 같습니다."
+msgstr "사용된 멀티스레드 티켓 저장소의 첫 번째 구현은 다음과 같습니다:"
 
 #: src/07_threads/13_without_channels.md:9
-#, fuzzy
 msgid "a single long-lived thread (server), to hold the shared state"
 msgstr "공유 상태를 유지하기 위한 단일 수명이 긴 스레드(서버)"
 
 #: src/07_threads/13_without_channels.md:10
-#, fuzzy
 msgid ""
 "multiple clients sending requests to it via channels from their own threads."
 msgstr "여러 클라이언트가 자체 스레드의 채널을 통해 요청을 보냅니다."
 
 #: src/07_threads/13_without_channels.md:12
-#, fuzzy
 msgid ""
 "No locking of the state was necessary, since the server was the only one "
 "modifying the state. That's because the \"inbox\" channel naturally "
@@ -13270,12 +13090,10 @@ msgstr ""
 "요청만 처리할 수 있었습니다."
 
 #: src/07_threads/13_without_channels.md:18
-#, fuzzy
 msgid "Fine-grained locking"
 msgstr "세분화된 잠금"
 
 #: src/07_threads/13_without_channels.md:20
-#, fuzzy
 msgid ""
 "We then moved to a more sophisticated design, where each ticket was protected "
 "by its own lock and clients could independently decide if they wanted to read "
@@ -13286,7 +13104,6 @@ msgstr ""
 "다 정교한 디자인으로 전환했습니다."
 
 #: src/07_threads/13_without_channels.md:23
-#, fuzzy
 msgid ""
 "This design allows for better parallelism (i.e. multiple clients can read "
 "tickets at the same time), but it is still fundamentally **serial**: the "
@@ -13298,7 +13115,6 @@ msgstr ""
 "처리합니다. 특히 클라이언트에게 하나씩 잠금을 전달합니다."
 
 #: src/07_threads/13_without_channels.md:27
-#, fuzzy
 msgid ""
 "Could we remove the channels entirely and allow clients to directly access "
 "the `TicketStore`, relying exclusively on locks to synchronize access?"
@@ -13307,29 +13123,24 @@ msgstr ""
 "여 `TicketStore`에 직접 액세스할 수 있도록 허용할 수 있습니까?"
 
 #: src/07_threads/13_without_channels.md:30
-#, fuzzy
 msgid "Removing channels"
 msgstr "채널 삭제"
 
 #: src/07_threads/13_without_channels.md:32
-#, fuzzy
 msgid "We have two problems to solve:"
-msgstr "해결해야 할 두 가지 문제가 있습니다."
+msgstr "해결해야 할 두 가지 문제가 있습니다:"
 
 #: src/07_threads/13_without_channels.md:34
 #: src/07_threads/13_without_channels.md:37
-#, fuzzy
 msgid "Sharing `TicketStore` across threads"
 msgstr "스레드 간에 `TicketStore` 공유"
 
 #: src/07_threads/13_without_channels.md:35
 #: src/07_threads/13_without_channels.md:43
-#, fuzzy
 msgid "Synchronizing access to the store"
-msgstr "상점에 대한 액세스 동기화"
+msgstr "스토어에 대한 액세스 동기화"
 
 #: src/07_threads/13_without_channels.md:39
-#, fuzzy
 msgid ""
 "We want all threads to refer to the same state, otherwise we don't really "
 "have a multithreaded system—we're just running multiple single-threaded "
@@ -13337,14 +13148,13 @@ msgid ""
 "We've already encountered this problem when we tried to share a lock across "
 "threads: we can use an `Arc`."
 msgstr ""
-"우리는 모든 스레드가 동일한 상태를 참조하기를 원합니다. 그렇지 않으면 실제로 "
-"다중 스레드 시스템이 없습니다. 단지 여러 단일 스레드 시스템을 병렬로 실행하는 "
-"것뿐입니다.  \n"
-"스레드 간에 잠금을 공유하려고 할 때 이미 이 문제에 직면했습니다. 'Arc'를 사용"
-"할 수 있습니다."
+"우리는 모든 스레드가 동일한 상태를 참조하기를 원합니다. 그렇지 않으면 실제로"
+"는 멀티스레드 시스템이 아닙니다. 단지 여러 단일 스레드 시스템을 병렬로 실행하"
+"는 것뿐입니다.  \n"
+"스레드 간에 잠금을 공유하려고 할 때 이미 이 문제에 직면했습니다. `Arc`를 사용"
+"하면 됩니다."
 
 #: src/07_threads/13_without_channels.md:45
-#, fuzzy
 msgid ""
 "There is one interaction that's still lockless thanks to the serialization "
 "provided by the channels: inserting (or removing) a ticket from the store.  \n"
@@ -13354,10 +13164,9 @@ msgstr ""
 "채널에서 제공하는 직렬화 덕분에 여전히 잠금이 해제된 상호 작용이 하나 있습니"
 "다. 바로 매장에서 티켓을 삽입(또는 제거)하는 것입니다.  \n"
 "채널을 제거하는 경우 `TicketStore` 자체에 대한 액세스를 동기화하기 위해 (또 다"
-"른) 잠금을 도입해야 합니다."
+"른) 잠금이 필요합니다."
 
 #: src/07_threads/13_without_channels.md:49
-#, fuzzy
 msgid ""
 "If we use a `Mutex`, then it makes no sense to use an additional `RwLock` for "
 "each ticket: the `Mutex` will already serialize access to the entire store, "
@@ -13368,13 +13177,12 @@ msgstr ""
 "`Mutex`를 사용하는 경우 각 티켓에 추가 `RwLock`을 사용하는 것은 의미가 없습니"
 "다. `Mutex`는 이미 전체 매장에 대한 액세스를 직렬화하므로 어쨌든 티켓을 병렬"
 "로 읽을 수 없습니다. .  \n"
-"대신 'RwLock'을 사용하면 티켓을 병렬로 읽을 수 있습니다. 티켓을 삽입하거나 제"
+"대신 `RwLock`을 사용하면 티켓을 병렬로 읽을 수 있습니다. 티켓을 삽입하거나 제"
 "거하는 동안 모든 읽기를 일시 중지하면 됩니다."
 
 #: src/07_threads/13_without_channels.md:54
-#, fuzzy
 msgid "Let's go down this path and see where it leads us."
-msgstr "이 길을 따라가서 그것이 우리를 어디로 인도하는지 봅시다."
+msgstr "이 접근 방식을 따라가봅시다."
 
 #: src/07_threads/13_without_channels.md:58
 msgid ""
@@ -13382,52 +13190,48 @@ msgid ""
 "(https://github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/07_threads/13_without_channels)"
 msgstr ""
+"이 섹션의 예제는 [`07_threads/13_without_channels`](https://github.com/"
+"mainmatter/100-exercises-to-learn-rust/tree/main/"
+"exercises/07_threads/13_without_channels)에 있습니다"
 
 #: src/07_threads/14_sync.md:1
-#, fuzzy
 msgid "`Sync`"
-msgstr "'동기화'"
+msgstr "`Sync`"
 
 #: src/07_threads/14_sync.md:3
-#, fuzzy
 msgid ""
 "Before we wrap up this chapter, let's talk about another key trait in Rust's "
 "standard library: `Sync`."
 msgstr ""
-"이 장을 마무리하기 전에 Rust 표준 라이브러리의 또 다른 핵심 특성인 `Sync`에 대"
-"해 이야기해 보겠습니다."
+"이 장을 마무리하기 전에 Rust 표준 라이브러리의 또 다른 핵심 트레잇인 `Sync`에 "
+"대해 이야기해 보겠습니다."
 
 #: src/07_threads/14_sync.md:5
-#, fuzzy
 msgid ""
 "`Sync` is an auto trait, just like `Send`.  \n"
 "It is automatically implemented by all types that can be safely **shared** "
 "between threads."
 msgstr ""
-"`Sync`는 `Send`와 마찬가지로 자동 특성입니다.  \n"
-"스레드 간에 안전하게 **공유**할 수 있는 모든 유형에 의해 자동으로 구현됩니다."
+"`Sync`는 `Send`와 마찬가지로 오토 트레잇입니다.  \n"
+"스레드 간에 안전하게 **공유**할 수 있는 모든 타입에 대해 자동으로 구현됩니다."
 
 #: src/07_threads/14_sync.md:8
-#, fuzzy
 msgid "In order words: `T: Sync` means that `&T` is `Send`."
 msgstr "즉, `T: Sync`는 `&T`가 `Send`임을 의미합니다."
 
 #: src/07_threads/14_sync.md:10
-#, fuzzy
 msgid "`Sync` doesn't imply `Send`"
-msgstr "'동기화'는 '보내기'를 의미하지 않습니다."
+msgstr "`Sync`는 `Send`를 뜻하는게 아닙니다"
 
 #: src/07_threads/14_sync.md:12
-#, fuzzy
 msgid ""
 "It's important to note that `Sync` doesn't imply `Send`.  \n"
 "For example: `MutexGuard` is not `Send`, but it is `Sync`."
 msgstr ""
-"'동기화'는 '보내기'를 의미하지 않는다는 점에 유의하는 것이 중요합니다.  \n"
+"`Sync`는 `Send`를 의미하지 않는다는 점에 유의하는 것이 중요합니다.  \n"
 "예를 들어 `MutexGuard`는 `Send`가 아니지만 `Sync`입니다."
 
 #: src/07_threads/14_sync.md:15
-#, fuzzy
 msgid ""
 "It isn't `Send` because the lock must be released on the same thread that "
 "acquired it, therefore we don't want `MutexGuard` to be dropped on a "
@@ -13438,24 +13242,21 @@ msgstr ""
 "잠금을 획득한 동일한 스레드에서 잠금을 해제해야 하기 때문에 `Send`가 아닙니"
 "다. 따라서 `MutexGuard`가 다른 스레드에서 삭제되는 것을 원하지 않습니다.  \n"
 "그러나 다른 스레드에 `&MutexGuard`를 제공해도 잠금이 해제되는 위치에는 영향을 "
-"미치지 않기 때문에 이는 `동기화`입니다."
+"미치지 않기 때문에 이는 `Sync`입니다."
 
 #: src/07_threads/14_sync.md:19
-#, fuzzy
 msgid "`Send` doesn't imply `Sync`"
-msgstr "'보내기'는 '동기화'를 의미하지 않습니다."
+msgstr "`Send`는 `Sync`를 뜻하지 않습니다."
 
 #: src/07_threads/14_sync.md:21
-#, fuzzy
 msgid ""
 "The opposite is also true: `Send` doesn't imply `Sync`.  \n"
 "For example: `RefCell<T>` is `Send` (if `T` is `Send`), but it is not `Sync`."
 msgstr ""
-"그 반대도 마찬가지입니다. '보내기'는 '동기화'를 의미하지 않습니다.  \n"
+"그 반대도 마찬가지입니다. `Send`는 `Sync`를 뜻하지 않습니다.  \n"
 "예를 들어 `RefCell<T>`는 `Send`(`T`가 `Send`인 경우)이지만 `Sync`는 아닙니다."
 
 #: src/07_threads/14_sync.md:24
-#, fuzzy
 msgid ""
 "`RefCell<T>` performs runtime borrow checking, but the counters it uses to "
 "track borrows are not thread-safe. Therefore, having multiple threads holding "
@@ -13466,13 +13267,13 @@ msgid ""
 "we're not leaving behind any references to the data it contains, hence no "
 "risk of concurrent mutable access."
 msgstr ""
-"`RefCell<T>`는 런타임 빌림 검사를 수행하지만 빌림을 추적하는 데 사용하는 카운"
-"터는 스레드로부터 안전하지 않습니다. 따라서 '&RefCell'을 보유하는 여러 스레드"
+"`RefCell<T>`는 런타임 차용 검사를 수행하지만 차용을 추적하는 데 사용하는 카운"
+"터는 스레드로부터 안전하지 않습니다. 따라서 `&RefCell`을 보유하는 여러 스레드"
 "가 있으면 데이터 경쟁이 발생하고 잠재적으로 여러 스레드가 동일한 데이터에 대"
 "한 변경 가능한 참조를 얻게 됩니다. 따라서 `RefCell`은 `Sync`가 아닙니다.  \n"
-"대신 `Send`는 괜찮습니다. 왜냐하면 `RefCell`을 다른 스레드로 보낼 때 포함된 데"
-"이터에 대한 참조를 남기지 않고 동시에 변경 가능한 액세스가 발생할 위험이 없기 "
-"때문입니다."
+"대신 `Send` 맞습니다. 왜냐하면 `RefCell`을 다른 스레드로 보낼 때 포함된 데이터"
+"에 대한 참조를 남기지 않고 동시에 변경 가능한 액세스가 발생할 위험이 없기 때문"
+"입니다."
 
 #: src/07_threads/14_sync.md:32
 msgid ""
@@ -13480,6 +13281,8 @@ msgid ""
 "github.com/mainmatter/100-exercises-to-learn-rust/tree/main/"
 "exercises/07_threads/14_sync)"
 msgstr ""
+"이 섹션의 예제는 [`07_threads/14_sync`](https://github.com/mainmatter/100-"
+"exercises-to-learn-rust/tree/main/exercises/07_threads/14_sync)에 있습니다"
 
 #: src/08_futures/00_intro.md:1
 #, fuzzy
