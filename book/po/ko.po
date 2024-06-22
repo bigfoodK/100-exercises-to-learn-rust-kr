@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 100 Exercises To Learn Rust\n"
 "POT-Creation-Date: 2024-06-20T21:50:15+09:00\n"
-"PO-Revision-Date: 2024-06-22 08:30+0900\n"
+"PO-Revision-Date: 2024-06-22 09:35+0900\n"
 "Last-Translator: bigfood <satcom1600@hanmail.net>\n"
 "Language-Team: Korean <translation-team-ko@googlegroups.com>\n"
 "Language: ko\n"
@@ -14513,7 +14513,7 @@ msgstr "문제 해결!"
 
 #: src/08_futures/06_async_aware_primitives.md:106
 msgid "Multithreaded won't save you"
-msgstr "멀티스레드로는 당신을 구원하지 않습니다"
+msgstr "멀티스레드는 당신을 구원하지 않습니다"
 
 #: src/08_futures/06_async_aware_primitives.md:108
 msgid ""
