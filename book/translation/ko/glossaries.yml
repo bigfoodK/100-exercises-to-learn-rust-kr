@@ -1,0 +1,29 @@
+annotation: 어노테이션
+associated type: 연관 타입
+binaries: 바이너리
+borrow: 차용
+closure: 클로저
+convention: 컨벤션
+crate: 크레이트
+custom: 커스텀
+dangling pointer: 댕글링 포인터
+dependency: 디펜던시
+deref coercion: deref coercion
+double free: 더블 프리
+error case: 에러 케이스
+fat pointer: 팻 포인터
+generic: 제네릭
+library: 라이브러리
+logic: 로직
+marker trait: 마커 트레잇
+method: 메서드
+negative trait bounds: 네거티브 트레잇 바운드
+placeholder: 플레이스 홀더
+scope: 스코프
+signature: 시그니처
+subtrait: 서브 트레잇
+supertraits: 슈퍼 트레잇
+trait: 트레잇
+trait bounds: 트레잇 바운드
+type: 타입
+variant: 배리언트
